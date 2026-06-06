@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-dark-100 antialiased font-sans;
+  }
+}
+
+/* Custom webkit scrollbars for premium dark analytics panel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0d20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b2349;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006fff;
+}
+
+/* Glow effects and animation utilities */
+.glow-card {
+  box-shadow: 0 0 20px 0 rgba(0, 111, 255, 0.05);
+}
+
+.glow-card-active {
+  box-shadow: 0 0 30px 0 rgba(0, 111, 255, 0.15);
+}
