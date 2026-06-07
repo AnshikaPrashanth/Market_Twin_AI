@@ -3,6 +3,7 @@ VALID_EVENTS = [
     "product_view",
     "add_to_cart",
     "remove_from_cart",
+    "cart_abandoned",
     "cart_abandon",
     "purchase",
     "email_sent",

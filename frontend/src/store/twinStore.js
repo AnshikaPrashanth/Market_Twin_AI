@@ -11,8 +11,22 @@ export const useTwinStore = create((set, get) => {
     twinState: null,
     eventsList: [],
     customerList: [], // Dynamically loaded list of customer IDs
+    dashboardMetrics: null,
     isLoading: false,
     error: null,
+
+    /**
+     * Fetches dashboard metrics
+     */
+    fetchMetricsData: async () => {
+      try {
+        const { getMetricsSummary } = await import('../api/client');
+        const metrics = await getMetricsSummary();
+        set({ dashboardMetrics: metrics });
+      } catch (err) {
+        console.error('Failed to fetch metrics', err);
+      }
+    },
 
     /**
      * Retrieves all customer profiles to populate lists.
@@ -79,9 +93,10 @@ export const useTwinStore = create((set, get) => {
      */
     startPolling: () => {
       if (pollingTimer) return;
+      console.log("Polling started: 60s interval");
       pollingTimer = setInterval(() => {
         get().fetchTwinData();
-      }, 3000);
+      }, 60000);
       useDebugStore.getState().addLog('[Sync Engine] Background polling sync active.');
     },
 

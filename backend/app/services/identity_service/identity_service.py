@@ -31,8 +31,18 @@ class IdentityService:
         """
         logger.info(f"Resolving customer ID for event: '{event.event_id}'")
 
+        match = None
+        # 0. Explicit Customer ID
+        if event.customer_id:
+            match = {
+                "customer_id": event.customer_id,
+                "matched_by": "explicit_id",
+                "confidence": 100
+            }
+
         # 1. Deterministic Match
-        match = self.deterministic_matcher.deterministic_match(event.identifiers)
+        if not match:
+            match = self.deterministic_matcher.deterministic_match(event.identifiers)
 
         # 2. Probabilistic Match
         if not match:

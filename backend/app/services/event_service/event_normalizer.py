@@ -82,7 +82,36 @@ class EventNormalizer:
 
         # 4. Finalize IDs and Timestamps
         event_id = raw_data.get("event_id") or generate_event_id()
-        source = raw_data.get("source") or "unknown"
+        
+        raw_source = raw_data.get("source")
+        source = None
+        
+        if raw_source:
+            # Normalize source values
+            s_lower = str(raw_source).lower()
+            if s_lower in ("storefront", "shopverse", "web", "website", "banner", "website_banner"):
+                source = "website"
+            elif s_lower in ("whatsapp", "wa"):
+                source = "whatsapp"
+            elif s_lower == "email":
+                source = "email"
+            elif s_lower == "push":
+                source = "push"
+            else:
+                source = s_lower
+        
+        if not source:
+            # Infer source from event_type
+            if event_type in ("product_view", "add_to_cart", "remove_from_cart", "cart_abandoned", "cart_abandon", "purchase", "banner_click"):
+                source = "website"
+            elif event_type in ("email_sent", "email_open", "email_click"):
+                source = "email"
+            elif event_type in ("whatsapp_sent", "whatsapp_click"):
+                source = "whatsapp"
+            elif event_type in ("push_sent", "push_click"):
+                source = "push"
+            else:
+                source = "unknown"
         
         timestamp = raw_data.get("timestamp")
         if not timestamp:

@@ -37,7 +37,7 @@ const HealthPage = () => {
 
   useEffect(() => {
     fetchHealthDetails();
-    const timer = setInterval(fetchHealthDetails, 5000); // Check every 5s
+    const timer = setInterval(fetchHealthDetails, 60000); // Check every 60s
     return () => clearInterval(timer);
   }, []);
 

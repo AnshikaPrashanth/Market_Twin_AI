@@ -9,6 +9,7 @@ from app.services.event_service.event_normalizer import EventNormalizer
 from app.services.event_service.event_store import EventStore
 from app.services.identity_service.identity_service import IdentityService
 from app.services.twin_service.twin_service import TwinService
+from app.services.creative_service import CreativeEngine
 from app.shared.event_bus import event_bus
 from app.core.logger import logger
 
@@ -25,6 +26,7 @@ class EventService:
         self.store = EventStore(db)
         self.identity_service = IdentityService(db)
         self.twin_service = TwinService(db)
+        self.creative_engine = CreativeEngine()
 
     async def process_event(self, raw_event: dict) -> EventIngestionResponse:
         """
@@ -69,10 +71,21 @@ class EventService:
         # 5. Link Customer ID to Event
         self.store.update_resolved_customer(db_event.event_id, customer_id)
 
-        # 6. Apply behavioral metrics to Digital Twin
-        updated_twin = self.twin_service.update_twin(customer_id, db_event)
+        # 6. Apply behavioral metrics and trigger NBA pipeline
+        processing_result = self.twin_service.process_event(customer_id, db_event)
+        updated_twin = processing_result.twin
 
-        # 7. Asynchronously trigger side-effect callbacks
+        # 7. Generate creative message if actionable
+        generated_msg = None
+        if processing_result.final_action and processing_result.final_channel:
+            generated_msg = self.creative_engine.generate(
+                customer_id=customer_id,
+                action=processing_result.final_action,
+                channel=processing_result.final_channel,
+                properties=db_event.properties
+            )
+
+        # 8. Asynchronously trigger side-effect callbacks
         event_dict = {
             "event_id": db_event.event_id,
             "event_type": db_event.event_type,
@@ -92,11 +105,17 @@ class EventService:
         asyncio.create_task(event_bus.publish("event_ingested", event_dict))
         asyncio.create_task(event_bus.publish("twin_updated", twin_dict))
 
-        # 8. Compile and return response
+        # 9. Compile and return response
         from app.schemas.twin_schema import TwinStateResponse
         return EventIngestionResponse(
             status="processed",
             event_id=db_event.event_id,
             customer_id=customer_id,
-            updated_twin=TwinStateResponse.model_validate(updated_twin)
+            updated_twin=TwinStateResponse.model_validate(updated_twin),
+            nba_decision=processing_result.nba_result.to_dict(),
+            final_action=processing_result.final_action,
+            final_channel=processing_result.final_channel,
+            consent_gate_applied=processing_result.consent_gate_applied,
+            generated_message=generated_msg,
+            identity_resolution=identity_response
         )

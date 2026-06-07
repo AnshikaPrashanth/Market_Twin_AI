@@ -7,7 +7,10 @@ import {
   Network, 
   Activity,
   Boxes,
-  Store
+  Store,
+  PieChart,
+  BarChart,
+  Smartphone
 } from 'lucide-react';
 
 const Sidebar = () => {
@@ -15,12 +18,12 @@ const Sidebar = () => {
   const currentPath = location.pathname;
 
   const navItems = [
-    { name: 'Dashboard', path: '/', icon: LayoutDashboard },
-    { name: 'Event Lab', path: '/event-lab', icon: FlaskConical },
+    { name: 'Command Center', path: '/', icon: LayoutDashboard },
     { name: 'Customer Twin', path: '/twin', icon: Cpu },
-    { name: 'Identity Graph', path: '/identity', icon: Network },
-    { name: 'Health Monitor', path: '/health', icon: Activity },
-    { name: 'Customer Storefront', path: '/store', icon: Store },
+    { name: 'Audience Intelligence', path: '/audience', icon: PieChart },
+    { name: 'Measurement Dashboard', path: '/measurement', icon: BarChart },
+    { name: 'Channel Simulator', path: '/simulator', icon: Smartphone },
+    { name: 'Storefront Simulator', path: '/store', icon: Store },
   ];
 
   return (

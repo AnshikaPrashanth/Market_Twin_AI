@@ -39,7 +39,8 @@ export const useTrackEvent = () => {
     };
 
     try {
-      await apiClient.post('/api/event', eventPayload);
+      const customerId = loyaltyId || deviceId;
+      await apiClient.post(`/api/nba/${customerId}/event`, eventPayload);
       console.log(`[Storefront] Tracked Event: ${eventType}`, eventPayload);
     } catch (error) {
       console.error(`[Storefront] Error tracking event ${eventType}:`, error);

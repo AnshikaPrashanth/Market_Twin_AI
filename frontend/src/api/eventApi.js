@@ -6,6 +6,7 @@ import apiClient from './client';
  * @returns {Promise<Object>}
  */
 export const sendEvent = async (payload) => {
-  const response = await apiClient.post('/api/event', payload);
+  const customerId = payload.customer_id || (payload.identifiers && payload.identifiers.device_id) || "unknown";
+  const response = await apiClient.post(`/api/nba/${customerId}/event`, payload);
   return response.data;
 };

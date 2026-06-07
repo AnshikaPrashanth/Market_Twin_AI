@@ -1,15 +1,37 @@
 class IntentScoreEngine:
     """
     Computes buying intent based on page views, cart additions,
-    repeated product interactions, and recency of activities.
-    Formula: Intent = views*3 + carts*20 + repeated_views*10 + recent_activity*15 (capped at 100)
+    repeated product interactions, abandonments, and recency of activities.
     """
     @staticmethod
     def calculate(raw_counters: dict) -> int:
         views = raw_counters.get("views", 0)
         carts = raw_counters.get("carts", 0)
         repeated_views = raw_counters.get("repeated_views", 0)
-        recent_activity = raw_counters.get("recent_activity", 0)  # Binary indicator (1 if active in last 24h else 0)
+        abandonments = raw_counters.get("abandonments", 0)
+        purchases = raw_counters.get("purchases", 0)
+        recent_activity = raw_counters.get("recent_activity", 0)
 
-        score = (views * 3) + (carts * 20) + (repeated_views * 10) + (recent_activity * 15)
-        return min(100, max(0, score))
+        score = 0
+
+        # Weak signal
+        score += views * 5
+
+        # Strong signal
+        score += carts * 25
+
+        # Stronger than normal view because user returned to same item
+        score += repeated_views * 8
+
+        # Very strong commercial signal
+        score += abandonments * 15
+
+        # Recent live activity boost
+        if recent_activity:
+            score += 10
+
+        # Purchase means maximum realized intent
+        if purchases > 0:
+            score += 30
+
+        return max(0, min(100, int(score)))
