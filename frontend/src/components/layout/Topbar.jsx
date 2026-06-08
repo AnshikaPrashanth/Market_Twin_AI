@@ -1,18 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { useTwinStore } from '../../store/twinStore';
+import { useMarketTwinStore } from '../../store/marketTwinStore';
 import { getHealth } from '../../api/healthApi';
+import { getAllCustomers } from '../../api/client';
 import { Database, User, ShieldAlert } from 'lucide-react';
 
 const Topbar = () => {
-  const { 
-    selectedCustomerId, 
-    customerList, 
-    selectCustomer,
-    eventsList
-  } = useTwinStore();
+  const { currentCustomerId, customer, liveEvents, latestTwin, loginAsCustomer, loading } = useMarketTwinStore();
 
   const [dbHealthy, setDbHealthy] = useState(false);
   const [loadingHealth, setLoadingHealth] = useState(true);
+  const [customersList, setCustomersList] = useState([]);
+
+  useEffect(() => {
+    const fetchCustomers = async () => {
+      try {
+        const list = await getAllCustomers();
+        if (list) {
+          setCustomersList(list);
+        }
+      } catch (e) {
+        console.error("Failed to fetch customers:", e);
+      }
+    };
+    fetchCustomers();
+  }, []);
 
   useEffect(() => {
     const checkConnection = async () => {
@@ -38,25 +49,40 @@ const Topbar = () => {
           <User size={18} />
           <span className="text-sm font-medium">Customer Context:</span>
         </div>
-        <select
-          value={selectedCustomerId}
-          onChange={(e) => selectCustomer(e.target.value)}
-          className="bg-dark-800 border border-dark-700 text-white rounded-lg px-3 py-1.5 text-sm font-semibold focus:outline-none focus:border-brand-500 cursor-pointer hover:bg-dark-750 transition-colors"
-        >
-          {customerList.map((id) => (
-            <option key={id} value={id}>
-              {id}
-            </option>
-          ))}
-        </select>
+        <div className="bg-dark-800 border border-dark-700 text-brand-400 rounded-lg px-4 py-1.5 text-sm font-semibold flex items-center shadow-inner">
+          <select
+            value={currentCustomerId || ""}
+            onChange={(e) => {
+              if (e.target.value) {
+                loginAsCustomer(e.target.value);
+              }
+            }}
+            className="bg-transparent text-brand-400 font-semibold outline-none cursor-pointer w-48 truncate"
+            disabled={loading}
+          >
+            <option value="" disabled className="bg-dark-800 text-dark-100">Select Identity...</option>
+            {customersList.map(c => (
+              <option key={c.customer_id} value={c.customer_id} className="bg-dark-800 text-dark-100">
+                {c.name} ({c.customer_id})
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Backend & Context Indicators */}
       <div className="flex items-center gap-6">
-        <div className="text-sm">
-          <span className="text-dark-400 font-medium">Profile Events: </span>
-          <span className="text-white font-bold bg-dark-850 px-2.5 py-1 rounded-md ml-1 border border-dark-700">
-            {eventsList.length}
+        <div className="text-sm flex items-center">
+          <span className="text-dark-400 font-medium">Journey: </span>
+          <span className="text-emerald-400 font-bold bg-dark-850 px-2.5 py-1 rounded-md ml-2 border border-dark-700 uppercase text-xs">
+            {latestTwin?.journey_stage || "Not started"}
+          </span>
+        </div>
+
+        <div className="text-sm flex items-center">
+          <span className="text-dark-400 font-medium">Live Events: </span>
+          <span className="text-white font-bold bg-dark-850 px-2.5 py-1 rounded-md ml-2 border border-dark-700">
+            {liveEvents.length}
           </span>
         </div>
 

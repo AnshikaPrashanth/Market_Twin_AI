@@ -28,15 +28,15 @@ class JourneyEngine:
                 return STAGE_LOYAL
             return STAGE_CONVERTED
 
-        if event_type == "cart_abandon":
+        if event_type in ("cart_abandon", "cart_abandoned"):
             return STAGE_CART_ABANDONED
 
         if event_type == "add_to_cart":
             return STAGE_CART_ACTIVE
 
-        # Re-engaged if they return from an inactive/abandoned stage via a marketing click
+        # Re-engaged if they return via a marketing click
         marketing_clicks = ("email_click", "whatsapp_click", "push_click", "banner_click")
-        if event_type in marketing_clicks and current_stage in (STAGE_CART_ABANDONED, STAGE_DORMANT, STAGE_CHURN_RISK):
+        if event_type in marketing_clicks:
             return STAGE_RE_ENGAGED
 
         if event_type == "product_view":

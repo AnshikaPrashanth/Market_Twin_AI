@@ -1,43 +1,47 @@
 import React, { useEffect, useState } from "react";
-import { useDemoStore } from "../store/demoStore";
-import { useTwinStore } from "../store/twinStore";
+import { useMarketTwinStore } from "../store/marketTwinStore";
 import { getPredictiveTwin } from "../api/client";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import { Sliders, Zap, ShieldAlert, CheckCircle, BrainCircuit } from "lucide-react";
+import { Sliders, Zap, ShieldAlert, CheckCircle, BrainCircuit, List, MapPin, BarChart2 } from "lucide-react";
 
 export default function CustomerTwin() {
-  const { latestProcessingResult } = useDemoStore();
-  const { selectedCustomerId, twinState } = useTwinStore();
+  const { latestProcessingResult, currentCustomerId, latestTwin, liveEvents } = useMarketTwinStore();
   const [predictiveData, setPredictiveData] = useState(null);
+  const [predictiveError, setPredictiveError] = useState(false);
 
   // NBA Sandbox local state
-  const [sandboxIntent, setSandboxIntent] = useState(twinState?.intent_score || 0);
-  const [sandboxChurn, setSandboxChurn] = useState(twinState?.churn_risk || 0);
-  const [sandboxFatigue, setSandboxFatigue] = useState(twinState?.fatigue_score || 0);
-  const [sandboxStage, setSandboxStage] = useState(twinState?.journey_stage || "browsing");
-  const [sandboxAbandonments, setSandboxAbandonments] = useState(twinState?.raw_counters?.abandonments || 0);
+  const [sandboxIntent, setSandboxIntent] = useState(latestTwin?.intent_score ?? 0);
+  const [sandboxChurn, setSandboxChurn] = useState(latestTwin?.churn_risk ?? 0);
+  const [sandboxFatigue, setSandboxFatigue] = useState(latestTwin?.fatigue_score ?? 0);
+  const [sandboxStage, setSandboxStage] = useState(latestTwin?.journey_stage || "browsing");
+  const [sandboxAbandonments, setSandboxAbandonments] = useState(latestTwin?.raw_counters?.abandonments || 0);
 
   useEffect(() => {
-    if (twinState) {
-      setSandboxIntent(twinState.intent_score);
-      setSandboxChurn(twinState.churn_risk);
-      setSandboxFatigue(twinState.fatigue_score);
-      setSandboxStage(twinState.journey_stage);
-      setSandboxAbandonments(twinState.raw_counters?.abandonments || 0);
+    if (latestTwin) {
+      setSandboxIntent(latestTwin.intent_score ?? 0);
+      setSandboxChurn(latestTwin.churn_risk ?? 0);
+      setSandboxFatigue(latestTwin.fatigue_score ?? 0);
+      setSandboxStage(latestTwin.journey_stage || "browsing");
+      setSandboxAbandonments(latestTwin.raw_counters?.abandonments || 0);
     }
-  }, [twinState]);
+  }, [latestTwin]);
 
   useEffect(() => {
-    if (selectedCustomerId) {
-      getPredictiveTwin(selectedCustomerId)
+    if (currentCustomerId) {
+      setPredictiveError(false);
+      getPredictiveTwin(currentCustomerId)
         .then(setPredictiveData)
-        .catch((e) => console.error("Failed to load predictive twin", e));
+        .catch((e) => {
+          console.error("Failed to load predictive twin", e);
+          setPredictiveError(true);
+          setPredictiveData(null);
+        });
     }
-  }, [selectedCustomerId]);
+  }, [currentCustomerId, latestTwin?.updated_at, latestTwin?.intent_score]);
 
   // Local NBA Rules Simulation
   const evaluateSandboxNBA = () => {
-    if (sandboxStage === "converted") return "do_nothing";
+    if (sandboxStage === "converted" || sandboxStage === "purchased") return "do_nothing";
     if (sandboxFatigue >= 60) return "cool_down_marketing";
     if (sandboxAbandonments >= 2 && sandboxIntent >= 40 && sandboxFatigue < 60) return "send_coupon";
     if (sandboxIntent >= 70 && sandboxStage === "cart_abandoned") return "send_coupon";
@@ -60,13 +64,15 @@ export default function CustomerTwin() {
     };
   }) || [];
 
-  if (!selectedCustomerId || !twinState) {
+  if (!latestTwin || !currentCustomerId) {
     return (
       <div className="flex h-screen items-center justify-center bg-[#0B0F19] text-gray-400">
-        Waiting for customer context. Run the demo or trigger an event in the Storefront.
+        No live twin yet. Use Storefront or Run Demo.
       </div>
     );
   }
+
+  const counters = latestTwin.raw_counters || {};
 
   return (
     <div className="p-8 space-y-8 bg-[#0B0F19] text-gray-100 min-h-screen">
@@ -74,7 +80,7 @@ export default function CustomerTwin() {
         <h1 className="text-3xl font-bold text-white tracking-tight flex items-center">
           <BrainCircuit className="w-8 h-8 mr-3 text-brand-500" /> Digital Twin Profile
         </h1>
-        <p className="text-gray-400 mt-2">Customer ID: <span className="font-mono text-brand-400">{selectedCustomerId}</span></p>
+        <p className="text-gray-400 mt-2">Customer ID: <span className="font-mono text-brand-400">{currentCustomerId}</span></p>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -83,18 +89,53 @@ export default function CustomerTwin() {
           <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
             <h2 className="text-lg font-semibold text-white mb-4">Current Parameters</h2>
             <div className="space-y-4">
-              <ParameterBar label="Intent Score" value={twinState.intent_score} color="bg-emerald-500" />
-              <ParameterBar label="Churn Risk" value={twinState.churn_risk} color="bg-rose-500" />
-              <ParameterBar label="Fatigue Score" value={twinState.fatigue_score} color="bg-amber-500" />
-              <ParameterBar label="Conversion Prob." value={twinState.conversion_probability} color="bg-blue-500" />
+              <ParameterBar label="Intent Score" value={latestTwin.intent_score ?? 0} color="bg-emerald-500" />
+              <ParameterBar label="Churn Risk" value={latestTwin.churn_risk ?? 0} color="bg-rose-500" />
+              <ParameterBar label="Fatigue Score" value={latestTwin.fatigue_score ?? 0} color="bg-amber-500" />
+              <ParameterBar label="Conversion Prob." value={latestTwin.conversion_probability ?? 0} color="bg-blue-500" />
             </div>
             <div className="mt-6 pt-4 border-t border-gray-800 flex justify-between">
               <span className="text-sm text-gray-400">Journey Stage</span>
-              <span className="text-sm font-semibold text-brand-400 uppercase tracking-wider">{twinState.journey_stage}</span>
+              <span className="text-sm font-semibold text-brand-400 uppercase tracking-wider">{latestTwin.journey_stage || "Not started"}</span>
+            </div>
+            <div className="mt-2 flex justify-between">
+              <span className="text-sm text-gray-400">Segment</span>
+              <span className="text-sm font-semibold text-indigo-400 uppercase tracking-wider">{latestTwin.segment || "Unassigned"}</span>
             </div>
             <div className="mt-2 flex justify-between">
               <span className="text-sm text-gray-400">Preferred Channel</span>
-              <span className="text-sm font-semibold text-white uppercase">{twinState.preferred_channel}</span>
+              <span className="text-sm font-semibold text-white uppercase">{latestTwin.preferred_channel || "Not available"}</span>
+            </div>
+          </div>
+
+          {/* Raw Counters */}
+          <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+              <BarChart2 className="w-5 h-5 mr-2 text-indigo-400" /> Raw Counters
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              <CounterItem label="Views" value={counters.views ?? 0} />
+              <CounterItem label="Carts" value={counters.carts ?? 0} />
+              <CounterItem label="Abandonments" value={counters.abandonments ?? 0} />
+              <CounterItem label="Purchases" value={counters.purchases ?? 0} />
+              <CounterItem label="Msgs (48h)" value={counters.messages_last_48h ?? 0} />
+              <CounterItem label="Clicks (48h)" value={counters.clicks_last_48h ?? 0} />
+              <CounterItem label="Ignored" value={counters.ignored_messages ?? 0} />
+              <CounterItem label="Total Spend" value={`₹${counters.total_spend ?? 0}`} />
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-800">
+              <span className="text-xs text-gray-400 block mb-1">Channels Used:</span>
+              <div className="flex flex-wrap gap-2">
+                {Object.keys(counters.channels_used || {}).length === 0 ? (
+                  <span className="text-xs text-gray-600 italic">None</span>
+                ) : (
+                  Object.entries(counters.channels_used).map(([channel, count]) => (
+                    <span key={channel} className="text-xs px-2 py-1 bg-gray-800 rounded text-gray-300">
+                      {channel}: {count}
+                    </span>
+                  ))
+                )}
+              </div>
             </div>
           </div>
 
@@ -107,7 +148,7 @@ export default function CustomerTwin() {
               <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
                 <Zap className="w-5 h-5 mr-2 text-amber-400" /> Live Decision Engine
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-3 relative z-10">
                 <div>
                   <div className="text-xs text-brand-300/70 uppercase">Raw Action</div>
                   <div className="font-semibold text-lg text-white">{latestProcessingResult.nba_decision.action}</div>
@@ -134,9 +175,9 @@ export default function CustomerTwin() {
                   <div className="mt-3 bg-dark-900/50 p-3 rounded-lg border border-gray-800">
                     <div className="flex justify-between items-center mb-1">
                       <span className="text-xs text-gray-500 uppercase">Final Delivery</span>
-                      <span className="text-xs font-bold text-white uppercase">{latestProcessingResult.final_channel || 'NONE'}</span>
+                      <span className="text-xs font-bold text-white uppercase">{latestProcessingResult.final_channel || 'none'}</span>
                     </div>
-                    <div className="font-semibold text-brand-400 text-sm">{latestProcessingResult.final_action}</div>
+                    <div className="font-semibold text-brand-400 text-sm">{latestProcessingResult.final_action || 'none'}</div>
                   </div>
                 </div>
               </div>
@@ -144,8 +185,45 @@ export default function CustomerTwin() {
           )}
         </div>
 
-        {/* Charts & Sandbox */}
+        {/* Center & Right Column */}
         <div className="col-span-2 space-y-6">
+          
+          {/* Journey Timeline */}
+          <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+              <MapPin className="w-5 h-5 mr-2 text-indigo-400" /> Journey Timeline
+            </h2>
+            {liveEvents.length === 0 ? (
+              <p className="text-gray-500 text-sm italic">No journey events yet.</p>
+            ) : (
+              <div className="flex overflow-x-auto pb-4 custom-scrollbar gap-4 items-center">
+                {[...liveEvents].reverse().map((ev, idx) => {
+                  let stage = "unknown";
+                  if (ev.event_type === "product_view") stage = "browsing";
+                  else if (ev.event_type === "add_to_cart") stage = "cart_active";
+                  else if (ev.event_type === "cart_abandoned") stage = "cart_abandoned";
+                  else if (ev.event_type === "purchase") stage = "purchased";
+                  else if (ev.event_type?.includes("click")) stage = "re_engaged";
+
+                  return (
+                    <div key={idx} className="flex flex-col items-center min-w-[120px]">
+                      <div className="w-3 h-3 rounded-full bg-brand-500 mb-2"></div>
+                      <div className="text-xs text-gray-400 mb-1 whitespace-nowrap">
+                        {ev.timestamp ? new Date(ev.timestamp).toLocaleTimeString() : ""}
+                      </div>
+                      <div className="text-sm font-semibold text-white text-center whitespace-nowrap">
+                        {ev.event_type}
+                      </div>
+                      <div className="text-xs text-brand-400 mt-1 uppercase text-center">
+                        {stage}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
           {/* Predictive Twin Chart */}
           <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl h-[400px]">
             <div className="flex justify-between items-center mb-4">
@@ -156,7 +234,9 @@ export default function CustomerTwin() {
                 </div>
               )}
             </div>
-            {chartData.length > 0 ? (
+            {predictiveError ? (
+              <div className="h-full flex items-center justify-center text-rose-400">Predictive twin unavailable</div>
+            ) : chartData.length > 0 ? (
               <ResponsiveContainer width="100%" height="85%">
                 <LineChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#374151" vertical={false} />
@@ -238,6 +318,15 @@ function ParameterBar({ label, value, color }) {
       <div className="w-full bg-gray-800 rounded-full h-2">
         <div className={`h-2 rounded-full ${color}`} style={{ width: `${value}%` }}></div>
       </div>
+    </div>
+  );
+}
+
+function CounterItem({ label, value }) {
+  return (
+    <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+      <div className="text-xs text-gray-400 mb-1">{label}</div>
+      <div className="text-lg font-bold text-white">{value}</div>
     </div>
   );
 }

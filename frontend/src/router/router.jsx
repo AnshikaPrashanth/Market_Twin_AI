@@ -7,11 +7,13 @@ import AudienceIntelligence from '../pages/AudienceIntelligence';
 import MeasurementDashboard from '../pages/MeasurementDashboard';
 import ChannelSimulator from '../pages/ChannelSimulator';
 import Storefront from '../pages/Storefront';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <AppLayout />,
+    errorElement: <ErrorBoundary />,
     children: [
       { path: '/', element: <CommandCenter /> },
       { path: '/twin', element: <CustomerTwin /> },
@@ -22,6 +24,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/store',
-    element: <Storefront />
+    element: <Storefront />,
+    errorElement: <ErrorBoundary />
   }
 ]);

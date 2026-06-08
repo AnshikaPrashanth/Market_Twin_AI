@@ -5,7 +5,10 @@ from app.schemas.twin_schema import TwinStateResponse
 class EventIngestionResponse(BaseModel):
     status: str = "processed"
     event_id: str
+    event_type: str
+    source: str
     customer_id: str
+    timestamp: str
     updated_twin: TwinStateResponse
     nba_decision: Optional[Dict[str, Any]] = None
     final_action: Optional[str] = None

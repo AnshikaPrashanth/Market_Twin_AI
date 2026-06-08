@@ -6,7 +6,7 @@ class CreativeEngine:
     consent-aware action and delivery channel.
     """
     
-    def generate(self, customer_id: str, action: str, channel: str, properties: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
+    def generate(self, customer_id: str, action: str, channel: str, properties: Optional[Dict[str, Any]] = None, event_type: Optional[str] = None) -> Optional[Dict[str, Any]]:
         if not action or action in ("do_nothing", "cool_down_marketing"):
             return None
             
@@ -18,7 +18,9 @@ class CreativeEngine:
         product_name = props.get("product_name") or props.get("product_id") or "your selected item"
         
         # Message generation based on action and channel
-        if action == "send_coupon":
+        is_recovery = action in ("cart_recovery_coupon", "send_coupon") or event_type in ("cart_abandoned", "cart_abandon")
+        
+        if is_recovery:
             return self._generate_coupon_message(channel, product_name)
         elif action in ("send_email", "send_whatsapp", "send_push", "show_website_personalization"):
             return self._generate_nurture_message(channel, product_name)
@@ -29,14 +31,14 @@ class CreativeEngine:
         if channel == "whatsapp":
             return {
                 "channel": "whatsapp",
-                "message": f"Hey there! You left {product_name} in your cart. Complete your order today and use code RECOVER10 for 10% off.",
+                "message": f"Hey Rahul, your {product_name} are still in your cart. Complete your order today and get 10% off.",
                 "cta": "Return to cart"
             }
         elif channel == "email":
             return {
                 "channel": "email",
-                "subject": "Still thinking it over? Here is 10% off!",
-                "body": f"Hi! The {product_name} you liked is waiting for you. Complete your purchase today and enjoy 10% off with code RECOVER10.",
+                "subject": "Your cart is waiting",
+                "body": f"Hi Rahul, your {product_name} are still in your cart. Complete your purchase today and get 10% off.",
                 "cta": "Complete purchase"
             }
         elif channel == "push":
@@ -49,7 +51,7 @@ class CreativeEngine:
         elif channel == "website":
             return {
                 "channel": "website",
-                "banner": f"Welcome back! Your {product_name} is waiting with 10% off. Use code RECOVER10.",
+                "banner": f"Welcome back Rahul! Your {product_name} are waiting with 10% off.",
                 "cta": "Return to cart"
             }
         return {}

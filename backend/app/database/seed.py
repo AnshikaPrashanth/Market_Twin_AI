@@ -25,7 +25,16 @@ def seed_initial_data():
         twin_store = TwinStore(db)
 
         # 2. Add customer profiles
-        # Mumbai mobile user active in mornings/evenings interested in audio/electronics
+        # CUST_DEMO_001 as required
+        id_store.save_customer_profile(
+            customer_id="CUST_DEMO_001",
+            city="Bangalore",
+            device_type="Desktop",
+            active_hours=[10, 14, 18, 20],
+            preferred_categories=["Electronics"]
+        )
+
+        # Mumbai mobile user
         id_store.save_customer_profile(
             customer_id="CUST_001",
             city="Mumbai",
@@ -34,29 +43,19 @@ def seed_initial_data():
             preferred_categories=["Headphones", "Electronics"]
         )
 
-        # Bengaluru desktop user active in afternoons interested in laptops/books
-        id_store.save_customer_profile(
-            customer_id="CUST_002",
-            city="Bengaluru",
-            device_type="Desktop",
-            active_hours=[14, 15, 16],
-            preferred_categories=["Laptops", "Books"]
-        )
-
         # 3. Create identity links
-        # Link DEV_88, EMAIL_991, PHONE_771, COOKIE_ABC to CUST_001
+        # Link D88, E991, P554, L230 to CUST_DEMO_001
+        id_store.create_identity_link("device_id", "D88", "CUST_DEMO_001", confidence=100, matched_by="deterministic")
+        id_store.create_identity_link("email_hash", hash_identifier("E991"), "CUST_DEMO_001", confidence=100, matched_by="deterministic")
+        id_store.create_identity_link("phone_hash", hash_identifier("P554"), "CUST_DEMO_001", confidence=100, matched_by="deterministic")
+        id_store.create_identity_link("loyalty_id", "L230", "CUST_DEMO_001", confidence=100, matched_by="deterministic")
+
+        # Link DEV_88 to CUST_001
         id_store.create_identity_link("device_id", "DEV_88", "CUST_001", confidence=100, matched_by="deterministic")
-        id_store.create_identity_link("email_hash", hash_identifier("EMAIL_991"), "CUST_001", confidence=100, matched_by="deterministic")
-        id_store.create_identity_link("phone_hash", hash_identifier("PHONE_771"), "CUST_001", confidence=100, matched_by="deterministic")
-        id_store.create_identity_link("cookie_id", "COOKIE_ABC", "CUST_001", confidence=100, matched_by="deterministic")
-
-        # Link DEV_99, EMAIL_CUST2 to CUST_002
-        id_store.create_identity_link("device_id", "DEV_99", "CUST_002", confidence=100, matched_by="deterministic")
-        id_store.create_identity_link("email_hash", hash_identifier("EMAIL_CUST2"), "CUST_002", confidence=100, matched_by="deterministic")
-
+        
         # 4. Initialize Digital Twins
+        twin_store.create_twin("CUST_DEMO_001")
         twin_store.create_twin("CUST_001")
-        twin_store.create_twin("CUST_002")
 
         # 5. Populate CUST_001 Twin with mock active metrics for intent simulation
         twin1 = twin_store.load_twin("CUST_001")

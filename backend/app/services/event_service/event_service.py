@@ -82,8 +82,12 @@ class EventService:
                 customer_id=customer_id,
                 action=processing_result.final_action,
                 channel=processing_result.final_channel,
-                properties=db_event.properties
+                properties=db_event.properties,
+                event_type=db_event.event_type
             )
+            if generated_msg:
+                from app.services.message_service import MessageService
+                MessageService.save_latest_message(customer_id, generated_msg)
 
         # 8. Asynchronously trigger side-effect callbacks
         event_dict = {
@@ -110,7 +114,10 @@ class EventService:
         return EventIngestionResponse(
             status="processed",
             event_id=db_event.event_id,
+            event_type=db_event.event_type,
+            source=db_event.source,
             customer_id=customer_id,
+            timestamp=db_event.timestamp.isoformat(),
             updated_twin=TwinStateResponse.model_validate(updated_twin),
             nba_decision=processing_result.nba_result.to_dict(),
             final_action=processing_result.final_action,

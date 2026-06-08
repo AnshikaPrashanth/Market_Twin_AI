@@ -136,6 +136,57 @@ class TwinStore:
         return twin
 
     # ------------------------------------------------------------------
+    # Reset twin to default
+    # ------------------------------------------------------------------
+
+    def reset_twin_to_default(self, customer_id: str) -> Optional[TwinModel]:
+        """
+        Resets an existing twin to default values instead of deleting it.
+        """
+        twin = self.load_twin(customer_id)
+        if not twin:
+            return None
+
+        now_str = datetime.now(timezone.utc).isoformat()
+        
+        default_counters = {
+            "views": 0,
+            "carts": 0,
+            "repeated_views": 0,
+            "recent_activity": 1,
+            "purchases": 0,
+            "abandonments": 0,
+            "inactive_days": 0,
+            "messages_last_48h": 0,
+            "clicks_last_48h": 0,
+            "ignored_messages": 0,
+            "unsubscribes": 0,
+            "total_spend": 0.0,
+            "channel_affinity": 50,
+            "discount_affinity": 50,
+            "last_active_time": now_str,
+            "first_seen": twin.raw_counters.get("first_seen", now_str) if twin.raw_counters else now_str,
+            "product_views": {},
+            "channels_used": {},
+        }
+
+        twin.journey_stage = "anonymous"
+        twin.intent_score = 0
+        twin.churn_risk = 0
+        twin.fatigue_score = 0
+        twin.conversion_probability = 0
+        twin.segment = "Standard Customer"
+        twin.preferred_channel = None
+        twin.next_best_action = None
+        twin.raw_counters = default_counters
+
+        self.db.commit()
+        self.db.refresh(twin)
+        self._backup_twins_to_json()
+        
+        return twin
+
+    # ------------------------------------------------------------------
     # Read all twins
     # ------------------------------------------------------------------
 

@@ -97,18 +97,18 @@ class EventNormalizer:
                 source = "email"
             elif s_lower == "push":
                 source = "push"
-            else:
+            elif s_lower != "unknown":
                 source = s_lower
         
-        if not source:
+        if not source or source == "unknown":
             # Infer source from event_type
-            if event_type in ("product_view", "add_to_cart", "remove_from_cart", "cart_abandoned", "cart_abandon", "purchase", "banner_click"):
+            if event_type in ("product_view", "add_to_cart", "remove_from_cart", "cart_abandoned", "cart_abandon", "purchase", "banner_click", "banner_view"):
                 source = "website"
             elif event_type in ("email_sent", "email_open", "email_click"):
                 source = "email"
-            elif event_type in ("whatsapp_sent", "whatsapp_click"):
+            elif event_type in ("whatsapp_sent", "whatsapp_open", "whatsapp_click"):
                 source = "whatsapp"
-            elif event_type in ("push_sent", "push_click"):
+            elif event_type in ("push_sent", "push_open", "push_click"):
                 source = "push"
             else:
                 source = "unknown"
