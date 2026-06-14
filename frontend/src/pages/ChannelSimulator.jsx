@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useMarketTwinStore } from "../store/marketTwinStore";
 import { getLatestMessage, reactToMessage } from "../api/client";
-import { MessageSquare, Mail, Bell, Monitor, HandIcon, MousePointerClick, XCircle, ShoppingBag, LogOut, CheckCircle } from "lucide-react";
+import { MessageSquare, Mail, Bell, Monitor, HandIcon, MousePointerClick, XCircle, ShoppingBag, LogOut, CheckCircle, Smartphone } from "lucide-react";
 
 export default function ChannelSimulator() {
   const { 
@@ -48,6 +48,7 @@ export default function ChannelSimulator() {
     { id: "whatsapp", label: "WhatsApp", icon: MessageSquare },
     { id: "email", label: "Email", icon: Mail },
     { id: "push", label: "Push", icon: Bell },
+    { id: "sms", label: "SMS", icon: Smartphone },
     { id: "website", label: "Website", icon: Monitor },
   ];
 
@@ -114,6 +115,21 @@ export default function ChannelSimulator() {
             <button className="w-full bg-white border border-gray-200 shadow-sm text-emerald-600 font-medium py-2 rounded-xl text-sm flex justify-center items-center gap-1 hover:bg-gray-50">
               <MessageSquare className="w-3 h-3" /> {creative.cta || "Continue"}
             </button>
+          </div>
+          <div className="self-center mt-4 px-2 py-1 bg-white/60 rounded shadow-sm text-[10px] text-gray-500 font-mono flex items-center border border-gray-100">
+            <span className="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>
+            source: live_backend
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "sms") {
+      return (
+        <div className="flex flex-col space-y-2 h-full justify-end pb-4 w-full">
+          <div className="self-end bg-gray-200 text-gray-900 px-4 py-3 rounded-2xl max-w-[85%] shadow-sm relative">
+            <p className="text-sm">{creative.message || creative.body || "Your personalized message is ready."}</p>
+            <div className="text-right text-[10px] text-gray-500 mt-1">10:43 AM</div>
           </div>
           <div className="self-center mt-4 px-2 py-1 bg-white/60 rounded shadow-sm text-[10px] text-gray-500 font-mono flex items-center border border-gray-100">
             <span className="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>

@@ -28,3 +28,19 @@ export const getCustomerEvents = async (customerId) => {
   const response = await apiClient.get(`/api/customer/${customerId}/events`);
   return response.data;
 };
+
+/**
+ * Retrieves all resolution engine identity bindings for a customer ID.
+ */
+export const getCustomerIdentities = async (customerId) => {
+  const response = await apiClient.get(`/api/customer/${customerId}/identities`);
+  return response.data;
+};
+
+/**
+ * Retrieves all resolution engine identity bindings globally.
+ */
+export const getAllIdentities = async () => {
+  const response = await apiClient.get(`/api/identities`);
+  return response.data;
+};

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { getCohortDrift, getMetricsSummary } from "../api/client";
 import { useMarketTwinStore } from "../store/marketTwinStore";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import { Target, TrendingUp, DollarSign, Info, ChevronDown, ChevronUp, AlertCircle, Loader2 } from "lucide-react";
+import { Target, TrendingUp, DollarSign, Info, ChevronDown, ChevronUp, AlertCircle, Loader2, Activity, Zap, Mail, MessageSquare, MousePointer, CheckCircle, Link } from "lucide-react";
 
 export default function MeasurementDashboard() {
   const { liveEvents, latestProcessingResult, metricsSummary, setMetricsSummary } = useMarketTwinStore();
@@ -69,6 +69,25 @@ export default function MeasurementDashboard() {
   const metrics = metricsSummary || {};
   const sources = metrics.sources || {};
 
+  // Compute derived metrics
+  const totalEvents = metrics.profile_events || 0;
+  const campaignsTriggered = metrics.messages_sent || 0;
+  const messagesSent = metrics.messages_sent || 0;
+  const opens = metrics.opens || 0;
+  const clicks = metrics.clicks || 0;
+  
+  // Campaign Metrics
+  const campaignConversions = metrics.conversions || 0;
+  const revenueRecovered = metrics.revenue_recovered || 0;
+  const couponCost = metrics.coupon_cost || 0;
+  const netUplift = metrics.net_uplift || 0;
+  const roi = metrics.iroas || 0;
+  const conversionRate = campaignsTriggered > 0 ? ((campaignConversions / campaignsTriggered) * 100).toFixed(1) : 0;
+
+  // Organic Metrics
+  const organicConversions = metrics.organic_conversions || 0;
+  const organicRevenue = metrics.organic_revenue || 0;
+
   return (
     <div className="p-8 space-y-8 bg-[#0B0F19] text-gray-100 min-h-screen">
       <header className="mb-8 border-b border-gray-800 pb-4 flex justify-between items-end">
@@ -78,60 +97,80 @@ export default function MeasurementDashboard() {
           </h1>
           <p className="text-gray-400 mt-2">Impact of MarketTwin AI Next Best Actions.</p>
         </div>
-        {metrics.computed_from && (
-          <div className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full border border-gray-700">
-            Computed from: {metrics.computed_from}
-          </div>
-        )}
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-        <MetricCard title="Revenue Recovered" value={metrics.revenue_recovered != null ? `₹${metrics.revenue_recovered.toLocaleString()}` : "₹0"} icon={DollarSign} color="text-emerald-400" source={sources.revenue_recovered} />
-        <MetricCard title="Conversion Lift" value={metrics.conversion_lift != null ? `+${metrics.conversion_lift}%` : "N/A"} icon={TrendingUp} color="text-blue-400" source={sources.conversion_lift} />
-        <MetricCard title="iROAS" value={metrics.iroas != null ? `${metrics.iroas}x` : "N/A"} icon={Target} color="text-purple-400" source={sources.iroas} />
-        <MetricCard title="Cart Recovery Rate" value={metrics.cart_recovery_rate != null ? `${metrics.cart_recovery_rate}%` : "N/A"} icon={TrendingUp} color="text-indigo-400" source={sources.cart_recovery_rate} />
-        <MetricCard title="Churn Risk Reduced" value={metrics.churn_risk_reduced != null ? `-${metrics.churn_risk_reduced}%` : "N/A"} icon={Target} color="text-rose-400" source={sources.churn_risk_reduced} />
-        <MetricCard title="Fatigue Avoided" value={metrics.fatigue_avoided != null ? `${metrics.fatigue_avoided} msg` : "0 msg"} icon={Target} color="text-amber-400" source={sources.fatigue_avoided} />
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-        {/* Cohort Drift Stacked Area Chart */}
-        <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl h-[450px]">
-          <h2 className="text-lg font-semibold text-white mb-6">Cohort Journey Drift (5 Weeks)</h2>
-          {(!cohortData || cohortData.length === 0) ? (
-            <div className="h-full flex items-center justify-center text-gray-500 italic pb-12">
-              No cohort drift data available.
+      {totalEvents === 0 ? (
+        <div className="bg-[#111827] border border-gray-800 rounded-2xl p-12 text-center text-gray-500 italic shadow-xl">
+          <AlertCircle className="w-12 h-12 mx-auto mb-4 text-gray-700" />
+          No data available yet. Trigger events via Storefront or Run Demo.
+        </div>
+      ) : (
+        <>
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-white mb-4 border-b border-gray-800 pb-2">Campaign Attribution Metrics</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+              <MetricCard title="Total Events" value={totalEvents} icon={Activity} color="text-gray-400" />
+              <MetricCard title="Messages Sent" value={messagesSent} icon={Mail} color="text-blue-400" />
+              <MetricCard title="Opens" value={opens} icon={MessageSquare} color="text-purple-400" />
+              <MetricCard title="Clicks" value={clicks} icon={MousePointer} color="text-indigo-400" />
+              <MetricCard title="Campaign Conversions" value={campaignConversions} icon={CheckCircle} color="text-emerald-400" />
+              <MetricCard title="Campaign CVR" value={`${conversionRate}%`} icon={TrendingUp} color="text-emerald-400" />
+              
+              <MetricCard title="Revenue Recovered" value={`₹${revenueRecovered.toLocaleString()}`} icon={DollarSign} color="text-emerald-500" />
+              <MetricCard title="Coupon Cost" value={`₹${couponCost.toLocaleString()}`} icon={DollarSign} color="text-rose-400" />
+              <MetricCard title="Net Uplift" value={`₹${netUplift.toLocaleString()}`} icon={TrendingUp} color="text-emerald-400" />
+              <MetricCard title="Campaign ROI" value={`${roi}x`} icon={Target} color="text-purple-400" />
+              <MetricCard title="Attribution Status" value={campaignConversions > 0 ? "Attributed" : "Pending"} icon={Link} color="text-blue-400" />
             </div>
-          ) : (
-            <ResponsiveContainer width="100%" height="85%">
-              <AreaChart data={cohortData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#374151" vertical={false} />
-                <XAxis dataKey="week" stroke="#9CA3AF" tick={{fill: '#9CA3AF', fontSize: 12}} />
-                <YAxis stroke="#9CA3AF" tick={{fill: '#9CA3AF', fontSize: 12}} />
-                <Tooltip contentStyle={{ backgroundColor: '#1F2937', borderColor: '#374151', color: '#F3F4F6' }} itemStyle={{ fontSize: 12 }} />
-                <Legend wrapperStyle={{ fontSize: 12, paddingTop: '10px' }} />
-                <Area type="monotone" dataKey="Browsing" stackId="1" stroke="#3B82F6" fill="#3B82F6" fillOpacity={0.6} />
-                <Area type="monotone" dataKey="Cart Active" stackId="1" stroke="#8B5CF6" fill="#8B5CF6" fillOpacity={0.6} />
-                <Area type="monotone" dataKey="Cart Abandoned" stackId="1" stroke="#F43F5E" fill="#F43F5E" fillOpacity={0.6} />
-                <Area type="monotone" dataKey="Recovered" stackId="1" stroke="#10B981" fill="#10B981" fillOpacity={0.8} />
-                <Area type="monotone" dataKey="Purchased" stackId="1" stroke="#F59E0B" fill="#F59E0B" fillOpacity={0.8} />
-              </AreaChart>
-            </ResponsiveContainer>
-          )}
-        </div>
-
-        {/* Action Effectiveness Bar Chart */}
-        <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl h-[450px]">
-          <h2 className="text-lg font-semibold text-white mb-6">Interaction Funnel</h2>
-          <div className="flex h-full flex-col justify-center px-8 space-y-8">
-            <FunnelBar label="Messages Sent" value={metrics.messages_sent || 0} max={metrics.messages_sent || 1} color="bg-blue-500" source={sources.messages_sent} />
-            <FunnelBar label="Clicks" value={metrics.clicks || 0} max={metrics.messages_sent || 1} color="bg-brand-500" source={sources.clicks} />
-            <FunnelBar label="Conversions" value={metrics.conversions || 0} max={metrics.messages_sent || 1} color="bg-emerald-500" source={sources.conversions} />
           </div>
-        </div>
-      </div>
-      
-      <ExplainMetricsPanel metrics={metrics} sources={sources} />
+
+          <div>
+            <h2 className="text-xl font-bold text-white mb-4 border-b border-gray-800 pb-2">Organic Storefront Metrics</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <MetricCard title="Organic Conversions" value={organicConversions} icon={CheckCircle} color="text-emerald-400" />
+              <MetricCard title="Organic Revenue" value={`₹${organicRevenue.toLocaleString()}`} icon={DollarSign} color="text-emerald-500" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+            {/* Attribution Path */}
+            <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl flex flex-col">
+              <h2 className="text-lg font-semibold text-white mb-6">Attribution Path</h2>
+              <div className="flex-1 flex flex-col justify-center">
+                <div className="flex items-center text-sm font-mono text-gray-400 flex-wrap gap-2 bg-[#1F2937] p-4 rounded-xl border border-gray-700/50">
+                  <span className="text-rose-400">cart_abandoned</span> 
+                  <span className="text-brand-500">→</span>
+                  <span className="text-amber-400">cart_recovery_coupon_sent</span> 
+                  <span className="text-brand-500">→</span>
+                  <span className="text-indigo-400">coupon_clicked</span> 
+                  <span className="text-brand-500">→</span>
+                  <span className="text-emerald-400 font-bold">purchase_completed</span>
+                </div>
+                <div className="mt-4 text-xs text-gray-500 italic px-2">
+                  <Info className="w-3 h-3 inline mr-1" /> Attribution Model: Rule-based last-touch attribution for demo.
+                </div>
+              </div>
+            </div>
+
+            {/* Campaign Performance Table */}
+            <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+              <h2 className="text-lg font-semibold text-white mb-6">Campaign Performance</h2>
+              <table className="w-full text-left text-sm text-gray-300">
+                <tbody>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Campaign</td><td className="py-2 font-semibold">Cart Recovery Coupon</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Channel</td><td className="py-2">Email (Fallback applied)</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Sent</td><td className="py-2">{messagesSent > 0 ? "Yes" : "No"}</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Opened</td><td className="py-2">{opens > 0 ? "Yes" : "No"}</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Clicked</td><td className="py-2">{clicks > 0 ? "Yes" : "No"}</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Converted</td><td className="py-2">{campaignConversions > 0 ? "Yes" : "No"}</td></tr>
+                  <tr className="border-b border-gray-800"><td className="py-2 text-gray-500">Revenue</td><td className="py-2 text-emerald-400 font-bold">₹{revenueRecovered.toLocaleString()}</td></tr>
+                  <tr><td className="py-2 text-gray-500">ROI</td><td className="py-2 font-mono text-purple-400">{roi}x</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

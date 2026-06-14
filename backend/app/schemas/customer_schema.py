@@ -36,3 +36,16 @@ class CustomerProfileResponse(CustomerProfileBase):
 
     class Config:
         from_attributes = True
+
+class IdentityLinkResponse(BaseModel):
+    id: int
+    identifier_type: str
+    identifier_value: str
+    customer_id: str
+    confidence_score: int
+    matched_by: str
+    created_at: datetime
+    last_seen: Optional[datetime] = None
+
+    class Config:
+        from_attributes = True

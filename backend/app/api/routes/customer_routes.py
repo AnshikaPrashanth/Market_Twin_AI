@@ -5,7 +5,7 @@ from app.api.dependencies import get_identity_service, get_twin_service, get_eve
 from app.services.identity_service.identity_service import IdentityService
 from app.services.twin_service.twin_service import TwinService
 from app.services.event_service.event_service import EventService
-from app.schemas.customer_schema import CustomerProfileResponse
+from app.schemas.customer_schema import CustomerProfileResponse, IdentityLinkResponse
 from app.schemas.twin_schema import TwinStateResponse
 from app.schemas.event_schema import EventResponse
 from app.core.logger import logger
@@ -57,3 +57,21 @@ def get_customer_events(customer_id: str, event_service: EventService = Depends(
     logger.info(f"GET /api/customer/{customer_id}/events called.")
     events = event_service.store.get_events_by_customer(customer_id)
     return [EventResponse.model_validate(e) for e in events]
+
+@router.get("/customer/{customer_id}/identities", response_model=List[IdentityLinkResponse])
+def get_customer_identities(customer_id: str, identity_service: IdentityService = Depends(get_identity_service)):
+    """
+    Retrieves the identity graph links for a specific customer ID.
+    """
+    logger.info(f"GET /api/customer/{customer_id}/identities called.")
+    links = identity_service.store.get_all_identifiers_for_customer(customer_id)
+    return [IdentityLinkResponse.model_validate(link) for link in links]
+
+@router.get("/identities", response_model=List[IdentityLinkResponse])
+def get_all_identities(identity_service: IdentityService = Depends(get_identity_service)):
+    """
+    Retrieves all identity graph links across all customers globally.
+    """
+    logger.info("GET /api/identities called.")
+    links = identity_service.store.get_all_identity_links()
+    return [IdentityLinkResponse.model_validate(link) for link in links]

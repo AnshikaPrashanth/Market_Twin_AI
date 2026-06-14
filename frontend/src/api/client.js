@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useDebugStore } from '../store/debugStore';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8001';
 
 const apiClient = axios.create({
   baseURL: BASE_URL,
@@ -205,6 +205,15 @@ export const getLatestMessage = async (customerId) => {
   }
 };
 
+export const getMessageHistory = async (customerId) => {
+  try {
+    const res = await apiClient.get(`/api/messages/history/${customerId}`);
+    return res.data;
+  } catch (error) {
+    handleApiError(error, `/api/messages/history/${customerId}`);
+  }
+};
+
 export const reactToMessage = async (customerId, reaction) => {
   try {
     const res = await apiClient.post('/api/messages/react', { customer_id: customerId, reaction });
@@ -256,5 +265,50 @@ export const getPredictiveTwin = async (customerId) => {
     return res.data;
   } catch (error) {
     handleApiError(error, `/api/predictive/${customerId}`);
+  }
+};
+
+export const predictConversion = async (customerId, features) => {
+  try {
+    const res = await apiClient.post('/api/ai/conversion', { customer_id: customerId, features });
+    return res.data;
+  } catch (error) {
+    handleApiError(error, '/api/ai/conversion');
+  }
+};
+
+export const predictChannel = async (customerId, features) => {
+  try {
+    const res = await apiClient.post('/api/ai/channel', { customer_id: customerId, features });
+    return res.data;
+  } catch (error) {
+    handleApiError(error, '/api/ai/channel');
+  }
+};
+
+export const predictNBA = async (customerId, features) => {
+  try {
+    const res = await apiClient.post('/api/ai/nba', { customer_id: customerId, features });
+    return res.data;
+  } catch (error) {
+    handleApiError(error, '/api/ai/nba');
+  }
+};
+
+export const runExperiment = async (count = 200) => {
+  try {
+    const res = await apiClient.post('/api/experiments/run', { count });
+    return res.data;
+  } catch (error) {
+    handleApiError(error, '/api/experiments/run');
+  }
+};
+
+export const getExperimentComparison = async () => {
+  try {
+    const res = await apiClient.get('/api/experiments/comparison');
+    return res.data;
+  } catch (error) {
+    handleApiError(error, '/api/experiments/comparison');
   }
 };

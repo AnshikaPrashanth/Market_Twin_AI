@@ -1,0 +1,30 @@
+[
+    {
+        "customer_name": "Rahul",
+        "journey_stage": "cart_abandoned",
+        "preferred_channel": "whatsapp",
+        "product": "Sony Noise Cancelling Headphones",
+        "generated_message": "Hey Rahul! We noticed you left the Sony Headphones in your cart. They are selling out fast\u2014complete your purchase now and we'll apply a 10% discount. \ud83c\udfa7"
+    },
+    {
+        "customer_name": "Priya",
+        "journey_stage": "Loyal",
+        "preferred_channel": "email",
+        "product": "Zara Summer Collection",
+        "generated_message": "Hi Priya, as a Platinum member, we're giving you 24-hour early access to our exclusive Summer Collection. Check out the latest styles curated just for you!"
+    },
+    {
+        "customer_name": "Arjun",
+        "journey_stage": "Browsing",
+        "preferred_channel": "push",
+        "product": "PS5 Controller",
+        "generated_message": "\ud83c\udfae Level up, Arjun! The PS5 Controller you were looking at is back in stock. Tap to view."
+    },
+    {
+        "customer_name": "Sneha",
+        "journey_stage": "Churn Risk",
+        "preferred_channel": "email",
+        "product": "Indoor Plants",
+        "generated_message": "We miss you, Sneha! \ud83c\udf31 It's been a while. Here is a 20% off coupon for your next purchase of indoor plants to bring some green into your home."
+    }
+]

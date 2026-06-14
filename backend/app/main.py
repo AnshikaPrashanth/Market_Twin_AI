@@ -22,6 +22,8 @@ from app.api.routes.metrics_routes import router as metrics_router
 from app.api.routes.message_routes import router as message_router
 from app.api.routes.product_routes import router as product_router
 from app.api.routes.cart_routes import router as cart_router
+from app.api.routes.ai_routes import router as ai_router
+from app.api.routes.experiment_routes import router as experiment_router
 
 # Import event_processor to register in-memory event bus subscribers
 import app.services.event_service.event_processor
@@ -59,6 +61,8 @@ app.include_router(metrics_router, prefix="/api/metrics", tags=["Measurement Met
 app.include_router(message_router, prefix="/api/messages", tags=["Messages"])
 app.include_router(product_router, prefix="/api/products", tags=["Products"])
 app.include_router(cart_router, prefix="/api/cart", tags=["Cart"])
+app.include_router(ai_router)
+app.include_router(experiment_router)
 
 
 @app.on_event("startup")

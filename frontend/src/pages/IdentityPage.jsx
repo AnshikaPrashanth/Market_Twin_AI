@@ -9,14 +9,31 @@ import LoadingSpinner from '../components/common/LoadingSpinner';
  * Page rendering the resolved customer identities graph connections.
  */
 const IdentityPage = () => {
-  const { selectedCustomerId, eventsList, twinState, isLoading } = useTwinStore();
+  const { selectedCustomerId, eventsList, identitiesList, twinState, isLoading } = useTwinStore();
 
   if (isLoading || !twinState) {
     return <LoadingSpinner text="Compiling identity maps..." />;
   }
 
-  // Pre-seeded customer reference IDs are deterministic, while simulated are probabilistic matches
-  const isDeterministic = selectedCustomerId === 'CUST_001' || selectedCustomerId === 'CUST_002';
+  // Calculate highest confidence from identities
+  let highestConfidence = 0;
+  let bestMatchSource = "Unknown";
+  let isDeterministic = false;
+
+  if (identitiesList && identitiesList.length > 0) {
+    identitiesList.forEach(link => {
+      if (link.confidence_score > highestConfidence) {
+        highestConfidence = link.confidence_score;
+        bestMatchSource = link.matched_by;
+      }
+    });
+    isDeterministic = highestConfidence === 100;
+  } else {
+    // Fallback if no identities exist (e.g. initial seeded state without links)
+    isDeterministic = selectedCustomerId === 'CUST_001' || selectedCustomerId === 'CUST_002';
+    highestConfidence = isDeterministic ? 100 : 85;
+    bestMatchSource = isDeterministic ? "Deterministic" : "Probabilistic";
+  }
 
   return (
     <div className="space-y-8 select-none">
@@ -31,6 +48,7 @@ const IdentityPage = () => {
         <div className="lg:col-span-2">
           <IdentityGraph 
             customerId={selectedCustomerId}
+            identities={identitiesList}
             events={eventsList}
           />
         </div>
@@ -39,7 +57,9 @@ const IdentityPage = () => {
         <div className="lg:col-span-1">
           <MatchConfidenceCard 
             matchType={isDeterministic ? "Deterministic Match" : "Probabilistic Match"}
-            score={isDeterministic ? 100 : 85}
+            score={highestConfidence}
+            matchSource={bestMatchSource}
+            identities={identitiesList}
           />
         </div>
 

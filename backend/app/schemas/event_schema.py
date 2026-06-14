@@ -8,6 +8,10 @@ class EventIdentifiers(BaseModel):
     phone_hash: Optional[str] = None
     cookie_id: Optional[str] = None
     loyalty_id: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    login_id: Optional[str] = None
+    browser_id: Optional[str] = None
 
 class EventCreate(BaseModel):
     event_id: Optional[str] = None

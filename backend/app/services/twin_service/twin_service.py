@@ -30,6 +30,7 @@ ACTION_TO_CHANNEL: Dict[str, str] = {
     "send_email": "email",
     "send_whatsapp": "whatsapp",
     "send_push": "push",
+    "send_sms": "sms",
 
     # Business actions mapped to delivery channels
     "send_coupon": "email",
@@ -44,6 +45,7 @@ ACTION_TO_CHANNEL: Dict[str, str] = {
 NO_CHANNEL_ACTIONS = {
     "cool_down_marketing",
     "do_nothing",
+    "reduce_frequency",
 }
 
 
@@ -501,6 +503,7 @@ class TwinService:
             "email": "send_email",
             "whatsapp": "send_whatsapp",
             "push": "send_push",
+            "sms": "send_sms",
             "website": "show_website_personalization",
         }
 

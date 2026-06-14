@@ -1,0 +1,1001 @@
+customer_id,intent_score,churn_risk,fatigue_score,product_views,cart_count,abandonments,cart_value,journey_stage,preferred_channel,active_hour,days_since_last_purchase,conversion_probability,converted
+CUST_STORY_RAHUL,100,82.0,10,3,3,3,0.0,High Intent,whatsapp,Evening,23.0,0.688,True
+CUST_STORY_PRIYA,100,82.0,10,3,3,3,0.0,Loyal,email,Morning,35.0,0.688,True
+CUST_STORY_ARJUN,40,52.0,10,6,0,0,0.0,Browsing,push,Night,,0.358,False
+CUST_STORY_SNEHA,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_DBA58527,100,67.0,10,4,3,2,0.0,Loyal,sms,Night,15.0,0.703,True
+CUST_574CC639,100,82.0,10,3,3,3,0.0,High Intent,email,Afternoon,70.0,0.688,True
+CUST_5F74829A,60,62.0,10,1,1,1,0.0,High Intent,email,Evening,2.0,0.7105,True
+CUST_312A6DB6,90,72.0,10,10,2,2,0.0,Browsing,whatsapp,Afternoon,,0.638,False
+CUST_729BBAFC,50,52.0,10,8,0,0,0.0,Browsing,email,Morning,,0.418,False
+CUST_9CB361E5,80,72.0,10,2,2,2,0.0,High Intent,sms,Night,23.0,0.578,True
+CUST_F2095CB0,80,72.0,10,8,2,2,0.0,Browsing,email,Afternoon,,0.578,False
+CUST_D0F1DC2C,65,47.0,10,2,1,0,0.0,High Intent,push,Afternoon,53.0,0.513,True
+CUST_A3613257,20,52.0,10,2,0,0,0.0,Anonymous,email,Morning,,0.238,False
+CUST_352FAB1D,50,52.0,10,8,0,0,0.0,Browsing,email,Afternoon,,0.418,False
+CUST_E80496F2,40,52.0,10,6,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.358,False
+CUST_0389F244,80,70.0,0,2,2,2,0.0,Interested,push,Night,42.0,0.61,True
+CUST_38477D29,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_D9AB9B04,85,57.0,10,3,2,1,0.0,High Intent,email,Night,5.0,0.623,True
+CUST_489B0639,90,42.0,10,4,2,0,0.0,Loyal,sms,Afternoon,94.0,0.668,True
+CUST_B31F3060,40,52.0,10,6,0,0,0.0,Anonymous,sms,Night,,0.358,False
+CUST_54458FD3,100,92.0,10,4,4,4,0.0,High Intent,email,Evening,4.0,0.678,True
+CUST_9B05CEFB,85,57.0,10,3,2,1,0.0,High Intent,email,Morning,84.0,0.623,True
+CUST_BE4A7697,60,62.0,10,1,1,1,0.0,High Intent,email,Morning,59.0,0.61,True
+CUST_1336A50D,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_468EB40A,100,92.0,10,4,4,4,0.0,High Intent,whatsapp,Afternoon,98.0,0.678,True
+CUST_F855D551,20,52.0,10,2,0,0,0.0,Anonymous,sms,Evening,,0.238,False
+CUST_B892658B,100,62.0,10,6,4,2,0.0,Loyal,sms,Morning,95.0,0.708,True
+CUST_C1F5099A,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Night,,0.438,False
+CUST_81A45894,20,52.0,10,2,0,0,0.0,Anonymous,sms,Evening,,0.238,False
+CUST_4992E778,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_EDB28AF9,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Morning,,0.238,False
+CUST_FEED1B22,100,90.0,0,4,4,4,0.0,Interested,email,Afternoon,21.0,0.71,True
+CUST_C11A6B23,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.034,False
+CUST_CD4F31D7,100,100.0,0,5,5,5,0.0,Interested,push,Afternoon,61.0,0.7,True
+CUST_3D9B9641,85,57.0,10,3,2,1,0.0,High Intent,email,Night,11.0,0.623,True
+CUST_5DFFC4BE,50,72.0,10,2,2,2,0.0,Interested,push,Night,,0.398,False
+CUST_E5EB6418,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Night,94.0,0.72,True
+CUST_CE38E4CB,80,70.0,0,2,2,2,0.0,Cart Active,sms,Evening,91.0,0.61,True
+CUST_11074403,50,72.0,10,2,2,2,0.0,Cart Active,push,Morning,,0.398,False
+CUST_57C4461D,70,82.0,10,3,3,3,0.0,Cart Active,email,Evening,,0.508,False
+CUST_3056D209,80,72.0,10,2,2,2,0.0,High Intent,whatsapp,Afternoon,87.0,0.578,True
+CUST_4AABB6B4,100,47.0,10,7,4,1,0.0,High Intent,email,Evening,67.0,0.723,True
+CUST_5064B994,100,100.0,10,5,5,5,0.0,High Intent,whatsapp,Evening,10.0,0.67,True
+CUST_E4673420,20,52.0,10,2,0,0,0.0,Browsing,sms,Morning,,0.238,False
+CUST_A055F6DB,80,72.0,10,2,2,2,0.0,High Intent,push,Afternoon,70.0,0.578,True
+CUST_DA6228BE,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_DA8A6EA9,100,77.0,10,5,4,3,0.0,High Intent,whatsapp,Morning,49.0,0.693,True
+CUST_B989B36C,90,72.0,10,10,2,2,0.0,Anonymous,email,Night,,0.638,False
+CUST_D7A45459,20,52.0,10,2,0,0,0.0,Anonymous,push,Night,,0.238,False
+CUST_412E9C77,70,82.0,10,3,3,3,0.0,Cart Active,push,Evening,,0.508,False
+CUST_9026C7A6,100,82.0,10,3,3,3,0.0,Loyal,email,Afternoon,20.0,0.688,True
+CUST_C8846AC3,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Evening,,0.298,False
+CUST_CE311944,65,47.0,10,2,1,0,0.0,Loyal,whatsapp,Night,96.0,0.513,True
+CUST_2C0B530D,30,62.0,10,1,1,1,0.0,Cart Active,sms,Morning,,0.288,False
+CUST_AA662E08,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.034,False
+CUST_3917DAA1,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Evening,38.0,0.513,True
+CUST_090EE7C3,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_538CA05B,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Night,79.0,0.72,True
+CUST_89658641,60,60.0,0,1,1,1,0.0,Interested,whatsapp,Night,98.0,0.5,True
+CUST_49288ADE,65,47.0,10,2,1,0,0.0,High Intent,sms,Evening,31.0,0.513,True
+CUST_949B7D14,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.034,False
+CUST_FC28FE99,100,57.0,10,8,5,2,0.0,High Intent,sms,Afternoon,43.0,0.713,True
+CUST_10D83418,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_6392D950,100,77.0,10,5,4,3,0.0,Loyal,whatsapp,Evening,31.0,0.693,True
+CUST_03A41A1A,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_8F04173D,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_19E10825,100,77.0,10,5,4,3,0.0,Loyal,email,Afternoon,59.0,0.693,True
+CUST_B8B54386,75,62.0,10,10,1,1,0.0,Anonymous,email,Evening,,0.558,False
+CUST_8AC845C7,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Evening,,0.034,False
+CUST_05A18D97,10,70.0,100,0,0,0,0.0,Dormant,sms,Morning,,0.0,False
+CUST_238050B7,75,62.0,10,10,1,1,0.0,Anonymous,email,Evening,,0.558,False
+CUST_5FEE8FDB,70,82.0,10,3,3,3,0.0,Interested,whatsapp,Night,,0.508,False
+CUST_F3D325DC,35,62.0,10,2,1,1,0.0,Browsing,email,Evening,,0.318,False
+CUST_DD059926,55,62.0,10,6,1,1,0.0,Browsing,sms,Evening,,0.438,False
+CUST_E3D4EBBE,100,72.0,10,7,5,3,0.0,High Intent,push,Morning,11.0,0.698,True
+CUST_FDA7DE19,10,70.0,100,0,0,0,0.0,Churn Risk,push,Night,,0.0,False
+CUST_9C916C23,100,57.0,10,8,5,2,0.0,Loyal,whatsapp,Afternoon,49.0,0.713,True
+CUST_A28ED8B7,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_900983AF,45,62.0,10,4,1,1,0.0,Anonymous,email,Morning,,0.378,False
+CUST_343B6A8E,100,67.0,10,4,3,2,0.0,Loyal,email,Afternoon,65.0,0.703,True
+CUST_4E144664,85,57.0,10,3,2,1,0.0,Loyal,email,Morning,39.0,0.623,True
+CUST_31BD9D1C,70,72.0,10,6,2,2,0.0,Anonymous,email,Morning,,0.518,False
+CUST_6751D2C2,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Afternoon,68.0,0.708,True
+CUST_C17B01C9,100,90.0,0,4,4,4,0.0,Interested,push,Evening,24.0,0.71,True
+CUST_33417744,10,61.0,55,0,0,0,0.0,Dormant,sms,Night,,0.034,False
+CUST_A4882A26,30,52.0,10,4,0,0,0.0,Browsing,whatsapp,Morning,,0.298,False
+CUST_97CE52FE,100,72.0,10,7,5,3,0.0,High Intent,whatsapp,Morning,23.0,0.698,True
+CUST_723D9DCA,90,42.0,10,4,2,0,0.0,High Intent,whatsapp,Morning,33.0,0.668,True
+CUST_22F4550D,30,62.0,10,1,1,1,0.0,Cart Active,sms,Afternoon,,0.288,False
+CUST_AC45C3AC,50,52.0,10,8,0,0,0.0,Browsing,whatsapp,Night,,0.418,False
+CUST_9D82044A,10,70.0,100,0,0,0,0.0,Dormant,email,Night,,0.0,False
+CUST_D78DFB60,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_E1941A92,55,62.0,10,6,1,1,0.0,Browsing,sms,Morning,,0.438,False
+CUST_5F4302E5,100,90.0,0,4,4,4,0.0,Interested,sms,Night,39.0,0.71,True
+CUST_B649101A,100,100.0,0,5,5,5,0.0,Interested,sms,Morning,65.0,0.7,True
+CUST_6331FF0E,40,52.0,10,6,0,0,0.0,Anonymous,push,Morning,,0.358,False
+CUST_587CCF42,50,72.0,10,2,2,2,0.0,Cart Active,whatsapp,Night,,0.398,False
+CUST_71A33694,10,61.0,55,0,0,0,0.0,Dormant,push,Afternoon,,0.034,False
+CUST_D638B75A,100,57.0,10,8,5,2,0.0,Loyal,sms,Morning,30.0,0.713,True
+CUST_84AFDD9D,60,60.0,0,1,1,1,0.0,Interested,push,Afternoon,30.0,0.5,True
+CUST_2E47009A,100,90.0,0,4,4,4,0.0,Interested,whatsapp,Evening,12.0,0.71,True
+CUST_4B612D8F,100,67.0,10,4,3,2,0.0,Loyal,email,Evening,89.0,0.703,True
+CUST_BE2277F0,90,92.0,10,4,4,4,0.0,Interested,sms,Night,,0.618,False
+CUST_9069B465,100,80.0,0,3,3,3,0.0,Interested,sms,Night,64.0,0.72,True
+CUST_98B23C4C,100,80.0,0,3,3,3,0.0,Cart Active,whatsapp,Evening,15.0,0.72,True
+CUST_3B99A0E9,55,62.0,10,6,1,1,0.0,Anonymous,email,Morning,,0.438,False
+CUST_C05261E1,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_81368C3D,100,90.0,0,4,4,4,0.0,Cart Active,email,Evening,75.0,0.71,True
+CUST_C5157150,100,42.0,10,9,5,1,0.0,Loyal,push,Night,79.0,0.728,True
+CUST_9EE0F949,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_0C131128,100,62.0,10,6,4,2,0.0,High Intent,sms,Morning,85.0,0.708,True
+CUST_19443392,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_4B8AC103,90,72.0,10,10,2,2,0.0,Anonymous,sms,Morning,,0.638,False
+CUST_35397777,10,61.0,55,0,0,0,0.0,Dormant,sms,Evening,,0.034,False
+CUST_64033C5A,20,52.0,10,2,0,0,0.0,Browsing,email,Night,,0.238,False
+CUST_08231C37,80,72.0,10,2,2,2,0.0,Loyal,whatsapp,Morning,84.0,0.578,True
+CUST_8CF33D3F,30,62.0,10,1,1,1,0.0,Interested,email,Night,,0.288,False
+CUST_FEE1B459,100,87.0,10,6,5,4,0.0,Loyal,push,Morning,92.0,0.683,True
+CUST_5FDCDBF4,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_F51BBC07,90,92.0,10,4,4,4,0.0,Cart Active,email,Evening,,0.618,False
+CUST_A8E1CF2E,30,62.0,10,1,1,1,0.0,Interested,push,Afternoon,,0.288,False
+CUST_4A676D67,40,52.0,10,6,0,0,0.0,Browsing,email,Night,,0.358,False
+CUST_15D8CF8B,100,67.0,10,4,3,2,0.0,High Intent,whatsapp,Night,89.0,0.703,True
+CUST_061CE91D,80,72.0,10,2,2,2,0.0,High Intent,whatsapp,Evening,78.0,0.578,True
+CUST_028DF181,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Afternoon,91.0,0.7,True
+CUST_E5EA6B2C,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_AA697B89,40,52.0,10,6,0,0,0.0,Browsing,email,Night,,0.358,False
+CUST_D7A95C5D,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_8EFCCF3E,10,70.0,100,0,0,0,0.0,Dormant,push,Morning,,0.0,False
+CUST_F1A59277,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_5E319C4D,100,72.0,10,7,5,3,0.0,High Intent,whatsapp,Evening,73.0,0.698,True
+CUST_E259BC38,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Night,,0.0,False
+CUST_10DF13DD,50,72.0,10,2,2,2,0.0,Cart Active,whatsapp,Afternoon,,0.398,False
+CUST_75F4F3CA,40,52.0,10,6,0,0,0.0,Browsing,sms,Night,,0.358,False
+CUST_E4288431,75,62.0,10,10,1,1,0.0,Anonymous,whatsapp,Night,,0.558,False
+CUST_67EE3FB6,10,70.0,100,0,0,0,0.0,Dormant,sms,Evening,,0.0,False
+CUST_B23B0C5B,90,92.0,10,4,4,4,0.0,Cart Active,email,Night,,0.618,False
+CUST_79684223,80,70.0,0,2,2,2,0.0,Interested,sms,Afternoon,28.0,0.61,True
+CUST_D1A85883,50,72.0,10,2,2,2,0.0,Interested,sms,Night,,0.398,False
+CUST_DE7BEBBA,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_DECDBB22,100,52.0,10,5,3,1,0.0,High Intent,sms,Evening,56.0,0.718,True
+CUST_CBC3BAEB,100,77.0,10,5,4,3,0.0,Loyal,whatsapp,Morning,82.0,0.693,True
+CUST_B1384C12,100,80.0,0,3,3,3,0.0,Cart Active,whatsapp,Morning,4.0,0.72,True
+CUST_1C71AE11,85,57.0,10,3,2,1,0.0,Loyal,email,Afternoon,93.0,0.623,True
+CUST_3DDCEA6F,80,70.0,0,2,2,2,0.0,Interested,email,Night,39.0,0.61,True
+CUST_48D454C1,85,57.0,10,3,2,1,0.0,High Intent,sms,Evening,38.0,0.623,True
+CUST_FE3A26F2,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_745D0AF1,90,92.0,10,4,4,4,0.0,Interested,email,Night,,0.618,False
+CUST_8F618114,100,52.0,10,5,3,1,0.0,Loyal,sms,Night,57.0,0.718,True
+CUST_AA76100A,65,62.0,10,8,1,1,0.0,Browsing,sms,Night,,0.498,False
+CUST_996223F2,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_58915F08,60,62.0,10,1,1,1,0.0,High Intent,whatsapp,Afternoon,87.0,0.7326,True
+CUST_4A6DBB54,80,70.0,0,2,2,2,0.0,Cart Active,sms,Morning,83.0,0.61,True
+CUST_8740AB12,40,52.0,10,6,0,0,0.0,Browsing,sms,Night,,0.358,False
+CUST_9DC5D903,60,62.0,10,1,1,1,0.0,Loyal,email,Morning,23.0,0.8533,True
+CUST_2FA71D0D,40,52.0,10,6,0,0,0.0,Anonymous,whatsapp,Morning,,0.358,False
+CUST_079E274E,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Night,,0.298,False
+CUST_7A4CA5C1,100,100.0,10,5,5,5,0.0,Interested,whatsapp,Night,,0.67,False
+CUST_0C263DCF,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.034,False
+CUST_DACF0911,10,61.0,55,0,0,0,0.0,Churn Risk,email,Evening,,0.034,False
+CUST_38C943B9,50,52.0,10,8,0,0,0.0,Browsing,push,Night,,0.418,False
+CUST_9CFE1314,100,52.0,10,5,3,1,0.0,Loyal,whatsapp,Evening,23.0,0.718,True
+CUST_1A657E85,100,80.0,0,3,3,3,0.0,Cart Active,sms,Morning,42.0,0.72,True
+CUST_DDA324D3,70,82.0,10,3,3,3,0.0,Interested,email,Night,,0.508,False
+CUST_8C94F6C3,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Evening,66.0,0.513,True
+CUST_CE3A6EF3,100,100.0,10,5,5,5,0.0,High Intent,whatsapp,Night,31.0,0.67,True
+CUST_877C104A,100,80.0,0,3,3,3,0.0,Interested,email,Morning,68.0,0.72,True
+CUST_7535DF38,100,90.0,0,4,4,4,0.0,Cart Active,email,Afternoon,57.0,0.71,True
+CUST_ACCFCF3B,100,82.0,10,3,3,3,0.0,High Intent,push,Morning,50.0,0.688,True
+CUST_790591B1,20,52.0,10,2,0,0,0.0,Anonymous,push,Afternoon,,0.238,False
+CUST_CC2CEE0A,60,62.0,10,1,1,1,0.0,Loyal,whatsapp,Evening,61.0,0.6217,True
+CUST_7E8D349A,50,52.0,10,8,0,0,0.0,Anonymous,email,Morning,,0.418,False
+CUST_1EF11355,10,70.0,100,0,0,0,0.0,Churn Risk,email,Morning,,0.0,False
+CUST_6E7D7A10,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Morning,,0.238,False
+CUST_EB2B5B57,50,52.0,10,8,0,0,0.0,Anonymous,push,Afternoon,,0.418,False
+CUST_8E0667CE,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_50D1ADC1,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Evening,,0.438,False
+CUST_5D420B03,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Evening,,0.288,False
+CUST_DE2C207D,100,77.0,10,5,4,3,0.0,Loyal,whatsapp,Night,25.0,0.693,True
+CUST_1749A777,100,80.0,0,3,3,3,0.0,Interested,sms,Morning,91.0,0.72,True
+CUST_04D43A98,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Afternoon,,0.358,False
+CUST_F5917397,100,100.0,0,5,5,5,0.0,Cart Active,email,Morning,52.0,0.7,True
+CUST_A46C2B22,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_EB553367,80,72.0,10,2,2,2,0.0,Loyal,sms,Afternoon,60.0,0.578,True
+CUST_66BD2CF3,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Morning,,0.034,False
+CUST_53636173,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Morning,11.0,0.7,True
+CUST_3B00B30E,10,70.0,100,0,0,0,0.0,Churn Risk,email,Night,,0.0,False
+CUST_45E3E33F,100,77.0,10,5,4,3,0.0,Loyal,push,Afternoon,88.0,0.693,True
+CUST_926AA93D,50,52.0,10,8,0,0,0.0,Anonymous,sms,Night,,0.418,False
+CUST_3298FAEB,30,62.0,10,1,1,1,0.0,Interested,sms,Afternoon,,0.288,False
+CUST_EFC2D016,10,70.0,100,0,0,0,0.0,Dormant,push,Night,,0.0,False
+CUST_09AE2702,75,62.0,10,10,1,1,0.0,Browsing,whatsapp,Afternoon,,0.558,False
+CUST_0518E45B,45,62.0,10,4,1,1,0.0,Browsing,email,Morning,,0.378,False
+CUST_705791DA,85,57.0,10,3,2,1,0.0,High Intent,sms,Afternoon,19.0,0.623,True
+CUST_8B1D85C9,30,62.0,10,1,1,1,0.0,Interested,sms,Afternoon,,0.288,False
+CUST_5FF49FA1,100,47.0,10,7,4,1,0.0,High Intent,push,Afternoon,65.0,0.723,True
+CUST_615278FE,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.034,False
+CUST_4FBCBBCA,100,80.0,0,3,3,3,0.0,Cart Active,email,Morning,72.0,0.72,True
+CUST_DA88C386,10,61.0,55,0,0,0,0.0,Churn Risk,push,Night,,0.034,False
+CUST_E9162E8B,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_101DB21C,30,52.0,10,4,0,0,0.0,Browsing,whatsapp,Night,,0.298,False
+CUST_EA2F4359,100,52.0,10,5,3,1,0.0,Loyal,email,Evening,96.0,0.718,True
+CUST_A0578F65,50,52.0,10,8,0,0,0.0,Browsing,email,Afternoon,,0.418,False
+CUST_DEA41107,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_AE5D913C,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_38E8F4D6,75,62.0,10,10,1,1,0.0,Anonymous,email,Afternoon,,0.558,False
+CUST_1FA0B7DE,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.034,False
+CUST_3B22D7B6,75,62.0,10,10,1,1,0.0,Anonymous,sms,Evening,,0.558,False
+CUST_6B7F538D,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_47B5FAF8,100,80.0,0,3,3,3,0.0,Interested,sms,Afternoon,18.0,0.72,True
+CUST_3B77AE1A,30,62.0,10,1,1,1,0.0,Cart Active,email,Afternoon,,0.288,False
+CUST_DDAA8F46,10,61.0,55,0,0,0,0.0,Dormant,push,Morning,,0.034,False
+CUST_4B8AA7C9,100,67.0,10,4,3,2,0.0,High Intent,whatsapp,Afternoon,3.0,0.703,True
+CUST_B4909F1A,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Night,,0.0,False
+CUST_AAC06769,50,52.0,10,8,0,0,0.0,Anonymous,push,Night,,0.418,False
+CUST_BC3F55D5,65,62.0,10,8,1,1,0.0,Browsing,email,Afternoon,,0.498,False
+CUST_19D5B925,50,52.0,10,8,0,0,0.0,Anonymous,whatsapp,Evening,,0.418,False
+CUST_F2902C84,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_BCEFD4B6,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_EB6FCAAE,85,57.0,10,3,2,1,0.0,High Intent,sms,Night,78.0,0.623,True
+CUST_C967E53B,10,70.0,100,0,0,0,0.0,Dormant,email,Night,,0.0,False
+CUST_40FB09E6,100,72.0,10,7,5,3,0.0,Loyal,email,Afternoon,13.0,0.698,True
+CUST_05F012AB,40,52.0,10,6,0,0,0.0,Browsing,sms,Evening,,0.358,False
+CUST_62EB54DD,60,52.0,10,10,0,0,0.0,Anonymous,email,Evening,,0.478,False
+CUST_17E45CFF,100,82.0,10,10,3,3,0.0,Browsing,whatsapp,Morning,,0.688,False
+CUST_85984E7D,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Night,,0.438,False
+CUST_CA4E5197,80,70.0,0,2,2,2,0.0,Cart Active,email,Morning,32.0,0.61,True
+CUST_A56D509F,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Night,,0.298,False
+CUST_34876524,10,61.0,55,0,0,0,0.0,Churn Risk,sms,Morning,,0.034,False
+CUST_529191E2,60,62.0,10,1,1,1,0.0,Loyal,email,Night,8.0,0.7214,True
+CUST_24B0315E,100,67.0,10,4,3,2,0.0,High Intent,push,Morning,94.0,0.703,True
+CUST_6EBB7C65,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Morning,26.0,0.513,True
+CUST_4B34FA4C,75,62.0,10,10,1,1,0.0,Browsing,sms,Morning,,0.558,False
+CUST_CCF4473E,10,70.0,100,0,0,0,0.0,Dormant,push,Night,,0.0,False
+CUST_66704680,100,80.0,0,3,3,3,0.0,Interested,push,Morning,72.0,0.72,True
+CUST_9F5AF1B4,55,62.0,10,6,1,1,0.0,Anonymous,email,Morning,,0.438,False
+CUST_B6BFC136,30,52.0,10,4,0,0,0.0,Anonymous,email,Night,,0.298,False
+CUST_3D58EB70,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_E2391426,100,57.0,10,8,5,2,0.0,High Intent,sms,Morning,82.0,0.713,True
+CUST_FF48FB57,100,72.0,10,7,5,3,0.0,High Intent,email,Afternoon,67.0,0.698,True
+CUST_0D5966DB,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_C5943693,70,82.0,10,3,3,3,0.0,Interested,whatsapp,Evening,,0.508,False
+CUST_5E4E88D4,100,100.0,0,5,5,5,0.0,Interested,push,Night,10.0,0.7,True
+CUST_63DB733C,10,70.0,100,0,0,0,0.0,Dormant,sms,Afternoon,,0.0,False
+CUST_85D20005,20,52.0,10,2,0,0,0.0,Browsing,email,Morning,,0.238,False
+CUST_A95EB599,50,72.0,10,2,2,2,0.0,Cart Active,email,Morning,,0.398,False
+CUST_D380949A,45,62.0,10,4,1,1,0.0,Anonymous,push,Afternoon,,0.378,False
+CUST_12C6D82F,100,100.0,0,5,5,5,0.0,Cart Active,push,Night,63.0,0.7,True
+CUST_F617AAB8,100,87.0,10,6,5,4,0.0,Loyal,sms,Morning,65.0,0.683,True
+CUST_EACDCB8F,100,57.0,10,8,5,2,0.0,Loyal,push,Evening,10.0,0.713,True
+CUST_3E4E7988,70,82.0,10,3,3,3,0.0,Cart Active,push,Night,,0.508,False
+CUST_F1B72375,30,62.0,10,1,1,1,0.0,Interested,push,Night,,0.288,False
+CUST_4456FF3A,65,62.0,10,8,1,1,0.0,Anonymous,whatsapp,Night,,0.498,False
+CUST_3EEB5BD5,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Night,,0.288,False
+CUST_68AD3E36,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Evening,,0.0,False
+CUST_D6AD16EF,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Morning,41.0,0.7,True
+CUST_08C4C971,50,52.0,10,8,0,0,0.0,Anonymous,email,Evening,,0.418,False
+CUST_008A2B5A,30,52.0,10,4,0,0,0.0,Anonymous,push,Night,,0.298,False
+CUST_AFA1A280,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_347B3E0F,100,80.0,0,3,3,3,0.0,Interested,sms,Night,18.0,0.72,True
+CUST_CAAAF0E2,100,90.0,0,4,4,4,0.0,Cart Active,whatsapp,Afternoon,95.0,0.71,True
+CUST_FCB4B49A,10,70.0,100,0,0,0,0.0,Dormant,sms,Night,,0.0,False
+CUST_D86EB996,10,70.0,100,0,0,0,0.0,Dormant,push,Morning,,0.0,False
+CUST_E21A7769,85,57.0,10,3,2,1,0.0,High Intent,push,Night,12.0,0.623,True
+CUST_2810A1B5,100,72.0,10,7,5,3,0.0,Loyal,email,Evening,30.0,0.698,True
+CUST_C8BBBA8B,60,62.0,10,1,1,1,0.0,Loyal,whatsapp,Afternoon,36.0,0.7271,True
+CUST_E110222E,10,61.0,55,0,0,0,0.0,Churn Risk,email,Afternoon,,0.034,False
+CUST_960A76FC,100,82.0,10,3,3,3,0.0,High Intent,push,Night,21.0,0.688,True
+CUST_8ED17183,35,62.0,10,2,1,1,0.0,Browsing,whatsapp,Evening,,0.318,False
+CUST_BB95004D,30,62.0,10,1,1,1,0.0,Interested,sms,Night,,0.288,False
+CUST_D8BE749D,60,62.0,10,1,1,1,0.0,High Intent,whatsapp,Night,3.0,0.854,True
+CUST_6CB57608,65,62.0,10,8,1,1,0.0,Anonymous,sms,Night,,0.498,False
+CUST_26E1B0EB,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.034,False
+CUST_8C56898E,65,47.0,10,2,1,0,0.0,Loyal,whatsapp,Evening,61.0,0.513,True
+CUST_694440B5,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_F8C7266D,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_8F64453D,100,42.0,10,9,5,1,0.0,High Intent,sms,Night,77.0,0.728,True
+CUST_4B2F1384,10,70.0,100,0,0,0,0.0,Churn Risk,push,Afternoon,,0.0,False
+CUST_D91D0369,90,92.0,10,4,4,4,0.0,Cart Active,push,Night,,0.618,False
+CUST_71A2934A,100,82.0,10,3,3,3,0.0,High Intent,whatsapp,Afternoon,23.0,0.688,True
+CUST_FB2D4E5B,100,100.0,10,5,5,5,0.0,Loyal,push,Night,37.0,0.67,True
+CUST_CD59B969,80,70.0,0,2,2,2,0.0,Interested,push,Night,59.0,0.61,True
+CUST_34F50D39,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Morning,,0.438,False
+CUST_CEDB7614,100,90.0,0,4,4,4,0.0,Interested,push,Morning,66.0,0.71,True
+CUST_6703F9EC,50,72.0,10,2,2,2,0.0,Cart Active,email,Evening,,0.398,False
+CUST_E7FDF8E3,60,52.0,10,10,0,0,0.0,Anonymous,sms,Morning,,0.478,False
+CUST_B3CC624F,100,87.0,10,6,5,4,0.0,Loyal,push,Evening,27.0,0.683,True
+CUST_13BCF28C,10,70.0,100,0,0,0,0.0,Churn Risk,email,Morning,,0.0,False
+CUST_8356E3B7,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Afternoon,82.0,0.513,True
+CUST_9FEEEC4A,10,61.0,55,0,0,0,0.0,Dormant,push,Morning,,0.034,False
+CUST_852D59DB,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Afternoon,60.0,0.513,True
+CUST_ED659A81,45,62.0,10,4,1,1,0.0,Browsing,whatsapp,Afternoon,,0.378,False
+CUST_A618E3BA,60,60.0,0,1,1,1,0.0,Cart Active,email,Evening,39.0,0.5,True
+CUST_FA778FB9,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.238,False
+CUST_48BD7B88,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Afternoon,,0.358,False
+CUST_16ACD0C6,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_37EB011F,40,52.0,10,6,0,0,0.0,Anonymous,push,Morning,,0.358,False
+CUST_88F1E24C,10,61.0,55,0,0,0,0.0,Churn Risk,email,Night,,0.034,False
+CUST_C92AD391,100,77.0,10,5,4,3,0.0,Loyal,email,Evening,54.0,0.693,True
+CUST_D95E4ED6,30,62.0,10,1,1,1,0.0,Interested,sms,Night,,0.288,False
+CUST_A9E98AE2,60,52.0,10,10,0,0,0.0,Browsing,push,Afternoon,,0.478,False
+CUST_060BDD16,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_D11AA116,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Morning,,0.288,False
+CUST_CCAC32CA,35,62.0,10,2,1,1,0.0,Anonymous,email,Afternoon,,0.318,False
+CUST_AC9B2E3E,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_7F8ED2EF,40,52.0,10,6,0,0,0.0,Anonymous,sms,Morning,,0.358,False
+CUST_A778788F,100,80.0,0,3,3,3,0.0,Interested,push,Morning,71.0,0.72,True
+CUST_630EA12D,60,62.0,10,1,1,1,0.0,High Intent,push,Morning,3.0,0.838,True
+CUST_844A74FA,100,80.0,0,3,3,3,0.0,Cart Active,sms,Evening,20.0,0.72,True
+CUST_5EA551EB,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Night,68.0,0.72,True
+CUST_C7B4B9BD,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Morning,,0.358,False
+CUST_17A20F69,100,100.0,0,5,5,5,0.0,Interested,email,Morning,7.0,0.7,True
+CUST_555700B4,10,70.0,100,0,0,0,0.0,Dormant,push,Night,,0.0,False
+CUST_259657D3,10,70.0,100,0,0,0,0.0,Dormant,sms,Afternoon,,0.0,False
+CUST_64ECE7EE,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_357B8D04,20,52.0,10,2,0,0,0.0,Browsing,email,Evening,,0.238,False
+CUST_D3C96A5E,100,80.0,0,3,3,3,0.0,Interested,push,Afternoon,58.0,0.72,True
+CUST_DCF1FC29,20,52.0,10,2,0,0,0.0,Browsing,email,Evening,,0.238,False
+CUST_4E07FA68,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Afternoon,48.0,0.61,True
+CUST_6610877B,90,92.0,10,4,4,4,0.0,Cart Active,sms,Evening,,0.618,False
+CUST_CDE020CE,30,62.0,10,1,1,1,0.0,Cart Active,push,Night,,0.288,False
+CUST_6633CBAE,100,100.0,0,5,5,5,0.0,Cart Active,sms,Morning,96.0,0.7,True
+CUST_2C34128B,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_7A39BAA4,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_AA3A1862,55,62.0,10,6,1,1,0.0,Browsing,push,Morning,,0.438,False
+CUST_CC054EE0,30,62.0,10,1,1,1,0.0,Interested,email,Afternoon,,0.288,False
+CUST_37055F28,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_06B32EE5,100,52.0,10,5,3,1,0.0,High Intent,push,Night,20.0,0.718,True
+CUST_65E04417,90,72.0,10,10,2,2,0.0,Anonymous,push,Evening,,0.638,False
+CUST_E6D7B89B,10,70.0,100,0,0,0,0.0,Churn Risk,email,Night,,0.0,False
+CUST_270F74DF,30,52.0,10,4,0,0,0.0,Browsing,push,Morning,,0.298,False
+CUST_910181D2,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_6301D9F7,100,90.0,0,4,4,4,0.0,Interested,whatsapp,Afternoon,69.0,0.71,True
+CUST_A33A37D8,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Morning,,0.238,False
+CUST_8F84B196,100,80.0,0,3,3,3,0.0,Interested,email,Morning,78.0,0.72,True
+CUST_9C39A1BB,85,57.0,10,3,2,1,0.0,Loyal,whatsapp,Morning,59.0,0.623,True
+CUST_4A5C1BEB,100,90.0,0,4,4,4,0.0,Interested,whatsapp,Morning,76.0,0.71,True
+CUST_90CC98DA,100,62.0,10,6,4,2,0.0,Loyal,sms,Night,56.0,0.708,True
+CUST_D3620381,30,62.0,10,1,1,1,0.0,Interested,push,Afternoon,,0.288,False
+CUST_B13B4F5E,100,100.0,0,5,5,5,0.0,Cart Active,email,Evening,49.0,0.7,True
+CUST_78C3C998,30,52.0,10,4,0,0,0.0,Browsing,push,Night,,0.298,False
+CUST_4F73EDFF,80,70.0,0,2,2,2,0.0,Cart Active,push,Evening,72.0,0.61,True
+CUST_CABDE95A,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Evening,86.0,0.61,True
+CUST_8290A620,50,52.0,10,8,0,0,0.0,Anonymous,whatsapp,Morning,,0.418,False
+CUST_5592D9DA,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_6080E2EB,80,70.0,0,2,2,2,0.0,Interested,sms,Evening,57.0,0.61,True
+CUST_EFC80D26,70,82.0,10,3,3,3,0.0,Interested,whatsapp,Morning,,0.508,False
+CUST_8A353FB6,90,42.0,10,4,2,0,0.0,High Intent,email,Afternoon,66.0,0.668,True
+CUST_BBA98762,80,70.0,0,2,2,2,0.0,Cart Active,whatsapp,Morning,29.0,0.61,True
+CUST_69E3C3BC,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Night,53.0,0.7,True
+CUST_0EBA4300,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Afternoon,,0.288,False
+CUST_2DCC9A50,100,67.0,10,4,3,2,0.0,Loyal,push,Afternoon,37.0,0.703,True
+CUST_0969A929,50,72.0,10,2,2,2,0.0,Interested,push,Evening,,0.398,False
+CUST_63815039,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_4490EE8E,75,62.0,10,10,1,1,0.0,Anonymous,email,Afternoon,,0.558,False
+CUST_9D23F007,100,57.0,10,8,5,2,0.0,Loyal,push,Evening,13.0,0.713,True
+CUST_F1C77A66,100,52.0,10,5,3,1,0.0,High Intent,email,Afternoon,90.0,0.718,True
+CUST_2CEA878B,20,52.0,10,2,0,0,0.0,Browsing,push,Evening,,0.238,False
+CUST_587AD8A4,100,80.0,0,3,3,3,0.0,Interested,push,Night,3.0,0.72,True
+CUST_B43BDCE6,30,62.0,10,1,1,1,0.0,Interested,email,Evening,,0.288,False
+CUST_4E9B31C7,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Evening,,0.288,False
+CUST_FE06D134,10,61.0,55,0,0,0,0.0,Churn Risk,push,Evening,,0.034,False
+CUST_ADB57CAD,100,100.0,0,5,5,5,0.0,Interested,email,Evening,78.0,0.7,True
+CUST_D973F35F,100,90.0,0,4,4,4,0.0,Cart Active,sms,Afternoon,6.0,0.71,True
+CUST_86A609C6,85,57.0,10,3,2,1,0.0,Loyal,email,Evening,68.0,0.623,True
+CUST_57541408,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_647F8747,30,52.0,10,4,0,0,0.0,Anonymous,sms,Night,,0.298,False
+CUST_C4A8005E,30,52.0,10,4,0,0,0.0,Browsing,push,Night,,0.298,False
+CUST_0AD2B348,90,92.0,10,4,4,4,0.0,Cart Active,email,Morning,,0.618,False
+CUST_18CE6EE9,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_D5C2AF50,45,62.0,10,4,1,1,0.0,Browsing,whatsapp,Afternoon,,0.378,False
+CUST_CB85A64B,100,80.0,0,3,3,3,0.0,Cart Active,sms,Evening,91.0,0.72,True
+CUST_DD199304,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_5382FC8A,30,52.0,10,4,0,0,0.0,Browsing,email,Afternoon,,0.298,False
+CUST_131DA56E,90,92.0,10,4,4,4,0.0,Cart Active,whatsapp,Evening,,0.618,False
+CUST_770B623C,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_0E180EA4,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_3BD1BFA6,80,72.0,10,8,2,2,0.0,Anonymous,email,Evening,,0.578,False
+CUST_0947CD11,30,62.0,10,1,1,1,0.0,Cart Active,sms,Morning,,0.288,False
+CUST_716F42AB,100,62.0,10,6,4,2,0.0,High Intent,email,Afternoon,44.0,0.708,True
+CUST_C143D2F6,100,77.0,10,5,4,3,0.0,High Intent,email,Afternoon,76.0,0.693,True
+CUST_56993D8E,80,72.0,10,2,2,2,0.0,Loyal,sms,Night,76.0,0.578,True
+CUST_A7E53581,10,61.0,55,0,0,0,0.0,Dormant,email,Afternoon,,0.034,False
+CUST_9CB02BCF,100,77.0,10,5,4,3,0.0,Loyal,whatsapp,Morning,70.0,0.693,True
+CUST_503BE15D,80,72.0,10,2,2,2,0.0,High Intent,push,Afternoon,80.0,0.578,True
+CUST_C2207C2D,100,80.0,0,3,3,3,0.0,Cart Active,sms,Afternoon,70.0,0.72,True
+CUST_02424CE3,80,70.0,0,2,2,2,0.0,Cart Active,sms,Afternoon,80.0,0.61,True
+CUST_1FF0F4B8,60,62.0,10,1,1,1,0.0,High Intent,sms,Morning,95.0,0.6802,True
+CUST_0B5ABC6D,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Night,,0.358,False
+CUST_184CC8F1,85,57.0,10,3,2,1,0.0,Loyal,whatsapp,Night,48.0,0.623,True
+CUST_E4B13E8F,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Morning,,0.238,False
+CUST_81CA5D16,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_83645FC6,100,52.0,10,5,3,1,0.0,Loyal,whatsapp,Night,13.0,0.718,True
+CUST_6E5A12E9,60,62.0,10,1,1,1,0.0,Loyal,sms,Morning,36.0,0.78,True
+CUST_AC41ECF3,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_3683D49C,65,62.0,10,8,1,1,0.0,Anonymous,email,Afternoon,,0.498,False
+CUST_9AC92005,100,72.0,10,7,5,3,0.0,Loyal,whatsapp,Afternoon,84.0,0.698,True
+CUST_36D8E45F,30,52.0,10,4,0,0,0.0,Anonymous,email,Night,,0.298,False
+CUST_741B6B68,20,52.0,10,2,0,0,0.0,Browsing,sms,Night,,0.238,False
+CUST_28C10C94,80,72.0,10,2,2,2,0.0,Loyal,email,Night,24.0,0.578,True
+CUST_6E27F854,50,52.0,10,8,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.418,False
+CUST_999FE051,100,62.0,10,6,4,2,0.0,Loyal,push,Evening,52.0,0.708,True
+CUST_EFDB19CD,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_83469F4C,30,52.0,10,4,0,0,0.0,Browsing,push,Evening,,0.298,False
+CUST_C71AE6AD,65,47.0,10,2,1,0,0.0,Loyal,whatsapp,Afternoon,44.0,0.513,True
+CUST_34A39B77,100,100.0,0,5,5,5,0.0,Cart Active,push,Night,10.0,0.7,True
+CUST_C8E4870F,100,100.0,10,5,5,5,0.0,High Intent,push,Afternoon,1.0,0.67,True
+CUST_A945F7C3,100,52.0,10,5,3,1,0.0,Loyal,whatsapp,Morning,79.0,0.718,True
+CUST_9A972779,60,62.0,10,1,1,1,0.0,Loyal,whatsapp,Evening,39.0,0.6087,True
+CUST_3B7AAABC,10,70.0,100,0,0,0,0.0,Dormant,push,Morning,,0.0,False
+CUST_67C3AF77,100,67.0,10,4,3,2,0.0,High Intent,sms,Night,32.0,0.703,True
+CUST_8861184D,35,62.0,10,2,1,1,0.0,Browsing,push,Night,,0.318,False
+CUST_06A239D3,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Afternoon,,0.238,False
+CUST_1BD16710,50,52.0,10,8,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.418,False
+CUST_912094DF,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Evening,85.0,0.708,True
+CUST_3F1908FF,100,87.0,10,6,5,4,0.0,High Intent,whatsapp,Afternoon,67.0,0.683,True
+CUST_EEB6C2C2,100,32.0,10,8,4,0,0.0,High Intent,push,Afternoon,63.0,0.738,True
+CUST_94DE09B8,20,52.0,10,2,0,0,0.0,Browsing,email,Afternoon,,0.238,False
+CUST_89EA70FF,65,62.0,10,8,1,1,0.0,Anonymous,whatsapp,Morning,,0.498,False
+CUST_5F83A21D,100,80.0,0,3,3,3,0.0,Cart Active,sms,Afternoon,8.0,0.72,True
+CUST_18AA4492,85,57.0,10,3,2,1,0.0,Loyal,sms,Night,90.0,0.623,True
+CUST_027164B3,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Morning,,0.238,False
+CUST_0AD94D28,40,52.0,10,6,0,0,0.0,Anonymous,push,Afternoon,,0.358,False
+CUST_31B02712,50,52.0,10,8,0,0,0.0,Browsing,email,Morning,,0.418,False
+CUST_AC95571E,50,52.0,10,8,0,0,0.0,Browsing,push,Night,,0.418,False
+CUST_65901553,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_8E8B796A,100,77.0,10,5,4,3,0.0,High Intent,email,Night,44.0,0.693,True
+CUST_7B473553,65,62.0,10,8,1,1,0.0,Browsing,whatsapp,Evening,,0.498,False
+CUST_9140D68A,30,62.0,10,1,1,1,0.0,Cart Active,email,Morning,,0.288,False
+CUST_0F053F77,30,52.0,10,4,0,0,0.0,Browsing,email,Evening,,0.298,False
+CUST_8D250AB2,100,67.0,10,4,3,2,0.0,High Intent,sms,Afternoon,18.0,0.703,True
+CUST_76F3CA16,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_8D1EC76F,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Morning,,0.358,False
+CUST_19C3FD37,30,52.0,10,4,0,0,0.0,Anonymous,email,Afternoon,,0.298,False
+CUST_4E59CDC9,100,77.0,10,5,4,3,0.0,Loyal,push,Morning,40.0,0.693,True
+CUST_E3CC687C,100,100.0,0,5,5,5,0.0,Interested,email,Afternoon,36.0,0.7,True
+CUST_895195FE,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Afternoon,43.0,0.708,True
+CUST_52A467A1,10,61.0,55,0,0,0,0.0,Dormant,sms,Night,,0.034,False
+CUST_895A3F9D,100,80.0,0,3,3,3,0.0,Cart Active,push,Afternoon,15.0,0.72,True
+CUST_D8C3AB84,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Evening,,0.358,False
+CUST_F32E13E7,100,92.0,10,4,4,4,0.0,High Intent,email,Morning,89.0,0.678,True
+CUST_68E73F1D,90,72.0,10,10,2,2,0.0,Browsing,whatsapp,Afternoon,,0.638,False
+CUST_3221BDA7,100,57.0,10,8,5,2,0.0,High Intent,whatsapp,Night,36.0,0.713,True
+CUST_2CF59DB9,10,61.0,55,0,0,0,0.0,Churn Risk,email,Night,,0.034,False
+CUST_7A473C6F,100,80.0,0,3,3,3,0.0,Cart Active,push,Evening,81.0,0.72,True
+CUST_BC076D08,100,62.0,10,6,4,2,0.0,Loyal,whatsapp,Afternoon,58.0,0.708,True
+CUST_13B3C39B,45,62.0,10,4,1,1,0.0,Browsing,sms,Evening,,0.378,False
+CUST_F399372B,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_2C04A290,90,72.0,10,10,2,2,0.0,Anonymous,email,Afternoon,,0.638,False
+CUST_8512043B,60,60.0,0,1,1,1,0.0,Cart Active,push,Afternoon,71.0,0.5,True
+CUST_BE0BE98D,10,61.0,55,0,0,0,0.0,Dormant,sms,Night,,0.034,False
+CUST_D385C01E,30,52.0,10,4,0,0,0.0,Browsing,sms,Evening,,0.298,False
+CUST_BEDEB4E5,10,61.0,55,0,0,0,0.0,Dormant,email,Afternoon,,0.034,False
+CUST_9A338CD0,70,82.0,10,3,3,3,0.0,Interested,email,Evening,,0.508,False
+CUST_1E67221C,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Evening,11.0,0.61,True
+CUST_0CD60EBD,30,52.0,10,4,0,0,0.0,Anonymous,sms,Evening,,0.298,False
+CUST_92F17E3F,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Evening,,0.034,False
+CUST_6F9E2418,30,52.0,10,4,0,0,0.0,Browsing,sms,Night,,0.298,False
+CUST_0FF13127,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_BB285F7A,100,100.0,10,5,5,5,0.0,High Intent,whatsapp,Morning,27.0,0.67,True
+CUST_7EABA16F,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Evening,,0.438,False
+CUST_B46F4923,30,62.0,10,1,1,1,0.0,Interested,email,Evening,,0.288,False
+CUST_93700F09,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Morning,53.0,0.7,True
+CUST_72B6D10E,100,90.0,0,4,4,4,0.0,Cart Active,whatsapp,Night,19.0,0.71,True
+CUST_A54C9E5A,65,47.0,10,2,1,0,0.0,High Intent,email,Evening,44.0,0.513,True
+CUST_BCF213F1,100,100.0,10,5,5,5,0.0,Cart Active,email,Morning,,0.67,False
+CUST_FB4910A7,10,61.0,55,0,0,0,0.0,Churn Risk,push,Evening,,0.034,False
+CUST_4C60FF11,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_5FAF1C12,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_79A602ED,100,62.0,10,6,4,2,0.0,High Intent,sms,Afternoon,75.0,0.708,True
+CUST_A1727E54,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Morning,,0.288,False
+CUST_A163EAC7,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_407E42A5,85,57.0,10,3,2,1,0.0,Loyal,email,Afternoon,43.0,0.623,True
+CUST_80D7E8E6,100,80.0,0,3,3,3,0.0,Interested,email,Afternoon,15.0,0.72,True
+CUST_F0508F34,65,62.0,10,8,1,1,0.0,Browsing,whatsapp,Night,,0.498,False
+CUST_65C588C7,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_115F567A,60,60.0,0,1,1,1,0.0,Cart Active,sms,Evening,44.0,0.5,True
+CUST_11809A6B,100,87.0,10,6,5,4,0.0,High Intent,push,Morning,67.0,0.683,True
+CUST_30A63D4E,90,72.0,10,10,2,2,0.0,Browsing,whatsapp,Afternoon,,0.638,False
+CUST_6C0C3F65,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Night,,0.288,False
+CUST_490CCB49,80,72.0,10,8,2,2,0.0,Browsing,whatsapp,Morning,,0.578,False
+CUST_E1598B61,100,87.0,10,6,5,4,0.0,High Intent,push,Afternoon,76.0,0.683,True
+CUST_0F7F15A2,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_9D644E2B,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.034,False
+CUST_D6F45E2B,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_5F316548,70,82.0,10,3,3,3,0.0,Interested,whatsapp,Night,,0.508,False
+CUST_241A82E0,100,77.0,10,5,4,3,0.0,High Intent,email,Evening,55.0,0.693,True
+CUST_C3A5792C,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_7F141E6F,85,57.0,10,3,2,1,0.0,Loyal,push,Morning,82.0,0.623,True
+CUST_FAF701E5,85,57.0,10,3,2,1,0.0,High Intent,email,Evening,73.0,0.623,True
+CUST_4BE3EA6F,10,70.0,100,0,0,0,0.0,Churn Risk,email,Night,,0.0,False
+CUST_0BDEBB7F,100,82.0,10,3,3,3,0.0,Loyal,push,Night,21.0,0.688,True
+CUST_E89782AF,55,62.0,10,6,1,1,0.0,Anonymous,sms,Evening,,0.438,False
+CUST_3F240E7F,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Night,,0.0,False
+CUST_ED884268,10,61.0,55,0,0,0,0.0,Churn Risk,sms,Afternoon,,0.034,False
+CUST_DF3740B2,100,100.0,0,5,5,5,0.0,Cart Active,sms,Afternoon,45.0,0.7,True
+CUST_73A64B24,30,52.0,10,4,0,0,0.0,Browsing,email,Afternoon,,0.298,False
+CUST_646349C1,100,57.0,10,8,5,2,0.0,High Intent,whatsapp,Morning,76.0,0.713,True
+CUST_0838480F,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.298,False
+CUST_35DB462E,100,72.0,10,7,5,3,0.0,High Intent,whatsapp,Night,40.0,0.698,True
+CUST_FBE3E53A,10,61.0,55,0,0,0,0.0,Dormant,sms,Evening,,0.034,False
+CUST_A46748F6,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_F6B94B37,10,70.0,100,0,0,0,0.0,Dormant,push,Night,,0.0,False
+CUST_6579F2EE,100,77.0,10,5,4,3,0.0,High Intent,sms,Night,40.0,0.693,True
+CUST_BEF47812,100,67.0,10,4,3,2,0.0,High Intent,push,Night,78.0,0.703,True
+CUST_E639AE8C,100,100.0,0,5,5,5,0.0,Cart Active,sms,Night,26.0,0.7,True
+CUST_6E69BB46,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Evening,,0.0,False
+CUST_269B407E,100,67.0,10,4,3,2,0.0,Loyal,push,Morning,98.0,0.703,True
+CUST_60F782FD,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Afternoon,29.0,0.708,True
+CUST_8EEBB8A3,100,52.0,10,5,3,1,0.0,High Intent,push,Evening,92.0,0.718,True
+CUST_19E5CD10,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_B10F3870,30,52.0,10,4,0,0,0.0,Browsing,sms,Evening,,0.298,False
+CUST_9BB9B538,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Evening,81.0,0.7,True
+CUST_7B3DBE5B,70,82.0,10,3,3,3,0.0,Cart Active,whatsapp,Evening,,0.508,False
+CUST_E999A8A8,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Night,30.0,0.61,True
+CUST_07EB68F4,80,72.0,10,2,2,2,0.0,High Intent,email,Afternoon,29.0,0.578,True
+CUST_A95B61CD,10,61.0,55,0,0,0,0.0,Churn Risk,push,Morning,,0.034,False
+CUST_9CC313BA,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Night,,0.288,False
+CUST_6E792318,30,52.0,10,4,0,0,0.0,Anonymous,push,Night,,0.298,False
+CUST_51AF6922,60,52.0,10,10,0,0,0.0,Anonymous,whatsapp,Night,,0.478,False
+CUST_EB3B7A55,100,67.0,10,4,3,2,0.0,High Intent,whatsapp,Morning,73.0,0.703,True
+CUST_34C5C6D7,10,61.0,55,0,0,0,0.0,Dormant,sms,Morning,,0.034,False
+CUST_5A2098A2,100,37.0,10,6,3,0,0.0,Loyal,email,Night,65.0,0.733,True
+CUST_5F862B40,100,67.0,10,4,3,2,0.0,Loyal,sms,Night,95.0,0.703,True
+CUST_B30C0F03,100,62.0,10,6,4,2,0.0,Loyal,whatsapp,Morning,43.0,0.708,True
+CUST_1351064A,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Afternoon,,0.438,False
+CUST_4A625328,50,52.0,10,8,0,0,0.0,Anonymous,push,Evening,,0.418,False
+CUST_D6FCB1E8,60,60.0,0,1,1,1,0.0,Cart Active,email,Afternoon,27.0,0.5,True
+CUST_EB78793E,50,52.0,10,8,0,0,0.0,Browsing,push,Night,,0.418,False
+CUST_3BC4ECAE,60,52.0,10,10,0,0,0.0,Browsing,sms,Afternoon,,0.478,False
+CUST_9BFE4ED4,80,70.0,0,2,2,2,0.0,Cart Active,whatsapp,Evening,55.0,0.61,True
+CUST_756B35DC,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Evening,90.0,0.61,True
+CUST_58DE26DE,80,72.0,10,2,2,2,0.0,High Intent,whatsapp,Night,79.0,0.578,True
+CUST_855AF781,80,72.0,10,8,2,2,0.0,Browsing,email,Evening,,0.578,False
+CUST_8FE037C1,30,52.0,10,4,0,0,0.0,Anonymous,email,Afternoon,,0.298,False
+CUST_2BA29819,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Night,76.0,0.61,True
+CUST_B99993B5,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_56A67BB4,100,57.0,10,8,5,2,0.0,Loyal,whatsapp,Afternoon,3.0,0.713,True
+CUST_93480CCB,65,62.0,10,8,1,1,0.0,Browsing,email,Evening,,0.498,False
+CUST_D488727A,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Evening,,0.0,False
+CUST_D26F973C,100,100.0,0,5,5,5,0.0,Interested,sms,Morning,51.0,0.7,True
+CUST_77F1C16C,10,70.0,100,0,0,0,0.0,Dormant,sms,Morning,,0.0,False
+CUST_D6436251,100,87.0,10,6,5,4,0.0,High Intent,whatsapp,Evening,75.0,0.683,True
+CUST_93A9BF43,60,62.0,10,1,1,1,0.0,Loyal,whatsapp,Evening,78.0,0.7717,True
+CUST_EE0967E3,100,52.0,10,5,3,1,0.0,High Intent,email,Night,96.0,0.718,True
+CUST_E0EAE488,100,80.0,0,3,3,3,0.0,Interested,email,Morning,19.0,0.72,True
+CUST_F2051248,35,62.0,10,2,1,1,0.0,Anonymous,whatsapp,Night,,0.318,False
+CUST_82F65E23,80,72.0,10,8,2,2,0.0,Browsing,whatsapp,Afternoon,,0.578,False
+CUST_DD984D84,65,62.0,10,8,1,1,0.0,Anonymous,email,Morning,,0.498,False
+CUST_CB568B0F,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_21BB680C,70,82.0,10,3,3,3,0.0,Interested,email,Night,,0.508,False
+CUST_FED98234,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Morning,,0.288,False
+CUST_EE8EF9EC,75,62.0,10,10,1,1,0.0,Anonymous,email,Morning,,0.558,False
+CUST_B35DE5D2,20,52.0,10,2,0,0,0.0,Anonymous,email,Morning,,0.238,False
+CUST_C56A11A5,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_A7E56800,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Morning,,0.298,False
+CUST_2C11FCAA,10,70.0,100,0,0,0,0.0,Churn Risk,push,Afternoon,,0.0,False
+CUST_547064A2,100,100.0,10,5,5,5,0.0,Interested,email,Evening,,0.67,False
+CUST_92CEDCA7,75,62.0,10,10,1,1,0.0,Browsing,whatsapp,Afternoon,,0.558,False
+CUST_D256D442,60,60.0,0,1,1,1,0.0,Cart Active,email,Evening,4.0,0.5,True
+CUST_449FC798,60,60.0,0,1,1,1,0.0,Interested,push,Night,97.0,0.5,True
+CUST_32B7B659,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_FBEBE3B4,40,52.0,10,6,0,0,0.0,Anonymous,whatsapp,Night,,0.358,False
+CUST_4C574128,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_EA42A92D,90,42.0,10,4,2,0,0.0,High Intent,push,Afternoon,95.0,0.668,True
+CUST_51A7B9FE,60,60.0,0,1,1,1,0.0,Interested,push,Evening,40.0,0.5,True
+CUST_44A2C795,10,61.0,55,0,0,0,0.0,Churn Risk,email,Evening,,0.034,False
+CUST_FCBFFC24,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Morning,,0.298,False
+CUST_85EA6A71,100,77.0,10,5,4,3,0.0,High Intent,sms,Morning,61.0,0.693,True
+CUST_94D3E97B,50,72.0,10,2,2,2,0.0,Cart Active,email,Morning,,0.398,False
+CUST_5D50C84D,55,62.0,10,6,1,1,0.0,Anonymous,sms,Night,,0.438,False
+CUST_5103D3C5,10,70.0,100,0,0,0,0.0,Dormant,push,Morning,,0.0,False
+CUST_260D0C2F,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_47FE6E8D,85,57.0,10,3,2,1,0.0,High Intent,sms,Afternoon,35.0,0.623,True
+CUST_4248F272,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Evening,,0.0,False
+CUST_6D8BC63B,50,52.0,10,8,0,0,0.0,Browsing,email,Afternoon,,0.418,False
+CUST_559D568C,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Night,,0.288,False
+CUST_475F08DA,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_5D81D8F3,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_F25B8976,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_6E4B08DD,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Night,,0.358,False
+CUST_7B8B4582,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_C8832EFB,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_C4B680AE,60,72.0,10,4,2,2,0.0,Anonymous,whatsapp,Night,,0.458,False
+CUST_0FE8CE86,100,80.0,0,3,3,3,0.0,Cart Active,whatsapp,Night,5.0,0.72,True
+CUST_119DD9F6,90,72.0,10,10,2,2,0.0,Anonymous,whatsapp,Night,,0.638,False
+CUST_4A5340F6,60,52.0,10,10,0,0,0.0,Browsing,whatsapp,Afternoon,,0.478,False
+CUST_1CE8F62B,60,62.0,10,1,1,1,0.0,High Intent,whatsapp,Evening,36.0,0.8638,True
+CUST_60543475,100,82.0,10,3,3,3,0.0,Loyal,whatsapp,Evening,54.0,0.688,True
+CUST_508B3E12,80,70.0,0,2,2,2,0.0,Interested,push,Night,82.0,0.61,True
+CUST_64D813A5,60,52.0,10,10,0,0,0.0,Browsing,push,Evening,,0.478,False
+CUST_EDC61F3F,75,62.0,10,10,1,1,0.0,Browsing,email,Afternoon,,0.558,False
+CUST_A14EE256,10,61.0,55,0,0,0,0.0,Dormant,sms,Evening,,0.034,False
+CUST_B11FBE08,30,52.0,10,4,0,0,0.0,Browsing,whatsapp,Night,,0.298,False
+CUST_DA071068,100,80.0,0,3,3,3,0.0,Cart Active,email,Afternoon,37.0,0.72,True
+CUST_E2442033,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_F0F97E05,50,52.0,10,8,0,0,0.0,Anonymous,email,Morning,,0.418,False
+CUST_3B2A0D43,100,90.0,0,4,4,4,0.0,Interested,push,Night,26.0,0.71,True
+CUST_E6593C6B,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_D730113B,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_B2B8F92B,30,62.0,10,1,1,1,0.0,Cart Active,email,Night,,0.288,False
+CUST_99CA12C2,100,90.0,0,4,4,4,0.0,Interested,email,Morning,10.0,0.71,True
+CUST_B7CA9F4F,100,57.0,10,8,5,2,0.0,High Intent,whatsapp,Evening,2.0,0.713,True
+CUST_DF7B584F,10,70.0,100,0,0,0,0.0,Churn Risk,email,Night,,0.0,False
+CUST_864192A5,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_C2777272,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_C39706E3,50,72.0,10,2,2,2,0.0,Interested,sms,Night,,0.398,False
+CUST_E429E2BF,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_EE5F32C6,60,60.0,0,1,1,1,0.0,Cart Active,push,Night,85.0,0.5,True
+CUST_B8585C55,10,61.0,55,0,0,0,0.0,Dormant,push,Morning,,0.034,False
+CUST_9C908B7E,100,87.0,10,6,5,4,0.0,High Intent,whatsapp,Evening,45.0,0.683,True
+CUST_E05A6E55,10,70.0,100,0,0,0,0.0,Dormant,sms,Night,,0.0,False
+CUST_1F1F606A,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.298,False
+CUST_DB91EDA3,100,90.0,0,4,4,4,0.0,Cart Active,sms,Night,48.0,0.71,True
+CUST_D26D51EE,100,47.0,10,7,4,1,0.0,Loyal,whatsapp,Evening,96.0,0.723,True
+CUST_0E935651,100,62.0,10,6,4,2,0.0,High Intent,sms,Afternoon,48.0,0.708,True
+CUST_72429935,60,62.0,10,1,1,1,0.0,High Intent,email,Evening,40.0,0.7892,True
+CUST_FD6AAD0E,45,62.0,10,4,1,1,0.0,Browsing,email,Afternoon,,0.378,False
+CUST_7A378EA4,100,90.0,0,4,4,4,0.0,Interested,sms,Night,56.0,0.71,True
+CUST_5F0AAC03,10,70.0,100,0,0,0,0.0,Dormant,sms,Morning,,0.0,False
+CUST_4EAC5F1B,30,52.0,10,4,0,0,0.0,Browsing,push,Afternoon,,0.298,False
+CUST_B3CF4A1B,100,52.0,10,5,3,1,0.0,Loyal,whatsapp,Night,71.0,0.718,True
+CUST_956AC9C3,35,62.0,10,2,1,1,0.0,Browsing,whatsapp,Morning,,0.318,False
+CUST_3EB938AC,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_0ECEFA24,75,62.0,10,10,1,1,0.0,Browsing,sms,Night,,0.558,False
+CUST_3BDB194B,10,70.0,100,0,0,0,0.0,Dormant,email,Morning,,0.0,False
+CUST_EA57BACB,35,62.0,10,2,1,1,0.0,Browsing,email,Morning,,0.318,False
+CUST_DB672D6E,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_73610D47,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Evening,,0.358,False
+CUST_43287017,100,90.0,0,4,4,4,0.0,Interested,push,Morning,42.0,0.71,True
+CUST_D06526D8,80,72.0,10,2,2,2,0.0,Loyal,sms,Afternoon,94.0,0.578,True
+CUST_D314B9C7,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Afternoon,82.0,0.7,True
+CUST_C5234514,30,62.0,10,1,1,1,0.0,Cart Active,email,Evening,,0.288,False
+CUST_06321A44,80,72.0,10,2,2,2,0.0,High Intent,push,Afternoon,91.0,0.578,True
+CUST_C9697997,65,47.0,10,2,1,0,0.0,High Intent,email,Afternoon,24.0,0.513,True
+CUST_33540ED1,10,70.0,100,0,0,0,0.0,Dormant,push,Afternoon,,0.0,False
+CUST_9674EE56,85,57.0,10,3,2,1,0.0,High Intent,email,Evening,91.0,0.623,True
+CUST_55273BA1,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_2DAEC16A,60,60.0,0,1,1,1,0.0,Interested,sms,Night,74.0,0.5,True
+CUST_B87AF05C,30,62.0,10,1,1,1,0.0,Cart Active,push,Afternoon,,0.288,False
+CUST_C5612976,100,67.0,10,4,3,2,0.0,High Intent,sms,Morning,6.0,0.703,True
+CUST_72CBC3FF,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Evening,49.0,0.72,True
+CUST_0F909074,10,61.0,55,0,0,0,0.0,Churn Risk,email,Afternoon,,0.034,False
+CUST_E15D1603,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Evening,,0.288,False
+CUST_328B8A58,55,62.0,10,6,1,1,0.0,Browsing,sms,Night,,0.438,False
+CUST_AE9B8C22,80,70.0,0,2,2,2,0.0,Cart Active,sms,Evening,29.0,0.61,True
+CUST_3734FEC0,100,67.0,10,4,3,2,0.0,Loyal,push,Afternoon,32.0,0.703,True
+CUST_7BB9CFB8,50,52.0,10,8,0,0,0.0,Browsing,email,Evening,,0.418,False
+CUST_ADAD237D,35,62.0,10,2,1,1,0.0,Anonymous,whatsapp,Night,,0.318,False
+CUST_972B2DD0,90,92.0,10,4,4,4,0.0,Interested,sms,Evening,,0.618,False
+CUST_12AF5997,100,92.0,10,10,4,4,0.0,Anonymous,sms,Evening,,0.678,False
+CUST_18AAD8FB,10,70.0,100,0,0,0,0.0,Dormant,push,Afternoon,,0.0,False
+CUST_3E5FC064,100,52.0,10,5,3,1,0.0,Loyal,email,Night,44.0,0.718,True
+CUST_75BA66A5,100,62.0,10,6,4,2,0.0,Loyal,email,Evening,20.0,0.708,True
+CUST_0276CE0E,100,80.0,0,3,3,3,0.0,Cart Active,push,Morning,45.0,0.72,True
+CUST_EFAE7945,80,72.0,10,8,2,2,0.0,Anonymous,email,Afternoon,,0.578,False
+CUST_58BF3EB3,100,52.0,10,5,3,1,0.0,High Intent,push,Night,58.0,0.718,True
+CUST_791BE7DD,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_43FE3394,100,42.0,10,9,5,1,0.0,Loyal,email,Afternoon,23.0,0.728,True
+CUST_8DFFB2CE,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Evening,,0.288,False
+CUST_63715C65,60,60.0,0,1,1,1,0.0,Cart Active,push,Morning,12.0,0.5,True
+CUST_9D10986B,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_AE7296E8,60,60.0,0,1,1,1,0.0,Cart Active,whatsapp,Evening,8.0,0.5,True
+CUST_F5094D5F,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Afternoon,49.0,0.7,True
+CUST_55E21CDC,90,92.0,10,4,4,4,0.0,Cart Active,whatsapp,Evening,,0.618,False
+CUST_8AE530FA,75,62.0,10,10,1,1,0.0,Anonymous,sms,Evening,,0.558,False
+CUST_C7AF7E68,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_A4B5E952,90,42.0,10,4,2,0,0.0,High Intent,email,Evening,66.0,0.668,True
+CUST_F9C12A90,100,100.0,0,5,5,5,0.0,Interested,sms,Afternoon,51.0,0.7,True
+CUST_6D34DCA7,100,67.0,10,4,3,2,0.0,Loyal,push,Night,100.0,0.703,True
+CUST_F8398755,100,57.0,10,8,5,2,0.0,High Intent,whatsapp,Night,15.0,0.713,True
+CUST_D351A539,100,90.0,0,4,4,4,0.0,Interested,whatsapp,Afternoon,94.0,0.71,True
+CUST_956F4391,50,52.0,10,8,0,0,0.0,Browsing,sms,Night,,0.418,False
+CUST_0AA057F5,100,100.0,0,5,5,5,0.0,Cart Active,email,Night,89.0,0.7,True
+CUST_8D6439E0,20,52.0,10,2,0,0,0.0,Anonymous,email,Afternoon,,0.238,False
+CUST_302CEB79,30,62.0,10,1,1,1,0.0,Cart Active,email,Morning,,0.288,False
+CUST_538A7176,100,90.0,0,4,4,4,0.0,Interested,email,Evening,48.0,0.71,True
+CUST_7D42AE80,45,62.0,10,4,1,1,0.0,Anonymous,whatsapp,Night,,0.378,False
+CUST_A32303A8,100,72.0,10,7,5,3,0.0,Loyal,email,Night,34.0,0.698,True
+CUST_711EDC8E,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_1AFE374A,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Night,,0.0,False
+CUST_66D6E841,90,92.0,10,4,4,4,0.0,Interested,push,Evening,,0.618,False
+CUST_94271BA7,65,47.0,10,2,1,0,0.0,Loyal,push,Night,79.0,0.513,True
+CUST_24C24DF0,100,37.0,10,6,3,0,0.0,High Intent,push,Night,3.0,0.733,True
+CUST_D9AFADA6,75,62.0,10,10,1,1,0.0,Browsing,whatsapp,Night,,0.558,False
+CUST_7DABD08A,60,60.0,0,1,1,1,0.0,Cart Active,whatsapp,Night,1.0,0.5,True
+CUST_0B2DF13F,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_B231E916,100,82.0,10,3,3,3,0.0,High Intent,whatsapp,Morning,19.0,0.688,True
+CUST_2307D46C,20,52.0,10,2,0,0,0.0,Anonymous,email,Night,,0.238,False
+CUST_9F6558FE,60,52.0,10,10,0,0,0.0,Browsing,email,Afternoon,,0.478,False
+CUST_EEF7C6CD,90,42.0,10,4,2,0,0.0,Loyal,sms,Afternoon,30.0,0.668,True
+CUST_A28972F7,100,87.0,10,6,5,4,0.0,Loyal,whatsapp,Night,59.0,0.683,True
+CUST_71D368F0,10,61.0,55,0,0,0,0.0,Dormant,email,Morning,,0.034,False
+CUST_8E801C1B,100,62.0,10,6,4,2,0.0,Loyal,whatsapp,Afternoon,69.0,0.708,True
+CUST_0AC726CC,60,72.0,10,4,2,2,0.0,Browsing,email,Night,,0.458,False
+CUST_7852DBC9,50,52.0,10,8,0,0,0.0,Anonymous,sms,Night,,0.418,False
+CUST_07EA8A74,45,62.0,10,4,1,1,0.0,Anonymous,whatsapp,Afternoon,,0.378,False
+CUST_BF9F3367,100,47.0,10,7,4,1,0.0,Loyal,whatsapp,Afternoon,66.0,0.723,True
+CUST_F3E2D497,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Evening,,0.438,False
+CUST_1A361C57,100,80.0,0,3,3,3,0.0,Cart Active,sms,Evening,46.0,0.72,True
+CUST_F3F8E500,55,62.0,10,6,1,1,0.0,Browsing,email,Morning,,0.438,False
+CUST_5B263543,100,100.0,10,5,5,5,0.0,Loyal,whatsapp,Night,59.0,0.67,True
+CUST_EFB1E232,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_586B166F,65,47.0,10,2,1,0,0.0,Loyal,email,Afternoon,90.0,0.513,True
+CUST_46A3E974,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_4263EE0F,100,27.0,10,10,5,0,0.0,High Intent,email,Afternoon,88.0,0.743,True
+CUST_0799698D,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Night,65.0,0.708,True
+CUST_C4813074,60,62.0,10,1,1,1,0.0,High Intent,sms,Night,100.0,0.6825,True
+CUST_D0D6BA71,100,67.0,10,4,3,2,0.0,High Intent,whatsapp,Night,69.0,0.703,True
+CUST_EE839A5D,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Night,,0.438,False
+CUST_325501F0,70,72.0,10,6,2,2,0.0,Browsing,push,Morning,,0.518,False
+CUST_71520E60,30,62.0,10,1,1,1,0.0,Interested,sms,Afternoon,,0.288,False
+CUST_462E7A2E,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.034,False
+CUST_4DC33C38,30,62.0,10,1,1,1,0.0,Cart Active,email,Afternoon,,0.288,False
+CUST_C640B75F,80,72.0,10,2,2,2,0.0,Loyal,sms,Morning,71.0,0.578,True
+CUST_CF937353,100,100.0,10,5,5,5,0.0,Cart Active,whatsapp,Night,,0.67,False
+CUST_642E3418,10,70.0,100,0,0,0,0.0,Dormant,sms,Night,,0.0,False
+CUST_84C827DA,50,72.0,10,2,2,2,0.0,Cart Active,push,Evening,,0.398,False
+CUST_05D41BA4,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_5DF7BE8B,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.034,False
+CUST_9919FCF3,80,70.0,0,2,2,2,0.0,Cart Active,sms,Night,82.0,0.61,True
+CUST_EDAA98F7,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_7C08061C,20,52.0,10,2,0,0,0.0,Browsing,email,Evening,,0.238,False
+CUST_00BB6298,45,62.0,10,4,1,1,0.0,Browsing,whatsapp,Evening,,0.378,False
+CUST_053AECF7,45,62.0,10,4,1,1,0.0,Anonymous,whatsapp,Evening,,0.378,False
+CUST_05128E95,30,62.0,10,1,1,1,0.0,Cart Active,email,Night,,0.288,False
+CUST_8E117EE4,100,90.0,0,4,4,4,0.0,Interested,sms,Afternoon,3.0,0.71,True
+CUST_6829755F,60,52.0,10,10,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.478,False
+CUST_AFA4D7A5,90,42.0,10,4,2,0,0.0,High Intent,push,Morning,2.0,0.668,True
+CUST_84D63496,45,62.0,10,4,1,1,0.0,Anonymous,push,Morning,,0.378,False
+CUST_F665114F,100,100.0,0,5,5,5,0.0,Cart Active,email,Morning,27.0,0.7,True
+CUST_DA68F69F,80,72.0,10,2,2,2,0.0,High Intent,whatsapp,Night,74.0,0.578,True
+CUST_B0CBB472,55,62.0,10,6,1,1,0.0,Anonymous,email,Afternoon,,0.438,False
+CUST_D9E59906,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_22C9C586,70,82.0,10,3,3,3,0.0,Interested,push,Evening,,0.508,False
+CUST_A434A37C,10,61.0,55,0,0,0,0.0,Dormant,sms,Evening,,0.034,False
+CUST_B726856D,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.298,False
+CUST_FCBBAB0E,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_2463F2C4,65,47.0,10,2,1,0,0.0,Loyal,email,Morning,92.0,0.513,True
+CUST_7A80472F,20,52.0,10,2,0,0,0.0,Anonymous,email,Morning,,0.238,False
+CUST_E227EA55,50,52.0,10,8,0,0,0.0,Anonymous,email,Evening,,0.418,False
+CUST_500B2D9A,10,70.0,100,0,0,0,0.0,Dormant,sms,Night,,0.0,False
+CUST_D568E62C,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_B2C5D3F0,100,100.0,0,5,5,5,0.0,Interested,email,Evening,89.0,0.7,True
+CUST_4F6B0EF5,75,62.0,10,10,1,1,0.0,Anonymous,email,Morning,,0.558,False
+CUST_30EC8970,65,47.0,10,2,1,0,0.0,Loyal,push,Evening,16.0,0.513,True
+CUST_9D087A5B,50,72.0,10,2,2,2,0.0,Interested,email,Evening,,0.398,False
+CUST_A677100E,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Evening,,0.288,False
+CUST_23EFB197,100,62.0,10,6,4,2,0.0,Loyal,email,Night,74.0,0.708,True
+CUST_7C7B002A,60,62.0,10,1,1,1,0.0,High Intent,email,Night,17.0,0.8969,True
+CUST_50E42BD9,30,52.0,10,4,0,0,0.0,Browsing,email,Night,,0.298,False
+CUST_4B21C776,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_23EEA7C2,100,100.0,0,5,5,5,0.0,Interested,email,Morning,28.0,0.7,True
+CUST_B215D3CB,95,82.0,10,8,3,3,0.0,Anonymous,whatsapp,Night,,0.658,False
+CUST_9717D202,80,72.0,10,2,2,2,0.0,Loyal,email,Morning,28.0,0.578,True
+CUST_8A4D9CAB,30,52.0,10,4,0,0,0.0,Anonymous,sms,Morning,,0.298,False
+CUST_0CFCD5D5,60,60.0,0,1,1,1,0.0,Interested,whatsapp,Morning,55.0,0.5,True
+CUST_3B0022BB,100,72.0,10,7,5,3,0.0,Loyal,email,Evening,100.0,0.698,True
+CUST_C1330647,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_DD504038,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Afternoon,,0.288,False
+CUST_BB8935C0,65,62.0,10,8,1,1,0.0,Anonymous,email,Morning,,0.498,False
+CUST_CF602B04,60,60.0,0,1,1,1,0.0,Cart Active,email,Night,87.0,0.5,True
+CUST_5E0BB013,100,37.0,10,6,3,0,0.0,Loyal,sms,Evening,95.0,0.733,True
+CUST_D26CE20B,10,61.0,55,0,0,0,0.0,Churn Risk,email,Afternoon,,0.034,False
+CUST_66F3F64C,100,80.0,0,3,3,3,0.0,Cart Active,push,Afternoon,17.0,0.72,True
+CUST_595A074D,10,70.0,100,0,0,0,0.0,Dormant,sms,Afternoon,,0.0,False
+CUST_B6F8C9F4,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Night,23.0,0.72,True
+CUST_04E1682F,60,60.0,0,1,1,1,0.0,Cart Active,push,Morning,54.0,0.5,True
+CUST_FC1DFA58,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_61784551,100,100.0,0,5,5,5,0.0,Cart Active,email,Afternoon,12.0,0.7,True
+CUST_6452BA91,30,62.0,10,1,1,1,0.0,Cart Active,push,Night,,0.288,False
+CUST_B5EFCFD7,10,70.0,100,0,0,0,0.0,Churn Risk,email,Morning,,0.0,False
+CUST_78779B3F,35,62.0,10,2,1,1,0.0,Anonymous,whatsapp,Morning,,0.318,False
+CUST_E765F27D,60,60.0,0,1,1,1,0.0,Interested,whatsapp,Evening,77.0,0.5,True
+CUST_DB6903B7,10,61.0,55,0,0,0,0.0,Dormant,push,Night,,0.034,False
+CUST_CC615E9C,70,72.0,10,6,2,2,0.0,Browsing,whatsapp,Morning,,0.518,False
+CUST_6CC2B6D5,90,72.0,10,10,2,2,0.0,Anonymous,whatsapp,Evening,,0.638,False
+CUST_E1363176,70,82.0,10,3,3,3,0.0,Interested,whatsapp,Night,,0.508,False
+CUST_732199DC,100,100.0,0,5,5,5,0.0,Interested,push,Afternoon,31.0,0.7,True
+CUST_8BE239CA,100,57.0,10,8,5,2,0.0,High Intent,email,Morning,15.0,0.713,True
+CUST_FCFD3350,35,62.0,10,2,1,1,0.0,Anonymous,email,Morning,,0.318,False
+CUST_3187E3F9,45,62.0,10,4,1,1,0.0,Anonymous,email,Morning,,0.378,False
+CUST_8BF8807D,65,47.0,10,2,1,0,0.0,Loyal,whatsapp,Morning,98.0,0.513,True
+CUST_813B4C1D,10,61.0,55,0,0,0,0.0,Dormant,email,Morning,,0.034,False
+CUST_3A24199B,45,62.0,10,4,1,1,0.0,Browsing,sms,Evening,,0.378,False
+CUST_4DE3D4BE,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Night,,0.0,False
+CUST_67D19DA2,65,47.0,10,2,1,0,0.0,High Intent,email,Afternoon,82.0,0.513,True
+CUST_A72EF9E3,100,47.0,10,7,4,1,0.0,Loyal,whatsapp,Morning,35.0,0.723,True
+CUST_5E96CE43,10,70.0,100,0,0,0,0.0,Dormant,sms,Morning,,0.0,False
+CUST_D665C471,100,52.0,10,5,3,1,0.0,High Intent,sms,Evening,81.0,0.718,True
+CUST_4726940D,60,60.0,0,1,1,1,0.0,Interested,push,Morning,74.0,0.5,True
+CUST_05774682,30,52.0,10,4,0,0,0.0,Browsing,whatsapp,Morning,,0.298,False
+CUST_E297E034,100,62.0,10,6,4,2,0.0,High Intent,sms,Morning,84.0,0.708,True
+CUST_76F2413B,10,70.0,100,0,0,0,0.0,Dormant,email,Evening,,0.0,False
+CUST_58844B20,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Afternoon,,0.0,False
+CUST_8C946A45,100,90.0,0,4,4,4,0.0,Cart Active,whatsapp,Afternoon,11.0,0.71,True
+CUST_A1319669,10,70.0,100,0,0,0,0.0,Dormant,push,Afternoon,,0.0,False
+CUST_DAF217DC,60,62.0,10,1,1,1,0.0,Loyal,push,Evening,49.0,0.6176,True
+CUST_5BF19433,10,70.0,100,0,0,0,0.0,Churn Risk,email,Morning,,0.0,False
+CUST_65AAD139,40,52.0,10,6,0,0,0.0,Browsing,email,Afternoon,,0.358,False
+CUST_E7CCC8F3,90,42.0,10,4,2,0,0.0,High Intent,email,Night,80.0,0.668,True
+CUST_6F69CD23,80,70.0,0,2,2,2,0.0,Cart Active,push,Evening,21.0,0.61,True
+CUST_6BB19DF4,60,62.0,10,1,1,1,0.0,High Intent,email,Afternoon,55.0,0.9355,True
+CUST_DB9A335D,100,100.0,0,5,5,5,0.0,Interested,push,Morning,64.0,0.7,True
+CUST_F70CEE46,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_FEC88168,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_3D41A73A,50,72.0,10,2,2,2,0.0,Interested,email,Morning,,0.398,False
+CUST_D34AB1F8,100,72.0,10,7,5,3,0.0,Loyal,email,Morning,28.0,0.698,True
+CUST_DE1FEA94,10,61.0,55,0,0,0,0.0,Dormant,email,Morning,,0.034,False
+CUST_D8629B7D,70,72.0,10,6,2,2,0.0,Browsing,whatsapp,Morning,,0.518,False
+CUST_394BBCE4,100,100.0,0,5,5,5,0.0,Interested,sms,Evening,23.0,0.7,True
+CUST_E7346EB8,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_9D8D3CB7,100,77.0,10,5,4,3,0.0,Loyal,push,Night,56.0,0.693,True
+CUST_EE577E68,50,72.0,10,2,2,2,0.0,Interested,whatsapp,Morning,,0.398,False
+CUST_4F08C7E1,10,61.0,55,0,0,0,0.0,Churn Risk,email,Evening,,0.034,False
+CUST_6EE4FF22,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Night,,0.438,False
+CUST_0D24552E,10,70.0,100,0,0,0,0.0,Dormant,push,Evening,,0.0,False
+CUST_2FD10D2E,90,72.0,10,10,2,2,0.0,Anonymous,whatsapp,Afternoon,,0.638,False
+CUST_35E4EBEE,100,77.0,10,5,4,3,0.0,High Intent,whatsapp,Afternoon,23.0,0.693,True
+CUST_019A65F6,80,70.0,0,2,2,2,0.0,Interested,sms,Evening,44.0,0.61,True
+CUST_27CCC870,100,52.0,10,5,3,1,0.0,Loyal,sms,Afternoon,99.0,0.718,True
+CUST_560A375E,10,61.0,55,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.034,False
+CUST_E8306052,100,92.0,10,4,4,4,0.0,Loyal,email,Morning,76.0,0.678,True
+CUST_40C1C35F,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Afternoon,56.0,0.7,True
+CUST_4973FEA9,90,72.0,10,10,2,2,0.0,Browsing,sms,Afternoon,,0.638,False
+CUST_19632405,100,90.0,0,4,4,4,0.0,Interested,sms,Afternoon,82.0,0.71,True
+CUST_29F2B405,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_1DC6721B,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Afternoon,73.0,0.61,True
+CUST_635C9A61,100,80.0,0,3,3,3,0.0,Interested,email,Afternoon,36.0,0.72,True
+CUST_F0626251,90,72.0,10,10,2,2,0.0,Browsing,email,Morning,,0.638,False
+CUST_A046FDBD,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_2CD14C35,100,52.0,10,5,3,1,0.0,Loyal,sms,Night,42.0,0.718,True
+CUST_C9FDE206,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Morning,47.0,0.708,True
+CUST_AFFDA14D,100,100.0,0,5,5,5,0.0,Cart Active,sms,Evening,84.0,0.7,True
+CUST_DDD5D12B,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Night,,0.438,False
+CUST_F080180D,100,87.0,10,6,5,4,0.0,High Intent,email,Afternoon,29.0,0.683,True
+CUST_3AFE3828,10,70.0,100,0,0,0,0.0,Dormant,push,Night,,0.0,False
+CUST_E82A5B06,90,72.0,10,10,2,2,0.0,Browsing,whatsapp,Night,,0.638,False
+CUST_9755D509,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Morning,,0.298,False
+CUST_B6244435,80,70.0,0,2,2,2,0.0,Cart Active,whatsapp,Night,24.0,0.61,True
+CUST_B1EB07F1,45,62.0,10,4,1,1,0.0,Anonymous,whatsapp,Afternoon,,0.378,False
+CUST_81413439,65,47.0,10,2,1,0,0.0,High Intent,whatsapp,Morning,31.0,0.513,True
+CUST_EF7187EF,85,57.0,10,3,2,1,0.0,High Intent,email,Afternoon,61.0,0.623,True
+CUST_52E25B39,100,90.0,0,4,4,4,0.0,Cart Active,whatsapp,Evening,90.0,0.71,True
+CUST_3901D123,45,62.0,10,4,1,1,0.0,Browsing,email,Evening,,0.378,False
+CUST_607B58AC,100,52.0,10,5,3,1,0.0,Loyal,whatsapp,Night,54.0,0.718,True
+CUST_7E9EF41D,50,72.0,10,2,2,2,0.0,Interested,whatsapp,Night,,0.398,False
+CUST_FCE6B254,30,52.0,10,4,0,0,0.0,Browsing,email,Morning,,0.298,False
+CUST_3FC6B029,85,57.0,10,3,2,1,0.0,Loyal,email,Afternoon,59.0,0.623,True
+CUST_6B3B55D4,60,62.0,10,1,1,1,0.0,High Intent,whatsapp,Evening,64.0,0.7538,True
+CUST_0D9C3C6D,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Morning,,0.034,False
+CUST_EAD51975,100,82.0,10,3,3,3,0.0,High Intent,whatsapp,Night,67.0,0.688,True
+CUST_6401C024,100,67.0,10,4,3,2,0.0,Loyal,push,Morning,7.0,0.703,True
+CUST_1419DF71,10,61.0,55,0,0,0,0.0,Churn Risk,push,Night,,0.034,False
+CUST_E80D9B4D,85,57.0,10,3,2,1,0.0,High Intent,whatsapp,Afternoon,17.0,0.623,True
+CUST_0D679C7A,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Night,1.0,0.7,True
+CUST_E9D7F09D,80,72.0,10,8,2,2,0.0,Browsing,whatsapp,Morning,,0.578,False
+CUST_442BA77D,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_5E833011,30,52.0,10,4,0,0,0.0,Anonymous,email,Morning,,0.298,False
+CUST_47E0987A,10,70.0,100,0,0,0,0.0,Churn Risk,sms,Morning,,0.0,False
+CUST_52F8A762,10,70.0,100,0,0,0,0.0,Churn Risk,email,Night,,0.0,False
+CUST_4D49D219,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_3A3C56D3,10,70.0,100,0,0,0,0.0,Churn Risk,email,Evening,,0.0,False
+CUST_53665C2A,10,70.0,100,0,0,0,0.0,Dormant,push,Afternoon,,0.0,False
+CUST_0D60282C,90,42.0,10,4,2,0,0.0,High Intent,email,Afternoon,51.0,0.668,True
+CUST_3E82BC00,30,62.0,10,1,1,1,0.0,Cart Active,push,Night,,0.288,False
+CUST_13032569,50,52.0,10,8,0,0,0.0,Browsing,email,Night,,0.418,False
+CUST_AEFFBB31,70,82.0,10,3,3,3,0.0,Interested,push,Evening,,0.508,False
+CUST_E8C23CF2,100,37.0,10,6,3,0,0.0,Loyal,email,Night,25.0,0.733,True
+CUST_43216AB0,80,70.0,0,2,2,2,0.0,Interested,email,Night,97.0,0.61,True
+CUST_A8DE6CBB,100,47.0,10,7,4,1,0.0,Loyal,email,Night,35.0,0.723,True
+CUST_288DE215,100,90.0,0,4,4,4,0.0,Interested,sms,Morning,6.0,0.71,True
+CUST_A5EAAA27,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Night,,0.438,False
+CUST_086C9EA2,100,37.0,10,6,3,0,0.0,Loyal,sms,Night,23.0,0.733,True
+CUST_358A3BBF,90,92.0,10,4,4,4,0.0,Interested,whatsapp,Afternoon,,0.618,False
+CUST_5EFCA7D3,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Evening,,0.438,False
+CUST_65C8F81A,10,70.0,100,0,0,0,0.0,Dormant,email,Night,,0.0,False
+CUST_D133848B,100,100.0,0,5,5,5,0.0,Cart Active,push,Evening,77.0,0.7,True
+CUST_D7E5199C,75,62.0,10,10,1,1,0.0,Anonymous,push,Morning,,0.558,False
+CUST_6F1B6EA5,80,70.0,0,2,2,2,0.0,Cart Active,push,Afternoon,40.0,0.61,True
+CUST_FAA24C6B,30,62.0,10,1,1,1,0.0,Cart Active,sms,Morning,,0.288,False
+CUST_FEC40CE5,100,27.0,10,10,5,0,0.0,High Intent,whatsapp,Morning,18.0,0.743,True
+CUST_36608905,10,61.0,55,0,0,0,0.0,Dormant,email,Evening,,0.034,False
+CUST_A34A1CD7,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Night,22.0,0.7,True
+CUST_03828410,40,52.0,10,6,0,0,0.0,Browsing,whatsapp,Evening,,0.358,False
+CUST_827F4A54,40,52.0,10,6,0,0,0.0,Anonymous,email,Night,,0.358,False
+CUST_4BA78447,100,100.0,0,5,5,5,0.0,Cart Active,sms,Evening,99.0,0.7,True
+CUST_B235EDF2,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Evening,,0.438,False
+CUST_AA0CFD5A,30,62.0,10,1,1,1,0.0,Cart Active,email,Morning,,0.288,False
+CUST_8C65C9E1,50,72.0,10,2,2,2,0.0,Interested,email,Afternoon,,0.398,False
+CUST_443DBF8F,60,60.0,0,1,1,1,0.0,Cart Active,whatsapp,Afternoon,12.0,0.5,True
+CUST_0417587D,10,70.0,100,0,0,0,0.0,Dormant,email,Afternoon,,0.0,False
+CUST_76AC0392,75,62.0,10,10,1,1,0.0,Anonymous,whatsapp,Night,,0.558,False
+CUST_FF0607BB,90,92.0,10,4,4,4,0.0,Interested,email,Evening,,0.618,False
+CUST_152DD3F0,100,80.0,0,3,3,3,0.0,Interested,sms,Evening,32.0,0.72,True
+CUST_D319C2D4,100,100.0,10,5,5,5,0.0,Loyal,whatsapp,Morning,52.0,0.67,True
+CUST_43FCC9A5,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_5ED05649,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Afternoon,63.0,0.61,True
+CUST_909AA15D,50,72.0,10,2,2,2,0.0,Cart Active,push,Afternoon,,0.398,False
+CUST_B319ED7C,100,47.0,10,7,4,1,0.0,Loyal,sms,Afternoon,39.0,0.723,True
+CUST_2367332C,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Evening,,0.238,False
+CUST_F112702A,80,70.0,0,2,2,2,0.0,Interested,push,Morning,24.0,0.61,True
+CUST_43E1C3FE,100,80.0,0,3,3,3,0.0,Interested,email,Night,52.0,0.72,True
+CUST_10B52115,40,52.0,10,6,0,0,0.0,Browsing,push,Evening,,0.358,False
+CUST_4F614825,75,62.0,10,10,1,1,0.0,Anonymous,whatsapp,Evening,,0.558,False
+CUST_DF1BA4AD,100,52.0,10,5,3,1,0.0,High Intent,push,Morning,43.0,0.718,True
+CUST_7F6A8925,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Evening,24.0,0.72,True
+CUST_27F2C1C5,60,60.0,0,1,1,1,0.0,Cart Active,email,Afternoon,32.0,0.5,True
+CUST_848687AA,100,100.0,0,5,5,5,0.0,Cart Active,push,Evening,100.0,0.7,True
+CUST_6ABF865A,100,72.0,10,7,5,3,0.0,Loyal,whatsapp,Morning,45.0,0.698,True
+CUST_96077CC0,10,70.0,100,0,0,0,0.0,Churn Risk,push,Evening,,0.0,False
+CUST_AC61A36B,80,72.0,10,2,2,2,0.0,Loyal,whatsapp,Night,99.0,0.578,True
+CUST_D4854721,100,100.0,0,5,5,5,0.0,Cart Active,email,Morning,58.0,0.7,True
+CUST_079742A8,100,80.0,0,3,3,3,0.0,Interested,whatsapp,Morning,17.0,0.72,True
+CUST_90355462,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Evening,,0.0,False
+CUST_17CE53E7,100,62.0,10,6,4,2,0.0,Loyal,email,Afternoon,19.0,0.708,True
+CUST_0863F041,30,62.0,10,1,1,1,0.0,Cart Active,whatsapp,Evening,,0.288,False
+CUST_2EFCFE48,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Evening,64.0,0.7,True
+CUST_A1886EE9,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Night,,0.238,False
+CUST_D49BFB32,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Afternoon,,0.238,False
+CUST_F32EC161,60,62.0,10,1,1,1,0.0,Loyal,email,Morning,22.0,0.6366,True
+CUST_637934D3,80,70.0,0,2,2,2,0.0,Interested,whatsapp,Night,98.0,0.61,True
+CUST_AC3367D9,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Evening,,0.034,False
+CUST_23CA8613,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_A9F28BD6,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Morning,,0.288,False
+CUST_C2529F48,20,52.0,10,2,0,0,0.0,Browsing,email,Morning,,0.238,False
+CUST_AB791841,10,70.0,100,0,0,0,0.0,Dormant,sms,Morning,,0.0,False
+CUST_C95518E2,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Afternoon,21.0,0.7,True
+CUST_ACB3D092,100,90.0,0,4,4,4,0.0,Cart Active,email,Night,36.0,0.71,True
+CUST_EB22D54A,10,70.0,100,0,0,0,0.0,Churn Risk,email,Afternoon,,0.0,False
+CUST_653FCFFE,10,61.0,55,0,0,0,0.0,Dormant,push,Afternoon,,0.034,False
+CUST_3E813AFB,65,47.0,10,2,1,0,0.0,High Intent,email,Afternoon,91.0,0.513,True
+CUST_1247D355,100,77.0,10,5,4,3,0.0,High Intent,whatsapp,Evening,42.0,0.693,True
+CUST_99797127,100,82.0,10,3,3,3,0.0,Loyal,sms,Morning,61.0,0.688,True
+CUST_2FA80455,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Afternoon,,0.0,False
+CUST_9BE8EFDB,50,72.0,10,2,2,2,0.0,Cart Active,whatsapp,Night,,0.398,False
+CUST_23F288E0,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Afternoon,,0.0,False
+CUST_B4EBE1E3,35,62.0,10,2,1,1,0.0,Anonymous,whatsapp,Morning,,0.318,False
+CUST_0B71948B,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Morning,29.0,0.708,True
+CUST_84D2D851,80,72.0,10,8,2,2,0.0,Anonymous,email,Night,,0.578,False
+CUST_A44512C0,100,82.0,10,3,3,3,0.0,High Intent,email,Morning,22.0,0.688,True
+CUST_483EE7A7,90,42.0,10,4,2,0,0.0,Loyal,push,Morning,50.0,0.668,True
+CUST_33336E21,100,62.0,10,6,4,2,0.0,High Intent,whatsapp,Night,31.0,0.708,True
+CUST_9FAC6DE4,55,62.0,10,6,1,1,0.0,Anonymous,whatsapp,Night,,0.438,False
+CUST_8D231AE2,60,62.0,10,1,1,1,0.0,High Intent,whatsapp,Night,48.0,0.6846,True
+CUST_FD5C5434,100,100.0,0,5,5,5,0.0,Interested,email,Night,42.0,0.7,True
+CUST_5E03E8A0,10,70.0,100,0,0,0,0.0,Churn Risk,push,Morning,,0.0,False
+CUST_4E1F226E,20,52.0,10,2,0,0,0.0,Anonymous,email,Evening,,0.238,False
+CUST_188B84EE,100,62.0,10,6,4,2,0.0,Loyal,email,Afternoon,67.0,0.708,True
+CUST_FBB9A1EC,40,52.0,10,6,0,0,0.0,Anonymous,whatsapp,Evening,,0.358,False
+CUST_E469213F,100,82.0,10,3,3,3,0.0,Loyal,email,Night,90.0,0.688,True
+CUST_9A03823A,80,72.0,10,8,2,2,0.0,Anonymous,sms,Night,,0.578,False
+CUST_0EE83A44,30,62.0,10,1,1,1,0.0,Interested,whatsapp,Evening,,0.288,False
+CUST_8B5D9007,30,52.0,10,4,0,0,0.0,Anonymous,whatsapp,Night,,0.298,False
+CUST_B3765000,100,62.0,10,6,4,2,0.0,High Intent,email,Evening,70.0,0.708,True
+CUST_F0EF17C0,20,52.0,10,2,0,0,0.0,Browsing,whatsapp,Morning,,0.238,False
+CUST_82D9BCE5,75,62.0,10,10,1,1,0.0,Anonymous,sms,Morning,,0.558,False
+CUST_8F7A5C8B,100,100.0,0,5,5,5,0.0,Cart Active,sms,Morning,60.0,0.7,True
+CUST_4F041D51,65,47.0,10,2,1,0,0.0,High Intent,email,Morning,30.0,0.513,True
+CUST_FF17432C,35,62.0,10,2,1,1,0.0,Anonymous,whatsapp,Night,,0.318,False
+CUST_B5684CA8,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Evening,24.0,0.7,True
+CUST_56D08890,10,70.0,100,0,0,0,0.0,Dormant,push,Morning,,0.0,False
+CUST_867A7DE6,100,47.0,10,7,4,1,0.0,High Intent,email,Evening,80.0,0.723,True
+CUST_9F3A1613,10,61.0,55,0,0,0,0.0,Churn Risk,email,Morning,,0.034,False
+CUST_19F2196D,100,37.0,10,6,3,0,0.0,Loyal,whatsapp,Night,9.0,0.733,True
+CUST_11C948DA,40,52.0,10,6,0,0,0.0,Anonymous,email,Night,,0.358,False
+CUST_58606570,100,67.0,10,4,3,2,0.0,High Intent,whatsapp,Night,83.0,0.703,True
+CUST_C77883ED,100,100.0,0,5,5,5,0.0,Interested,whatsapp,Afternoon,9.0,0.7,True
+CUST_DD40A301,20,52.0,10,2,0,0,0.0,Anonymous,whatsapp,Afternoon,,0.238,False
+CUST_D8D2FDCB,10,70.0,100,0,0,0,0.0,Churn Risk,whatsapp,Morning,,0.0,False
+CUST_9FA79122,10,61.0,55,0,0,0,0.0,Dormant,whatsapp,Morning,,0.034,False
+CUST_97CD1252,90,92.0,10,4,4,4,0.0,Interested,sms,Night,,0.618,False
+CUST_D826C7E9,30,52.0,10,4,0,0,0.0,Browsing,whatsapp,Afternoon,,0.298,False
+CUST_8A9962A4,40,52.0,10,6,0,0,0.0,Anonymous,email,Night,,0.358,False
+CUST_0DB8C5EC,20,52.0,10,2,0,0,0.0,Anonymous,push,Night,,0.238,False
+CUST_90E53D61,100,72.0,10,7,5,3,0.0,Loyal,email,Evening,85.0,0.698,True
+CUST_04AB380C,30,62.0,10,1,1,1,0.0,Cart Active,sms,Night,,0.288,False
+CUST_D57FE0BC,100,47.0,10,7,4,1,0.0,Loyal,whatsapp,Morning,31.0,0.723,True
+CUST_C52FAA26,55,62.0,10,6,1,1,0.0,Browsing,whatsapp,Afternoon,,0.438,False
+CUST_22023F09,100,100.0,0,5,5,5,0.0,Cart Active,email,Afternoon,70.0,0.7,True
+CUST_D3EF9E22,90,72.0,10,10,2,2,0.0,Anonymous,email,Morning,,0.638,False
+CUST_FE7CF396,60,62.0,10,1,1,1,0.0,Loyal,email,Evening,19.0,0.6211,True
+CUST_E95ED05E,20,52.0,10,2,0,0,0.0,Anonymous,email,Morning,,0.238,False
+CUST_79EBAC2B,100,90.0,0,4,4,4,0.0,Cart Active,whatsapp,Morning,15.0,0.71,True
+CUST_E10AE950,50,52.0,10,8,0,0,0.0,Browsing,email,Afternoon,,0.418,False
+CUST_467A7CB2,100,47.0,10,7,4,1,0.0,Loyal,email,Night,60.0,0.723,True
+CUST_055B9C2E,60,62.0,10,1,1,1,0.0,High Intent,sms,Night,68.0,0.6697,True
+CUST_D0A5B691,65,62.0,10,8,1,1,0.0,Browsing,whatsapp,Afternoon,,0.498,False
+CUST_FF1FD384,10,61.0,55,0,0,0,0.0,Dormant,push,Night,,0.034,False
+CUST_9C7733C9,100,100.0,0,5,5,5,0.0,Cart Active,whatsapp,Night,26.0,0.7,True
+CUST_89CE4A1E,60,62.0,10,1,1,1,0.0,Loyal,sms,Night,65.0,0.684,True
+CUST_3BBD2672,100,72.0,10,7,5,3,0.0,High Intent,whatsapp,Night,90.0,0.698,True
+CUST_0522E9F6,10,70.0,100,0,0,0,0.0,Dormant,whatsapp,Morning,,0.0,False
+CUST_AFD558F5,90,42.0,10,4,2,0,0.0,Loyal,sms,Night,83.0,0.668,True
+CUST_43F3B4AD,50,52.0,10,8,0,0,0.0,Anonymous,whatsapp,Night,,0.418,False
+CUST_F263F203,100,100.0,0,5,5,5,0.0,Interested,email,Afternoon,32.0,0.7,True
+CUST_AA650E61,50,72.0,10,2,2,2,0.0,Cart Active,whatsapp,Evening,,0.398,False
+CUST_37E7FB43,100,80.0,0,3,3,3,0.0,Cart Active,sms,Afternoon,89.0,0.72,True
+CUST_AB0C4AE8,100,92.0,10,4,4,4,0.0,High Intent,sms,Morning,62.0,0.678,True
+CUST_70827BC2,50,52.0,10,8,0,0,0.0,Browsing,email,Morning,,0.418,False

@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useMarketTwinStore } from "../store/marketTwinStore";
 import { ingestEvent, addToCart, removeFromCart, abandonCart, purchaseCart, loginCustomer, registerCustomer } from "../api/client";
-import { ShoppingCart, Eye, LogOut, CheckCircle, Trash2, XCircle, User, Mail, Lock, Phone, MapPin, Loader2 } from "lucide-react";
+import { useDemoStore } from "../store/demoStore";
+import { ShoppingCart, Eye, LogOut, CheckCircle, Trash2, XCircle, User, Mail, Lock, Phone, MapPin, Loader2, Smartphone } from "lucide-react";
 
 export default function Storefront() {
-  const { currentCustomerId, customer, products, cart, loadProductsIfNeeded, loginAsCustomer, setProcessingResult, error, setError, loading } = useMarketTwinStore();
+  const { currentCustomerId, customer, products, cart, loadProductsIfNeeded, loginAsCustomer, setProcessingResult, latestProcessingResult, error, setError, loading } = useMarketTwinStore();
   const [actionLoading, setActionLoading] = useState(false);
   const [toast, setToast] = useState("");
   const [authMode, setAuthMode] = useState("login"); // "login" or "register"
   const [authForm, setAuthForm] = useState({
     name: "", email: "", password: "", phone: "", city: "",
-    consent_email: true, consent_whatsapp: true, consent_push: false
+    device_id: "", consent_email: true, consent_whatsapp: true, consent_push: false
   });
   const [authLoading, setAuthLoading] = useState(false);
+  const { demoEnabled, getActiveUser, getActiveIdentifiers } = useDemoStore();
+  const activeUser = getActiveUser();
+  const activeIdentifiers = getActiveIdentifiers();
+
+  useEffect(() => {
+    // No longer pre-filling demo user data
+  }, []);
 
   useEffect(() => {
     loadProductsIfNeeded();
@@ -33,11 +41,15 @@ export default function Storefront() {
         event_type: "product_view",
         source: "website",
         customer_id: currentCustomerId,
-        identifiers: { device_id: "D88" },
+        identifiers: { ...activeIdentifiers, device_id: authForm.device_id || activeIdentifiers.device_id || "D88" },
         properties: {
           product_id: product.product_id,
           product_name: product.name,
-          price: product.price
+          price: product.price,
+          category: product.category,
+          stock_status: product.stock_status,
+          popularity_score: product.popularity_score,
+          margin: product.margin
         }
       };
       const response = await ingestEvent(payload);
@@ -117,6 +129,9 @@ export default function Storefront() {
     try {
       const res = await loginCustomer({ identifier: authForm.email, password: authForm.password });
       if (res && res.customer_id) {
+        if (authForm.device_id) {
+          activeIdentifiers.device_id = authForm.device_id;
+        }
         await loginAsCustomer(res.customer_id);
       }
     } catch (e) {
@@ -136,7 +151,7 @@ export default function Storefront() {
         password: authForm.password,
         phone: authForm.phone,
         city: authForm.city,
-        device_id: "D88",
+        device_id: authForm.device_id || activeIdentifiers.device_id || "D88",
         consent: {
           email: authForm.consent_email,
           whatsapp: authForm.consent_whatsapp,
@@ -145,6 +160,9 @@ export default function Storefront() {
       };
       const res = await registerCustomer(payload);
       if (res && res.customer_id) {
+        if (authForm.device_id) {
+          activeIdentifiers.device_id = authForm.device_id;
+        }
         await loginAsCustomer(res.customer_id);
       }
     } catch (e) {
@@ -188,6 +206,13 @@ export default function Storefront() {
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <input required type="password" className="pl-10 w-full rounded-lg border border-gray-300 p-2.5 focus:ring-brand-500 focus:border-brand-500 outline-none" value={authForm.password} onChange={e => setAuthForm({...authForm, password: e.target.value})} placeholder="••••••••" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Device ID (Optional)</label>
+                <div className="relative">
+                  <Smartphone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                  <input type="text" className="pl-10 w-full rounded-lg border border-gray-300 p-2.5 focus:ring-brand-500 focus:border-brand-500 outline-none" value={authForm.device_id} onChange={e => setAuthForm({...authForm, device_id: e.target.value})} placeholder="e.g., DEV_123" />
                 </div>
               </div>
               <button type="submit" disabled={authLoading} className="w-full flex items-center justify-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-white bg-brand-600 hover:bg-brand-700 font-medium transition disabled:opacity-50">
@@ -236,6 +261,13 @@ export default function Storefront() {
                     <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                     <input required type="password" className="pl-10 w-full rounded-lg border border-gray-300 p-2 focus:ring-brand-500 focus:border-brand-500 outline-none" value={authForm.password} onChange={e => setAuthForm({...authForm, password: e.target.value})} placeholder="••••••••" />
                   </div>
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Device ID</label>
+                <div className="relative">
+                  <Smartphone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                  <input type="text" className="pl-10 w-full rounded-lg border border-gray-300 p-2 focus:ring-brand-500 focus:border-brand-500 outline-none" value={authForm.device_id} onChange={e => setAuthForm({...authForm, device_id: e.target.value})} placeholder="e.g., DEV_123" />
                 </div>
               </div>
               <div className="pt-2 border-t mt-4">
@@ -401,6 +433,20 @@ export default function Storefront() {
         </div>
 
       </div>
+
+      {/* Generated Event Payload Log */}
+      {latestProcessingResult && (
+        <div className="mt-8 bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-xl text-gray-300">
+          <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+            <CheckCircle className="w-5 h-5 mr-2 text-emerald-500" /> Generated Event Payload
+          </h2>
+          <div className="bg-black p-4 rounded-xl border border-gray-700 overflow-x-auto">
+            <pre className="text-xs font-mono text-emerald-400">
+              {JSON.stringify(latestProcessingResult, null, 2)}
+            </pre>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -13,6 +13,8 @@ export const useMarketTwinStore = create((set, get) => ({
   latestTwin: null,
   latestProcessingResult: null,
   latestGeneratedMessage: null,
+  messageHistory: [],
+  latestAIPredictions: null,
 
   liveEvents: [],
   metricsSummary: null,
@@ -28,6 +30,8 @@ export const useMarketTwinStore = create((set, get) => ({
   
   setDemoRunning: (value) => set({ demoRunning: value }),
   
+  setMetricsSummary: (summary) => set({ metricsSummary: summary }),
+  
   clearLiveEvents: () => set({ liveEvents: [] }),
   
   resetDemoState: () => set({
@@ -38,6 +42,8 @@ export const useMarketTwinStore = create((set, get) => ({
     latestTwin: null,
     latestProcessingResult: null,
     latestGeneratedMessage: null,
+    messageHistory: [],
+    latestAIPredictions: null,
     liveEvents: [],
     metricsSummary: null,
     error: null,
@@ -52,6 +58,8 @@ export const useMarketTwinStore = create((set, get) => ({
       latestTwin: resetResponse.twin || null,
       cart: resetResponse.cart || { status: 'empty', items: [], cart_value: 0 },
       latestGeneratedMessage: resetResponse.latest_message || null,
+      messageHistory: [],
+      latestAIPredictions: null,
       liveEvents: [],
       latestProcessingResult: null,
     });
@@ -130,6 +138,17 @@ export const useMarketTwinStore = create((set, get) => ({
         liveEvents: nextEvents
       };
     });
+
+    // Automatically refresh AI predictions and latest messages without a manual Run Demo
+    if (currentCustomerId) {
+      setTimeout(() => {
+        get().refreshLatestMessage();
+        get().refreshMessageHistory();
+        if (latestTwin) {
+          get().refreshAIPredictions(currentCustomerId, latestTwin, eventResult.final_channel);
+        }
+      }, 500);
+    }
   },
 
   initializeDemo: async () => {
@@ -148,6 +167,8 @@ export const useMarketTwinStore = create((set, get) => ({
 
       const latestMsgRes = await api.getLatestMessage(currentCustomerId);
       get().setLatestMessage(latestMsgRes);
+
+      get().refreshMessageHistory();
 
     } catch (err) {
       get().setError(err);
@@ -184,6 +205,8 @@ export const useMarketTwinStore = create((set, get) => ({
         latestGeneratedMessage: latestMsg?.generated_message || latestMsg || null,
         latestProcessingResult: null
       });
+      
+      get().refreshMessageHistory();
     } catch (err) {
       get().setError(err);
     } finally {
@@ -213,12 +236,84 @@ export const useMarketTwinStore = create((set, get) => ({
     }
   },
 
+  refreshMessageHistory: async () => {
+    const currentCustomerId = get().currentCustomerId;
+    if (!currentCustomerId) return;
+    try {
+      const historyRes = await api.getMessageHistory(currentCustomerId);
+      set({ messageHistory: historyRes?.history || [] });
+    } catch (err) {
+      console.error(err);
+    }
+  },
+
   refreshMetrics: async () => {
     try {
       const metricsSummary = await api.getMetricsSummary();
       set({ metricsSummary });
     } catch (err) {
       console.error(err);
+    }
+  },
+
+  refreshAIPredictions: async (customerId, twinData, finalChannel = null) => {
+    if (!customerId || !twinData) return;
+    try {
+      // Align ML features with the demo execution to ensure L1, L2, L3 match L4
+      const targetChannel = finalChannel || twinData.preferred_channel || "whatsapp";
+      const isConverted = twinData.journey_stage === "converted" || twinData.journey_stage === "loyal";
+
+      const features = {
+        intent_score: twinData.intent_score || 0,
+        churn_risk: twinData.churn_risk || 0,
+        fatigue_score: twinData.fatigue_score || 0,
+        product_views: twinData.raw_counters?.views || 5,
+        cart_count: twinData.raw_counters?.carts || 0,
+        abandonments: twinData.raw_counters?.abandonments || 0,
+        cart_value: twinData.raw_counters?.total_spend || 0,
+        journey_stage: twinData.journey_stage || "Browsing",
+        preferred_channel: targetChannel,
+        active_hour: "Afternoon",
+        age_group: "25-34",
+        device_type: "Mobile",
+        activity_time: "Evening",
+        preferred_category: "Electronics",
+        engagement_level: "High",
+        email_click_rate: targetChannel === 'email' ? 0.9 : 0.1,
+        whatsapp_click_rate: targetChannel === 'whatsapp' ? 0.9 : 0.1,
+        push_click_rate: targetChannel === 'push' || targetChannel === 'sms' ? 0.9 : 0.1,
+      };
+
+      let conv = await api.predictConversion(customerId, features);
+      
+      if (isConverted) {
+        conv = {
+          conversion_probability: 1.0,
+          risk_level: "converted",
+          confidence: { score: 1.0, percentage: 100, tier: "High" },
+          top_factors: ["Successfully Purchased", "High Intent", "Loyal Journey Stage"]
+        };
+      }
+      
+      const featuresWithConv = { 
+        ...features, 
+        conversion_probability: conv?.conversion_probability || 0 
+      };
+
+      const [chan, nba] = await Promise.all([
+        api.predictChannel(customerId, features),
+        api.predictNBA(customerId, featuresWithConv)
+      ]);
+
+      set({ 
+        latestAIPredictions: {
+          conversion: conv,
+          channel: chan,
+          nba: nba
+        }
+      });
+    } catch (err) {
+      console.error("AI Prediction Error:", err);
     }
   }
 

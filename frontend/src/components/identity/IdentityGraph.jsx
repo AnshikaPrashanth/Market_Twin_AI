@@ -6,44 +6,54 @@ import { Network } from 'lucide-react';
  * Visualizes the resolved graph connections surrounding a customer.
  * Discovers nodes dynamically by scanning the properties of events.
  */
-const IdentityGraph = ({ customerId, events = [] }) => {
-  // Extract all distinct identifiers from the events list
-  const uniqueIdentifiers = {
-    email_hash: new Set(),
-    phone_hash: new Set(),
-    device_id: new Set(),
-    cookie_id: new Set(),
-    loyalty_id: new Set()
-  };
-
-  events.forEach((evt) => {
-    const ids = evt.identifiers || {};
-    if (ids.email_hash) uniqueIdentifiers.email_hash.add(ids.email_hash);
-    if (ids.phone_hash) uniqueIdentifiers.phone_hash.add(ids.phone_hash);
-    if (ids.device_id) uniqueIdentifiers.device_id.add(ids.device_id);
-    if (ids.cookie_id) uniqueIdentifiers.cookie_id.add(ids.cookie_id);
-    if (ids.loyalty_id) uniqueIdentifiers.loyalty_id.add(ids.loyalty_id);
-  });
-
-  // Convert Set items into node objects
+const IdentityGraph = ({ customerId, events = [], identities = [] }) => {
   const nodes = [];
-  Object.entries(uniqueIdentifiers).forEach(([type, set]) => {
-    set.forEach((value) => {
-      nodes.push({ type, value });
-    });
-  });
 
-  // Fallback defaults for pre-seeded demo customer contexts if no events ingested yet
-  if (nodes.length === 0) {
-    if (customerId === 'CUST_001') {
-      nodes.push({ type: 'device_id', value: 'DEV_88' });
-      nodes.push({ type: 'email_hash', value: 'EMAIL_991' });
-      nodes.push({ type: 'phone_hash', value: 'PHONE_771' });
-      nodes.push({ type: 'cookie_id', value: 'COOKIE_ABC' });
-    } else if (customerId === 'CUST_002') {
-      nodes.push({ type: 'device_id', value: 'DEV_99' });
-      nodes.push({ type: 'email_hash', value: 'EMAIL_CUST2' });
-    }
+  // If we have explicit database identity links, use them directly as they represent the true state
+  if (identities && identities.length > 0) {
+    identities.forEach(link => {
+      // Avoid duplicate types if they have the same value (should be unique in DB anyway)
+      nodes.push({
+        type: link.identifier_type,
+        value: link.identifier_value,
+        confidence: link.confidence_score,
+        matchedBy: link.matched_by
+      });
+    });
+  } else {
+    // Fallback: Extract all distinct identifiers from the events list
+    const uniqueIdentifiers = {
+      email: new Set(),
+      phone: new Set(),
+      login_id: new Set(),
+      email_hash: new Set(),
+      phone_hash: new Set(),
+      device_id: new Set(),
+      cookie_id: new Set(),
+      browser_id: new Set(),
+      loyalty_id: new Set()
+    };
+
+    events.forEach((evt) => {
+      const ids = evt.identifiers || {};
+      if (ids.email) uniqueIdentifiers.email.add(ids.email);
+      if (ids.phone) uniqueIdentifiers.phone.add(ids.phone);
+      if (ids.login_id) uniqueIdentifiers.login_id.add(ids.login_id);
+      if (ids.email_hash) uniqueIdentifiers.email_hash.add(ids.email_hash);
+      if (ids.phone_hash) uniqueIdentifiers.phone_hash.add(ids.phone_hash);
+      if (ids.device_id) uniqueIdentifiers.device_id.add(ids.device_id);
+      if (ids.cookie_id) uniqueIdentifiers.cookie_id.add(ids.cookie_id);
+      if (ids.browser_id) uniqueIdentifiers.browser_id.add(ids.browser_id);
+      if (ids.loyalty_id) uniqueIdentifiers.loyalty_id.add(ids.loyalty_id);
+    });
+
+    Object.entries(uniqueIdentifiers).forEach(([type, set]) => {
+      set.forEach((value) => {
+        nodes.push({ type, value, confidence: 100, matchedBy: 'legacy_event' });
+      });
+    });
+
+    // Removed static seeded defaults as they conflict with dynamic resolution
   }
 
   return (
@@ -59,10 +69,15 @@ const IdentityGraph = ({ customerId, events = [] }) => {
         
         {/* Left column: Hardware & Browser Trackers */}
         <div className="flex flex-col gap-6 items-center">
-          {nodes.filter(n => ['device_id', 'cookie_id'].includes(n.type)).map((n, idx) => (
-            <IdentityNode key={idx} type={n.type} value={n.value} label={n.type.replace('_', ' ')} />
+          {nodes.filter(n => ['device_id', 'cookie_id', 'browser_id'].includes(n.type)).map((n, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <IdentityNode type={n.type} value={n.value} label={n.type.replace('_', ' ')} />
+              {n.matchedBy && n.matchedBy !== 'legacy_event' && (
+                <span className="text-[9px] text-brand-400 mt-1 max-w-[120px] text-center">{n.matchedBy.replace('deterministic_', '')}</span>
+              )}
+            </div>
           ))}
-          {nodes.filter(n => ['device_id', 'cookie_id'].includes(n.type)).length === 0 && (
+          {nodes.filter(n => ['device_id', 'cookie_id', 'browser_id'].includes(n.type)).length === 0 && (
             <span className="text-xs text-dark-500 font-semibold italic">No Device Identifiers</span>
           )}
         </div>
@@ -74,10 +89,15 @@ const IdentityGraph = ({ customerId, events = [] }) => {
 
         {/* Right column: Profile Credentials */}
         <div className="flex flex-col gap-6 items-center">
-          {nodes.filter(n => ['email_hash', 'phone_hash', 'loyalty_id'].includes(n.type)).map((n, idx) => (
-            <IdentityNode key={idx} type={n.type} value={n.value} label={n.type.replace('_', ' ')} />
+          {nodes.filter(n => ['email', 'phone', 'login_id', 'email_hash', 'phone_hash', 'loyalty_id'].includes(n.type)).map((n, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <IdentityNode type={n.type} value={n.value} label={n.type.replace('_', ' ')} />
+              {n.matchedBy && n.matchedBy !== 'legacy_event' && (
+                <span className="text-[9px] text-brand-400 mt-1 max-w-[120px] text-center">{n.matchedBy.replace('deterministic_', '')}</span>
+              )}
+            </div>
           ))}
-          {nodes.filter(n => ['email_hash', 'phone_hash', 'loyalty_id'].includes(n.type)).length === 0 && (
+          {nodes.filter(n => ['email', 'phone', 'login_id', 'email_hash', 'phone_hash', 'loyalty_id'].includes(n.type)).length === 0 && (
             <span className="text-xs text-dark-500 font-semibold italic">No Profile Credentials</span>
           )}
         </div>

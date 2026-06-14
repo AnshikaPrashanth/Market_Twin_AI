@@ -4,6 +4,7 @@ from app.models.customer_model import CustomerModel
 from app.shared.storage import JSONFallbackStore
 from app.core.logger import logger
 from typing import List, Optional
+from datetime import datetime, timezone
 
 class IdentityStore:
     """
@@ -26,7 +27,11 @@ class IdentityStore:
             )
             .first()
         )
-        return link.customer_id if link else None
+        if link:
+            link.last_seen = datetime.now(timezone.utc)
+            self.db.commit()
+            return link.customer_id
+        return None
 
     def create_identity_link(
         self, id_type: str, id_val: str, customer_id: str, confidence: int = 100, matched_by: str = "deterministic"
@@ -44,10 +49,13 @@ class IdentityStore:
             .first()
         )
         
+        now = datetime.now(timezone.utc)
+
         if existing:
             existing.customer_id = customer_id
             existing.confidence_score = confidence
             existing.matched_by = matched_by
+            existing.last_seen = now
             self.db.commit()
             self.db.refresh(existing)
             self._backup_links_to_json()
@@ -58,7 +66,8 @@ class IdentityStore:
             identifier_value=id_val,
             customer_id=customer_id,
             confidence_score=confidence,
-            matched_by=matched_by
+            matched_by=matched_by,
+            last_seen=now
         )
         self.db.add(db_link)
         self.db.commit()
@@ -77,6 +86,12 @@ class IdentityStore:
             .all()
         )
 
+    def get_all_identity_links(self) -> List[IdentityLinkModel]:
+        """
+        Retrieves all identity bindings across all customers.
+        """
+        return self.db.query(IdentityLinkModel).all()
+
     def get_customer_profile(self, customer_id: str) -> Optional[CustomerModel]:
         """
         Retrieves demographics metadata profile for a customer.
@@ -94,6 +109,7 @@ class IdentityStore:
         """
         Creates or updates metadata properties stored on a customer profile.
         """
+        now = datetime.now(timezone.utc)
         profile = self.get_customer_profile(customer_id)
         if not profile:
             profile = CustomerModel(
@@ -101,10 +117,12 @@ class IdentityStore:
                 city=city,
                 device_type=device_type,
                 active_hours=active_hours or [],
-                preferred_categories=preferred_categories or []
+                preferred_categories=preferred_categories or [],
+                last_seen=now
             )
             self.db.add(profile)
         else:
+            profile.last_seen = now
             if city is not None:
                 profile.city = city
             if device_type is not None:

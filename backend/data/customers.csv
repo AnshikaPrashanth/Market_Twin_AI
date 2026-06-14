@@ -1,0 +1,1001 @@
+customer_id,name,age,gender,city,profession,income_group,preferred_category,active_hours,preferred_channel,loyalty_level,signup_source,customer_segment
+CUST_STORY_RAHUL,Rahul,28,Male,Bangalore,Software Engineer,High,Electronics,Evening,whatsapp,Gold,Instagram,High Intent
+CUST_STORY_PRIYA,Priya,34,Female,Mumbai,Marketing Manager,Medium,Fashion,Morning,email,Platinum,Google,Loyal
+CUST_STORY_ARJUN,Arjun,22,Male,Delhi,Student,Low,Gaming,Night,push,Silver,Twitch,Browsing
+CUST_STORY_SNEHA,Sneha,45,Female,Chennai,Doctor,High,Home & Garden,Afternoon,email,Bronze,Facebook,Dormant
+CUST_DBA58527,Praneel,32,Male,Delhi,Student,Low,Gaming,Night,sms,Bronze,Twitch,Loyal
+CUST_574CC639,Lakshit,27,Male,Hyderabad,Teacher,Medium,Home & Garden,Afternoon,email,Gold,Instagram,High Intent
+CUST_5F74829A,Chaitanya,39,Male,Delhi,Doctor,Medium,Beauty,Evening,email,Bronze,Twitch,High Intent
+CUST_312A6DB6,Bakhshi,32,Male,Delhi,Doctor,Ultra-High,Gaming,Afternoon,whatsapp,Gold,Google,Browsing
+CUST_729BBAFC,Yug,50,Male,Bangalore,Teacher,High,Beauty,Morning,email,Bronze,Twitch,Browsing
+CUST_9CB361E5,Girik,50,Male,Mumbai,Business Owner,High,Gaming,Night,sms,Silver,Organic,High Intent
+CUST_F2095CB0,Logan,41,Male,Bangalore,Artist,High,Fashion,Afternoon,email,Platinum,Twitter,Browsing
+CUST_D0F1DC2C,Hemangini,39,Female,Kolkata,Teacher,Ultra-High,Electronics,Afternoon,push,Bronze,Instagram,High Intent
+CUST_A3613257,Balveer,46,Male,Pune,Engineer,Low,Fashion,Morning,email,Gold,Twitter,Anonymous
+CUST_352FAB1D,Daniel,43,Male,Chennai,Doctor,High,Beauty,Afternoon,email,Bronze,Instagram,Browsing
+CUST_E80496F2,Krishna,49,Female,Pune,Artist,Medium,Fashion,Afternoon,whatsapp,Silver,Instagram,Anonymous
+CUST_0389F244,Ayushman,19,Male,Bangalore,Manager,Low,Books,Night,push,Gold,Twitch,Interested
+CUST_38477D29,Michael,31,Male,Pune,Doctor,Ultra-High,Electronics,Night,whatsapp,Gold,Referral,Dormant
+CUST_D9AB9B04,Amrita,31,Female,Pune,Consultant,High,Electronics,Night,email,Gold,Twitch,High Intent
+CUST_489B0639,Chasmum,23,Female,Mumbai,Teacher,High,Fashion,Afternoon,sms,Platinum,Referral,Loyal
+CUST_B31F3060,Yauvani,24,Non-binary,Mumbai,Manager,Low,Fashion,Night,sms,Platinum,Google,Anonymous
+CUST_54458FD3,Xalak,36,Female,Delhi,Consultant,Ultra-High,Fashion,Evening,email,Platinum,Referral,High Intent
+CUST_9B05CEFB,Advaith,29,Male,Mumbai,Engineer,Ultra-High,Sports,Morning,email,Gold,Instagram,High Intent
+CUST_BE4A7697,Dakshesh,25,Male,Chennai,Consultant,High,Beauty,Morning,email,Silver,Instagram,High Intent
+CUST_1336A50D,Wishi,51,Female,Ahmedabad,Consultant,High,Home & Garden,Morning,email,Gold,Google,Dormant
+CUST_468EB40A,Pahal,30,Female,Hyderabad,Artist,Ultra-High,Sports,Afternoon,whatsapp,Silver,Facebook,High Intent
+CUST_F855D551,Devansh,55,Male,Hyderabad,Business Owner,High,Fashion,Evening,sms,Bronze,Google,Anonymous
+CUST_B892658B,Anthony,32,Male,Ahmedabad,Student,Low,Gaming,Morning,sms,Platinum,Google,Loyal
+CUST_C1F5099A,Wazir,22,Male,Kolkata,Engineer,Ultra-High,Fashion,Night,whatsapp,Platinum,Organic,Anonymous
+CUST_81A45894,Chakradhar,35,Non-binary,Delhi,Engineer,Low,Home & Garden,Evening,sms,Silver,Instagram,Anonymous
+CUST_4992E778,David,46,Male,Hyderabad,Student,Low,Sports,Night,whatsapp,Bronze,Organic,Churn Risk
+CUST_EDB28AF9,Jonathan,35,Male,Kolkata,Consultant,Ultra-High,Beauty,Morning,whatsapp,Gold,Referral,Anonymous
+CUST_FEED1B22,Urvashi,27,Female,Delhi,Business Owner,Medium,Gaming,Afternoon,email,Bronze,Referral,Interested
+CUST_C11A6B23,Chatura,34,Male,Chennai,Manager,High,Books,Evening,whatsapp,Platinum,Twitter,Churn Risk
+CUST_CD4F31D7,Tanveer,42,Male,Bangalore,Artist,Low,Sports,Afternoon,push,Gold,Facebook,Interested
+CUST_3D9B9641,Nathaniel,41,Male,Mumbai,Consultant,Ultra-High,Fashion,Night,email,Platinum,Twitch,High Intent
+CUST_5DFFC4BE,Vidhi,32,Female,Pune,Student,Low,Sports,Night,push,Gold,Instagram,Interested
+CUST_E5EB6418,Samarth,42,Male,Delhi,Consultant,High,Fashion,Night,whatsapp,Gold,Facebook,Interested
+CUST_CE38E4CB,Yatin,23,Male,Chennai,Consultant,Low,Electronics,Evening,sms,Platinum,Referral,Cart Active
+CUST_11074403,Ranbir,27,Male,Bangalore,Engineer,High,Home & Garden,Morning,push,Platinum,Facebook,Cart Active
+CUST_57C4461D,Kabir,31,Male,Chennai,Manager,High,Home & Garden,Evening,email,Gold,Referral,Cart Active
+CUST_3056D209,Qushi,30,Female,Ahmedabad,Manager,High,Home & Garden,Afternoon,whatsapp,Silver,Twitter,High Intent
+CUST_4AABB6B4,Tanveer,38,Male,Bangalore,Engineer,Medium,Sports,Evening,email,Gold,Twitch,High Intent
+CUST_5064B994,Abhimanyu,29,Male,Hyderabad,Consultant,Low,Books,Evening,whatsapp,Silver,Referral,High Intent
+CUST_E4673420,Christopher,31,Male,Chennai,Teacher,Ultra-High,Beauty,Morning,sms,Gold,Facebook,Browsing
+CUST_A055F6DB,Qabil,26,Non-binary,Mumbai,Teacher,Ultra-High,Home & Garden,Afternoon,push,Platinum,Twitter,High Intent
+CUST_DA6228BE,Balendra,40,Male,Bangalore,Engineer,Medium,Beauty,Afternoon,whatsapp,Platinum,Instagram,Dormant
+CUST_DA8A6EA9,Vaishnavi,42,Female,Pune,Manager,Medium,Home & Garden,Morning,whatsapp,Bronze,Instagram,High Intent
+CUST_B989B36C,Falak,32,Female,Delhi,Manager,Medium,Fashion,Night,email,Platinum,Twitch,Anonymous
+CUST_D7A45459,Gaurika,35,Female,Hyderabad,Student,Low,Home & Garden,Night,push,Silver,Organic,Anonymous
+CUST_412E9C77,Ijaya,44,Female,Pune,Engineer,Medium,Fashion,Evening,push,Silver,Google,Cart Active
+CUST_9026C7A6,Urvashi,63,Female,Pune,Manager,Ultra-High,Sports,Afternoon,email,Bronze,Twitch,Loyal
+CUST_C8846AC3,Yadavi,46,Female,Delhi,Business Owner,High,Electronics,Evening,whatsapp,Platinum,Google,Anonymous
+CUST_CE311944,Jeet,28,Male,Chennai,Engineer,Medium,Books,Night,whatsapp,Silver,Referral,Loyal
+CUST_2C0B530D,Advaith,42,Male,Mumbai,Student,Low,Electronics,Morning,sms,Gold,Facebook,Cart Active
+CUST_AA662E08,Rushil,26,Male,Mumbai,Engineer,Medium,Home & Garden,Afternoon,whatsapp,Bronze,Organic,Dormant
+CUST_3917DAA1,Darsh,47,Male,Bangalore,Consultant,High,Beauty,Evening,whatsapp,Gold,Facebook,High Intent
+CUST_090EE7C3,Damini,33,Female,Mumbai,Doctor,Low,Home & Garden,Morning,whatsapp,Silver,Google,Churn Risk
+CUST_538CA05B,Vidhi,21,Female,Mumbai,Consultant,High,Sports,Night,whatsapp,Gold,Twitter,Interested
+CUST_89658641,Vedhika,42,Female,Delhi,Consultant,Ultra-High,Electronics,Night,whatsapp,Silver,Facebook,Interested
+CUST_49288ADE,Kai,22,Male,Kolkata,Doctor,Ultra-High,Gaming,Evening,sms,Silver,Google,High Intent
+CUST_949B7D14,David,36,Male,Hyderabad,Doctor,High,Sports,Afternoon,whatsapp,Bronze,Organic,Dormant
+CUST_FC28FE99,Yug,23,Male,Kolkata,Consultant,Low,Gaming,Afternoon,sms,Platinum,Referral,High Intent
+CUST_10D83418,Yashasvi,27,Female,Delhi,Teacher,Low,Beauty,Afternoon,whatsapp,Silver,Facebook,Churn Risk
+CUST_6392D950,Hemal,30,Female,Delhi,Business Owner,High,Beauty,Evening,whatsapp,Silver,Instagram,Loyal
+CUST_03A41A1A,Atharv,28,Male,Hyderabad,Business Owner,High,Fashion,Night,whatsapp,Silver,Referral,Churn Risk
+CUST_8F04173D,Janaki,41,Female,Ahmedabad,Doctor,Ultra-High,Electronics,Evening,whatsapp,Silver,Twitter,Dormant
+CUST_19E10825,Ryan,34,Male,Ahmedabad,Consultant,Medium,Electronics,Afternoon,email,Silver,Organic,Loyal
+CUST_B8B54386,Yuvraj,33,Male,Bangalore,Manager,Ultra-High,Gaming,Evening,email,Silver,Google,Anonymous
+CUST_8AC845C7,Tanmayi,49,Female,Delhi,Engineer,Ultra-High,Beauty,Evening,whatsapp,Platinum,Instagram,Dormant
+CUST_05A18D97,Warjas,36,Male,Bangalore,Teacher,Low,Sports,Morning,sms,Silver,Twitter,Dormant
+CUST_238050B7,Yutika,41,Female,Kolkata,Consultant,Ultra-High,Beauty,Evening,email,Silver,Instagram,Anonymous
+CUST_5FEE8FDB,Jalsa,40,Female,Bangalore,Manager,Ultra-High,Sports,Night,whatsapp,Bronze,Organic,Interested
+CUST_F3D325DC,Vasudha,32,Female,Mumbai,Teacher,Low,Sports,Evening,email,Silver,Twitch,Browsing
+CUST_DD059926,Qarin,24,Male,Kolkata,Teacher,Low,Home & Garden,Evening,sms,Gold,Organic,Browsing
+CUST_E3D4EBBE,Yutika,24,Female,Chennai,Business Owner,Low,Beauty,Morning,push,Platinum,Twitch,High Intent
+CUST_FDA7DE19,Bachittar,24,Male,Ahmedabad,Student,Low,Books,Night,push,Gold,Instagram,Churn Risk
+CUST_9C916C23,Wishi,44,Female,Ahmedabad,Consultant,Ultra-High,Home & Garden,Afternoon,whatsapp,Silver,Organic,Loyal
+CUST_A28ED8B7,Falak,55,Female,Delhi,Student,Low,Electronics,Morning,email,Platinum,Google,Dormant
+CUST_900983AF,Sathvik,38,Male,Delhi,Business Owner,Ultra-High,Home & Garden,Morning,email,Silver,Twitter,Anonymous
+CUST_343B6A8E,Chasmum,44,Female,Kolkata,Doctor,High,Fashion,Afternoon,email,Silver,Google,Loyal
+CUST_4E144664,Ekta,26,Female,Pune,Business Owner,High,Sports,Morning,email,Bronze,Google,Loyal
+CUST_31BD9D1C,Kevin,57,Male,Bangalore,Business Owner,Ultra-High,Home & Garden,Morning,email,Platinum,Facebook,Anonymous
+CUST_6751D2C2,Daniel,25,Male,Mumbai,Consultant,Low,Sports,Afternoon,whatsapp,Bronze,Organic,High Intent
+CUST_C17B01C9,Ekbal,29,Male,Mumbai,Business Owner,High,Gaming,Evening,push,Silver,Google,Interested
+CUST_33417744,Jasmit,56,Female,Bangalore,Teacher,Medium,Beauty,Night,sms,Gold,Twitch,Dormant
+CUST_A4882A26,Avi,42,Male,Bangalore,Manager,Medium,Books,Morning,whatsapp,Bronze,Google,Browsing
+CUST_97CE52FE,Owen,39,Male,Kolkata,Consultant,Ultra-High,Books,Morning,whatsapp,Bronze,Organic,High Intent
+CUST_723D9DCA,Jeet,23,Male,Bangalore,Teacher,Medium,Beauty,Morning,whatsapp,Bronze,Facebook,High Intent
+CUST_22F4550D,Lajita,41,Female,Hyderabad,Student,Low,Electronics,Afternoon,sms,Silver,Organic,Cart Active
+CUST_AC45C3AC,Alka,27,Female,Delhi,Artist,Ultra-High,Books,Night,whatsapp,Gold,Organic,Browsing
+CUST_9D82044A,Prisha,29,Female,Bangalore,Doctor,High,Gaming,Night,email,Platinum,Instagram,Dormant
+CUST_D78DFB60,Fitan,22,Male,Hyderabad,Student,Low,Beauty,Morning,whatsapp,Gold,Referral,Dormant
+CUST_E1941A92,Yoshita,20,Female,Ahmedabad,Manager,Ultra-High,Electronics,Morning,sms,Silver,Referral,Browsing
+CUST_5F4302E5,Owen,30,Male,Chennai,Business Owner,Low,Gaming,Night,sms,Gold,Organic,Interested
+CUST_B649101A,Priya,21,Female,Hyderabad,Artist,Medium,Books,Morning,sms,Platinum,Google,Interested
+CUST_6331FF0E,Deepa,56,Female,Kolkata,Artist,Medium,Electronics,Morning,push,Silver,Instagram,Anonymous
+CUST_587CCF42,Aarini,40,Female,Mumbai,Consultant,Ultra-High,Fashion,Night,whatsapp,Silver,Facebook,Cart Active
+CUST_71A33694,Manya,46,Female,Pune,Artist,Low,Beauty,Afternoon,push,Silver,Facebook,Dormant
+CUST_D638B75A,Agastya,26,Male,Kolkata,Teacher,High,Electronics,Morning,sms,Gold,Twitter,Loyal
+CUST_84AFDD9D,Gaurika,44,Non-binary,Mumbai,Artist,Medium,Electronics,Afternoon,push,Platinum,Twitter,Interested
+CUST_2E47009A,Sneha,43,Female,Bangalore,Manager,Ultra-High,Electronics,Evening,whatsapp,Bronze,Facebook,Interested
+CUST_4B612D8F,Wazir,48,Male,Delhi,Consultant,High,Beauty,Evening,email,Gold,Twitter,Loyal
+CUST_BE2277F0,Ekbal,35,Male,Chennai,Business Owner,Low,Beauty,Night,sms,Gold,Twitter,Interested
+CUST_9069B465,Joshua,49,Male,Chennai,Engineer,High,Fashion,Night,sms,Silver,Twitter,Interested
+CUST_98B23C4C,Nidra,34,Female,Pune,Manager,High,Electronics,Evening,whatsapp,Gold,Organic,Cart Active
+CUST_3B99A0E9,Chakrika,61,Female,Mumbai,Student,Low,Books,Morning,email,Silver,Twitch,Anonymous
+CUST_C05261E1,Alka,42,Female,Ahmedabad,Teacher,High,Books,Evening,push,Platinum,Referral,Churn Risk
+CUST_81368C3D,Frederick,42,Male,Mumbai,Business Owner,High,Sports,Evening,email,Bronze,Twitch,Cart Active
+CUST_C5157150,Nicholas,28,Male,Mumbai,Artist,Low,Electronics,Night,push,Bronze,Organic,Loyal
+CUST_9EE0F949,Zansi,49,Female,Chennai,Student,Low,Home & Garden,Night,whatsapp,Silver,Facebook,Churn Risk
+CUST_0C131128,Maanav,53,Male,Mumbai,Artist,Ultra-High,Gaming,Morning,sms,Gold,Instagram,High Intent
+CUST_19443392,Manya,43,Female,Pune,Student,Low,Beauty,Evening,whatsapp,Platinum,Facebook,Dormant
+CUST_4B8AC103,Amaira,30,Female,Mumbai,Student,Low,Gaming,Morning,sms,Silver,Organic,Anonymous
+CUST_35397777,Robert,34,Male,Bangalore,Teacher,Low,Electronics,Evening,sms,Gold,Twitch,Dormant
+CUST_64033C5A,Avi,30,Male,Pune,Manager,Ultra-High,Sports,Night,email,Gold,Google,Browsing
+CUST_08231C37,Agastya,27,Male,Hyderabad,Doctor,Medium,Electronics,Morning,whatsapp,Silver,Twitter,Loyal
+CUST_8CF33D3F,Isaac,34,Male,Delhi,Consultant,Medium,Fashion,Night,email,Platinum,Twitter,Interested
+CUST_FEE1B459,Panini,27,Female,Bangalore,Student,Low,Beauty,Morning,push,Bronze,Referral,Loyal
+CUST_5FDCDBF4,Baghyawati,24,Female,Bangalore,Doctor,Low,Beauty,Morning,sms,Silver,Facebook,Churn Risk
+CUST_F51BBC07,Oscar,57,Male,Mumbai,Consultant,Ultra-High,Electronics,Evening,email,Gold,Google,Cart Active
+CUST_A8E1CF2E,Abdul,33,Male,Bangalore,Teacher,Low,Beauty,Afternoon,push,Silver,Twitch,Interested
+CUST_4A676D67,Elijah,51,Male,Delhi,Consultant,Ultra-High,Electronics,Night,email,Bronze,Twitter,Browsing
+CUST_15D8CF8B,Tejas,39,Male,Chennai,Manager,Ultra-High,Electronics,Night,whatsapp,Platinum,Twitter,High Intent
+CUST_061CE91D,Chavvi,28,Female,Mumbai,Teacher,Ultra-High,Electronics,Evening,whatsapp,Silver,Google,High Intent
+CUST_028DF181,Rudra,28,Male,Pune,Student,Low,Gaming,Afternoon,whatsapp,Gold,Instagram,Cart Active
+CUST_E5EA6B2C,Baghyawati,26,Female,Mumbai,Consultant,Medium,Fashion,Evening,whatsapp,Silver,Facebook,Dormant
+CUST_AA697B89,Bhavya,43,Female,Delhi,Doctor,Ultra-High,Sports,Night,email,Platinum,Organic,Browsing
+CUST_D7A95C5D,Bina,47,Female,Bangalore,Manager,High,Electronics,Afternoon,email,Platinum,Instagram,Churn Risk
+CUST_8EFCCF3E,Fitan,33,Male,Delhi,Business Owner,Medium,Electronics,Morning,push,Bronze,Organic,Dormant
+CUST_F1A59277,Zashil,43,Male,Kolkata,Manager,High,Sports,Morning,whatsapp,Platinum,Google,Churn Risk
+CUST_5E319C4D,Reva,31,Female,Ahmedabad,Manager,Low,Home & Garden,Evening,whatsapp,Platinum,Google,High Intent
+CUST_E259BC38,Zansi,26,Female,Bangalore,Student,Low,Fashion,Night,sms,Platinum,Twitter,Churn Risk
+CUST_10DF13DD,Zinal,38,Female,Pune,Consultant,Low,Electronics,Afternoon,whatsapp,Gold,Google,Cart Active
+CUST_75F4F3CA,Priya,50,Female,Pune,Student,Low,Sports,Night,sms,Silver,Twitter,Browsing
+CUST_E4288431,Naksh,29,Male,Chennai,Consultant,High,Books,Night,whatsapp,Gold,Facebook,Anonymous
+CUST_67EE3FB6,Nathan,27,Male,Bangalore,Artist,High,Home & Garden,Evening,sms,Bronze,Facebook,Dormant
+CUST_B23B0C5B,Hemal,30,Female,Bangalore,Consultant,High,Home & Garden,Night,email,Bronze,Google,Cart Active
+CUST_79684223,Sanaya,47,Female,Bangalore,Engineer,Ultra-High,Home & Garden,Afternoon,sms,Bronze,Google,Interested
+CUST_D1A85883,Krishna,22,Female,Mumbai,Business Owner,Medium,Home & Garden,Night,sms,Gold,Organic,Interested
+CUST_DE7BEBBA,Bhavika,30,Female,Delhi,Manager,High,Electronics,Night,whatsapp,Bronze,Organic,Dormant
+CUST_DECDBB22,Nidhi,36,Female,Ahmedabad,Student,Low,Fashion,Evening,sms,Silver,Twitter,High Intent
+CUST_CBC3BAEB,Tejas,32,Male,Chennai,Doctor,Low,Books,Morning,whatsapp,Platinum,Twitch,Loyal
+CUST_B1384C12,Rayaan,42,Male,Ahmedabad,Student,Low,Home & Garden,Morning,whatsapp,Gold,Facebook,Cart Active
+CUST_1C71AE11,Neelima,47,Female,Hyderabad,Engineer,Medium,Beauty,Afternoon,email,Silver,Instagram,Loyal
+CUST_3DDCEA6F,Manya,40,Female,Kolkata,Manager,Low,Sports,Night,email,Gold,Twitch,Interested
+CUST_48D454C1,Omaja,51,Female,Hyderabad,Teacher,High,Fashion,Evening,sms,Gold,Twitter,High Intent
+CUST_FE3A26F2,Maanav,26,Male,Chennai,Doctor,Ultra-High,Electronics,Night,whatsapp,Silver,Instagram,Churn Risk
+CUST_745D0AF1,Dev,37,Non-binary,Mumbai,Doctor,Low,Electronics,Night,email,Bronze,Facebook,Interested
+CUST_8F618114,Ikbal,33,Male,Pune,Artist,Medium,Beauty,Night,sms,Silver,Facebook,Loyal
+CUST_AA76100A,Mohini,33,Female,Bangalore,Artist,Low,Gaming,Night,sms,Platinum,Google,Browsing
+CUST_996223F2,Chasmum,41,Female,Kolkata,Artist,Medium,Home & Garden,Afternoon,email,Bronze,Organic,Churn Risk
+CUST_58915F08,Neelima,57,Female,Delhi,Doctor,Ultra-High,Books,Afternoon,whatsapp,Silver,Organic,High Intent
+CUST_4A6DBB54,Dev,29,Male,Kolkata,Teacher,High,Fashion,Morning,sms,Bronze,Twitch,Cart Active
+CUST_8740AB12,Karan,32,Male,Ahmedabad,Business Owner,Ultra-High,Sports,Night,sms,Platinum,Organic,Browsing
+CUST_9DC5D903,Aayush,39,Male,Delhi,Engineer,High,Sports,Morning,email,Gold,Organic,Loyal
+CUST_2FA71D0D,Rishi,38,Male,Mumbai,Engineer,Low,Books,Morning,whatsapp,Platinum,Referral,Anonymous
+CUST_079E274E,Garima,53,Female,Delhi,Consultant,High,Sports,Night,whatsapp,Gold,Instagram,Anonymous
+CUST_7A4CA5C1,Mason,19,Male,Chennai,Consultant,Low,Home & Garden,Night,whatsapp,Silver,Facebook,Interested
+CUST_0C263DCF,Falak,39,Female,Mumbai,Doctor,Low,Home & Garden,Morning,whatsapp,Bronze,Facebook,Churn Risk
+CUST_DACF0911,Guneet,27,Male,Delhi,Student,Low,Beauty,Evening,email,Silver,Facebook,Churn Risk
+CUST_38C943B9,Akshay,24,Male,Ahmedabad,Student,Low,Sports,Night,push,Silver,Twitch,Browsing
+CUST_9CFE1314,Suhani,44,Female,Delhi,Doctor,High,Books,Evening,whatsapp,Silver,Twitter,Loyal
+CUST_1A657E85,Gagan,59,Male,Ahmedabad,Teacher,Low,Sports,Morning,sms,Silver,Twitch,Cart Active
+CUST_DDA324D3,Ishaan,34,Male,Ahmedabad,Consultant,Low,Electronics,Night,email,Gold,Instagram,Interested
+CUST_8C94F6C3,Chakradev,26,Male,Mumbai,Teacher,High,Beauty,Evening,whatsapp,Gold,Twitter,High Intent
+CUST_CE3A6EF3,Vrishti,32,Female,Pune,Doctor,Ultra-High,Electronics,Night,whatsapp,Gold,Facebook,High Intent
+CUST_877C104A,Arunima,46,Female,Mumbai,Manager,Low,Books,Morning,email,Platinum,Google,Interested
+CUST_7535DF38,Tanmayi,27,Female,Bangalore,Manager,Low,Sports,Afternoon,email,Bronze,Facebook,Cart Active
+CUST_ACCFCF3B,Rishi,31,Male,Delhi,Business Owner,Ultra-High,Beauty,Morning,push,Platinum,Twitch,High Intent
+CUST_790591B1,Mugdha,28,Female,Mumbai,Business Owner,Ultra-High,Sports,Afternoon,push,Gold,Instagram,Anonymous
+CUST_CC2CEE0A,Harrison,32,Male,Chennai,Business Owner,Low,Home & Garden,Evening,whatsapp,Platinum,Facebook,Loyal
+CUST_7E8D349A,Chanakya,41,Male,Mumbai,Student,Low,Beauty,Morning,email,Silver,Facebook,Anonymous
+CUST_1EF11355,Banjeet,28,Male,Bangalore,Business Owner,Medium,Home & Garden,Morning,email,Bronze,Instagram,Churn Risk
+CUST_6E7D7A10,Jagat,47,Male,Kolkata,Doctor,High,Beauty,Morning,whatsapp,Silver,Facebook,Browsing
+CUST_EB2B5B57,Maanav,36,Male,Pune,Teacher,High,Sports,Afternoon,push,Bronze,Facebook,Anonymous
+CUST_8E0667CE,Jyoti,48,Female,Pune,Doctor,Ultra-High,Books,Afternoon,email,Platinum,Referral,Churn Risk
+CUST_50D1ADC1,Abdul,43,Male,Mumbai,Consultant,High,Books,Evening,whatsapp,Platinum,Twitter,Anonymous
+CUST_5D420B03,Tristan,28,Male,Bangalore,Consultant,Medium,Electronics,Evening,whatsapp,Bronze,Referral,Interested
+CUST_DE2C207D,Ati,41,Non-binary,Mumbai,Student,Low,Gaming,Night,whatsapp,Silver,Twitch,Loyal
+CUST_1749A777,Chakrika,19,Female,Bangalore,Manager,Ultra-High,Gaming,Morning,sms,Bronze,Instagram,Interested
+CUST_04D43A98,Qabil,26,Male,Mumbai,Artist,Ultra-High,Books,Afternoon,whatsapp,Gold,Twitter,Browsing
+CUST_F5917397,Pahal,56,Female,Kolkata,Student,Low,Sports,Morning,email,Bronze,Organic,Cart Active
+CUST_A46C2B22,Omaja,53,Female,Bangalore,Engineer,Low,Electronics,Afternoon,email,Silver,Facebook,Dormant
+CUST_EB553367,Yagnesh,46,Male,Chennai,Engineer,Low,Beauty,Afternoon,sms,Platinum,Facebook,Loyal
+CUST_66BD2CF3,Sarthak,36,Male,Mumbai,Business Owner,Medium,Home & Garden,Morning,whatsapp,Silver,Referral,Dormant
+CUST_53636173,Darpan,28,Non-binary,Mumbai,Manager,Low,Fashion,Morning,whatsapp,Bronze,Organic,Interested
+CUST_3B00B30E,Samesh,35,Male,Bangalore,Manager,Ultra-High,Electronics,Night,email,Silver,Twitter,Churn Risk
+CUST_45E3E33F,Amruta,31,Female,Pune,Student,Low,Books,Afternoon,push,Silver,Twitter,Loyal
+CUST_926AA93D,Warinder,52,Male,Delhi,Teacher,Low,Beauty,Night,sms,Platinum,Google,Anonymous
+CUST_3298FAEB,Wazir,44,Male,Pune,Teacher,Ultra-High,Gaming,Afternoon,sms,Bronze,Twitter,Interested
+CUST_EFC2D016,Chaman,38,Female,Hyderabad,Teacher,Medium,Beauty,Night,push,Platinum,Twitter,Dormant
+CUST_09AE2702,Unni,45,Female,Bangalore,Business Owner,High,Electronics,Afternoon,whatsapp,Gold,Google,Browsing
+CUST_0518E45B,Sudiksha,43,Female,Pune,Teacher,Ultra-High,Gaming,Morning,email,Gold,Organic,Browsing
+CUST_705791DA,Jeet,37,Male,Pune,Engineer,Low,Gaming,Afternoon,sms,Silver,Organic,High Intent
+CUST_8B1D85C9,Upkaar,39,Male,Bangalore,Business Owner,Medium,Gaming,Afternoon,sms,Bronze,Facebook,Interested
+CUST_5FF49FA1,Noah,37,Male,Delhi,Artist,Medium,Home & Garden,Afternoon,push,Gold,Twitter,High Intent
+CUST_615278FE,Amol,52,Non-binary,Ahmedabad,Artist,Ultra-High,Electronics,Evening,whatsapp,Platinum,Twitter,Churn Risk
+CUST_4FBCBBCA,Agastya,41,Male,Mumbai,Business Owner,Ultra-High,Sports,Morning,email,Silver,Twitter,Cart Active
+CUST_DA88C386,Rayaan,23,Male,Delhi,Manager,Low,Sports,Night,push,Silver,Organic,Churn Risk
+CUST_E9162E8B,Veer,28,Male,Bangalore,Engineer,Medium,Books,Morning,whatsapp,Platinum,Twitter,Dormant
+CUST_101DB21C,Yatin,46,Male,Mumbai,Doctor,Ultra-High,Gaming,Night,whatsapp,Platinum,Facebook,Browsing
+CUST_EA2F4359,Rishi,36,Male,Hyderabad,Teacher,High,Beauty,Evening,email,Gold,Instagram,Loyal
+CUST_A0578F65,Leena,27,Female,Kolkata,Manager,High,Home & Garden,Afternoon,email,Platinum,Facebook,Browsing
+CUST_DEA41107,Vincent,32,Male,Mumbai,Consultant,High,Home & Garden,Morning,whatsapp,Silver,Instagram,Dormant
+CUST_AE5D913C,Teerth,30,Male,Bangalore,Doctor,Medium,Beauty,Night,whatsapp,Silver,Instagram,Churn Risk
+CUST_38E8F4D6,Upma,46,Female,Delhi,Doctor,High,Beauty,Afternoon,email,Silver,Instagram,Anonymous
+CUST_1FA0B7DE,Anmol,32,Male,Bangalore,Doctor,Ultra-High,Fashion,Afternoon,whatsapp,Platinum,Facebook,Dormant
+CUST_3B22D7B6,Nakul,35,Male,Bangalore,Artist,High,Home & Garden,Evening,sms,Silver,Facebook,Anonymous
+CUST_6B7F538D,Theodore,54,Male,Delhi,Teacher,Low,Gaming,Afternoon,email,Bronze,Facebook,Churn Risk
+CUST_47B5FAF8,Agastya,24,Male,Mumbai,Artist,Low,Fashion,Afternoon,sms,Gold,Facebook,Interested
+CUST_3B77AE1A,Girish,29,Male,Hyderabad,Doctor,Ultra-High,Sports,Afternoon,email,Platinum,Twitter,Cart Active
+CUST_DDAA8F46,Anusha,32,Female,Mumbai,Teacher,Medium,Fashion,Morning,push,Silver,Facebook,Dormant
+CUST_4B8AA7C9,Deepa,29,Female,Bangalore,Doctor,Medium,Sports,Afternoon,whatsapp,Platinum,Organic,High Intent
+CUST_B4909F1A,Lakshmi,41,Female,Mumbai,Teacher,Low,Electronics,Night,sms,Silver,Referral,Churn Risk
+CUST_AAC06769,Raksha,35,Female,Bangalore,Teacher,Low,Home & Garden,Night,push,Gold,Facebook,Anonymous
+CUST_BC3F55D5,Ishita,37,Female,Mumbai,Doctor,Low,Sports,Afternoon,email,Silver,Instagram,Browsing
+CUST_19D5B925,Yashoda,44,Female,Mumbai,Manager,High,Gaming,Evening,whatsapp,Bronze,Instagram,Anonymous
+CUST_F2902C84,Divya,37,Female,Hyderabad,Manager,Medium,Gaming,Morning,email,Silver,Organic,Dormant
+CUST_BCEFD4B6,Gaurika,23,Female,Mumbai,Student,Low,Home & Garden,Evening,whatsapp,Gold,Organic,Dormant
+CUST_EB6FCAAE,Irya,36,Female,Bangalore,Teacher,Medium,Home & Garden,Night,sms,Silver,Twitter,High Intent
+CUST_C967E53B,Omisha,37,Female,Mumbai,Consultant,Medium,Sports,Night,email,Silver,Instagram,Dormant
+CUST_40FB09E6,Thomas,40,Male,Ahmedabad,Business Owner,Low,Books,Afternoon,email,Platinum,Google,Loyal
+CUST_05F012AB,Jagdish,31,Male,Mumbai,Artist,High,Electronics,Evening,sms,Gold,Instagram,Browsing
+CUST_62EB54DD,Gaurang,49,Male,Delhi,Business Owner,High,Beauty,Evening,email,Bronze,Twitch,Anonymous
+CUST_17E45CFF,Alexander,55,Male,Bangalore,Teacher,Ultra-High,Fashion,Morning,whatsapp,Silver,Twitter,Browsing
+CUST_85984E7D,Zaid,25,Non-binary,Delhi,Business Owner,Low,Books,Night,whatsapp,Silver,Twitter,Browsing
+CUST_CA4E5197,Jai,57,Male,Hyderabad,Consultant,Ultra-High,Gaming,Morning,email,Silver,Organic,Cart Active
+CUST_A56D509F,Gopal,22,Male,Bangalore,Business Owner,High,Fashion,Night,whatsapp,Platinum,Twitch,Anonymous
+CUST_34876524,Anirudh,58,Male,Pune,Student,Low,Beauty,Morning,sms,Platinum,Google,Churn Risk
+CUST_529191E2,Vihaan,53,Male,Ahmedabad,Consultant,Ultra-High,Electronics,Night,email,Gold,Instagram,Loyal
+CUST_24B0315E,Agastya,48,Male,Hyderabad,Artist,Ultra-High,Beauty,Morning,push,Silver,Google,High Intent
+CUST_6EBB7C65,Jason,26,Male,Pune,Doctor,High,Home & Garden,Morning,whatsapp,Gold,Twitch,High Intent
+CUST_4B34FA4C,Yutika,57,Female,Hyderabad,Engineer,High,Gaming,Morning,sms,Gold,Referral,Browsing
+CUST_CCF4473E,Jonathan,26,Male,Bangalore,Business Owner,Ultra-High,Books,Night,push,Bronze,Twitch,Dormant
+CUST_66704680,Rehaan,23,Male,Pune,Manager,High,Books,Morning,push,Gold,Google,Interested
+CUST_9F5AF1B4,Ekansh,40,Male,Mumbai,Consultant,Medium,Fashion,Morning,email,Bronze,Instagram,Anonymous
+CUST_B6BFC136,Vedant,26,Male,Pune,Manager,High,Electronics,Night,email,Bronze,Referral,Anonymous
+CUST_3D58EB70,Damini,36,Female,Mumbai,Teacher,High,Beauty,Night,whatsapp,Silver,Twitch,Churn Risk
+CUST_E2391426,Thomas,38,Male,Mumbai,Business Owner,Medium,Beauty,Morning,sms,Gold,Instagram,High Intent
+CUST_FF48FB57,Zayyan,50,Male,Mumbai,Student,Low,Books,Afternoon,email,Silver,Twitter,High Intent
+CUST_0D5966DB,Maanas,40,Male,Bangalore,Artist,Low,Gaming,Night,whatsapp,Platinum,Twitter,Dormant
+CUST_C5943693,Quincy,23,Male,Bangalore,Manager,Medium,Electronics,Evening,whatsapp,Silver,Referral,Interested
+CUST_5E4E88D4,Chasmum,21,Female,Chennai,Teacher,Low,Beauty,Night,push,Platinum,Instagram,Interested
+CUST_63DB733C,Oeshi,24,Female,Mumbai,Student,Low,Electronics,Afternoon,sms,Platinum,Google,Dormant
+CUST_85D20005,Gopal,31,Male,Chennai,Consultant,High,Sports,Morning,email,Silver,Referral,Browsing
+CUST_A95EB599,Urvi,31,Female,Mumbai,Artist,High,Home & Garden,Morning,email,Silver,Twitter,Cart Active
+CUST_D380949A,Tanveer,31,Male,Ahmedabad,Business Owner,Ultra-High,Sports,Afternoon,push,Gold,Referral,Anonymous
+CUST_12C6D82F,Qasim,46,Male,Mumbai,Teacher,Ultra-High,Fashion,Night,push,Bronze,Google,Cart Active
+CUST_F617AAB8,Fariq,41,Male,Chennai,Business Owner,Ultra-High,Home & Garden,Morning,sms,Gold,Google,Loyal
+CUST_EACDCB8F,Tanish,26,Male,Chennai,Student,Low,Electronics,Evening,push,Silver,Instagram,Loyal
+CUST_3E4E7988,Zashil,30,Male,Chennai,Student,Low,Fashion,Night,push,Silver,Twitch,Cart Active
+CUST_F1B72375,Faraj,47,Male,Kolkata,Teacher,Ultra-High,Beauty,Night,push,Platinum,Google,Interested
+CUST_4456FF3A,Ekapad,54,Male,Delhi,Consultant,Ultra-High,Electronics,Night,whatsapp,Bronze,Google,Anonymous
+CUST_3EEB5BD5,Sarthak,61,Male,Mumbai,Consultant,Ultra-High,Sports,Night,whatsapp,Silver,Twitch,Cart Active
+CUST_68AD3E36,Yauvani,23,Female,Chennai,Student,Low,Sports,Evening,sms,Silver,Twitter,Churn Risk
+CUST_D6AD16EF,Samuel,46,Male,Pune,Consultant,Ultra-High,Books,Morning,whatsapp,Silver,Instagram,Cart Active
+CUST_08C4C971,Neha,29,Non-binary,Delhi,Doctor,High,Gaming,Evening,email,Silver,Twitter,Anonymous
+CUST_008A2B5A,Ikbal,29,Male,Mumbai,Artist,Medium,Home & Garden,Night,push,Bronze,Twitter,Anonymous
+CUST_AFA1A280,Baljiwan,41,Non-binary,Ahmedabad,Doctor,High,Gaming,Afternoon,email,Platinum,Twitch,Dormant
+CUST_347B3E0F,Advay,29,Male,Bangalore,Artist,Low,Fashion,Night,sms,Silver,Facebook,Interested
+CUST_CAAAF0E2,Riya,33,Female,Hyderabad,Artist,Low,Books,Afternoon,whatsapp,Silver,Twitch,Cart Active
+CUST_FCB4B49A,Darsh,34,Male,Bangalore,Business Owner,Medium,Sports,Night,sms,Bronze,Twitter,Dormant
+CUST_D86EB996,Faraj,62,Male,Kolkata,Engineer,Medium,Electronics,Morning,push,Silver,Referral,Dormant
+CUST_E21A7769,Prisha,27,Female,Delhi,Student,Low,Fashion,Night,push,Platinum,Facebook,High Intent
+CUST_2810A1B5,Yatin,28,Male,Kolkata,Artist,High,Fashion,Evening,email,Bronze,Twitter,Loyal
+CUST_C8BBBA8B,Teerth,27,Male,Chennai,Artist,Medium,Electronics,Afternoon,whatsapp,Bronze,Organic,Loyal
+CUST_E110222E,Januja,25,Female,Bangalore,Student,Low,Electronics,Afternoon,email,Silver,Referral,Churn Risk
+CUST_960A76FC,Aarna,31,Female,Delhi,Artist,High,Books,Night,push,Platinum,Referral,High Intent
+CUST_8ED17183,Chanchal,40,Female,Bangalore,Doctor,Ultra-High,Home & Garden,Evening,whatsapp,Silver,Twitch,Browsing
+CUST_BB95004D,Dalbir,25,Male,Pune,Teacher,Ultra-High,Beauty,Night,sms,Gold,Referral,Interested
+CUST_D8BE749D,Siya,38,Female,Delhi,Business Owner,High,Books,Night,whatsapp,Gold,Facebook,High Intent
+CUST_6CB57608,Michael,33,Male,Bangalore,Business Owner,Ultra-High,Home & Garden,Night,sms,Platinum,Organic,Anonymous
+CUST_26E1B0EB,Nachiket,30,Male,Mumbai,Artist,High,Sports,Afternoon,whatsapp,Platinum,Organic,Dormant
+CUST_8C56898E,Henry,40,Male,Hyderabad,Consultant,Ultra-High,Electronics,Evening,whatsapp,Platinum,Instagram,Loyal
+CUST_694440B5,Azaan,41,Male,Mumbai,Artist,Medium,Fashion,Evening,email,Silver,Google,Dormant
+CUST_F8C7266D,Xavier,31,Male,Bangalore,Consultant,Ultra-High,Sports,Evening,whatsapp,Platinum,Organic,Churn Risk
+CUST_8F64453D,Turvi,23,Female,Ahmedabad,Engineer,Low,Electronics,Night,sms,Bronze,Twitter,High Intent
+CUST_4B2F1384,Balvan,38,Male,Mumbai,Engineer,Low,Books,Afternoon,push,Platinum,Twitch,Churn Risk
+CUST_D91D0369,Ira,31,Female,Ahmedabad,Teacher,Low,Sports,Night,push,Platinum,Twitter,Cart Active
+CUST_71A2934A,Chaitanya,37,Non-binary,Chennai,Consultant,Medium,Fashion,Afternoon,whatsapp,Silver,Twitter,High Intent
+CUST_FB2D4E5B,Nirja,27,Female,Hyderabad,Teacher,Ultra-High,Home & Garden,Night,push,Bronze,Instagram,Loyal
+CUST_CD59B969,Falak,44,Female,Hyderabad,Student,Low,Electronics,Night,push,Gold,Organic,Interested
+CUST_34F50D39,Chandresh,34,Male,Bangalore,Doctor,High,Beauty,Morning,whatsapp,Platinum,Twitch,Anonymous
+CUST_CEDB7614,Manan,32,Male,Mumbai,Business Owner,Ultra-High,Books,Morning,push,Platinum,Google,Interested
+CUST_6703F9EC,Ekaja,59,Female,Hyderabad,Manager,High,Electronics,Evening,email,Silver,Organic,Cart Active
+CUST_E7FDF8E3,Nakul,23,Male,Mumbai,Artist,Low,Books,Morning,sms,Bronze,Organic,Anonymous
+CUST_B3CC624F,Avni,42,Female,Hyderabad,Business Owner,Ultra-High,Home & Garden,Evening,push,Platinum,Facebook,Loyal
+CUST_13BCF28C,Vivaan,56,Male,Mumbai,Artist,High,Beauty,Morning,email,Gold,Organic,Churn Risk
+CUST_8356E3B7,Ekta,30,Female,Bangalore,Teacher,Low,Home & Garden,Afternoon,whatsapp,Bronze,Twitch,High Intent
+CUST_9FEEEC4A,Chatura,39,Male,Bangalore,Teacher,Low,Books,Morning,push,Platinum,Organic,Dormant
+CUST_852D59DB,Devansh,52,Male,Ahmedabad,Manager,High,Sports,Afternoon,whatsapp,Silver,Twitter,High Intent
+CUST_ED659A81,Waida,26,Female,Mumbai,Business Owner,Medium,Electronics,Afternoon,whatsapp,Silver,Instagram,Browsing
+CUST_A618E3BA,Harinakshi,27,Female,Mumbai,Doctor,Medium,Beauty,Evening,email,Gold,Twitch,Cart Active
+CUST_FA778FB9,Jack,29,Male,Kolkata,Doctor,Ultra-High,Gaming,Afternoon,whatsapp,Bronze,Google,Anonymous
+CUST_48BD7B88,Imaran,26,Male,Bangalore,Artist,Ultra-High,Books,Afternoon,whatsapp,Silver,Instagram,Browsing
+CUST_16ACD0C6,Oscar,27,Male,Mumbai,Doctor,Medium,Books,Morning,whatsapp,Platinum,Twitter,Churn Risk
+CUST_37EB011F,Zehaan,35,Male,Ahmedabad,Student,Low,Fashion,Morning,push,Bronze,Organic,Anonymous
+CUST_88F1E24C,Prisha,26,Female,Ahmedabad,Doctor,High,Gaming,Night,email,Silver,Referral,Churn Risk
+CUST_C92AD391,Theodore,41,Male,Pune,Consultant,High,Sports,Evening,email,Platinum,Organic,Loyal
+CUST_D95E4ED6,Guneet,28,Male,Delhi,Artist,Ultra-High,Electronics,Night,sms,Silver,Facebook,Interested
+CUST_A9E98AE2,Vinaya,37,Female,Ahmedabad,Business Owner,Medium,Beauty,Afternoon,push,Platinum,Twitter,Browsing
+CUST_060BDD16,Oviya,48,Female,Delhi,Engineer,High,Fashion,Morning,push,Bronze,Twitter,Churn Risk
+CUST_D11AA116,Faris,29,Male,Chennai,Teacher,High,Electronics,Morning,whatsapp,Silver,Google,Interested
+CUST_CCAC32CA,Farhan,47,Male,Hyderabad,Consultant,High,Books,Afternoon,email,Bronze,Google,Anonymous
+CUST_AC9B2E3E,Ati,25,Female,Mumbai,Consultant,Ultra-High,Sports,Morning,whatsapp,Gold,Instagram,Dormant
+CUST_7F8ED2EF,Raghav,31,Male,Hyderabad,Engineer,High,Sports,Morning,sms,Gold,Google,Anonymous
+CUST_A778788F,Watika,21,Female,Bangalore,Teacher,High,Beauty,Morning,push,Bronze,Twitter,Interested
+CUST_630EA12D,Imaran,32,Male,Chennai,Engineer,Medium,Sports,Morning,push,Platinum,Instagram,High Intent
+CUST_844A74FA,Gavin,22,Male,Hyderabad,Business Owner,Medium,Sports,Evening,sms,Bronze,Facebook,Cart Active
+CUST_5EA551EB,Hamsini,42,Female,Delhi,Consultant,Ultra-High,Electronics,Night,whatsapp,Platinum,Twitter,Interested
+CUST_C7B4B9BD,Karan,31,Male,Chennai,Consultant,High,Books,Morning,whatsapp,Platinum,Google,Browsing
+CUST_17A20F69,Ranveer,31,Male,Mumbai,Doctor,High,Gaming,Morning,email,Silver,Referral,Interested
+CUST_555700B4,Pushti,55,Female,Hyderabad,Business Owner,Ultra-High,Sports,Night,push,Platinum,Twitch,Dormant
+CUST_259657D3,Sanaya,30,Female,Hyderabad,Business Owner,Ultra-High,Sports,Afternoon,sms,Silver,Instagram,Dormant
+CUST_64ECE7EE,Chatura,35,Male,Delhi,Consultant,Ultra-High,Books,Evening,email,Silver,Facebook,Churn Risk
+CUST_357B8D04,Gaurang,33,Male,Bangalore,Manager,Ultra-High,Sports,Evening,email,Bronze,Organic,Browsing
+CUST_D3C96A5E,Indira,46,Non-binary,Ahmedabad,Student,Low,Gaming,Afternoon,push,Platinum,Facebook,Interested
+CUST_DCF1FC29,Matthew,44,Male,Kolkata,Business Owner,Ultra-High,Beauty,Evening,email,Platinum,Facebook,Browsing
+CUST_4E07FA68,Zayyan,44,Non-binary,Hyderabad,Manager,Ultra-High,Fashion,Afternoon,whatsapp,Silver,Twitter,Interested
+CUST_6610877B,Osha,35,Female,Mumbai,Artist,Ultra-High,Books,Evening,sms,Platinum,Twitter,Cart Active
+CUST_CDE020CE,Mitali,27,Female,Delhi,Student,Low,Home & Garden,Night,push,Silver,Google,Cart Active
+CUST_6633CBAE,Gunbir,44,Male,Bangalore,Artist,Ultra-High,Home & Garden,Morning,sms,Platinum,Google,Cart Active
+CUST_2C34128B,Ikshita,51,Female,Bangalore,Business Owner,Ultra-High,Fashion,Evening,whatsapp,Silver,Facebook,Dormant
+CUST_7A39BAA4,Onkar,51,Male,Mumbai,Teacher,Low,Home & Garden,Evening,push,Gold,Twitch,Dormant
+CUST_AA3A1862,Gautami,49,Female,Ahmedabad,Teacher,Ultra-High,Beauty,Morning,push,Platinum,Twitch,Browsing
+CUST_CC054EE0,Dominic,48,Male,Pune,Engineer,Medium,Electronics,Afternoon,email,Platinum,Facebook,Interested
+CUST_37055F28,Eesha,27,Female,Pune,Artist,Medium,Books,Morning,push,Gold,Google,Churn Risk
+CUST_06B32EE5,Avi,41,Male,Ahmedabad,Engineer,Ultra-High,Books,Night,push,Gold,Twitter,High Intent
+CUST_65E04417,Samaksh,46,Male,Delhi,Business Owner,Ultra-High,Sports,Evening,push,Bronze,Referral,Anonymous
+CUST_E6D7B89B,Ayush,37,Male,Mumbai,Consultant,Medium,Home & Garden,Night,email,Bronze,Referral,Churn Risk
+CUST_270F74DF,Ira,24,Female,Bangalore,Doctor,High,Beauty,Morning,push,Platinum,Twitch,Browsing
+CUST_910181D2,Andrew,28,Male,Mumbai,Artist,Ultra-High,Fashion,Morning,whatsapp,Gold,Organic,Churn Risk
+CUST_6301D9F7,Amol,39,Male,Delhi,Teacher,Low,Electronics,Afternoon,whatsapp,Platinum,Organic,Interested
+CUST_A33A37D8,Jagvi,23,Female,Bangalore,Student,Low,Books,Morning,whatsapp,Platinum,Instagram,Browsing
+CUST_8F84B196,Damini,42,Female,Hyderabad,Manager,Medium,Electronics,Morning,email,Gold,Organic,Interested
+CUST_9C39A1BB,Bhavya,44,Non-binary,Mumbai,Engineer,High,Books,Morning,whatsapp,Gold,Twitch,Loyal
+CUST_4A5C1BEB,Ekbal,28,Male,Mumbai,Business Owner,Medium,Fashion,Morning,whatsapp,Silver,Twitch,Interested
+CUST_90CC98DA,Mohammed,50,Male,Hyderabad,Business Owner,High,Sports,Night,sms,Gold,Referral,Loyal
+CUST_D3620381,Om,40,Male,Pune,Artist,Low,Electronics,Afternoon,push,Gold,Twitter,Interested
+CUST_B13B4F5E,Jai,31,Male,Chennai,Consultant,Ultra-High,Gaming,Evening,email,Platinum,Twitch,Cart Active
+CUST_78C3C998,Xavier,32,Male,Mumbai,Teacher,Ultra-High,Beauty,Night,push,Platinum,Twitter,Browsing
+CUST_4F73EDFF,Oscar,23,Male,Mumbai,Artist,High,Books,Evening,push,Bronze,Instagram,Cart Active
+CUST_CABDE95A,Pushti,29,Female,Ahmedabad,Consultant,Low,Gaming,Evening,whatsapp,Bronze,Facebook,Interested
+CUST_8290A620,Jatin,25,Male,Bangalore,Manager,Low,Beauty,Morning,whatsapp,Gold,Instagram,Anonymous
+CUST_5592D9DA,Avi,60,Non-binary,Ahmedabad,Teacher,High,Electronics,Afternoon,whatsapp,Silver,Google,Churn Risk
+CUST_6080E2EB,Karan,38,Male,Bangalore,Artist,High,Gaming,Evening,sms,Platinum,Google,Interested
+CUST_EFC80D26,Zaitra,39,Female,Bangalore,Student,Low,Home & Garden,Morning,whatsapp,Silver,Twitter,Interested
+CUST_8A353FB6,Avi,34,Male,Ahmedabad,Engineer,Low,Beauty,Afternoon,email,Platinum,Instagram,High Intent
+CUST_BBA98762,Yauvani,35,Female,Kolkata,Manager,Medium,Electronics,Morning,whatsapp,Bronze,Organic,Cart Active
+CUST_69E3C3BC,Karan,26,Male,Mumbai,Teacher,Low,Sports,Night,whatsapp,Bronze,Twitter,Interested
+CUST_0EBA4300,Ekapad,34,Male,Hyderabad,Manager,Medium,Fashion,Afternoon,whatsapp,Bronze,Instagram,Cart Active
+CUST_2DCC9A50,Tristan,34,Male,Ahmedabad,Teacher,High,Books,Afternoon,push,Silver,Referral,Loyal
+CUST_0969A929,Harita,49,Female,Hyderabad,Artist,Medium,Beauty,Evening,push,Gold,Twitch,Interested
+CUST_63815039,Brijesh,35,Male,Bangalore,Student,Low,Beauty,Afternoon,whatsapp,Bronze,Instagram,Dormant
+CUST_4490EE8E,Darika,29,Female,Hyderabad,Student,Low,Sports,Afternoon,email,Silver,Instagram,Anonymous
+CUST_9D23F007,Aarini,33,Female,Mumbai,Engineer,Low,Beauty,Evening,push,Platinum,Facebook,Loyal
+CUST_F1C77A66,Falan,26,Non-binary,Delhi,Student,Low,Fashion,Afternoon,email,Gold,Google,High Intent
+CUST_2CEA878B,Kalpit,21,Male,Mumbai,Consultant,Medium,Home & Garden,Evening,push,Gold,Facebook,Browsing
+CUST_587AD8A4,Kashish,43,Female,Pune,Student,Low,Sports,Night,push,Silver,Referral,Interested
+CUST_B43BDCE6,Qasim,52,Male,Mumbai,Doctor,Ultra-High,Books,Evening,email,Platinum,Referral,Interested
+CUST_4E9B31C7,Balveer,26,Male,Mumbai,Manager,Ultra-High,Beauty,Evening,whatsapp,Silver,Twitter,Cart Active
+CUST_FE06D134,Chaitanya,24,Male,Chennai,Artist,Medium,Home & Garden,Evening,push,Platinum,Twitter,Churn Risk
+CUST_ADB57CAD,Sai,25,Male,Mumbai,Manager,Low,Gaming,Evening,email,Gold,Instagram,Interested
+CUST_D973F35F,Devansh,30,Male,Pune,Teacher,Low,Books,Afternoon,sms,Platinum,Twitter,Cart Active
+CUST_86A609C6,Jagat,44,Male,Ahmedabad,Student,Low,Beauty,Evening,email,Gold,Facebook,Loyal
+CUST_57541408,Priya,50,Female,Mumbai,Engineer,Medium,Electronics,Afternoon,whatsapp,Silver,Instagram,Churn Risk
+CUST_647F8747,Tamanna,22,Female,Chennai,Artist,Medium,Books,Night,sms,Platinum,Organic,Anonymous
+CUST_C4A8005E,Ladli,22,Female,Pune,Engineer,High,Beauty,Night,push,Gold,Google,Browsing
+CUST_0AD2B348,Fariq,41,Non-binary,Delhi,Doctor,Ultra-High,Fashion,Morning,email,Gold,Facebook,Cart Active
+CUST_18CE6EE9,Samuel,58,Male,Mumbai,Consultant,High,Books,Night,whatsapp,Bronze,Organic,Dormant
+CUST_D5C2AF50,Saumya,54,Female,Hyderabad,Manager,High,Home & Garden,Afternoon,whatsapp,Bronze,Organic,Browsing
+CUST_CB85A64B,Wakeeta,23,Female,Hyderabad,Business Owner,Medium,Beauty,Evening,sms,Gold,Facebook,Cart Active
+CUST_DD199304,Girindra,35,Male,Hyderabad,Business Owner,Ultra-High,Books,Evening,email,Silver,Google,Dormant
+CUST_5382FC8A,Madhav,52,Male,Bangalore,Doctor,Ultra-High,Gaming,Afternoon,email,Gold,Organic,Browsing
+CUST_131DA56E,Baljiwan,53,Male,Delhi,Teacher,Ultra-High,Books,Evening,whatsapp,Bronze,Instagram,Cart Active
+CUST_770B623C,Wriddhish,34,Male,Bangalore,Engineer,Low,Beauty,Morning,sms,Bronze,Instagram,Churn Risk
+CUST_0E180EA4,Edhitha,28,Non-binary,Chennai,Business Owner,High,Fashion,Evening,email,Gold,Twitter,Churn Risk
+CUST_3BD1BFA6,Onkar,34,Male,Delhi,Consultant,Medium,Gaming,Evening,email,Bronze,Twitch,Anonymous
+CUST_0947CD11,Girindra,20,Male,Chennai,Doctor,Ultra-High,Fashion,Morning,sms,Bronze,Instagram,Cart Active
+CUST_716F42AB,Ikshita,32,Female,Bangalore,Engineer,High,Electronics,Afternoon,email,Gold,Google,High Intent
+CUST_C143D2F6,Laban,46,Male,Pune,Consultant,High,Sports,Afternoon,email,Gold,Google,High Intent
+CUST_56993D8E,Yashoda,35,Non-binary,Kolkata,Business Owner,Low,Home & Garden,Night,sms,Silver,Facebook,Loyal
+CUST_A7E53581,Chaitaly,46,Female,Delhi,Teacher,Medium,Gaming,Afternoon,email,Silver,Facebook,Dormant
+CUST_9CB02BCF,Harsh,25,Male,Chennai,Student,Low,Electronics,Morning,whatsapp,Platinum,Facebook,Loyal
+CUST_503BE15D,Yagnesh,36,Male,Pune,Artist,High,Books,Afternoon,push,Gold,Organic,High Intent
+CUST_C2207C2D,Shaurya,27,Male,Bangalore,Engineer,Medium,Gaming,Afternoon,sms,Silver,Twitch,Cart Active
+CUST_02424CE3,Fiyaz,41,Male,Hyderabad,Teacher,Low,Beauty,Afternoon,sms,Silver,Organic,Cart Active
+CUST_1FF0F4B8,Guneet,38,Male,Bangalore,Teacher,High,Books,Morning,sms,Bronze,Google,High Intent
+CUST_0B5ABC6D,Alka,35,Female,Bangalore,Teacher,Ultra-High,Books,Night,whatsapp,Gold,Instagram,Browsing
+CUST_184CC8F1,Ikshita,40,Female,Pune,Teacher,High,Gaming,Night,whatsapp,Platinum,Facebook,Loyal
+CUST_E4B13E8F,Xalak,41,Female,Chennai,Doctor,Ultra-High,Sports,Morning,whatsapp,Bronze,Instagram,Anonymous
+CUST_81CA5D16,Aashi,26,Female,Ahmedabad,Engineer,High,Beauty,Evening,push,Gold,Twitter,Dormant
+CUST_83645FC6,Robert,47,Male,Ahmedabad,Student,Low,Home & Garden,Night,whatsapp,Bronze,Twitch,Loyal
+CUST_6E5A12E9,Chanakya,58,Male,Mumbai,Business Owner,Ultra-High,Home & Garden,Morning,sms,Platinum,Google,Loyal
+CUST_AC41ECF3,Nilima,43,Female,Bangalore,Teacher,Low,Electronics,Evening,email,Gold,Facebook,Churn Risk
+CUST_3683D49C,Inaya,55,Female,Bangalore,Consultant,High,Gaming,Afternoon,email,Gold,Facebook,Anonymous
+CUST_9AC92005,Dominic,29,Male,Delhi,Business Owner,Ultra-High,Books,Afternoon,whatsapp,Platinum,Twitter,Loyal
+CUST_36D8E45F,Teerth,31,Male,Kolkata,Manager,Medium,Fashion,Night,email,Gold,Instagram,Anonymous
+CUST_741B6B68,Balhaar,29,Male,Bangalore,Student,Low,Beauty,Night,sms,Gold,Twitch,Browsing
+CUST_28C10C94,Mekhala,27,Female,Ahmedabad,Manager,Medium,Electronics,Night,email,Silver,Referral,Loyal
+CUST_6E27F854,Frederick,25,Male,Bangalore,Consultant,Low,Beauty,Afternoon,whatsapp,Bronze,Twitter,Anonymous
+CUST_999FE051,Chaaya,26,Female,Bangalore,Business Owner,Ultra-High,Fashion,Evening,push,Silver,Instagram,Loyal
+CUST_EFDB19CD,Brinda,28,Non-binary,Hyderabad,Doctor,Low,Electronics,Afternoon,whatsapp,Bronze,Twitch,Dormant
+CUST_83469F4C,Jagat,56,Male,Delhi,Business Owner,High,Fashion,Evening,push,Silver,Twitter,Browsing
+CUST_C71AE6AD,Ronith,55,Male,Bangalore,Artist,Low,Home & Garden,Afternoon,whatsapp,Silver,Referral,Loyal
+CUST_34A39B77,Anamika,48,Female,Chennai,Teacher,Ultra-High,Home & Garden,Night,push,Bronze,Referral,Cart Active
+CUST_C8E4870F,Udarsh,40,Male,Delhi,Artist,High,Sports,Afternoon,push,Bronze,Referral,High Intent
+CUST_A945F7C3,Samarth,22,Non-binary,Pune,Consultant,Medium,Fashion,Morning,whatsapp,Gold,Instagram,Loyal
+CUST_9A972779,Benjamin,40,Male,Chennai,Manager,High,Home & Garden,Evening,whatsapp,Gold,Twitch,Loyal
+CUST_3B7AAABC,Bina,56,Female,Bangalore,Teacher,Medium,Electronics,Morning,push,Gold,Facebook,Dormant
+CUST_67C3AF77,Vivaan,22,Male,Pune,Business Owner,Ultra-High,Home & Garden,Night,sms,Silver,Google,High Intent
+CUST_8861184D,Inaya,30,Female,Bangalore,Teacher,Low,Home & Garden,Night,push,Bronze,Organic,Browsing
+CUST_06A239D3,Dayita,54,Female,Bangalore,Manager,Low,Home & Garden,Afternoon,whatsapp,Platinum,Facebook,Browsing
+CUST_1BD16710,Ayushman,53,Male,Delhi,Student,Low,Home & Garden,Afternoon,whatsapp,Platinum,Twitch,Anonymous
+CUST_912094DF,Forum,28,Female,Kolkata,Engineer,Medium,Home & Garden,Evening,whatsapp,Silver,Google,High Intent
+CUST_3F1908FF,Meera,27,Female,Hyderabad,Consultant,Low,Electronics,Afternoon,whatsapp,Silver,Instagram,High Intent
+CUST_EEB6C2C2,Chaman,21,Female,Delhi,Doctor,Ultra-High,Sports,Afternoon,push,Platinum,Google,High Intent
+CUST_94DE09B8,Kevin,37,Male,Mumbai,Teacher,Medium,Sports,Afternoon,email,Bronze,Referral,Browsing
+CUST_89EA70FF,Kritika,36,Female,Delhi,Engineer,High,Books,Morning,whatsapp,Platinum,Referral,Anonymous
+CUST_5F83A21D,Ekaraj,28,Male,Mumbai,Student,Low,Beauty,Afternoon,sms,Gold,Twitter,Cart Active
+CUST_18AA4492,Vamakshi,22,Female,Delhi,Consultant,Medium,Beauty,Night,sms,Platinum,Instagram,Loyal
+CUST_027164B3,Caleb,37,Male,Hyderabad,Manager,Medium,Beauty,Morning,whatsapp,Gold,Instagram,Anonymous
+CUST_0AD94D28,Jyoti,39,Female,Mumbai,Artist,High,Home & Garden,Afternoon,push,Gold,Twitch,Anonymous
+CUST_31B02712,Utkarsh,35,Male,Mumbai,Student,Low,Books,Morning,email,Silver,Google,Browsing
+CUST_AC95571E,Amara,32,Female,Bangalore,Artist,Medium,Gaming,Night,push,Bronze,Instagram,Browsing
+CUST_65901553,Arya,30,Female,Chennai,Artist,Ultra-High,Books,Evening,whatsapp,Platinum,Instagram,Churn Risk
+CUST_8E8B796A,Yauvani,35,Female,Chennai,Consultant,Medium,Electronics,Night,email,Silver,Organic,High Intent
+CUST_7B473553,Theodore,43,Male,Chennai,Manager,Ultra-High,Books,Evening,whatsapp,Platinum,Instagram,Browsing
+CUST_9140D68A,Hemang,29,Male,Mumbai,Student,Low,Home & Garden,Morning,email,Bronze,Instagram,Cart Active
+CUST_0F053F77,Veer,35,Male,Bangalore,Artist,Ultra-High,Beauty,Evening,email,Platinum,Twitch,Browsing
+CUST_8D250AB2,Zarna,36,Female,Mumbai,Business Owner,Medium,Gaming,Afternoon,sms,Platinum,Instagram,High Intent
+CUST_76F3CA16,Hemangini,29,Female,Chennai,Manager,Ultra-High,Sports,Morning,email,Silver,Facebook,Dormant
+CUST_8D1EC76F,Adweta,47,Female,Hyderabad,Consultant,High,Fashion,Morning,whatsapp,Silver,Google,Browsing
+CUST_19C3FD37,Abhiram,37,Male,Delhi,Consultant,Low,Books,Afternoon,email,Silver,Instagram,Anonymous
+CUST_4E59CDC9,Sara,50,Female,Delhi,Student,Low,Beauty,Morning,push,Platinum,Google,Loyal
+CUST_E3CC687C,Joshua,28,Male,Chennai,Engineer,Medium,Fashion,Afternoon,email,Gold,Twitch,Interested
+CUST_895195FE,Geetika,29,Female,Chennai,Manager,Ultra-High,Fashion,Afternoon,whatsapp,Bronze,Organic,High Intent
+CUST_52A467A1,Samesh,33,Male,Delhi,Artist,High,Sports,Night,sms,Platinum,Twitter,Dormant
+CUST_895A3F9D,Victor,31,Male,Pune,Business Owner,Low,Home & Garden,Afternoon,push,Bronze,Organic,Cart Active
+CUST_D8C3AB84,Daksh,35,Male,Mumbai,Consultant,Medium,Sports,Evening,whatsapp,Platinum,Google,Browsing
+CUST_F32E13E7,Avi,25,Non-binary,Ahmedabad,Manager,Low,Sports,Morning,email,Bronze,Referral,High Intent
+CUST_68E73F1D,Vedhika,54,Female,Delhi,Artist,High,Books,Afternoon,whatsapp,Gold,Facebook,Browsing
+CUST_3221BDA7,Zehaan,39,Male,Pune,Engineer,Low,Beauty,Night,whatsapp,Silver,Organic,High Intent
+CUST_2CF59DB9,Robert,54,Male,Hyderabad,Consultant,Ultra-High,Home & Garden,Night,email,Platinum,Twitch,Churn Risk
+CUST_7A473C6F,Vyanjana,26,Female,Pune,Teacher,Low,Beauty,Evening,push,Bronze,Twitch,Cart Active
+CUST_BC076D08,Peter,27,Male,Delhi,Student,Low,Beauty,Afternoon,whatsapp,Bronze,Instagram,Loyal
+CUST_13B3C39B,Laban,22,Male,Kolkata,Artist,Ultra-High,Gaming,Evening,sms,Silver,Organic,Browsing
+CUST_F399372B,Gauri,34,Female,Mumbai,Consultant,Low,Gaming,Morning,email,Bronze,Referral,Dormant
+CUST_2C04A290,Maya,39,Female,Mumbai,Doctor,Ultra-High,Home & Garden,Afternoon,email,Silver,Google,Anonymous
+CUST_8512043B,Gagan,43,Male,Delhi,Business Owner,High,Home & Garden,Afternoon,push,Silver,Referral,Cart Active
+CUST_BE0BE98D,Samarth,40,Male,Pune,Business Owner,Ultra-High,Gaming,Night,sms,Platinum,Twitter,Dormant
+CUST_D385C01E,Peter,27,Male,Kolkata,Teacher,Medium,Beauty,Evening,sms,Bronze,Google,Browsing
+CUST_BEDEB4E5,Arya,40,Female,Mumbai,Doctor,Ultra-High,Electronics,Afternoon,email,Silver,Instagram,Dormant
+CUST_9A338CD0,Advika,33,Female,Hyderabad,Consultant,Ultra-High,Sports,Evening,email,Platinum,Twitch,Interested
+CUST_1E67221C,Varenya,44,Female,Kolkata,Teacher,High,Beauty,Evening,whatsapp,Gold,Google,Interested
+CUST_0CD60EBD,Yash,44,Male,Bangalore,Artist,Medium,Electronics,Evening,sms,Gold,Referral,Anonymous
+CUST_92F17E3F,Farhan,40,Male,Hyderabad,Teacher,Medium,Home & Garden,Evening,whatsapp,Bronze,Organic,Dormant
+CUST_6F9E2418,Tripti,23,Female,Mumbai,Engineer,High,Fashion,Night,sms,Platinum,Referral,Browsing
+CUST_0FF13127,Ayaan,33,Male,Mumbai,Consultant,Low,Fashion,Morning,whatsapp,Platinum,Google,Dormant
+CUST_BB285F7A,Urishilla,37,Female,Delhi,Consultant,Low,Sports,Morning,whatsapp,Silver,Facebook,High Intent
+CUST_7EABA16F,Jack,24,Male,Pune,Manager,Low,Fashion,Evening,whatsapp,Platinum,Facebook,Browsing
+CUST_B46F4923,Nicholas,34,Non-binary,Delhi,Artist,High,Books,Evening,email,Silver,Organic,Interested
+CUST_93700F09,Yoshita,30,Non-binary,Kolkata,Manager,High,Fashion,Morning,whatsapp,Silver,Google,Cart Active
+CUST_72B6D10E,Nisha,23,Female,Delhi,Consultant,High,Gaming,Night,whatsapp,Silver,Referral,Cart Active
+CUST_A54C9E5A,Daniel,27,Male,Pune,Consultant,Medium,Sports,Evening,email,Gold,Instagram,High Intent
+CUST_BCF213F1,Faras,43,Male,Ahmedabad,Business Owner,High,Beauty,Morning,email,Gold,Google,Cart Active
+CUST_FB4910A7,Kashish,23,Female,Bangalore,Teacher,Medium,Beauty,Evening,push,Platinum,Organic,Churn Risk
+CUST_4C60FF11,Forum,37,Female,Delhi,Student,Low,Home & Garden,Evening,push,Silver,Organic,Dormant
+CUST_5FAF1C12,Fariq,29,Male,Bangalore,Artist,High,Beauty,Afternoon,whatsapp,Bronze,Organic,Dormant
+CUST_79A602ED,Osha,35,Female,Delhi,Teacher,Medium,Books,Afternoon,sms,Gold,Twitch,High Intent
+CUST_A1727E54,Arin,47,Male,Ahmedabad,Doctor,High,Gaming,Morning,whatsapp,Bronze,Instagram,Cart Active
+CUST_A163EAC7,Elijah,41,Male,Pune,Consultant,High,Electronics,Night,whatsapp,Silver,Referral,Churn Risk
+CUST_407E42A5,Nathaniel,39,Male,Ahmedabad,Doctor,Ultra-High,Sports,Afternoon,email,Bronze,Instagram,Loyal
+CUST_80D7E8E6,Aayush,40,Male,Delhi,Consultant,High,Electronics,Afternoon,email,Bronze,Organic,Interested
+CUST_F0508F34,Saanvi,36,Female,Delhi,Doctor,Low,Gaming,Night,whatsapp,Bronze,Referral,Browsing
+CUST_65C588C7,Mitesh,31,Male,Hyderabad,Engineer,Low,Sports,Evening,push,Silver,Twitch,Churn Risk
+CUST_115F567A,Oni,47,Non-binary,Pune,Artist,Low,Fashion,Evening,sms,Bronze,Referral,Cart Active
+CUST_11809A6B,Gautam,41,Male,Bangalore,Artist,High,Home & Garden,Morning,push,Bronze,Google,High Intent
+CUST_30A63D4E,Bhavani,36,Female,Mumbai,Consultant,Low,Home & Garden,Afternoon,whatsapp,Platinum,Twitter,Browsing
+CUST_6C0C3F65,Laban,29,Male,Delhi,Consultant,Medium,Home & Garden,Night,whatsapp,Bronze,Google,Cart Active
+CUST_490CCB49,Osha,53,Female,Bangalore,Artist,Ultra-High,Gaming,Morning,whatsapp,Platinum,Google,Browsing
+CUST_E1598B61,Frederick,46,Male,Pune,Teacher,High,Home & Garden,Afternoon,push,Silver,Twitch,High Intent
+CUST_0F7F15A2,Ojas,35,Male,Kolkata,Teacher,Medium,Electronics,Morning,sms,Platinum,Google,Churn Risk
+CUST_9D644E2B,David,40,Male,Kolkata,Manager,Low,Sports,Afternoon,whatsapp,Platinum,Facebook,Churn Risk
+CUST_D6F45E2B,Bishakha,63,Female,Delhi,Teacher,Medium,Gaming,Morning,email,Bronze,Facebook,Dormant
+CUST_5F316548,Charles,28,Male,Bangalore,Business Owner,Ultra-High,Electronics,Night,whatsapp,Platinum,Twitter,Interested
+CUST_241A82E0,Osha,26,Female,Bangalore,Teacher,High,Electronics,Evening,email,Silver,Google,High Intent
+CUST_C3A5792C,Udarsh,50,Male,Ahmedabad,Engineer,Ultra-High,Sports,Morning,email,Bronze,Organic,Dormant
+CUST_7F141E6F,Fariq,36,Male,Mumbai,Student,Low,Gaming,Morning,push,Platinum,Referral,Loyal
+CUST_FAF701E5,Yashawini,50,Female,Pune,Doctor,High,Fashion,Evening,email,Bronze,Organic,High Intent
+CUST_4BE3EA6F,David,54,Male,Pune,Manager,High,Books,Night,email,Platinum,Referral,Churn Risk
+CUST_0BDEBB7F,Faras,38,Male,Hyderabad,Engineer,High,Home & Garden,Night,push,Silver,Twitch,Loyal
+CUST_E89782AF,Ekbal,21,Male,Ahmedabad,Business Owner,Ultra-High,Books,Evening,sms,Silver,Facebook,Anonymous
+CUST_3F240E7F,Riya,36,Female,Ahmedabad,Artist,Medium,Gaming,Night,sms,Silver,Twitter,Churn Risk
+CUST_ED884268,Hredhaan,30,Male,Ahmedabad,Student,Low,Sports,Afternoon,sms,Gold,Facebook,Churn Risk
+CUST_DF3740B2,Jack,45,Male,Mumbai,Business Owner,High,Beauty,Afternoon,sms,Silver,Twitter,Cart Active
+CUST_73A64B24,Jyoti,34,Female,Mumbai,Doctor,Ultra-High,Sports,Afternoon,email,Silver,Facebook,Browsing
+CUST_646349C1,Dakshesh,21,Male,Bangalore,Teacher,High,Electronics,Morning,whatsapp,Platinum,Referral,High Intent
+CUST_0838480F,Atharv,36,Male,Pune,Manager,High,Gaming,Afternoon,whatsapp,Platinum,Google,Anonymous
+CUST_35DB462E,Kalpit,44,Male,Pune,Consultant,Ultra-High,Gaming,Night,whatsapp,Bronze,Facebook,High Intent
+CUST_FBE3E53A,Charles,36,Male,Mumbai,Engineer,Medium,Beauty,Evening,sms,Platinum,Referral,Dormant
+CUST_A46748F6,Abhimanyu,26,Male,Bangalore,Teacher,Medium,Fashion,Evening,email,Gold,Twitch,Dormant
+CUST_F6B94B37,Ekaraj,32,Male,Pune,Student,Low,Fashion,Night,push,Gold,Twitch,Dormant
+CUST_6579F2EE,Ekapad,41,Male,Bangalore,Business Owner,High,Books,Night,sms,Gold,Twitch,High Intent
+CUST_BEF47812,Ekapad,32,Male,Bangalore,Business Owner,Low,Fashion,Night,push,Platinum,Google,High Intent
+CUST_E639AE8C,Hardik,19,Male,Ahmedabad,Business Owner,Medium,Books,Night,sms,Silver,Facebook,Cart Active
+CUST_6E69BB46,Nimrat,35,Female,Delhi,Doctor,Low,Books,Evening,whatsapp,Platinum,Organic,Dormant
+CUST_269B407E,Hemang,30,Non-binary,Delhi,Artist,Ultra-High,Books,Morning,push,Gold,Twitch,Loyal
+CUST_60F782FD,Darika,32,Female,Hyderabad,Consultant,Low,Beauty,Afternoon,whatsapp,Platinum,Referral,High Intent
+CUST_8EEBB8A3,Priya,28,Female,Bangalore,Artist,Medium,Books,Evening,push,Bronze,Organic,High Intent
+CUST_19E5CD10,Gauri,36,Female,Mumbai,Manager,Ultra-High,Gaming,Afternoon,email,Gold,Twitter,Dormant
+CUST_B10F3870,Balvan,22,Male,Delhi,Manager,Ultra-High,Sports,Evening,sms,Gold,Twitch,Browsing
+CUST_9BB9B538,Krish,31,Male,Pune,Teacher,High,Books,Evening,whatsapp,Platinum,Instagram,Interested
+CUST_7B3DBE5B,Devansh,23,Male,Ahmedabad,Consultant,Low,Sports,Evening,whatsapp,Silver,Twitch,Cart Active
+CUST_E999A8A8,Nikita,44,Female,Bangalore,Doctor,High,Beauty,Night,whatsapp,Platinum,Instagram,Interested
+CUST_07EB68F4,Meera,45,Female,Kolkata,Manager,Medium,Electronics,Afternoon,email,Gold,Organic,High Intent
+CUST_A95B61CD,Arunima,41,Female,Ahmedabad,Teacher,Low,Electronics,Morning,push,Platinum,Organic,Churn Risk
+CUST_9CC313BA,Darpan,41,Male,Mumbai,Manager,Ultra-High,Sports,Night,whatsapp,Bronze,Organic,Cart Active
+CUST_6E792318,Balveer,54,Male,Mumbai,Business Owner,High,Electronics,Night,push,Bronze,Facebook,Anonymous
+CUST_51AF6922,Ekbal,36,Male,Bangalore,Manager,Medium,Sports,Night,whatsapp,Bronze,Referral,Anonymous
+CUST_EB3B7A55,Yashasvi,61,Female,Bangalore,Consultant,High,Beauty,Morning,whatsapp,Bronze,Google,High Intent
+CUST_34C5C6D7,Atharv,46,Male,Bangalore,Teacher,Medium,Books,Morning,sms,Platinum,Referral,Dormant
+CUST_5A2098A2,Simon,35,Male,Pune,Manager,Ultra-High,Home & Garden,Night,email,Gold,Google,Loyal
+CUST_5F862B40,Luke,26,Male,Delhi,Student,Low,Fashion,Night,sms,Platinum,Google,Loyal
+CUST_B30C0F03,Arya,20,Female,Hyderabad,Artist,Low,Gaming,Morning,whatsapp,Gold,Twitter,Loyal
+CUST_1351064A,Charvi,25,Female,Chennai,Teacher,Low,Fashion,Afternoon,whatsapp,Platinum,Referral,Anonymous
+CUST_4A625328,Bahadurjit,34,Male,Ahmedabad,Engineer,High,Gaming,Evening,push,Silver,Twitter,Anonymous
+CUST_D6FCB1E8,Matthew,30,Male,Mumbai,Artist,Low,Beauty,Afternoon,email,Silver,Organic,Cart Active
+CUST_EB78793E,Vansha,32,Female,Chennai,Student,Low,Gaming,Night,push,Bronze,Facebook,Browsing
+CUST_3BC4ECAE,Ikbal,23,Male,Delhi,Consultant,High,Sports,Afternoon,sms,Platinum,Instagram,Browsing
+CUST_9BFE4ED4,Veda,41,Female,Hyderabad,Doctor,Ultra-High,Fashion,Evening,whatsapp,Bronze,Referral,Cart Active
+CUST_756B35DC,Zaid,45,Male,Mumbai,Consultant,Ultra-High,Sports,Evening,whatsapp,Platinum,Google,Interested
+CUST_58DE26DE,Raksha,22,Female,Bangalore,Manager,Ultra-High,Sports,Night,whatsapp,Gold,Google,High Intent
+CUST_855AF781,Ekalinga,40,Male,Mumbai,Business Owner,High,Beauty,Evening,email,Bronze,Twitter,Browsing
+CUST_8FE037C1,Tripti,37,Female,Mumbai,Manager,Ultra-High,Fashion,Afternoon,email,Gold,Twitter,Anonymous
+CUST_2BA29819,Gauri,33,Female,Ahmedabad,Manager,Medium,Beauty,Night,whatsapp,Gold,Twitch,Interested
+CUST_B99993B5,Anjali,26,Female,Ahmedabad,Doctor,High,Electronics,Morning,whatsapp,Silver,Organic,Dormant
+CUST_56A67BB4,Wahab,59,Male,Mumbai,Manager,Low,Books,Afternoon,whatsapp,Bronze,Organic,Loyal
+CUST_93480CCB,Onkar,38,Male,Chennai,Engineer,High,Electronics,Evening,email,Bronze,Facebook,Browsing
+CUST_D488727A,Ekapad,31,Male,Mumbai,Engineer,Low,Electronics,Evening,sms,Platinum,Google,Churn Risk
+CUST_D26F973C,Praneel,42,Male,Mumbai,Business Owner,Ultra-High,Sports,Morning,sms,Platinum,Organic,Interested
+CUST_77F1C16C,Diya,31,Non-binary,Bangalore,Engineer,High,Books,Morning,sms,Silver,Facebook,Dormant
+CUST_D6436251,Madhavi,33,Female,Delhi,Artist,High,Electronics,Evening,whatsapp,Platinum,Twitch,High Intent
+CUST_93A9BF43,Ryan,28,Male,Mumbai,Manager,Ultra-High,Home & Garden,Evening,whatsapp,Gold,Facebook,Loyal
+CUST_EE0967E3,Anusha,32,Female,Bangalore,Consultant,Low,Home & Garden,Night,email,Silver,Twitter,High Intent
+CUST_E0EAE488,Caleb,43,Male,Hyderabad,Manager,High,Electronics,Morning,email,Bronze,Twitch,Interested
+CUST_F2051248,Anthony,45,Male,Hyderabad,Consultant,High,Fashion,Night,whatsapp,Platinum,Facebook,Anonymous
+CUST_82F65E23,Hemal,29,Female,Hyderabad,Manager,Low,Electronics,Afternoon,whatsapp,Silver,Twitch,Browsing
+CUST_DD984D84,Janaki,40,Female,Pune,Consultant,Medium,Sports,Morning,email,Platinum,Twitter,Anonymous
+CUST_CB568B0F,Pallavi,41,Female,Ahmedabad,Doctor,Ultra-High,Sports,Morning,whatsapp,Platinum,Referral,Dormant
+CUST_21BB680C,Yasti,37,Female,Ahmedabad,Doctor,Medium,Electronics,Night,email,Platinum,Twitter,Interested
+CUST_FED98234,Sarthak,35,Male,Ahmedabad,Student,Low,Sports,Morning,whatsapp,Bronze,Twitch,Interested
+CUST_EE8EF9EC,Geetika,39,Female,Kolkata,Teacher,Ultra-High,Sports,Morning,email,Silver,Google,Anonymous
+CUST_B35DE5D2,Brinda,48,Female,Hyderabad,Consultant,Ultra-High,Fashion,Morning,email,Bronze,Twitch,Anonymous
+CUST_C56A11A5,Gaurang,23,Male,Bangalore,Doctor,High,Beauty,Night,whatsapp,Silver,Google,Dormant
+CUST_A7E56800,Krish,54,Male,Hyderabad,Consultant,High,Gaming,Morning,whatsapp,Platinum,Instagram,Anonymous
+CUST_2C11FCAA,Jhalak,35,Female,Mumbai,Student,Low,Fashion,Afternoon,push,Gold,Twitch,Churn Risk
+CUST_547064A2,Manan,25,Male,Ahmedabad,Artist,High,Fashion,Evening,email,Bronze,Instagram,Interested
+CUST_92CEDCA7,Adweta,24,Female,Chennai,Manager,High,Sports,Afternoon,whatsapp,Bronze,Twitter,Browsing
+CUST_D256D442,Suhani,60,Female,Mumbai,Engineer,Low,Beauty,Evening,email,Gold,Twitter,Cart Active
+CUST_449FC798,Qadim,24,Male,Pune,Student,Low,Beauty,Night,push,Platinum,Facebook,Interested
+CUST_32B7B659,Zaid,32,Male,Chennai,Engineer,Medium,Beauty,Night,whatsapp,Silver,Facebook,Churn Risk
+CUST_FBEBE3B4,Vedant,52,Male,Hyderabad,Artist,Ultra-High,Fashion,Night,whatsapp,Silver,Instagram,Anonymous
+CUST_4C574128,Indrajit,22,Male,Pune,Teacher,Ultra-High,Sports,Evening,push,Silver,Google,Dormant
+CUST_EA42A92D,Suhani,36,Female,Delhi,Engineer,High,Beauty,Afternoon,push,Silver,Facebook,High Intent
+CUST_51A7B9FE,Ronith,31,Male,Mumbai,Student,Low,Books,Evening,push,Gold,Referral,Interested
+CUST_44A2C795,Mason,46,Male,Hyderabad,Manager,Medium,Electronics,Evening,email,Bronze,Twitch,Churn Risk
+CUST_FCBFFC24,Rachita,38,Female,Delhi,Doctor,High,Beauty,Morning,whatsapp,Platinum,Facebook,Anonymous
+CUST_85EA6A71,Samarth,36,Male,Bangalore,Artist,High,Electronics,Morning,sms,Bronze,Instagram,High Intent
+CUST_94D3E97B,Nitesh,31,Male,Delhi,Manager,High,Sports,Morning,email,Platinum,Facebook,Cart Active
+CUST_5D50C84D,Onveer,59,Male,Pune,Artist,High,Fashion,Night,sms,Platinum,Facebook,Anonymous
+CUST_5103D3C5,Naveen,44,Male,Mumbai,Engineer,Medium,Fashion,Morning,push,Gold,Organic,Dormant
+CUST_260D0C2F,Lucky,29,Male,Chennai,Student,Low,Gaming,Evening,whatsapp,Gold,Organic,Churn Risk
+CUST_47FE6E8D,Siya,18,Female,Mumbai,Manager,Ultra-High,Beauty,Afternoon,sms,Platinum,Organic,High Intent
+CUST_4248F272,Triveni,30,Female,Bangalore,Artist,High,Gaming,Evening,sms,Platinum,Referral,Churn Risk
+CUST_6D8BC63B,Mohini,33,Female,Hyderabad,Business Owner,Ultra-High,Electronics,Afternoon,email,Gold,Instagram,Browsing
+CUST_559D568C,Amol,50,Male,Kolkata,Teacher,High,Electronics,Night,whatsapp,Gold,Instagram,Interested
+CUST_475F08DA,Anika,41,Female,Chennai,Student,Low,Gaming,Morning,whatsapp,Gold,Twitch,Churn Risk
+CUST_5D81D8F3,Umang,54,Male,Chennai,Doctor,Ultra-High,Books,Night,whatsapp,Bronze,Google,Churn Risk
+CUST_F25B8976,Nitesh,33,Male,Mumbai,Doctor,High,Gaming,Morning,whatsapp,Silver,Google,Churn Risk
+CUST_6E4B08DD,Chaitanya,40,Male,Kolkata,Business Owner,Low,Beauty,Night,whatsapp,Gold,Twitch,Browsing
+CUST_7B8B4582,Gaurav,27,Male,Bangalore,Teacher,Ultra-High,Electronics,Evening,push,Silver,Referral,Churn Risk
+CUST_C8832EFB,Chanakya,31,Male,Mumbai,Consultant,Medium,Books,Afternoon,whatsapp,Silver,Google,Dormant
+CUST_C4B680AE,Ekaja,46,Female,Mumbai,Doctor,Ultra-High,Home & Garden,Night,whatsapp,Bronze,Organic,Anonymous
+CUST_0FE8CE86,Laksh,60,Non-binary,Bangalore,Artist,Ultra-High,Books,Night,whatsapp,Bronze,Twitter,Cart Active
+CUST_119DD9F6,Jagvi,38,Female,Mumbai,Student,Low,Fashion,Night,whatsapp,Silver,Google,Anonymous
+CUST_4A5340F6,Imaran,42,Male,Mumbai,Manager,Ultra-High,Fashion,Afternoon,whatsapp,Bronze,Facebook,Browsing
+CUST_1CE8F62B,Ayushman,34,Non-binary,Delhi,Manager,High,Beauty,Evening,whatsapp,Bronze,Google,High Intent
+CUST_60543475,Kalpit,31,Male,Mumbai,Engineer,Medium,Books,Evening,whatsapp,Gold,Referral,Loyal
+CUST_508B3E12,Ikbal,25,Male,Bangalore,Student,Low,Books,Night,push,Gold,Facebook,Interested
+CUST_64D813A5,Dominic,31,Male,Bangalore,Artist,Low,Sports,Evening,push,Platinum,Referral,Browsing
+CUST_EDC61F3F,Mohini,43,Female,Delhi,Manager,High,Books,Afternoon,email,Bronze,Facebook,Browsing
+CUST_A14EE256,Vedhika,33,Female,Ahmedabad,Engineer,Ultra-High,Home & Garden,Evening,sms,Platinum,Organic,Dormant
+CUST_B11FBE08,Zarna,36,Female,Pune,Artist,Low,Beauty,Night,whatsapp,Bronze,Instagram,Browsing
+CUST_DA071068,Janya,28,Female,Mumbai,Engineer,Medium,Books,Afternoon,email,Silver,Twitch,Cart Active
+CUST_E2442033,Sanya,31,Female,Bangalore,Consultant,Medium,Beauty,Afternoon,whatsapp,Silver,Twitter,Dormant
+CUST_F0F97E05,Anvi,44,Female,Pune,Engineer,Low,Fashion,Morning,email,Gold,Twitch,Anonymous
+CUST_3B2A0D43,Azad,31,Male,Hyderabad,Business Owner,Medium,Sports,Night,push,Bronze,Google,Interested
+CUST_E6593C6B,Rayaan,29,Non-binary,Kolkata,Business Owner,High,Beauty,Evening,push,Silver,Facebook,Churn Risk
+CUST_D730113B,Ekanta,52,Female,Bangalore,Doctor,High,Sports,Morning,whatsapp,Gold,Organic,Churn Risk
+CUST_B2B8F92B,Xiti,32,Female,Mumbai,Consultant,Medium,Sports,Night,email,Gold,Twitter,Cart Active
+CUST_99CA12C2,Isha,56,Female,Delhi,Doctor,Ultra-High,Books,Morning,email,Silver,Organic,Interested
+CUST_B7CA9F4F,Lohit,59,Male,Kolkata,Business Owner,Ultra-High,Beauty,Evening,whatsapp,Gold,Facebook,High Intent
+CUST_DF7B584F,Varenya,44,Female,Mumbai,Doctor,Ultra-High,Electronics,Night,email,Gold,Instagram,Churn Risk
+CUST_864192A5,Urvi,35,Female,Ahmedabad,Teacher,High,Electronics,Morning,push,Platinum,Twitch,Churn Risk
+CUST_C2777272,Shivansh,33,Male,Delhi,Manager,High,Home & Garden,Evening,whatsapp,Platinum,Instagram,Churn Risk
+CUST_C39706E3,Manbir,46,Male,Bangalore,Teacher,Medium,Beauty,Night,sms,Bronze,Twitter,Interested
+CUST_E429E2BF,Qabil,48,Male,Ahmedabad,Student,Low,Electronics,Evening,email,Silver,Twitter,Dormant
+CUST_EE5F32C6,Wahab,35,Male,Ahmedabad,Teacher,Ultra-High,Books,Night,push,Platinum,Referral,Cart Active
+CUST_B8585C55,Ekaja,27,Female,Mumbai,Student,Low,Books,Morning,push,Gold,Google,Dormant
+CUST_9C908B7E,Anay,37,Male,Delhi,Engineer,Medium,Fashion,Evening,whatsapp,Silver,Twitter,High Intent
+CUST_E05A6E55,Bhavini,40,Female,Pune,Engineer,Ultra-High,Books,Night,sms,Gold,Twitch,Dormant
+CUST_1F1F606A,Panini,61,Female,Kolkata,Consultant,High,Sports,Afternoon,whatsapp,Gold,Twitch,Anonymous
+CUST_DB91EDA3,Amol,29,Male,Mumbai,Engineer,Low,Home & Garden,Night,sms,Platinum,Twitch,Cart Active
+CUST_D26D51EE,Rushil,28,Male,Chennai,Teacher,Low,Gaming,Evening,whatsapp,Silver,Twitter,Loyal
+CUST_0E935651,Anita,38,Female,Ahmedabad,Business Owner,Ultra-High,Books,Afternoon,sms,Gold,Twitter,High Intent
+CUST_72429935,Timothy,28,Male,Bangalore,Teacher,Ultra-High,Fashion,Evening,email,Gold,Google,High Intent
+CUST_FD6AAD0E,Dalaja,44,Female,Bangalore,Doctor,Ultra-High,Beauty,Afternoon,email,Silver,Twitter,Browsing
+CUST_7A378EA4,Jai,20,Male,Pune,Student,Low,Gaming,Night,sms,Platinum,Organic,Interested
+CUST_5F0AAC03,Girik,30,Male,Pune,Business Owner,Low,Sports,Morning,sms,Bronze,Instagram,Dormant
+CUST_4EAC5F1B,Triveni,30,Female,Bangalore,Teacher,Ultra-High,Beauty,Afternoon,push,Silver,Twitter,Browsing
+CUST_B3CF4A1B,Jacob,25,Male,Pune,Doctor,Low,Books,Night,whatsapp,Platinum,Referral,Loyal
+CUST_956AC9C3,Qarin,31,Male,Chennai,Doctor,Low,Home & Garden,Morning,whatsapp,Bronze,Organic,Browsing
+CUST_3EB938AC,Qabil,56,Male,Bangalore,Artist,Ultra-High,Sports,Afternoon,whatsapp,Silver,Twitter,Churn Risk
+CUST_0ECEFA24,Gopal,27,Male,Mumbai,Artist,Ultra-High,Home & Garden,Night,sms,Bronze,Twitter,Browsing
+CUST_3BDB194B,Logan,53,Male,Chennai,Teacher,Medium,Books,Morning,email,Silver,Twitch,Dormant
+CUST_EA57BACB,Sara,38,Female,Bangalore,Business Owner,Ultra-High,Sports,Morning,email,Gold,Referral,Browsing
+CUST_DB672D6E,Gagan,33,Male,Bangalore,Teacher,High,Beauty,Morning,sms,Platinum,Organic,Churn Risk
+CUST_73610D47,Bhavani,28,Female,Mumbai,Artist,High,Home & Garden,Evening,whatsapp,Silver,Facebook,Browsing
+CUST_43287017,Upkaar,39,Non-binary,Bangalore,Teacher,Low,Home & Garden,Morning,push,Platinum,Twitter,Interested
+CUST_D06526D8,Yatin,54,Male,Ahmedabad,Student,Low,Fashion,Afternoon,sms,Bronze,Facebook,Loyal
+CUST_D314B9C7,Priya,38,Female,Ahmedabad,Artist,Medium,Books,Afternoon,whatsapp,Silver,Organic,Interested
+CUST_C5234514,Ekansh,45,Male,Hyderabad,Teacher,High,Books,Evening,email,Silver,Instagram,Cart Active
+CUST_06321A44,Jeevika,55,Female,Kolkata,Student,Low,Electronics,Afternoon,push,Platinum,Facebook,High Intent
+CUST_C9697997,Urmi,25,Female,Mumbai,Manager,Medium,Beauty,Afternoon,email,Platinum,Referral,High Intent
+CUST_33540ED1,Veer,37,Male,Chennai,Teacher,Medium,Electronics,Afternoon,push,Silver,Facebook,Dormant
+CUST_9674EE56,Jagat,27,Male,Hyderabad,Teacher,Medium,Gaming,Evening,email,Bronze,Instagram,High Intent
+CUST_55273BA1,Kashish,32,Female,Kolkata,Artist,Medium,Home & Garden,Night,whatsapp,Silver,Facebook,Dormant
+CUST_2DAEC16A,Dalaja,31,Female,Hyderabad,Business Owner,Ultra-High,Gaming,Night,sms,Bronze,Instagram,Interested
+CUST_B87AF05C,Gauri,40,Female,Bangalore,Engineer,Medium,Electronics,Afternoon,push,Platinum,Twitter,Cart Active
+CUST_C5612976,Benjamin,21,Male,Chennai,Teacher,Low,Gaming,Morning,sms,Platinum,Facebook,High Intent
+CUST_72CBC3FF,Triya,23,Female,Bangalore,Doctor,Ultra-High,Home & Garden,Evening,whatsapp,Platinum,Instagram,Interested
+CUST_0F909074,Gautami,32,Female,Delhi,Doctor,Medium,Fashion,Afternoon,email,Bronze,Google,Churn Risk
+CUST_E15D1603,Mohammed,26,Male,Ahmedabad,Consultant,Low,Books,Evening,whatsapp,Platinum,Google,Cart Active
+CUST_328B8A58,Daksha,34,Female,Bangalore,Student,Low,Fashion,Night,sms,Gold,Twitch,Browsing
+CUST_AE9B8C22,Dominic,29,Male,Mumbai,Engineer,Ultra-High,Sports,Evening,sms,Bronze,Facebook,Cart Active
+CUST_3734FEC0,Oscar,23,Male,Mumbai,Teacher,Medium,Beauty,Afternoon,push,Silver,Instagram,Loyal
+CUST_7BB9CFB8,Kalpit,45,Male,Mumbai,Doctor,Ultra-High,Electronics,Evening,email,Bronze,Google,Browsing
+CUST_ADAD237D,Qarin,44,Male,Mumbai,Doctor,High,Gaming,Night,whatsapp,Silver,Google,Anonymous
+CUST_972B2DD0,Yashoda,35,Female,Bangalore,Teacher,High,Electronics,Evening,sms,Gold,Referral,Interested
+CUST_12AF5997,Sarthak,58,Male,Ahmedabad,Engineer,Medium,Fashion,Evening,sms,Bronze,Twitch,Anonymous
+CUST_18AAD8FB,Bakhshi,43,Male,Delhi,Artist,Medium,Home & Garden,Afternoon,push,Gold,Referral,Dormant
+CUST_3E5FC064,Yug,31,Male,Hyderabad,Consultant,High,Gaming,Night,email,Platinum,Instagram,Loyal
+CUST_75BA66A5,Chakradev,59,Male,Chennai,Manager,Ultra-High,Beauty,Evening,email,Silver,Instagram,Loyal
+CUST_0276CE0E,Abhiram,34,Male,Delhi,Teacher,Ultra-High,Beauty,Morning,push,Bronze,Organic,Cart Active
+CUST_EFAE7945,Pratyush,30,Male,Kolkata,Teacher,Medium,Sports,Afternoon,email,Platinum,Google,Anonymous
+CUST_58BF3EB3,Samaksh,55,Male,Delhi,Engineer,High,Fashion,Night,push,Platinum,Organic,High Intent
+CUST_791BE7DD,Balveer,33,Non-binary,Pune,Student,Low,Books,Evening,email,Gold,Google,Churn Risk
+CUST_43FE3394,Urishilla,41,Non-binary,Bangalore,Manager,Ultra-High,Books,Afternoon,email,Bronze,Twitter,Loyal
+CUST_8DFFB2CE,Harshil,36,Male,Mumbai,Doctor,High,Gaming,Evening,whatsapp,Bronze,Facebook,Cart Active
+CUST_63715C65,Mohini,19,Female,Mumbai,Teacher,Ultra-High,Gaming,Morning,push,Platinum,Facebook,Cart Active
+CUST_9D10986B,Lucky,26,Male,Mumbai,Manager,Medium,Gaming,Afternoon,whatsapp,Bronze,Referral,Dormant
+CUST_AE7296E8,Avi,57,Male,Pune,Artist,Ultra-High,Books,Evening,whatsapp,Bronze,Google,Cart Active
+CUST_F5094D5F,Neel,30,Male,Mumbai,Engineer,Ultra-High,Home & Garden,Afternoon,whatsapp,Platinum,Twitter,Cart Active
+CUST_55E21CDC,Libni,62,Non-binary,Hyderabad,Student,Low,Sports,Evening,whatsapp,Gold,Google,Cart Active
+CUST_8AE530FA,Ronith,36,Male,Mumbai,Teacher,Ultra-High,Sports,Evening,sms,Bronze,Twitch,Anonymous
+CUST_C7AF7E68,Arya,34,Female,Hyderabad,Doctor,High,Gaming,Afternoon,whatsapp,Silver,Twitter,Churn Risk
+CUST_A4B5E952,Benjamin,36,Male,Mumbai,Manager,Ultra-High,Home & Garden,Evening,email,Bronze,Google,High Intent
+CUST_F9C12A90,Ria,20,Non-binary,Hyderabad,Business Owner,High,Sports,Afternoon,sms,Platinum,Twitch,Interested
+CUST_6D34DCA7,Frado,26,Male,Pune,Teacher,High,Electronics,Night,push,Bronze,Referral,Loyal
+CUST_F8398755,Nandini,37,Female,Ahmedabad,Consultant,Low,Beauty,Night,whatsapp,Platinum,Google,High Intent
+CUST_D351A539,Nimrat,38,Female,Pune,Student,Low,Gaming,Afternoon,whatsapp,Gold,Google,Interested
+CUST_956F4391,Krish,24,Male,Mumbai,Engineer,Low,Sports,Night,sms,Bronze,Facebook,Browsing
+CUST_0AA057F5,Chaitanya,27,Non-binary,Ahmedabad,Doctor,Low,Electronics,Night,email,Platinum,Instagram,Cart Active
+CUST_8D6439E0,Daksh,32,Male,Delhi,Doctor,Low,Fashion,Afternoon,email,Gold,Facebook,Anonymous
+CUST_302CEB79,Harini,26,Female,Chennai,Engineer,High,Beauty,Morning,email,Silver,Organic,Cart Active
+CUST_538A7176,Vasana,46,Female,Delhi,Teacher,Medium,Electronics,Evening,email,Silver,Twitch,Interested
+CUST_7D42AE80,Umang,30,Male,Bangalore,Artist,Medium,Sports,Night,whatsapp,Bronze,Twitter,Anonymous
+CUST_A32303A8,Daniel,44,Male,Hyderabad,Consultant,High,Fashion,Night,email,Silver,Google,Loyal
+CUST_711EDC8E,Lakshit,35,Male,Bangalore,Student,Low,Books,Morning,whatsapp,Platinum,Google,Churn Risk
+CUST_1AFE374A,Theodore,28,Male,Delhi,Engineer,High,Fashion,Night,whatsapp,Silver,Twitter,Churn Risk
+CUST_66D6E841,Amol,42,Male,Ahmedabad,Engineer,Low,Sports,Evening,push,Silver,Twitch,Interested
+CUST_94271BA7,Gayathri,22,Female,Ahmedabad,Consultant,Low,Gaming,Night,push,Platinum,Referral,Loyal
+CUST_24C24DF0,Sarthak,24,Male,Mumbai,Engineer,Low,Beauty,Night,push,Gold,Facebook,High Intent
+CUST_D9AFADA6,Fitan,25,Male,Ahmedabad,Manager,Medium,Fashion,Night,whatsapp,Gold,Facebook,Browsing
+CUST_7DABD08A,Isaiah,22,Non-binary,Chennai,Doctor,High,Gaming,Night,whatsapp,Platinum,Facebook,Cart Active
+CUST_0B2DF13F,Mitesh,42,Male,Chennai,Engineer,Ultra-High,Gaming,Morning,push,Gold,Instagram,Churn Risk
+CUST_B231E916,Qadim,37,Male,Delhi,Consultant,High,Sports,Morning,whatsapp,Gold,Organic,High Intent
+CUST_2307D46C,Yochana,58,Female,Mumbai,Doctor,High,Sports,Night,email,Gold,Organic,Anonymous
+CUST_9F6558FE,Nidra,33,Female,Mumbai,Consultant,Low,Home & Garden,Afternoon,email,Bronze,Google,Browsing
+CUST_EEF7C6CD,Sai,24,Male,Mumbai,Consultant,Low,Books,Afternoon,sms,Gold,Twitch,Loyal
+CUST_A28972F7,Jagrati,49,Female,Hyderabad,Doctor,High,Home & Garden,Night,whatsapp,Gold,Twitch,Loyal
+CUST_71D368F0,George,37,Male,Mumbai,Teacher,Ultra-High,Gaming,Morning,email,Platinum,Twitter,Dormant
+CUST_8E801C1B,Lakshmi,48,Female,Hyderabad,Artist,Medium,Sports,Afternoon,whatsapp,Platinum,Google,Loyal
+CUST_0AC726CC,Oliver,28,Male,Kolkata,Manager,High,Electronics,Night,email,Platinum,Instagram,Browsing
+CUST_7852DBC9,Shivansh,57,Male,Bangalore,Engineer,High,Books,Night,sms,Silver,Twitch,Anonymous
+CUST_07EA8A74,Gaurang,23,Male,Bangalore,Consultant,Medium,Sports,Afternoon,whatsapp,Gold,Google,Anonymous
+CUST_BF9F3367,Wriddhish,34,Male,Ahmedabad,Manager,Low,Fashion,Afternoon,whatsapp,Platinum,Facebook,Loyal
+CUST_F3E2D497,Vritti,32,Female,Ahmedabad,Business Owner,High,Fashion,Evening,whatsapp,Silver,Twitch,Browsing
+CUST_1A361C57,Jackson,23,Male,Chennai,Artist,High,Books,Evening,sms,Silver,Organic,Cart Active
+CUST_F3F8E500,Max,38,Male,Bangalore,Student,Low,Beauty,Morning,email,Platinum,Organic,Browsing
+CUST_5B263543,Wishi,49,Female,Kolkata,Manager,Ultra-High,Gaming,Night,whatsapp,Gold,Instagram,Loyal
+CUST_EFB1E232,Balveer,33,Male,Kolkata,Teacher,High,Fashion,Evening,push,Gold,Organic,Churn Risk
+CUST_586B166F,Champak,28,Non-binary,Mumbai,Doctor,Medium,Fashion,Afternoon,email,Bronze,Organic,Loyal
+CUST_46A3E974,Ubika,28,Female,Mumbai,Manager,High,Beauty,Evening,whatsapp,Platinum,Twitter,Churn Risk
+CUST_4263EE0F,Jonathan,34,Male,Pune,Business Owner,High,Sports,Afternoon,email,Bronze,Organic,High Intent
+CUST_0799698D,Siddharth,36,Male,Bangalore,Teacher,Medium,Beauty,Night,whatsapp,Silver,Twitter,High Intent
+CUST_C4813074,Balhaar,30,Male,Bangalore,Engineer,Medium,Electronics,Night,sms,Gold,Twitter,High Intent
+CUST_D0D6BA71,Gaurav,42,Male,Mumbai,Manager,High,Books,Night,whatsapp,Gold,Google,High Intent
+CUST_EE839A5D,Anirudh,57,Male,Mumbai,Student,Low,Gaming,Night,whatsapp,Platinum,Instagram,Browsing
+CUST_325501F0,Harita,28,Female,Mumbai,Teacher,High,Beauty,Morning,push,Silver,Referral,Browsing
+CUST_71520E60,Hardik,45,Male,Bangalore,Artist,Ultra-High,Sports,Afternoon,sms,Gold,Referral,Interested
+CUST_462E7A2E,Pranit,47,Male,Chennai,Consultant,Ultra-High,Home & Garden,Morning,whatsapp,Bronze,Instagram,Churn Risk
+CUST_4DC33C38,Faqid,26,Male,Bangalore,Doctor,Ultra-High,Fashion,Afternoon,email,Gold,Organic,Cart Active
+CUST_C640B75F,Jack,52,Non-binary,Bangalore,Student,Low,Books,Morning,sms,Platinum,Instagram,Loyal
+CUST_CF937353,Aarush,50,Male,Mumbai,Doctor,Ultra-High,Home & Garden,Night,whatsapp,Platinum,Twitch,Cart Active
+CUST_642E3418,Ronith,33,Male,Pune,Teacher,High,Sports,Night,sms,Bronze,Referral,Dormant
+CUST_84C827DA,Ekavir,37,Male,Kolkata,Student,Low,Electronics,Evening,push,Platinum,Facebook,Cart Active
+CUST_05D41BA4,Hemal,45,Female,Mumbai,Engineer,High,Fashion,Evening,email,Platinum,Google,Churn Risk
+CUST_5DF7BE8B,Zinal,54,Female,Mumbai,Consultant,Ultra-High,Gaming,Afternoon,whatsapp,Bronze,Organic,Churn Risk
+CUST_9919FCF3,Damini,33,Female,Delhi,Student,Low,Fashion,Night,sms,Gold,Facebook,Cart Active
+CUST_EDAA98F7,Kashish,35,Female,Bangalore,Manager,High,Electronics,Afternoon,whatsapp,Silver,Twitter,Churn Risk
+CUST_7C08061C,Waida,31,Female,Pune,Engineer,Ultra-High,Sports,Evening,email,Silver,Referral,Browsing
+CUST_00BB6298,Sathvik,52,Male,Bangalore,Student,Low,Home & Garden,Evening,whatsapp,Bronze,Facebook,Browsing
+CUST_053AECF7,Jai,35,Male,Bangalore,Student,Low,Home & Garden,Evening,whatsapp,Silver,Referral,Anonymous
+CUST_05128E95,Chandani,34,Female,Bangalore,Doctor,Ultra-High,Beauty,Night,email,Bronze,Referral,Cart Active
+CUST_8E117EE4,Jackson,34,Male,Kolkata,Teacher,Low,Home & Garden,Afternoon,sms,Platinum,Referral,Interested
+CUST_6829755F,Qasim,33,Male,Kolkata,Business Owner,Medium,Beauty,Afternoon,whatsapp,Platinum,Twitch,Anonymous
+CUST_AFA4D7A5,Divya,39,Female,Pune,Business Owner,Ultra-High,Beauty,Morning,push,Bronze,Twitter,High Intent
+CUST_84D63496,Triya,26,Female,Chennai,Student,Low,Home & Garden,Morning,push,Silver,Facebook,Anonymous
+CUST_F665114F,Rishi,25,Male,Mumbai,Engineer,High,Sports,Morning,email,Platinum,Facebook,Cart Active
+CUST_DA68F69F,Dev,45,Male,Hyderabad,Manager,Ultra-High,Books,Night,whatsapp,Silver,Google,High Intent
+CUST_B0CBB472,Qushi,58,Female,Mumbai,Student,Low,Electronics,Afternoon,email,Gold,Google,Anonymous
+CUST_D9E59906,Frado,28,Male,Ahmedabad,Teacher,Low,Sports,Evening,push,Platinum,Google,Dormant
+CUST_22C9C586,Anay,55,Male,Chennai,Student,Low,Electronics,Evening,push,Silver,Facebook,Interested
+CUST_A434A37C,Bimala,24,Female,Ahmedabad,Consultant,Ultra-High,Sports,Evening,sms,Silver,Referral,Dormant
+CUST_B726856D,Ubika,36,Female,Delhi,Manager,Medium,Books,Afternoon,whatsapp,Bronze,Facebook,Anonymous
+CUST_FCBBAB0E,Vidhi,34,Female,Hyderabad,Consultant,High,Fashion,Morning,whatsapp,Platinum,Referral,Dormant
+CUST_2463F2C4,Charles,31,Male,Ahmedabad,Artist,Ultra-High,Sports,Morning,email,Platinum,Instagram,Loyal
+CUST_7A80472F,Dayita,37,Female,Chennai,Manager,Low,Beauty,Morning,email,Platinum,Referral,Anonymous
+CUST_E227EA55,Avni,27,Female,Mumbai,Doctor,Ultra-High,Electronics,Evening,email,Silver,Instagram,Anonymous
+CUST_500B2D9A,Kai,39,Male,Pune,Student,Low,Fashion,Night,sms,Gold,Facebook,Dormant
+CUST_D568E62C,Saanvi,24,Non-binary,Pune,Teacher,Ultra-High,Home & Garden,Night,whatsapp,Bronze,Organic,Dormant
+CUST_B2C5D3F0,Qabil,37,Male,Mumbai,Engineer,Medium,Home & Garden,Evening,email,Bronze,Instagram,Interested
+CUST_4F6B0EF5,Benjamin,32,Male,Delhi,Manager,Low,Fashion,Morning,email,Gold,Google,Anonymous
+CUST_30EC8970,Lekha,34,Female,Ahmedabad,Teacher,Ultra-High,Sports,Evening,push,Platinum,Twitch,Loyal
+CUST_9D087A5B,Ranbir,48,Male,Mumbai,Engineer,Ultra-High,Beauty,Evening,email,Gold,Twitch,Interested
+CUST_A677100E,Bhavani,54,Female,Ahmedabad,Student,Low,Beauty,Evening,whatsapp,Bronze,Twitter,Interested
+CUST_23EFB197,Umang,47,Non-binary,Mumbai,Manager,Low,Sports,Night,email,Platinum,Instagram,Loyal
+CUST_7C7B002A,Amol,29,Male,Ahmedabad,Manager,Ultra-High,Fashion,Night,email,Platinum,Instagram,High Intent
+CUST_50E42BD9,Rishi,30,Non-binary,Delhi,Consultant,Ultra-High,Gaming,Night,email,Bronze,Facebook,Browsing
+CUST_4B21C776,Gopal,39,Male,Hyderabad,Teacher,Ultra-High,Gaming,Evening,email,Gold,Referral,Dormant
+CUST_23EEA7C2,Rachit,46,Male,Delhi,Engineer,Medium,Beauty,Morning,email,Gold,Twitch,Interested
+CUST_B215D3CB,Suhani,20,Female,Delhi,Artist,High,Home & Garden,Night,whatsapp,Silver,Referral,Anonymous
+CUST_9717D202,Ojasvi,50,Non-binary,Mumbai,Doctor,Ultra-High,Gaming,Morning,email,Platinum,Google,Loyal
+CUST_8A4D9CAB,Tarak,47,Male,Delhi,Teacher,Low,Electronics,Morning,sms,Gold,Google,Anonymous
+CUST_0CFCD5D5,Garima,35,Female,Hyderabad,Engineer,Ultra-High,Fashion,Morning,whatsapp,Bronze,Instagram,Interested
+CUST_3B0022BB,Siya,42,Female,Chennai,Student,Low,Gaming,Evening,email,Silver,Google,Loyal
+CUST_C1330647,Yatin,57,Male,Hyderabad,Business Owner,Ultra-High,Fashion,Afternoon,email,Gold,Facebook,Dormant
+CUST_DD504038,Aradhana,50,Female,Hyderabad,Manager,High,Electronics,Afternoon,whatsapp,Bronze,Facebook,Cart Active
+CUST_BB8935C0,Varenya,32,Female,Mumbai,Business Owner,Medium,Electronics,Morning,email,Silver,Instagram,Anonymous
+CUST_CF602B04,Udant,31,Male,Pune,Doctor,Medium,Sports,Night,email,Silver,Twitter,Cart Active
+CUST_5E0BB013,Harshil,23,Male,Hyderabad,Teacher,Low,Beauty,Evening,sms,Gold,Google,Loyal
+CUST_D26CE20B,Samarth,50,Male,Mumbai,Manager,Low,Books,Afternoon,email,Gold,Facebook,Churn Risk
+CUST_66F3F64C,Gaurang,34,Male,Bangalore,Student,Low,Home & Garden,Afternoon,push,Bronze,Referral,Cart Active
+CUST_595A074D,Anirudh,29,Male,Mumbai,Teacher,High,Books,Afternoon,sms,Gold,Instagram,Dormant
+CUST_B6F8C9F4,Ranveer,25,Male,Kolkata,Consultant,High,Sports,Night,whatsapp,Bronze,Google,Interested
+CUST_04E1682F,Dipta,59,Female,Chennai,Engineer,Ultra-High,Sports,Morning,push,Silver,Twitch,Cart Active
+CUST_FC1DFA58,Indrajit,32,Male,Mumbai,Engineer,Low,Beauty,Morning,sms,Platinum,Instagram,Churn Risk
+CUST_61784551,Gaurang,35,Male,Delhi,Consultant,Medium,Sports,Afternoon,email,Gold,Google,Cart Active
+CUST_6452BA91,Gagan,27,Male,Bangalore,Engineer,Ultra-High,Sports,Night,push,Silver,Twitter,Cart Active
+CUST_B5EFCFD7,Dominic,31,Male,Pune,Business Owner,Medium,Gaming,Morning,email,Silver,Referral,Churn Risk
+CUST_78779B3F,Vedhika,29,Female,Hyderabad,Consultant,Ultra-High,Electronics,Morning,whatsapp,Platinum,Twitter,Anonymous
+CUST_E765F27D,Hamsini,30,Female,Pune,Manager,Low,Beauty,Evening,whatsapp,Platinum,Referral,Interested
+CUST_DB6903B7,Sai,54,Male,Hyderabad,Engineer,Ultra-High,Books,Night,push,Bronze,Instagram,Dormant
+CUST_CC615E9C,Hamsini,28,Female,Bangalore,Doctor,Medium,Beauty,Morning,whatsapp,Platinum,Organic,Browsing
+CUST_6CC2B6D5,Isaac,38,Male,Bangalore,Doctor,Medium,Sports,Evening,whatsapp,Silver,Organic,Anonymous
+CUST_E1363176,Shaurya,32,Male,Delhi,Doctor,High,Fashion,Night,whatsapp,Bronze,Google,Interested
+CUST_732199DC,Abdul,28,Male,Chennai,Teacher,Ultra-High,Gaming,Afternoon,push,Gold,Twitter,Interested
+CUST_8BE239CA,Peter,27,Male,Bangalore,Consultant,Medium,Sports,Morning,email,Bronze,Instagram,High Intent
+CUST_FCFD3350,Barkha,27,Female,Mumbai,Doctor,Low,Books,Morning,email,Platinum,Facebook,Anonymous
+CUST_3187E3F9,Ojas,41,Male,Chennai,Artist,Low,Sports,Morning,email,Gold,Twitter,Anonymous
+CUST_8BF8807D,Jackson,39,Male,Mumbai,Teacher,High,Gaming,Morning,whatsapp,Bronze,Facebook,Loyal
+CUST_813B4C1D,Yashica,44,Female,Hyderabad,Teacher,Ultra-High,Fashion,Morning,email,Silver,Google,Dormant
+CUST_3A24199B,Tanay,31,Male,Mumbai,Business Owner,Medium,Electronics,Evening,sms,Bronze,Instagram,Browsing
+CUST_4DE3D4BE,Yatin,59,Male,Mumbai,Artist,Ultra-High,Beauty,Night,whatsapp,Platinum,Referral,Dormant
+CUST_67D19DA2,Jairaj,30,Male,Mumbai,Teacher,Low,Electronics,Afternoon,email,Bronze,Referral,High Intent
+CUST_A72EF9E3,Michael,26,Male,Mumbai,Teacher,Low,Books,Morning,whatsapp,Silver,Facebook,Loyal
+CUST_5E96CE43,Vyanjana,24,Female,Bangalore,Doctor,Medium,Books,Morning,sms,Gold,Google,Dormant
+CUST_D665C471,Vedika,38,Female,Mumbai,Student,Low,Gaming,Evening,sms,Silver,Instagram,High Intent
+CUST_4726940D,Chakradhar,23,Male,Mumbai,Student,Low,Sports,Morning,push,Platinum,Google,Interested
+CUST_05774682,Janaki,22,Female,Mumbai,Manager,High,Fashion,Morning,whatsapp,Silver,Facebook,Browsing
+CUST_E297E034,Harinakshi,28,Female,Ahmedabad,Artist,Low,Books,Morning,sms,Platinum,Organic,High Intent
+CUST_76F2413B,Ekavir,51,Male,Ahmedabad,Manager,High,Gaming,Evening,email,Platinum,Facebook,Dormant
+CUST_58844B20,Bhavani,31,Female,Hyderabad,Engineer,Medium,Fashion,Afternoon,sms,Platinum,Twitter,Churn Risk
+CUST_8C946A45,Yahvi,35,Female,Mumbai,Business Owner,Medium,Sports,Afternoon,whatsapp,Platinum,Google,Cart Active
+CUST_A1319669,Frado,29,Male,Hyderabad,Artist,Medium,Sports,Afternoon,push,Silver,Twitter,Dormant
+CUST_DAF217DC,Ethan,39,Male,Hyderabad,Artist,High,Gaming,Evening,push,Silver,Facebook,Loyal
+CUST_5BF19433,Daksh,28,Male,Delhi,Teacher,Low,Books,Morning,email,Platinum,Organic,Churn Risk
+CUST_65AAD139,Lipika,36,Female,Mumbai,Business Owner,Low,Home & Garden,Afternoon,email,Bronze,Twitch,Browsing
+CUST_E7CCC8F3,Neha,49,Female,Pune,Manager,Low,Electronics,Night,email,Platinum,Facebook,High Intent
+CUST_6F69CD23,Nikita,29,Female,Pune,Artist,High,Beauty,Evening,push,Silver,Google,Cart Active
+CUST_6BB19DF4,Fitan,29,Male,Bangalore,Manager,High,Beauty,Afternoon,email,Bronze,Twitch,High Intent
+CUST_DB9A335D,Ekapad,48,Male,Kolkata,Teacher,Low,Sports,Morning,push,Gold,Twitch,Interested
+CUST_F70CEE46,Adya,51,Female,Bangalore,Doctor,Ultra-High,Beauty,Morning,whatsapp,Bronze,Twitter,Churn Risk
+CUST_FEC88168,Chameli,23,Non-binary,Bangalore,Teacher,Low,Books,Morning,push,Bronze,Twitter,Churn Risk
+CUST_3D41A73A,Anya,44,Female,Kolkata,Consultant,Ultra-High,Home & Garden,Morning,email,Gold,Facebook,Interested
+CUST_D34AB1F8,Anita,44,Female,Delhi,Manager,Low,Sports,Morning,email,Platinum,Twitter,Loyal
+CUST_DE1FEA94,Abhimanyu,38,Male,Hyderabad,Manager,Medium,Sports,Morning,email,Gold,Twitch,Dormant
+CUST_D8629B7D,Umang,36,Male,Bangalore,Business Owner,Medium,Home & Garden,Morning,whatsapp,Silver,Twitter,Browsing
+CUST_394BBCE4,Kiaan,45,Male,Bangalore,Business Owner,High,Gaming,Evening,sms,Gold,Referral,Interested
+CUST_E7346EB8,Chakrika,28,Female,Mumbai,Doctor,Medium,Beauty,Evening,email,Silver,Organic,Churn Risk
+CUST_9D8D3CB7,Damini,39,Female,Delhi,Artist,High,Fashion,Night,push,Bronze,Twitch,Loyal
+CUST_EE577E68,Harshil,55,Male,Hyderabad,Consultant,Ultra-High,Fashion,Morning,whatsapp,Platinum,Twitch,Interested
+CUST_4F08C7E1,Pooja,45,Female,Pune,Teacher,High,Electronics,Evening,email,Gold,Instagram,Churn Risk
+CUST_6EE4FF22,Nikita,31,Female,Mumbai,Teacher,Low,Books,Night,whatsapp,Silver,Twitch,Browsing
+CUST_0D24552E,Manthan,32,Male,Chennai,Artist,Ultra-High,Fashion,Evening,push,Platinum,Instagram,Dormant
+CUST_2FD10D2E,Omisha,23,Female,Bangalore,Business Owner,High,Gaming,Afternoon,whatsapp,Platinum,Twitch,Anonymous
+CUST_35E4EBEE,Qarin,42,Male,Mumbai,Student,Low,Home & Garden,Afternoon,whatsapp,Platinum,Twitch,High Intent
+CUST_019A65F6,Xalak,58,Female,Hyderabad,Artist,Ultra-High,Electronics,Evening,sms,Silver,Twitter,Interested
+CUST_27CCC870,Reyansh,38,Male,Bangalore,Student,Low,Electronics,Afternoon,sms,Platinum,Instagram,Loyal
+CUST_560A375E,Ojas,37,Male,Delhi,Business Owner,Low,Fashion,Morning,whatsapp,Gold,Google,Churn Risk
+CUST_E8306052,Hemang,60,Male,Delhi,Consultant,Ultra-High,Beauty,Morning,email,Gold,Referral,Loyal
+CUST_40C1C35F,Yug,33,Male,Delhi,Doctor,Medium,Fashion,Afternoon,whatsapp,Bronze,Facebook,Cart Active
+CUST_4973FEA9,Vihaan,30,Male,Chennai,Student,Low,Books,Afternoon,sms,Platinum,Instagram,Browsing
+CUST_19632405,Chanakya,58,Male,Pune,Teacher,Ultra-High,Books,Afternoon,sms,Gold,Facebook,Interested
+CUST_29F2B405,Kalpit,41,Male,Kolkata,Artist,Low,Sports,Afternoon,whatsapp,Platinum,Organic,Dormant
+CUST_1DC6721B,Tanmayi,56,Female,Hyderabad,Artist,High,Books,Afternoon,whatsapp,Bronze,Referral,Interested
+CUST_635C9A61,Logan,39,Male,Chennai,Business Owner,Low,Fashion,Afternoon,email,Silver,Google,Interested
+CUST_F0626251,Janya,50,Female,Bangalore,Manager,Ultra-High,Sports,Morning,email,Gold,Organic,Browsing
+CUST_A046FDBD,Raghav,45,Male,Delhi,Student,Low,Electronics,Afternoon,email,Bronze,Twitch,Churn Risk
+CUST_2CD14C35,Vasatika,40,Female,Kolkata,Artist,Medium,Electronics,Night,sms,Platinum,Referral,Loyal
+CUST_C9FDE206,Parth,25,Male,Delhi,Business Owner,Low,Beauty,Morning,whatsapp,Bronze,Organic,High Intent
+CUST_AFFDA14D,Falan,33,Male,Chennai,Student,Low,Beauty,Evening,sms,Bronze,Organic,Cart Active
+CUST_DDD5D12B,Ethan,26,Male,Kolkata,Teacher,High,Home & Garden,Night,whatsapp,Platinum,Instagram,Anonymous
+CUST_F080180D,Aditya,28,Male,Ahmedabad,Manager,High,Sports,Afternoon,email,Bronze,Facebook,High Intent
+CUST_3AFE3828,Noah,44,Male,Hyderabad,Artist,Low,Sports,Night,push,Platinum,Google,Dormant
+CUST_E82A5B06,Chaman,28,Female,Mumbai,Engineer,Low,Beauty,Night,whatsapp,Platinum,Instagram,Browsing
+CUST_9755D509,Manan,52,Male,Mumbai,Consultant,Ultra-High,Gaming,Morning,whatsapp,Platinum,Google,Anonymous
+CUST_B6244435,Frederick,28,Male,Chennai,Business Owner,Low,Home & Garden,Night,whatsapp,Platinum,Organic,Cart Active
+CUST_B1EB07F1,Imaran,38,Male,Pune,Manager,Low,Gaming,Afternoon,whatsapp,Bronze,Organic,Anonymous
+CUST_81413439,Nimrat,42,Female,Hyderabad,Consultant,Ultra-High,Gaming,Morning,whatsapp,Bronze,Referral,High Intent
+CUST_EF7187EF,Pallavi,56,Female,Delhi,Student,Low,Sports,Afternoon,email,Gold,Organic,High Intent
+CUST_52E25B39,Triya,39,Female,Hyderabad,Engineer,Medium,Home & Garden,Evening,whatsapp,Silver,Twitch,Cart Active
+CUST_3901D123,Upkaar,34,Male,Mumbai,Doctor,Ultra-High,Electronics,Evening,email,Bronze,Organic,Browsing
+CUST_607B58AC,Victor,26,Male,Ahmedabad,Artist,Low,Sports,Night,whatsapp,Platinum,Organic,Loyal
+CUST_7E9EF41D,Niharika,22,Female,Pune,Artist,Medium,Home & Garden,Night,whatsapp,Platinum,Twitter,Interested
+CUST_FCE6B254,Ijaya,51,Female,Mumbai,Student,Low,Sports,Morning,email,Platinum,Twitch,Browsing
+CUST_3FC6B029,Divya,49,Female,Mumbai,Doctor,High,Home & Garden,Afternoon,email,Gold,Facebook,Loyal
+CUST_6B3B55D4,Hritik,32,Male,Mumbai,Consultant,High,Books,Evening,whatsapp,Gold,Organic,High Intent
+CUST_0D9C3C6D,Brijesh,32,Male,Pune,Engineer,Ultra-High,Gaming,Morning,whatsapp,Silver,Referral,Dormant
+CUST_EAD51975,Gabriel,26,Male,Hyderabad,Teacher,Low,Gaming,Night,whatsapp,Bronze,Twitter,High Intent
+CUST_6401C024,Varenya,24,Female,Pune,Student,Low,Books,Morning,push,Bronze,Twitter,Loyal
+CUST_1419DF71,Matthew,39,Male,Chennai,Student,Low,Home & Garden,Night,push,Platinum,Twitter,Churn Risk
+CUST_E80D9B4D,Bachittar,25,Male,Hyderabad,Manager,Low,Beauty,Afternoon,whatsapp,Platinum,Instagram,High Intent
+CUST_0D679C7A,Daksh,26,Male,Delhi,Consultant,Low,Home & Garden,Night,whatsapp,Bronze,Twitch,Interested
+CUST_E9D7F09D,Anamika,31,Female,Chennai,Manager,Ultra-High,Gaming,Morning,whatsapp,Silver,Google,Browsing
+CUST_442BA77D,Balhaar,25,Male,Ahmedabad,Manager,Ultra-High,Electronics,Afternoon,email,Platinum,Twitch,Dormant
+CUST_5E833011,Devansh,27,Male,Delhi,Manager,Medium,Home & Garden,Morning,email,Bronze,Google,Anonymous
+CUST_47E0987A,Pahal,42,Female,Pune,Student,Low,Fashion,Morning,sms,Silver,Facebook,Churn Risk
+CUST_52F8A762,Daksh,49,Male,Bangalore,Manager,Medium,Beauty,Night,email,Bronze,Twitch,Churn Risk
+CUST_4D49D219,Urishilla,28,Female,Hyderabad,Manager,Medium,Books,Evening,whatsapp,Silver,Instagram,Churn Risk
+CUST_3A3C56D3,Anusha,29,Female,Pune,Student,Low,Home & Garden,Evening,email,Bronze,Twitch,Churn Risk
+CUST_53665C2A,Robert,23,Male,Bangalore,Teacher,Low,Beauty,Afternoon,push,Bronze,Facebook,Dormant
+CUST_0D60282C,Ekantika,54,Non-binary,Kolkata,Teacher,High,Home & Garden,Afternoon,email,Bronze,Google,High Intent
+CUST_3E82BC00,Vritti,20,Female,Delhi,Doctor,High,Fashion,Night,push,Bronze,Twitch,Cart Active
+CUST_13032569,Ekaja,34,Female,Delhi,Manager,Low,Beauty,Night,email,Platinum,Twitter,Browsing
+CUST_AEFFBB31,Indira,37,Non-binary,Mumbai,Business Owner,Medium,Gaming,Evening,push,Silver,Referral,Interested
+CUST_E8C23CF2,Vanya,30,Female,Mumbai,Doctor,Medium,Fashion,Night,email,Silver,Twitter,Loyal
+CUST_43216AB0,Abdul,27,Non-binary,Delhi,Doctor,Low,Sports,Night,email,Silver,Referral,Interested
+CUST_A8DE6CBB,Eshana,35,Female,Hyderabad,Doctor,High,Sports,Night,email,Gold,Facebook,Loyal
+CUST_288DE215,Bachittar,49,Male,Ahmedabad,Teacher,Ultra-High,Fashion,Morning,sms,Platinum,Google,Interested
+CUST_A5EAAA27,Praneel,30,Male,Kolkata,Business Owner,Ultra-High,Books,Night,whatsapp,Gold,Organic,Browsing
+CUST_086C9EA2,Ladli,20,Female,Pune,Student,Low,Fashion,Night,sms,Silver,Instagram,Loyal
+CUST_358A3BBF,Mekhala,33,Female,Pune,Doctor,Medium,Sports,Afternoon,whatsapp,Silver,Organic,Interested
+CUST_5EFCA7D3,Omkaar,22,Male,Delhi,Business Owner,Medium,Home & Garden,Evening,whatsapp,Bronze,Facebook,Anonymous
+CUST_65C8F81A,Pranav,47,Male,Hyderabad,Consultant,High,Sports,Night,email,Silver,Referral,Dormant
+CUST_D133848B,Aachal,39,Female,Bangalore,Artist,Medium,Electronics,Evening,push,Platinum,Google,Cart Active
+CUST_D7E5199C,Qarin,35,Male,Mumbai,Business Owner,Ultra-High,Sports,Morning,push,Gold,Twitch,Anonymous
+CUST_6F1B6EA5,Ridhi,24,Female,Chennai,Business Owner,Medium,Sports,Afternoon,push,Bronze,Instagram,Cart Active
+CUST_FAA24C6B,Ikshita,38,Non-binary,Kolkata,Teacher,Low,Gaming,Morning,sms,Bronze,Referral,Cart Active
+CUST_FEC40CE5,Chandran,38,Male,Mumbai,Manager,High,Fashion,Morning,whatsapp,Platinum,Instagram,High Intent
+CUST_36608905,Riya,46,Female,Mumbai,Manager,Medium,Fashion,Evening,email,Platinum,Facebook,Dormant
+CUST_A34A1CD7,Ekanta,32,Female,Ahmedabad,Student,Low,Gaming,Night,whatsapp,Platinum,Google,Interested
+CUST_03828410,Aarush,48,Male,Mumbai,Student,Low,Electronics,Evening,whatsapp,Gold,Twitter,Browsing
+CUST_827F4A54,Samar,44,Male,Chennai,Manager,Ultra-High,Sports,Night,email,Platinum,Twitter,Anonymous
+CUST_4BA78447,Manan,43,Male,Bangalore,Teacher,High,Books,Evening,sms,Platinum,Facebook,Cart Active
+CUST_B235EDF2,Gauri,30,Female,Delhi,Manager,Ultra-High,Books,Evening,whatsapp,Bronze,Twitter,Anonymous
+CUST_AA0CFD5A,Arjun,33,Male,Delhi,Engineer,Low,Beauty,Morning,email,Bronze,Instagram,Cart Active
+CUST_8C65C9E1,Hitesh,49,Non-binary,Delhi,Doctor,Ultra-High,Beauty,Afternoon,email,Silver,Referral,Interested
+CUST_443DBF8F,Ira,40,Female,Mumbai,Consultant,Medium,Electronics,Afternoon,whatsapp,Platinum,Facebook,Cart Active
+CUST_0417587D,Gaurang,36,Male,Pune,Manager,Ultra-High,Home & Garden,Afternoon,email,Bronze,Google,Dormant
+CUST_76AC0392,Harish,54,Male,Bangalore,Doctor,Ultra-High,Electronics,Night,whatsapp,Platinum,Twitch,Anonymous
+CUST_FF0607BB,Laban,35,Male,Delhi,Teacher,Medium,Electronics,Evening,email,Silver,Google,Interested
+CUST_152DD3F0,Aradhana,48,Female,Mumbai,Teacher,Low,Home & Garden,Evening,sms,Silver,Google,Interested
+CUST_D319C2D4,Nachiket,36,Male,Chennai,Consultant,High,Home & Garden,Morning,whatsapp,Silver,Google,Loyal
+CUST_43FCC9A5,Simon,38,Non-binary,Mumbai,Engineer,Medium,Sports,Morning,whatsapp,Gold,Referral,Churn Risk
+CUST_5ED05649,Irya,47,Female,Delhi,Doctor,Ultra-High,Home & Garden,Afternoon,whatsapp,Platinum,Facebook,Interested
+CUST_909AA15D,Jagrati,30,Female,Delhi,Student,Low,Fashion,Afternoon,push,Gold,Twitch,Cart Active
+CUST_B319ED7C,Warinder,37,Male,Hyderabad,Teacher,Low,Gaming,Afternoon,sms,Silver,Google,Loyal
+CUST_2367332C,Kashvi,50,Female,Chennai,Manager,Ultra-High,Fashion,Evening,whatsapp,Platinum,Twitch,Anonymous
+CUST_F112702A,Tanveer,40,Male,Kolkata,Teacher,Low,Beauty,Morning,push,Silver,Facebook,Interested
+CUST_43E1C3FE,Yatan,35,Non-binary,Delhi,Manager,High,Electronics,Night,email,Silver,Instagram,Interested
+CUST_10B52115,Ryan,37,Male,Mumbai,Business Owner,High,Electronics,Evening,push,Platinum,Organic,Browsing
+CUST_4F614825,Nathaniel,40,Male,Chennai,Business Owner,Ultra-High,Fashion,Evening,whatsapp,Platinum,Twitter,Anonymous
+CUST_DF1BA4AD,Janani,55,Female,Kolkata,Teacher,Medium,Electronics,Morning,push,Platinum,Instagram,High Intent
+CUST_7F6A8925,Rehaan,36,Non-binary,Delhi,Doctor,Ultra-High,Gaming,Evening,whatsapp,Silver,Facebook,Interested
+CUST_27F2C1C5,Tanvi,50,Female,Bangalore,Consultant,Ultra-High,Sports,Afternoon,email,Platinum,Google,Cart Active
+CUST_848687AA,Lekha,28,Female,Ahmedabad,Business Owner,High,Sports,Evening,push,Silver,Twitch,Cart Active
+CUST_6ABF865A,Gabriel,39,Male,Kolkata,Artist,High,Home & Garden,Morning,whatsapp,Gold,Referral,Loyal
+CUST_96077CC0,Rishi,36,Male,Pune,Business Owner,High,Fashion,Evening,push,Silver,Twitter,Churn Risk
+CUST_AC61A36B,Vamakshi,40,Female,Pune,Student,Low,Books,Night,whatsapp,Gold,Instagram,Loyal
+CUST_D4854721,Ishaan,35,Male,Delhi,Consultant,Medium,Sports,Morning,email,Gold,Organic,Cart Active
+CUST_079742A8,Harsh,20,Male,Chennai,Engineer,High,Beauty,Morning,whatsapp,Platinum,Instagram,Interested
+CUST_90355462,Kevin,51,Male,Ahmedabad,Consultant,Ultra-High,Books,Evening,whatsapp,Silver,Twitch,Churn Risk
+CUST_17CE53E7,Varsha,41,Female,Bangalore,Business Owner,High,Books,Afternoon,email,Gold,Twitch,Loyal
+CUST_0863F041,Odika,35,Female,Hyderabad,Consultant,Medium,Beauty,Evening,whatsapp,Platinum,Referral,Cart Active
+CUST_2EFCFE48,Manthan,54,Male,Mumbai,Student,Low,Gaming,Evening,whatsapp,Platinum,Google,Cart Active
+CUST_A1886EE9,David,40,Male,Kolkata,Doctor,Ultra-High,Beauty,Night,whatsapp,Gold,Google,Browsing
+CUST_D49BFB32,Pranit,46,Male,Bangalore,Artist,Ultra-High,Gaming,Afternoon,whatsapp,Gold,Organic,Browsing
+CUST_F32EC161,Gauri,26,Female,Delhi,Artist,High,Sports,Morning,email,Silver,Organic,Loyal
+CUST_637934D3,Nihal,34,Male,Ahmedabad,Doctor,High,Electronics,Night,whatsapp,Gold,Organic,Interested
+CUST_AC3367D9,Siya,32,Female,Mumbai,Manager,High,Fashion,Evening,whatsapp,Bronze,Organic,Dormant
+CUST_23CA8613,Faras,36,Male,Mumbai,Engineer,Ultra-High,Sports,Morning,push,Bronze,Google,Churn Risk
+CUST_A9F28BD6,Warinder,37,Non-binary,Chennai,Doctor,Medium,Sports,Morning,whatsapp,Bronze,Referral,Interested
+CUST_C2529F48,Ishwar,25,Male,Chennai,Manager,Low,Electronics,Morning,email,Gold,Twitter,Browsing
+CUST_AB791841,Niharika,44,Female,Bangalore,Engineer,High,Books,Morning,sms,Gold,Instagram,Dormant
+CUST_C95518E2,Mohammed,36,Male,Bangalore,Doctor,Ultra-High,Beauty,Afternoon,whatsapp,Gold,Instagram,Cart Active
+CUST_ACB3D092,Yoshita,29,Female,Pune,Doctor,Medium,Books,Night,email,Platinum,Twitter,Cart Active
+CUST_EB22D54A,Oeshi,53,Female,Pune,Manager,Low,Fashion,Afternoon,email,Gold,Twitch,Churn Risk
+CUST_653FCFFE,Vanya,28,Female,Mumbai,Student,Low,Beauty,Afternoon,push,Platinum,Twitch,Dormant
+CUST_3E813AFB,Gauri,60,Female,Kolkata,Consultant,Ultra-High,Beauty,Afternoon,email,Gold,Facebook,High Intent
+CUST_1247D355,Upkaar,39,Male,Mumbai,Artist,Ultra-High,Electronics,Evening,whatsapp,Silver,Google,High Intent
+CUST_99797127,Riya,34,Female,Delhi,Teacher,High,Books,Morning,sms,Silver,Twitch,Loyal
+CUST_2FA80455,Matthew,31,Male,Bangalore,Consultant,Low,Home & Garden,Afternoon,whatsapp,Bronze,Twitch,Dormant
+CUST_9BE8EFDB,Veer,33,Male,Delhi,Student,Low,Sports,Night,whatsapp,Bronze,Twitter,Cart Active
+CUST_23F288E0,Anmol,62,Male,Pune,Doctor,Ultra-High,Home & Garden,Afternoon,whatsapp,Bronze,Twitter,Churn Risk
+CUST_B4EBE1E3,Jhalak,46,Female,Bangalore,Manager,Medium,Beauty,Morning,whatsapp,Platinum,Organic,Anonymous
+CUST_0B71948B,Samuel,37,Male,Pune,Business Owner,High,Sports,Morning,whatsapp,Platinum,Google,High Intent
+CUST_84D2D851,Jai,57,Male,Bangalore,Manager,High,Books,Night,email,Gold,Organic,Anonymous
+CUST_A44512C0,Girik,36,Male,Mumbai,Engineer,High,Home & Garden,Morning,email,Bronze,Organic,High Intent
+CUST_483EE7A7,Krish,53,Male,Ahmedabad,Teacher,Ultra-High,Books,Morning,push,Platinum,Organic,Loyal
+CUST_33336E21,Daksha,29,Female,Kolkata,Business Owner,Low,Books,Night,whatsapp,Platinum,Organic,High Intent
+CUST_9FAC6DE4,Nachiket,31,Male,Mumbai,Doctor,Medium,Gaming,Night,whatsapp,Platinum,Twitter,Anonymous
+CUST_8D231AE2,Nitara,56,Female,Delhi,Engineer,High,Books,Night,whatsapp,Bronze,Twitch,High Intent
+CUST_FD5C5434,Darpan,26,Male,Bangalore,Doctor,Medium,Fashion,Night,email,Gold,Instagram,Interested
+CUST_5E03E8A0,Luke,56,Male,Mumbai,Engineer,Low,Books,Morning,push,Bronze,Referral,Churn Risk
+CUST_4E1F226E,Forum,51,Female,Chennai,Consultant,High,Fashion,Evening,email,Platinum,Twitch,Anonymous
+CUST_188B84EE,Girik,26,Male,Mumbai,Engineer,High,Fashion,Afternoon,email,Bronze,Organic,Loyal
+CUST_FBB9A1EC,Priya,49,Female,Ahmedabad,Consultant,High,Books,Evening,whatsapp,Bronze,Google,Anonymous
+CUST_E469213F,Vasatika,49,Female,Bangalore,Consultant,Ultra-High,Beauty,Night,email,Platinum,Twitter,Loyal
+CUST_9A03823A,Mason,23,Male,Delhi,Artist,High,Books,Night,sms,Bronze,Instagram,Anonymous
+CUST_0EE83A44,Charvi,27,Female,Delhi,Manager,Ultra-High,Gaming,Evening,whatsapp,Platinum,Referral,Interested
+CUST_8B5D9007,Bhavika,48,Female,Bangalore,Business Owner,Ultra-High,Fashion,Night,whatsapp,Gold,Twitch,Anonymous
+CUST_B3765000,Upma,50,Female,Bangalore,Consultant,High,Home & Garden,Evening,email,Gold,Referral,High Intent
+CUST_F0EF17C0,Kavya,45,Female,Mumbai,Consultant,High,Fashion,Morning,whatsapp,Bronze,Twitter,Browsing
+CUST_82D9BCE5,Wazir,28,Male,Hyderabad,Engineer,Ultra-High,Sports,Morning,sms,Platinum,Referral,Anonymous
+CUST_8F7A5C8B,Rehaan,30,Male,Hyderabad,Student,Low,Books,Morning,sms,Silver,Facebook,Cart Active
+CUST_4F041D51,Pavani,50,Female,Bangalore,Consultant,Ultra-High,Electronics,Morning,email,Silver,Twitter,High Intent
+CUST_FF17432C,Peter,37,Male,Mumbai,Manager,Medium,Fashion,Night,whatsapp,Silver,Twitter,Anonymous
+CUST_B5684CA8,Yamini,39,Female,Bangalore,Engineer,High,Books,Evening,whatsapp,Gold,Facebook,Cart Active
+CUST_56D08890,Madhav,31,Male,Mumbai,Student,Low,Beauty,Morning,push,Platinum,Instagram,Dormant
+CUST_867A7DE6,Krisha,46,Female,Chennai,Doctor,High,Books,Evening,email,Gold,Organic,High Intent
+CUST_9F3A1613,Rachit,47,Male,Hyderabad,Business Owner,High,Gaming,Morning,email,Platinum,Instagram,Churn Risk
+CUST_19F2196D,Turvi,27,Female,Ahmedabad,Engineer,High,Books,Night,whatsapp,Platinum,Instagram,Loyal
+CUST_11C948DA,Yagnesh,40,Male,Mumbai,Manager,High,Home & Garden,Night,email,Platinum,Organic,Anonymous
+CUST_58606570,Reva,27,Female,Chennai,Doctor,High,Fashion,Night,whatsapp,Silver,Instagram,High Intent
+CUST_C77883ED,Chatura,39,Male,Bangalore,Manager,High,Gaming,Afternoon,whatsapp,Silver,Facebook,Interested
+CUST_DD40A301,Warinder,23,Male,Hyderabad,Business Owner,Ultra-High,Beauty,Afternoon,whatsapp,Platinum,Referral,Anonymous
+CUST_D8D2FDCB,Yashica,57,Female,Delhi,Manager,High,Beauty,Morning,whatsapp,Bronze,Twitch,Churn Risk
+CUST_9FA79122,Nathaniel,45,Male,Bangalore,Manager,Low,Home & Garden,Morning,whatsapp,Gold,Google,Dormant
+CUST_97CD1252,Lopa,31,Female,Bangalore,Teacher,Ultra-High,Electronics,Night,sms,Bronze,Organic,Interested
+CUST_D826C7E9,Sarthak,38,Male,Ahmedabad,Consultant,Low,Beauty,Afternoon,whatsapp,Gold,Google,Browsing
+CUST_8A9962A4,Faraj,50,Male,Chennai,Consultant,High,Home & Garden,Night,email,Platinum,Twitter,Anonymous
+CUST_0DB8C5EC,Januja,30,Female,Delhi,Artist,Medium,Beauty,Night,push,Gold,Organic,Anonymous
+CUST_90E53D61,Inaya,28,Female,Mumbai,Engineer,Ultra-High,Books,Evening,email,Platinum,Twitch,Loyal
+CUST_04AB380C,Rajata,50,Female,Hyderabad,Artist,Medium,Books,Night,sms,Bronze,Instagram,Cart Active
+CUST_D57FE0BC,Amara,23,Female,Ahmedabad,Engineer,High,Sports,Morning,whatsapp,Platinum,Instagram,Loyal
+CUST_C52FAA26,Logan,44,Male,Bangalore,Consultant,Ultra-High,Gaming,Afternoon,whatsapp,Gold,Referral,Browsing
+CUST_22023F09,Quincy,39,Male,Chennai,Consultant,Low,Sports,Afternoon,email,Platinum,Organic,Cart Active
+CUST_D3EF9E22,Hardik,33,Male,Mumbai,Engineer,Ultra-High,Fashion,Morning,email,Platinum,Referral,Anonymous
+CUST_FE7CF396,Nitesh,47,Male,Mumbai,Doctor,Ultra-High,Fashion,Evening,email,Bronze,Twitter,Loyal
+CUST_E95ED05E,Frado,31,Male,Mumbai,Consultant,Low,Books,Morning,email,Platinum,Twitter,Anonymous
+CUST_79EBAC2B,Divya,31,Female,Mumbai,Manager,Ultra-High,Electronics,Morning,whatsapp,Silver,Instagram,Cart Active
+CUST_E10AE950,Qasim,35,Male,Ahmedabad,Business Owner,Low,Beauty,Afternoon,email,Bronze,Referral,Browsing
+CUST_467A7CB2,Akshay,32,Male,Hyderabad,Manager,High,Fashion,Night,email,Gold,Facebook,Loyal
+CUST_055B9C2E,Bhavani,32,Female,Delhi,Business Owner,Medium,Beauty,Night,sms,Platinum,Twitter,High Intent
+CUST_D0A5B691,Varsha,34,Female,Delhi,Doctor,Ultra-High,Sports,Afternoon,whatsapp,Silver,Twitch,Browsing
+CUST_FF1FD384,Hritik,26,Male,Chennai,Teacher,Ultra-High,Sports,Night,push,Gold,Twitch,Dormant
+CUST_9C7733C9,Harinakshi,49,Female,Delhi,Engineer,Low,Books,Night,whatsapp,Bronze,Organic,Cart Active
+CUST_89CE4A1E,Keya,27,Female,Bangalore,Teacher,Low,Books,Night,sms,Silver,Twitter,Loyal
+CUST_3BBD2672,Neelima,25,Female,Delhi,Manager,High,Gaming,Night,whatsapp,Bronze,Organic,High Intent
+CUST_0522E9F6,Alka,32,Female,Pune,Consultant,Ultra-High,Fashion,Morning,whatsapp,Silver,Facebook,Dormant
+CUST_AFD558F5,Balendra,49,Male,Bangalore,Student,Low,Home & Garden,Night,sms,Platinum,Referral,Loyal
+CUST_43F3B4AD,Andrew,60,Male,Pune,Doctor,High,Home & Garden,Night,whatsapp,Bronze,Facebook,Anonymous
+CUST_F263F203,Geetika,43,Female,Delhi,Teacher,Medium,Fashion,Afternoon,email,Gold,Facebook,Interested
+CUST_AA650E61,Simon,50,Male,Bangalore,Artist,Ultra-High,Books,Evening,whatsapp,Silver,Referral,Cart Active
+CUST_37E7FB43,Jagvi,29,Female,Delhi,Engineer,Ultra-High,Electronics,Afternoon,sms,Platinum,Facebook,Cart Active
+CUST_AB0C4AE8,Tamanna,31,Female,Bangalore,Student,Low,Books,Morning,sms,Gold,Google,High Intent
+CUST_70827BC2,Arin,25,Male,Bangalore,Artist,Ultra-High,Beauty,Morning,email,Gold,Twitter,Browsing

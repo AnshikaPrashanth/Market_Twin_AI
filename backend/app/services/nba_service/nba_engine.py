@@ -124,40 +124,11 @@ def _confidence_from_fatigue(fatigue: int) -> float:
 # ---------------------------------------------------------------------------
 
 _RULES: List[Rule] = [
-    # ── Rule 1: converted customers — never re-market ────────────────────
-    Rule(
-        action="do_nothing",
-        predicate=lambda s: (
-            s["purchases"] > 0 or s["is_converted"],
-            0.99,
-        ),
-        reason_tmpl=(
-            "Customer {customer_id} has already converted. "
-            "No further marketing action is required."
-        ),
-    ),
-
-    # ── Rule 2: high fatigue — protect the relationship ──────────────────
-    Rule(
-        action="reduce_frequency",
-        predicate=lambda s: (
-            s["fatigue_score"] >= FATIGUE_HIGH,
-            _confidence_from_fatigue(s["fatigue_score"]),
-        ),
-        reason_tmpl=(
-            "Fatigue score {fatigue_score} exceeds threshold {fatigue_high}. "
-            "Customer {customer_id} is over-messaged; cooling down to protect "
-            "long-term engagement."
-        ),
-    ),
-
-    # ── Rule 3: Cart abandonment recovery (New) ──────────────────────────
+    # ── Rule 1: Cart abandonment recovery (New) ──────────────────────────
     Rule(
         action="cart_recovery_coupon",
         predicate=lambda s: (
-            s["abandonments"] >= 1
-            and s["fatigue_score"] < FATIGUE_HIGH
-            and s["purchases"] == 0,
+            s["abandonments"] >= 1 and not s["is_converted"],
             0.85,
         ),
         reason_tmpl=(
@@ -166,7 +137,20 @@ _RULES: List[Rule] = [
         ),
     ),
 
-    # ── Rule 4: high intent + low fatigue → WhatsApp ─────────────────────
+    # ── Rule 2: converted customers — never re-market ────────────────────
+    Rule(
+        action="reduce_frequency",
+        predicate=lambda s: (
+            s["is_converted"] or s["fatigue_score"] >= FATIGUE_HIGH,
+            _confidence_from_fatigue(s["fatigue_score"]) if s["fatigue_score"] >= FATIGUE_HIGH else 0.95,
+        ),
+        reason_tmpl=(
+            "Customer {customer_id} is recently converted or highly fatigued. "
+            "Cooling down to protect long-term engagement."
+        ),
+    ),
+
+    # ── Rule 3: high fatigue — protect the relationship ──────────────────
     Rule(
         action="send_whatsapp",
         predicate=lambda s: (
@@ -254,7 +238,14 @@ class NBAEngine:
         snap = _extract_snapshot(customer_twin)
         rule, confidence = self._evaluate(snap)
         reason = self._format_reason(rule, snap)
-        channel = snap.get("preferred_channel") or "email" if rule.action == "cart_recovery_coupon" else None
+        pref_channel = snap.get("preferred_channel")
+        if not pref_channel or pref_channel == "website":
+            # Cycle through channels for demo purposes based on abandonments
+            abandonments = snap.get("abandonments", 0)
+            channels = ["email", "whatsapp", "sms"]
+            pref_channel = channels[abandonments % len(channels)]
+            
+        channel = pref_channel if rule.action == "cart_recovery_coupon" else None
         return NBAResult(action=rule.action, confidence=confidence, reason=reason, channel=channel)
 
     def explain_action(
@@ -273,7 +264,13 @@ class NBAEngine:
         snap = _extract_snapshot(customer_twin)
         rule, confidence = self._evaluate(snap)
         reason = self._format_reason(rule, snap)
-        channel = snap.get("preferred_channel") or "email" if rule.action == "cart_recovery_coupon" else None
+        pref_channel = snap.get("preferred_channel")
+        if not pref_channel or pref_channel == "website":
+            abandonments = snap.get("abandonments", 0)
+            channels = ["email", "whatsapp", "sms"]
+            pref_channel = channels[abandonments % len(channels)]
+            
+        channel = pref_channel if rule.action == "cart_recovery_coupon" else None
 
         return {
             "customer_id":    snap["customer_id"],

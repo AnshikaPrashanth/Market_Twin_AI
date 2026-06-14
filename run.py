@@ -8,4 +8,4 @@ sys.path.insert(0, backend_path)
 
 if __name__ == "__main__":
     print("Booting MarketTwin AI Core Engine Development Server...")
-    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=False)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8001, reload=True)

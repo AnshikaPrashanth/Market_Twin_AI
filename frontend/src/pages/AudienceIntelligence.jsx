@@ -95,15 +95,41 @@ export default function AudienceIntelligence() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-white tracking-tight flex items-center">
-              <Users className="w-8 h-8 mr-3 text-purple-500" /> Audience Intelligence
+              <Users className="w-8 h-8 mr-3 text-purple-500" /> Aggregated Segment Intelligence
             </h1>
             <p className="text-gray-400 mt-2 flex items-center">
-              Deep dive into segment metrics and channel fatigue.
-              <span className="ml-3 text-[10px] uppercase font-bold tracking-wider bg-gray-800 text-gray-400 px-2 py-0.5 rounded border border-gray-700">Estimated Demo Data</span>
+              Deep dive into cohort-level segment metrics and channel fatigue.
+              <span className="ml-3 text-[10px] uppercase font-bold tracking-wider bg-gray-800 text-gray-400 px-2 py-0.5 rounded border border-gray-700">Demo Cohort Analytics</span>
             </p>
           </div>
         </div>
       </header>
+
+      <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl mb-8">
+        <h2 className="text-sm font-bold text-gray-300 uppercase tracking-widest mb-4">Rule-Based Demo Segmentation</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-gray-400">
+          <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+            <strong className="text-white block mb-1">High Intent Cart Abandoners</strong>
+            intent {'>'} 70% AND cart abandoned
+          </div>
+          <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+            <strong className="text-white block mb-1">Premium Loyalists</strong>
+            high LTV AND low churn
+          </div>
+          <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+            <strong className="text-white block mb-1">Window Shoppers</strong>
+            browsing high, cart activity low
+          </div>
+          <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+            <strong className="text-white block mb-1">Deal Seekers</strong>
+            coupon-sensitive users
+          </div>
+          <div className="bg-[#1F2937] p-3 rounded-lg border border-gray-700/50">
+            <strong className="text-white block mb-1">Dormant Customers</strong>
+            inactive with high churn risk
+          </div>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 gap-8">
         {/* Segment Table */}

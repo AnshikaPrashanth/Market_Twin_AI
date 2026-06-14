@@ -43,7 +43,11 @@ async def add_to_cart(request: CartRequest, db: Session = Depends(get_db), event
             "product_id": request.product_id,
             "product_name": product["name"] if product else "Unknown Product",
             "price": product["price"] if product else 0,
-            "value": product["price"] if product else 0
+            "value": product["price"] if product else 0,
+            "category": product["category"] if product else "Unknown",
+            "stock_status": product["stock_status"] if product else "unknown",
+            "popularity_score": product["popularity_score"] if product else 0,
+            "margin": product["margin"] if product else 0
         }
     }
     
@@ -68,7 +72,11 @@ async def remove_from_cart(request: CartRequest, db: Session = Depends(get_db), 
         "properties": {
             "product_id": request.product_id,
             "product_name": product["name"] if product else "Unknown Product",
-            "price": product["price"] if product else 0
+            "price": product["price"] if product else 0,
+            "category": product["category"] if product else "Unknown",
+            "stock_status": product["stock_status"] if product else "unknown",
+            "popularity_score": product["popularity_score"] if product else 0,
+            "margin": product["margin"] if product else 0
         }
     }
     
@@ -97,7 +105,11 @@ async def abandon_cart(request: CartRequest, db: Session = Depends(get_db), even
             "product_id": first_item["product_id"],
             "product_name": first_item["name"],
             "price": first_item["price"],
-            "value": cart["cart_value"]
+            "value": cart["cart_value"],
+            "category": first_item.get("category", "Unknown"),
+            "stock_status": first_item.get("stock_status", "unknown"),
+            "popularity_score": first_item.get("popularity_score", 0),
+            "margin": first_item.get("margin", 0)
         }
     }
     

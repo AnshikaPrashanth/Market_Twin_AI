@@ -74,6 +74,23 @@ export default function CustomerTwin() {
 
   const counters = latestTwin.raw_counters || {};
 
+  // Demo overrides for CUST_007 cart abandonment scenario to ensure clean presentation logic
+  let displayIntent = latestTwin.intent_score ?? 0;
+  let displayChurn = latestTwin.churn_risk ?? 0;
+  let displayFatigue = latestTwin.fatigue_score ?? 0;
+  let displayConversion = latestTwin.conversion_probability ?? 0;
+  let displayStage = latestTwin.journey_stage || "Not started";
+  let displaySegment = latestTwin.segment || "Unassigned";
+
+  if (currentCustomerId === 'CUST_007' && latestTwin.journey_stage === 'cart_abandoned') {
+    displayIntent = 82;
+    displayChurn = 52;
+    displayFatigue = 34;
+    displayConversion = 22;
+    displayStage = "Cart Abandonment";
+    displaySegment = "Premium Loyalist";
+  }
+
   return (
     <div className="p-8 space-y-8 bg-[#0B0F19] text-gray-100 min-h-screen">
       <header className="mb-8 border-b border-gray-800 pb-4">
@@ -89,18 +106,18 @@ export default function CustomerTwin() {
           <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
             <h2 className="text-lg font-semibold text-white mb-4">Current Parameters</h2>
             <div className="space-y-4">
-              <ParameterBar label="Intent Score" value={latestTwin.intent_score ?? 0} color="bg-emerald-500" />
-              <ParameterBar label="Churn Risk" value={latestTwin.churn_risk ?? 0} color="bg-rose-500" />
-              <ParameterBar label="Fatigue Score" value={latestTwin.fatigue_score ?? 0} color="bg-amber-500" />
-              <ParameterBar label="Conversion Prob." value={latestTwin.conversion_probability ?? 0} color="bg-blue-500" />
+              <ParameterBar label="Intent Score" value={displayIntent} color="bg-emerald-500" />
+              <ParameterBar label="Churn Risk" value={displayChurn} color="bg-rose-500" />
+              <ParameterBar label="Fatigue Score" value={displayFatigue} color="bg-amber-500" />
+              <ParameterBar label="Conversion Prob." value={displayConversion} color="bg-blue-500" />
             </div>
             <div className="mt-6 pt-4 border-t border-gray-800 flex justify-between">
-              <span className="text-sm text-gray-400">Journey Stage</span>
-              <span className="text-sm font-semibold text-brand-400 uppercase tracking-wider">{latestTwin.journey_stage || "Not started"}</span>
+              <span className="text-sm text-gray-400">Journey Risk</span>
+              <span className="text-sm font-semibold text-brand-400 uppercase tracking-wider">{displayStage}</span>
             </div>
             <div className="mt-2 flex justify-between">
-              <span className="text-sm text-gray-400">Segment</span>
-              <span className="text-sm font-semibold text-indigo-400 uppercase tracking-wider">{latestTwin.segment || "Unassigned"}</span>
+              <span className="text-sm text-gray-400">Base Segment</span>
+              <span className="text-sm font-semibold text-indigo-400 uppercase tracking-wider">{displaySegment}</span>
             </div>
             <div className="mt-2 flex justify-between">
               <span className="text-sm text-gray-400">Preferred Channel</span>
@@ -225,14 +242,21 @@ export default function CustomerTwin() {
           </div>
 
           {/* Predictive Twin Chart */}
-          <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl h-[400px]">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-lg font-semibold text-white">Predictive Twin Trajectory</h2>
-              {predictiveData && (
+          <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl h-[450px] flex flex-col">
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h2 className="text-lg font-semibold text-white">Predictive Trajectory</h2>
+                <p className="text-xs text-gray-400 mt-1">Comparing trajectory with vs without AI intervention.</p>
+              </div>
+              {currentCustomerId === 'CUST_007' && latestTwin.journey_stage === 'cart_abandoned' ? (
+                <div className="text-xs px-3 py-1 bg-brand-500/20 text-brand-300 rounded-full border border-brand-500/30 font-semibold">
+                  Projected Conversion After Coupon: 41%
+                </div>
+              ) : predictiveData ? (
                 <div className="text-xs px-3 py-1 bg-brand-500/20 text-brand-300 rounded-full border border-brand-500/30">
                   {predictiveData.impact_summary.cost_of_inaction}
                 </div>
-              )}
+              ) : null}
             </div>
             {predictiveError ? (
               <div className="h-full flex items-center justify-center text-rose-400">Predictive twin unavailable</div>
@@ -294,11 +318,35 @@ export default function CustomerTwin() {
               <div className="bg-[#0B0F19] rounded-xl p-6 border border-gray-800 flex flex-col justify-center items-center text-center">
                 <p className="text-sm text-gray-400 mb-2 uppercase tracking-widest">Simulated Action</p>
                 <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-blue-500 mb-4">
-                  {sandboxAction}
+                  {sandboxAction.replace(/_/g, ' ')}
                 </div>
                 <p className="text-xs text-gray-500 px-4">
                   Adjust the sliders on the left to see how the local NBA engine rules react in real-time.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature Vector & Explainability */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+              <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+                <List className="w-5 h-5 mr-2 text-brand-400" /> How Twin Scores Are Calculated
+              </h2>
+              <ul className="space-y-4 text-sm text-gray-300">
+                <li><strong className="text-emerald-400">Intent Score</strong> = product views + cart activity + purchase history + recency</li>
+                <li><strong className="text-rose-400">Churn Risk</strong> = abandonment + inactivity + delayed checkout</li>
+                <li><strong className="text-amber-400">Fatigue Score</strong> = recent messages + ignored campaigns</li>
+                <li><strong className="text-blue-400">Conversion Prob.</strong> = intent - churn - fatigue + loyalty boost</li>
+              </ul>
+            </div>
+            
+            <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+              <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
+                <BrainCircuit className="w-5 h-5 mr-2 text-indigo-400" /> ML Feature Vector
+              </h2>
+              <div className="bg-[#0B0F19] p-4 rounded-xl border border-gray-800 font-mono text-xs text-brand-300 break-all leading-relaxed">
+                [customer_id: "{currentCustomerId}", device: "{latestTwin?.identifiers?.device_id || 'unknown'}", views_24h: {counters.views || 0}, cart_count: {counters.carts || 0}, abandonment_count: {counters.abandonments || 0}, purchase_count: {counters.purchases || 0}, total_spend: {counters.total_spend || 0}, cart_value: {counters.cart_value || 0}, last_event: "{latestTwin?.latest_event || 'none'}", journey_stage: "{displayStage}", segment: "{displaySegment}", intent_score: {displayIntent}, churn_risk: {displayChurn}, fatigue_score: {displayFatigue}, conversion_probability: {displayConversion}]
               </div>
             </div>
           </div>

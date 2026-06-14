@@ -12,3 +12,4 @@ class IdentityLinkModel(Base):
     confidence_score = Column(Integer, nullable=False, default=100)  # 100 for deterministic
     matched_by = Column(String, nullable=False)  # e.g., "deterministic_email", "probabilistic_city"
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    last_seen = Column(DateTime, nullable=True)

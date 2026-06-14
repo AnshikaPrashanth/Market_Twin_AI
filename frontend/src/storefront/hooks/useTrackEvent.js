@@ -16,9 +16,32 @@ const getDeviceId = () => {
   return deviceId;
 };
 
+// Helper to get or create a persistent cookie ID
+const getCookieId = () => {
+  let cookieId = localStorage.getItem('mt_cookie_id');
+  if (!cookieId) {
+    cookieId = `COOKIE_${generateRandomId()}`;
+    localStorage.setItem('mt_cookie_id', cookieId);
+  }
+  return cookieId;
+};
+
+// Helper to get browser ID (simplistic hash of userAgent)
+const getBrowserId = () => {
+  // Very simplistic browser hash for demonstration
+  const ua = navigator.userAgent;
+  let hash = 0;
+  for (let i = 0; i < ua.length; i++) {
+    hash = Math.imul(31, hash) + ua.charCodeAt(i) | 0;
+  }
+  return `BRW_${Math.abs(hash)}`;
+};
+
 export const useTrackEvent = () => {
   const trackEvent = useCallback(async (eventType, properties = {}) => {
     const deviceId = getDeviceId();
+    const cookieId = getCookieId();
+    const browserId = getBrowserId();
     const email = localStorage.getItem('mt_user_email');
     const loyaltyId = localStorage.getItem('mt_user_id');
 
@@ -29,8 +52,10 @@ export const useTrackEvent = () => {
       timestamp: new Date().toISOString(),
       identifiers: {
         device_id: deviceId,
-        ...(email ? { email_hash: email } : {}),
-        ...(loyaltyId ? { loyalty_id: loyaltyId } : {}),
+        cookie_id: cookieId,
+        browser_id: browserId,
+        ...(email ? { email: email } : {}), // Sending pure email now
+        ...(loyaltyId ? { login_id: loyaltyId } : {}),
       },
       properties: {
         ...properties,

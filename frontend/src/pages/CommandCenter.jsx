@@ -30,35 +30,54 @@ export default function CommandCenter() {
   const kpiJourneyStage = latestTwin?.journey_stage || "Not started";
   const kpiLiveEvents = liveEvents.length;
   
-  let kpiRevenue = 0;
-  if (metrics.revenue_recovered !== undefined) {
-    kpiRevenue = metrics.revenue_recovered;
+  let kpiRevenueRisk = 0;
+  if (latestTwin?.raw_counters?.cart_value !== undefined) {
+    kpiRevenueRisk = latestTwin.raw_counters.cart_value;
   } else if (latestTwin?.raw_counters?.total_spend !== undefined) {
-    kpiRevenue = latestTwin.raw_counters.total_spend;
+    kpiRevenueRisk = latestTwin.raw_counters.total_spend;
   }
   
-  const kpiPreferredChannel = latestTwin?.preferred_channel || "Not available";
+  let expectedRecovery = metrics.revenue_recovered || 0;
+
+  // L2 and L4 Data from latest twin and processing result
+  const l3Action = latestTwin?.latest_prediction?.nba?.best_action || "Pending";
+  const l2Channel = latestTwin?.latest_prediction?.channel?.best_channel || "Pending";
+  const finalChannel = latestTwin?.latest_processing?.final_channel || "Pending";
 
   return (
     <div className="p-8 space-y-8 bg-[#0B0F19] text-gray-100 min-h-screen">
-      <header className="mb-8 border-b border-gray-800 pb-4">
+      <header className="mb-4 border-b border-gray-800 pb-4">
         <h1 className="text-3xl font-bold text-white tracking-tight">Intelligence Command Center</h1>
         <p className="text-gray-400 mt-2">Real-time omnichannel customer intelligence overview.</p>
       </header>
 
+      {/* System Flow Strip */}
+      <div className="bg-[#1F2937] border border-gray-700/50 rounded-xl p-3 flex justify-between items-center text-xs font-mono text-gray-400 tracking-wider">
+        <span>Storefront</span> <span className="text-brand-500">→</span>
+        <span>Event Engine</span> <span className="text-brand-500">→</span>
+        <span>Identity Resolver</span> <span className="text-brand-500">→</span>
+        <span className="text-white font-bold">Customer Twin</span> <span className="text-brand-500">→</span>
+        <span>NBA Engine</span> <span className="text-brand-500">→</span>
+        <span>Channel Dispatcher</span> <span className="text-brand-500">→</span>
+        <span>Measurement</span>
+      </div>
+
       {/* KPI Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-        <KpiCard title="Active Customer" value={kpiActiveCustomer} icon={Users} color="text-blue-400" source={latestTwin ? "live twin" : "demo baseline"} />
-        <KpiCard title="Intent Score" value={`${kpiIntentScore}%`} icon={Target} color="text-emerald-400" source={latestTwin ? "live twin" : "demo baseline"} />
-        <KpiCard title="Journey Stage" value={kpiJourneyStage.toUpperCase()} icon={Activity} color="text-indigo-400" source={latestTwin ? "live twin" : "demo baseline"} />
-        <KpiCard title="Live Events" value={kpiLiveEvents.toString()} icon={BarChart3} color="text-purple-400" source="live twin" />
-        <KpiCard title="Revenue Recovered" value={`₹${kpiRevenue.toLocaleString()}`} icon={TrendingUp} color="text-emerald-400" source={sources.revenue_recovered || (latestTwin ? "live twin" : "demo baseline")} />
-        <KpiCard title="Preferred Channel" value={kpiPreferredChannel} icon={ShieldCheck} color="text-amber-400" source={latestTwin ? "live twin" : "demo baseline"} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <KpiCard title="Active Customer ID" value={kpiActiveCustomer} icon={Users} color="text-blue-400" />
+        <KpiCard title="Intent Score" value={`${kpiIntentScore}%`} icon={Target} color="text-emerald-400" />
+        <KpiCard title="Journey Stage" value={kpiJourneyStage.toUpperCase()} icon={Activity} color="text-indigo-400" />
+        <KpiCard title="Live Events" value={kpiLiveEvents.toString()} icon={BarChart3} color="text-purple-400" />
+        <KpiCard title="Revenue Risk" value={`₹${kpiRevenueRisk.toLocaleString()}`} icon={TrendingUp} color="text-rose-400" />
+        <KpiCard title="Recommended Action" value={l3Action.replace(/_/g, ' ')} icon={ShieldCheck} color="text-amber-400" className="capitalize" />
+        <KpiCard title="Predicted Channel" value={l2Channel} icon={ShieldCheck} color="text-blue-400" className="capitalize" />
+        <KpiCard title="Final Channel" value={finalChannel} icon={ShieldCheck} color="text-emerald-400" className="capitalize" />
+        <KpiCard title="Expected Recovery" value={`₹${expectedRecovery.toLocaleString()}`} icon={TrendingUp} color="text-emerald-400" />
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
         {/* Live Event Feed */}
-        <div className="col-span-1 bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
+        <div className="col-span-1 xl:col-span-3 bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
           <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-3"></span>
             Live Event Feed
@@ -75,18 +94,14 @@ export default function CommandCenter() {
                       {ev.timestamp ? new Date(ev.timestamp).toLocaleTimeString() : new Date().toLocaleTimeString()}
                     </span>
                   </div>
-                  <div className="text-gray-400 text-xs mb-1">Customer: {ev.customer_id || "unknown_customer"}</div>
-                  <div className="text-gray-400 text-xs mb-1">Source: {ev.source || "unknown"}</div>
+                  <div className="text-gray-400 text-xs mb-1 font-mono">Customer: {ev.customer_id || "unknown"}</div>
+                  <div className="text-gray-400 text-xs mb-1">Source: {ev.source || "website"}</div>
                   
                   {(ev.final_action || ev.final_channel) && (
                     <div className="flex items-center gap-2 mt-1">
-                      {ev.final_action && <span className="bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Action: {ev.final_action}</span>}
+                      {ev.final_action && <span className="bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Action: {ev.final_action.replace(/_/g, ' ')}</span>}
                       {ev.final_channel && <span className="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Channel: {ev.final_channel}</span>}
                     </div>
-                  )}
-
-                  {(ev.product_name || ev.product_id) && (
-                    <div className="text-gray-500 text-xs mt-1">Product: {ev.product_name || ev.product_id}</div>
                   )}
                 </div>
               ))
@@ -94,48 +109,12 @@ export default function CommandCenter() {
           </div>
         </div>
 
-        {/* Charts & Audience Overview */}
-        <div className="col-span-2 space-y-6">
-          <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
-            <h2 className="text-lg font-semibold text-white mb-4">Demo Baseline Analytics (Audience Segments)</h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm text-left">
-                <thead className="text-xs text-gray-400 uppercase bg-[#1F2937] rounded-t-lg">
-                  <tr>
-                    <th className="px-4 py-3 rounded-tl-lg">Segment</th>
-                    <th className="px-4 py-3">Size</th>
-                    <th className="px-4 py-3">Avg Intent</th>
-                    <th className="px-4 py-3">Avg Churn</th>
-                    <th className="px-4 py-3">Fatigue</th>
-                    <th className="px-4 py-3 rounded-tr-lg">Best Channel</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {segments.map((seg, i) => (
-                    <tr key={i} className="border-b border-gray-800 hover:bg-[#1F2937]/50">
-                      <td className="px-4 py-3 font-medium text-white">{seg.segment}</td>
-                      <td className="px-4 py-3 text-gray-300">{seg.size}</td>
-                      <td className="px-4 py-3">
-                        <span className={`px-2 py-1 rounded text-xs font-semibold ${seg.avg_intent > 70 ? 'bg-emerald-500/10 text-emerald-400' : 'bg-gray-700 text-gray-300'}`}>
-                          {seg.avg_intent}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 text-rose-400">{seg.avg_churn}</td>
-                      <td className="px-4 py-3 text-amber-400">{seg.avg_fatigue}</td>
-                      <td className="px-4 py-3 text-blue-400">{seg.best_channel}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
   );
 }
 
-function KpiCard({ title, value, icon: Icon, color, source }) {
+function KpiCard({ title, value, icon: Icon, color, className = "" }) {
   return (
     <div className="bg-[#111827] border border-gray-800 rounded-2xl p-5 shadow-lg flex items-center space-x-4">
       <div className={`p-3 rounded-xl bg-gray-800/50 ${color}`}>
@@ -145,9 +124,8 @@ function KpiCard({ title, value, icon: Icon, color, source }) {
         <p className="text-sm font-medium text-gray-400 w-full truncate flex justify-between">
           {title}
         </p>
-        <div className="flex items-center mt-1">
-          <p className="text-2xl font-bold text-white tracking-tight">{value}</p>
-          <SourceBadge source={source} />
+        <div className="flex items-center mt-1 w-full">
+          <p className={`text-xl font-bold text-white tracking-tight truncate w-full ${className}`}>{value}</p>
         </div>
       </div>
     </div>

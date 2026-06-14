@@ -32,27 +32,20 @@ async def reset_demo(db: Session = Depends(get_db)):
 
     logger.info("POST /api/demo/reset called.")
     try:
-        identity = db.query(IdentityLinkModel).filter(IdentityLinkModel.identifier_value == 'D88').first()
-        if identity:
-            customer_id = identity.customer_id
-            # Delete events
-            db.query(EventModel).filter(EventModel.customer_id == customer_id).delete()
+            # For demo purposes, we will clear ALL events and twins.
+            db.query(EventModel).delete()
             
-            # Reset Twin
+            # Reset Twins
             twin_store = TwinStore(db)
-            reset_twin = twin_store.reset_twin_to_default(customer_id)
+            db.query(TwinModel).delete()
             
-            # Set default preferred channel
-            if reset_twin:
-                reset_twin.preferred_channel = "email"
-            
-            # Clear latest message
+            # Clear all messages
             from app.services.message_service import MessageService
-            MessageService.clear_message(customer_id)
+            MessageService._latest_messages.clear()
 
-            # Clear cart
+            # Clear carts
             from app.services.cart_service import CartService
-            reset_cart = CartService.reset_cart(customer_id)
+            CartService.carts.clear()
             
             db.commit()
             
@@ -66,11 +59,9 @@ async def reset_demo(db: Session = Depends(get_db)):
                     "phone_hash": "P554",
                     "loyalty_id": "L230"
                 },
-                "twin": TwinStateResponse.model_validate(reset_twin).model_dump() if reset_twin else None,
-                "cart": reset_cart
+                "twin": None,
+                "cart": {"items": [], "cart_value": 0, "status": "active"}
             }
-            
-        return {"status": "success", "message": "No demo data found to clear."}
     except Exception as e:
         db.rollback()
         logger.error(f"Failed to reset demo: {e}")

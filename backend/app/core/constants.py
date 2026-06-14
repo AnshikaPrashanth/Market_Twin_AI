@@ -11,13 +11,14 @@ VALID_EVENTS = [
     "email_click",
     "whatsapp_sent",
     "whatsapp_click",
+    "sms_click",
     "push_sent",
     "push_click",
     "banner_click",
     "session_start",
-    "session_end"
+    "session_end",
+    "unsubscribe"
 ]
-
 # Identity confidence engine scoring details
 CONFIDENCE_WEIGHT_CITY = 15
 CONFIDENCE_WEIGHT_DEVICE = 30

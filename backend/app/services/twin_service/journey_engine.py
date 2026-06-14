@@ -35,7 +35,7 @@ class JourneyEngine:
             return STAGE_CART_ACTIVE
 
         # Re-engaged if they return via a marketing click
-        marketing_clicks = ("email_click", "whatsapp_click", "push_click", "banner_click")
+        marketing_clicks = ("email_click", "whatsapp_click", "push_click", "sms_click", "banner_click")
         if event_type in marketing_clicks:
             return STAGE_RE_ENGAGED
 

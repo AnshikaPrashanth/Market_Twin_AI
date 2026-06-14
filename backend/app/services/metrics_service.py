@@ -25,26 +25,63 @@ class MetricsService:
                 EventModel.event_type.in_(["whatsapp_sent", "email_sent", "push_sent", "banner_shown"])
             ).count()
 
-            clicks = self.db.query(EventModel).filter(
-                EventModel.event_type.in_(["whatsapp_click", "email_click", "push_click", "banner_click", "product_view", "add_to_cart"])
+            opens = self.db.query(EventModel).filter(
+                EventModel.event_type.in_(["email_open"])
             ).count()
 
-            conversions = self.db.query(EventModel).filter(EventModel.event_type == "purchase").count()
+            clicks = self.db.query(EventModel).filter(
+                EventModel.event_type.in_(["whatsapp_click", "email_click", "sms_click", "push_click", "banner_click"])
+            ).count()
 
-            # Revenue Recovered
-            purchases = self.db.query(EventModel).filter(EventModel.event_type == "purchase").all()
+            # Process all events grouped by customer to find attribution
+            all_events = self.db.query(EventModel).order_by(EventModel.customer_id, EventModel.timestamp).all()
+            
+            customer_events = {}
+            for e in all_events:
+                if e.customer_id not in customer_events:
+                    customer_events[e.customer_id] = []
+                customer_events[e.customer_id].append(e)
+
+            campaign_conversions = 0
             revenue_recovered = 0
-            for p in purchases:
-                props = p.properties or {}
-                amount = props.get("amount") or props.get("cart_value") or props.get("price") or props.get("total") or 0
-                try:
-                    revenue_recovered += float(amount)
-                except ValueError:
-                    pass
+            organic_conversions = 0
+            organic_revenue = 0
 
-            # For hackathon simulation, campaign cost assumes minimum ₹500 spend or ₹20 per message, whichever is higher.
-            campaign_cost = max(messages_sent * 20, 500)
-            iroas = round(revenue_recovered / campaign_cost, 1) if campaign_cost > 0 else 0
+            for cid, evs in customer_events.items():
+                has_sent = False
+                has_click = False
+                for e in evs:
+                    if e.event_type in ["whatsapp_sent", "email_sent", "push_sent", "banner_shown"]:
+                        has_sent = True
+                    if e.event_type in ["whatsapp_click", "email_click", "sms_click", "push_click", "banner_click"]:
+                        has_click = True
+                    if e.event_type == "purchase":
+                        props = e.properties or {}
+                        amount = float(props.get("amount") or props.get("cart_value") or props.get("price") or props.get("total") or 0)
+                        
+                        # Strict attribution logic
+                        if has_sent and has_click:
+                            campaign_conversions += 1
+                            revenue_recovered += amount
+                            # reset for next purchase
+                            has_sent = False
+                            has_click = False
+                        else:
+                            organic_conversions += 1
+                            organic_revenue += amount
+
+            # Strict 0 overrides
+            if messages_sent == 0:
+                opens = 0
+                clicks = 0
+                campaign_conversions = 0
+                revenue_recovered = 0
+
+            # Calculate cost and ROI
+            # Actual discount cost: Assume 20% discount on recovered revenue or flat ₹50 per message sent if no revenue
+            coupon_cost = (revenue_recovered * 0.2) if revenue_recovered > 0 else (messages_sent * 50)
+            net_uplift = revenue_recovered - coupon_cost
+            iroas = round(net_uplift / coupon_cost, 1) if coupon_cost > 0 else 0
 
             fatigue_avoided_count = self.db.query(EventModel).filter(
                 EventModel.event_type.in_(["fatigue_suppressed", "blocked", "message_suppressed"])
@@ -61,10 +98,14 @@ class MetricsService:
                 "best_audience_today": "High Intent Abandoners",
                 "profile_events": profile_events,
                 "messages_sent": messages_sent,
+                "opens": opens,
                 "clicks": clicks,
-                "conversions": conversions,
+                "conversions": campaign_conversions,
                 "revenue_recovered": revenue_recovered,
-                "campaign_cost": campaign_cost,
+                "organic_conversions": organic_conversions,
+                "organic_revenue": organic_revenue,
+                "coupon_cost": coupon_cost,
+                "net_uplift": net_uplift,
                 "iroas": iroas,
                 "conversion_lift": 18,
                 "fatigue_avoided": fatigue_avoided,
@@ -78,10 +119,14 @@ class MetricsService:
                     "best_audience_today": "computed",
                     "profile_events": "computed",
                     "messages_sent": "computed",
+                    "opens": "computed",
                     "clicks": "computed",
                     "conversions": "computed",
                     "revenue_recovered": "computed",
-                    "campaign_cost": "estimated",
+                    "organic_conversions": "computed",
+                    "organic_revenue": "computed",
+                    "coupon_cost": "computed",
+                    "net_uplift": "computed",
                     "iroas": "computed",
                     "conversion_lift": "estimated",
                     "fatigue_avoided": fatigue_source,
@@ -93,40 +138,27 @@ class MetricsService:
 
     def _fallback_summary(self, sqlite_state: str) -> Dict[str, Any]:
         return {
-            "resolved_customers": 8402,
-            "identity_match_rate": 84,
-            "high_intent_customers": 1240,
-            "revenue_opportunity": 320000,
-            "active_channels": 4,
-            "best_audience_today": "High Intent Abandoners",
+            "resolved_customers": 0,
+            "identity_match_rate": 0,
+            "high_intent_customers": 0,
+            "revenue_opportunity": 0,
+            "active_channels": 0,
+            "best_audience_today": "None",
             "profile_events": 0,
-            "messages_sent": 1240,
-            "clicks": 384,
-            "conversions": 118,
-            "revenue_recovered": 320000,
-            "campaign_cost": 24800,
-            "iroas": 12.9,
-            "conversion_lift": 18,
-            "fatigue_avoided": 312,
+            "messages_sent": 0,
+            "opens": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "revenue_recovered": 0,
+            "organic_conversions": 0,
+            "organic_revenue": 0,
+            "coupon_cost": 0,
+            "net_uplift": 0,
+            "iroas": 0,
+            "conversion_lift": 0,
+            "fatigue_avoided": 0,
             "sqlite_state": sqlite_state,
-            "sources": {
-                "resolved_customers": "estimated",
-                "identity_match_rate": "estimated",
-                "high_intent_customers": "estimated",
-                "revenue_opportunity": "estimated",
-                "active_channels": "estimated",
-                "best_audience_today": "seeded",
-                "profile_events": "estimated",
-                "messages_sent": "estimated",
-                "clicks": "estimated",
-                "conversions": "estimated",
-                "revenue_recovered": "estimated",
-                "campaign_cost": "estimated",
-                "iroas": "estimated",
-                "conversion_lift": "estimated",
-                "fatigue_avoided": "estimated",
-                "sqlite_state": "computed"
-            }
+            "sources": {}
         }
 
     def get_cohort_drift(self) -> List[Dict[str, Any]]:

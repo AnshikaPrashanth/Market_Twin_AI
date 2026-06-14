@@ -21,6 +21,14 @@ async def get_latest_message(customer_id: str):
         "generated_message": message
     }
 
+@router.get("/history/{customer_id}")
+async def get_message_history(customer_id: str):
+    history = MessageService.get_message_history(customer_id)
+    return {
+        "customer_id": customer_id,
+        "history": history
+    }
+
 @router.post("/react")
 async def react_to_message(request: ReactionRequest, db: Session = Depends(get_db), event_service: EventService = Depends(get_event_service)):
     message = MessageService.get_latest_message(request.customer_id)
@@ -41,6 +49,8 @@ async def react_to_message(request: ReactionRequest, db: Session = Depends(get_d
             event_type = "whatsapp_click"
         elif channel == "push":
             event_type = "push_click"
+        elif channel == "sms":
+            event_type = "sms_click"
         elif channel == "website":
             event_type = "banner_click"
     elif request.reaction == "ignored":

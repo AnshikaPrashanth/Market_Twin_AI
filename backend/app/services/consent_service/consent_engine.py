@@ -31,7 +31,7 @@ from pydantic import BaseModel, Field
 # Constants
 # ---------------------------------------------------------------------------
 
-SUPPORTED_CHANNELS: frozenset[str] = frozenset({"email", "whatsapp", "push"})
+SUPPORTED_CHANNELS: frozenset[str] = frozenset({"email", "whatsapp", "push", "sms"})
 
 
 # ---------------------------------------------------------------------------
@@ -50,6 +50,7 @@ class ConsentVault(BaseModel):
     email:        bool = True
     whatsapp:     bool = True
     push:         bool = True
+    sms:          bool = True
     last_updated: str  = Field(
         default_factory=lambda: datetime.now(timezone.utc).isoformat()
     )
@@ -60,6 +61,7 @@ class ConsentVault(BaseModel):
                 "email":        True,
                 "whatsapp":     False,
                 "push":         True,
+                "sms":          True,
                 "last_updated": "2024-11-01T10:30:00+00:00",
             }
         }
@@ -75,6 +77,7 @@ class ConsentUpdateRequest(BaseModel):
     email:    Optional[bool] = None
     whatsapp: Optional[bool] = None
     push:     Optional[bool] = None
+    sms:      Optional[bool] = None
 
     model_config = {
         "json_schema_extra": {
@@ -82,6 +85,7 @@ class ConsentUpdateRequest(BaseModel):
                 "email":    True,
                 "whatsapp": False,
                 "push":     True,
+                "sms":      True,
             }
         }
     }

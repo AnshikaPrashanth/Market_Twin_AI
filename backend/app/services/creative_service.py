@@ -22,15 +22,15 @@ class CreativeEngine:
         
         if is_recovery:
             return self._generate_coupon_message(channel, product_name)
-        elif action in ("send_email", "send_whatsapp", "send_push", "show_website_personalization"):
+        elif action in ("send_email", "send_whatsapp", "send_push", "send_sms", "show_website_personalization"):
             return self._generate_nurture_message(channel, product_name)
         else:
             return None
 
     def _generate_coupon_message(self, channel: str, product_name: str) -> Dict[str, Any]:
-        if channel == "whatsapp":
+        if channel in ("whatsapp", "sms"):
             return {
-                "channel": "whatsapp",
+                "channel": channel,
                 "message": f"Hey Rahul, your {product_name} are still in your cart. Complete your order today and get 10% off.",
                 "cta": "Return to cart"
             }
@@ -57,9 +57,9 @@ class CreativeEngine:
         return {}
 
     def _generate_nurture_message(self, channel: str, product_name: str) -> Dict[str, Any]:
-        if channel == "whatsapp":
+        if channel in ("whatsapp", "sms"):
             return {
-                "channel": "whatsapp",
+                "channel": channel,
                 "message": f"Hey, still interested in {product_name}? Let us know if you have any questions!",
                 "cta": "View product"
             }

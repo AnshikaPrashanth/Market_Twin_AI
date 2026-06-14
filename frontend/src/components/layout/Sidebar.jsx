@@ -10,8 +10,19 @@ import {
   Store,
   PieChart,
   BarChart,
-  Smartphone
+  BrainCircuit,
+  Smartphone,
+  ChevronDown,
+  MonitorSmartphone,
+  Mail,
+  MessageSquare,
+  Send,
+  RefreshCw,
+  Rocket
 } from 'lucide-react';
+import { useDemoStore, MOCK_USERS } from '../../store/demoStore';
+import { resetDemo } from '../../api/client';
+import { useState } from 'react';
 
 const Sidebar = () => {
   const location = useLocation();
@@ -19,12 +30,32 @@ const Sidebar = () => {
 
   const navItems = [
     { name: 'Command Center', path: '/', icon: LayoutDashboard },
+    { name: 'Global Identity Map', path: '/global-identity', icon: Network },
     { name: 'Customer Twin', path: '/twin', icon: Cpu },
+    { name: 'AI Orchestration', path: '/orchestration', icon: BrainCircuit },
     { name: 'Audience Intelligence', path: '/audience', icon: PieChart },
     { name: 'Measurement Dashboard', path: '/measurement', icon: BarChart },
-    { name: 'Channel Simulator', path: '/simulator', icon: Smartphone },
     { name: 'Storefront Simulator', path: '/store', icon: Store },
+    { name: 'Email Inbox', path: '/demo/email', icon: Mail },
+    { name: 'WhatsApp', path: '/demo/whatsapp', icon: MessageSquare },
+    { name: 'SMS / Push', path: '/demo/sms', icon: Send },
+    { name: 'AI Impact Center', path: '/demo/impact', icon: Rocket },
   ];
+
+  const [isResetting, setIsResetting] = useState(false);
+
+  const handleReset = async () => {
+    setIsResetting(true);
+    try {
+      await resetDemo();
+      // Optional: show a quick success state or reload window to clear everything
+      window.location.reload();
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setIsResetting(false);
+    }
+  };
 
   return (
     <aside className="w-64 bg-dark-900 border-r border-dark-800 text-dark-100 flex flex-col h-screen select-none">
@@ -65,6 +96,24 @@ const Sidebar = () => {
           );
         })}
       </nav>
+
+      {/* Context Switcher Widget */}
+      <div className="mx-4 mb-4 bg-dark-950 border border-dark-800 rounded-xl p-3 shadow-lg">
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-xs font-bold text-dark-300 flex items-center gap-1.5 uppercase tracking-wider">
+            <MonitorSmartphone size={12} className="text-brand-400" /> Demo Actions
+          </span>
+        </div>
+
+        <button 
+          onClick={handleReset}
+          disabled={isResetting}
+          className="w-full mt-3 flex items-center justify-center gap-1.5 py-1.5 bg-dark-900 hover:bg-dark-800 text-dark-300 hover:text-white text-xs font-semibold rounded-lg border border-dark-800 transition-colors disabled:opacity-50"
+        >
+          <RefreshCw size={12} className={isResetting ? "animate-spin" : ""} /> 
+          {isResetting ? "Resetting..." : "Reset Data"}
+        </button>
+      </div>
 
       {/* Footer Meta */}
       <div className="p-4 border-t border-dark-800 text-center text-xs text-dark-500 font-semibold uppercase tracking-wider">

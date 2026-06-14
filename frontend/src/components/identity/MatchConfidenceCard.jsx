@@ -5,7 +5,7 @@ import { ShieldCheck } from 'lucide-react';
 /**
  * Renders the matching metrics report of the identity resolution engine.
  */
-const MatchConfidenceCard = ({ matchType = "Deterministic", score = 100 }) => {
+const MatchConfidenceCard = ({ matchType = "Deterministic", score = 100, matchSource = "Unknown", identities = [] }) => {
   const isHigh = score >= 70;
   
   return (
@@ -38,27 +38,47 @@ const MatchConfidenceCard = ({ matchType = "Deterministic", score = 100 }) => {
         {/* Weights Details Table */}
         <div className="space-y-3 pt-3 border-t border-dark-800">
           <div className="flex justify-between text-xs">
-            <span className="text-dark-400 font-medium">Deterministic match</span>
-            <span className="text-white font-bold bg-dark-800 px-2 py-0.5 rounded border border-dark-750">
-              Email / Phone hashes (100%)
+            <span className="text-dark-400 font-medium">Primary Match Resolution</span>
+            <span className="text-white font-bold bg-dark-800 px-2 py-0.5 rounded border border-dark-750 max-w-[150px] truncate" title={matchSource}>
+              {matchSource.replace('deterministic_', '').replace('probabilistic_', '')}
             </span>
           </div>
-          <div className="flex justify-between text-xs">
-            <span className="text-dark-400 font-medium">Probabilistic Device match</span>
-            <span className="text-white font-bold text-brand-400">+30 pts</span>
-          </div>
-          <div className="flex justify-between text-xs">
-            <span className="text-dark-400 font-medium">Probabilistic Category overlap</span>
-            <span className="text-white font-bold text-brand-400">+25 pts</span>
-          </div>
-          <div className="flex justify-between text-xs">
-            <span className="text-dark-400 font-medium">Probabilistic Time overlap</span>
-            <span className="text-white font-bold text-brand-400">+20 pts</span>
-          </div>
-          <div className="flex justify-between text-xs">
-            <span className="text-dark-400 font-medium">Probabilistic City match</span>
-            <span className="text-white font-bold text-brand-400">+15 pts</span>
-          </div>
+          
+          {/* Detailed heuristic breakdown - static weights for visualization or derived from identities if possible */}
+          {matchType.includes("Deterministic") ? (
+             <div className="flex justify-between text-xs mt-2">
+               <span className="text-dark-400 font-medium">Deterministic Match Applied</span>
+               <span className="text-white font-bold text-emerald-400">Exact</span>
+             </div>
+          ) : (
+            <>
+              <div className="flex justify-between text-xs">
+                <span className="text-dark-400 font-medium">Probabilistic Categories</span>
+                <span className="text-white font-bold text-brand-400">+30 pts</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-dark-400 font-medium">Probabilistic Device</span>
+                <span className="text-white font-bold text-brand-400">+25 pts</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-dark-400 font-medium">Probabilistic Time</span>
+                <span className="text-white font-bold text-brand-400">+20 pts</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-dark-400 font-medium">Probabilistic City</span>
+                <span className="text-white font-bold text-brand-400">+15 pts</span>
+              </div>
+            </>
+          )}
+
+          {identities && identities.length > 0 && (
+            <div className="flex justify-between text-xs pt-2 border-t border-dark-800 mt-2">
+              <span className="text-dark-400 font-medium">Total Graph Nodes Connected</span>
+              <span className="text-white font-bold bg-brand-500/20 text-brand-400 px-2 py-0.5 rounded">
+                {identities.length} Links
+              </span>
+            </div>
+          )}
         </div>
       </div>
     </SectionCard>

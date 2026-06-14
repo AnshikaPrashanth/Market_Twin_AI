@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { getCustomer, getCustomerTwin, getCustomerEvents, getCustomers } from '../api/customerApi';
+import { getCustomer, getCustomerTwin, getCustomerEvents, getCustomers, getCustomerIdentities } from '../api/customerApi';
 import { useDebugStore } from './debugStore';
 
 export const useTwinStore = create((set, get) => {
@@ -10,6 +10,7 @@ export const useTwinStore = create((set, get) => {
     customerProfile: null,
     twinState: null,
     eventsList: [],
+    identitiesList: [],
     customerList: [], // Dynamically loaded list of customer IDs
     dashboardMetrics: null,
     isLoading: false,
@@ -66,16 +67,18 @@ export const useTwinStore = create((set, get) => {
       get().fetchCustomersList();
 
       try {
-        const [profile, twin, events] = await Promise.all([
+        const [profile, twin, events, identities] = await Promise.all([
           getCustomer(targetId),
           getCustomerTwin(targetId),
-          getCustomerEvents(targetId)
+          getCustomerEvents(targetId),
+          getCustomerIdentities(targetId)
         ]);
 
         set({
           customerProfile: profile,
           twinState: twin,
           eventsList: events,
+          identitiesList: identities,
           isLoading: false,
           error: null
         });

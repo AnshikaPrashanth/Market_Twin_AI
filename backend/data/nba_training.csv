@@ -1,0 +1,1001 @@
+customer_id,intent_score,conversion_probability,churn_risk,fatigue_score,journey_stage,preferred_channel,recommended_action,channel_used,converted
+CUST_STORY_RAHUL,100,0.688,82.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_STORY_PRIYA,100,0.688,82.0,10,Loyal,email,send_coupon,email,True
+CUST_STORY_ARJUN,40,0.358,52.0,10,Browsing,push,recommend_products,none,False
+CUST_STORY_SNEHA,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_DBA58527,100,0.703,67.0,10,Loyal,sms,send_coupon,sms,True
+CUST_574CC639,100,0.688,82.0,10,High Intent,email,send_coupon,email,True
+CUST_5F74829A,60,0.7105,62.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_312A6DB6,90,0.638,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_729BBAFC,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_9CB361E5,80,0.578,72.0,10,High Intent,sms,send_coupon,sms,True
+CUST_F2095CB0,80,0.578,72.0,10,Browsing,email,send_coupon,email,False
+CUST_D0F1DC2C,65,0.513,47.0,10,High Intent,push,send_push,push,True
+CUST_A3613257,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_352FAB1D,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_E80496F2,40,0.358,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_0389F244,80,0.61,70.0,0,Interested,push,loyalty_reward,none,True
+CUST_38477D29,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_D9AB9B04,85,0.623,57.0,10,High Intent,email,send_coupon,email,True
+CUST_489B0639,90,0.668,42.0,10,Loyal,sms,loyalty_reward,none,True
+CUST_B31F3060,40,0.358,52.0,10,Anonymous,sms,wait,none,False
+CUST_54458FD3,100,0.678,92.0,10,High Intent,email,send_coupon,email,True
+CUST_9B05CEFB,85,0.623,57.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_BE4A7697,60,0.61,62.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_1336A50D,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_468EB40A,100,0.678,92.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_F855D551,20,0.238,52.0,10,Anonymous,sms,wait,none,False
+CUST_B892658B,100,0.708,62.0,10,Loyal,sms,send_push,push,True
+CUST_C1F5099A,55,0.438,62.0,10,Anonymous,whatsapp,loyalty_reward,none,False
+CUST_81A45894,20,0.238,52.0,10,Anonymous,sms,wait,none,False
+CUST_4992E778,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_EDB28AF9,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_FEED1B22,100,0.71,90.0,0,Interested,email,send_coupon,email,True
+CUST_C11A6B23,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_CD4F31D7,100,0.7,100.0,0,Interested,push,send_coupon,push,True
+CUST_3D9B9641,85,0.623,57.0,10,High Intent,email,send_coupon,email,True
+CUST_5DFFC4BE,50,0.398,72.0,10,Interested,push,send_whatsapp,whatsapp,False
+CUST_E5EB6418,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_CE38E4CB,80,0.61,70.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_11074403,50,0.398,72.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_57C4461D,70,0.508,82.0,10,Cart Active,email,send_coupon,email,False
+CUST_3056D209,80,0.578,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_4AABB6B4,100,0.723,47.0,10,High Intent,email,send_coupon,email,True
+CUST_5064B994,100,0.67,100.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_E4673420,20,0.238,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_A055F6DB,80,0.578,72.0,10,High Intent,push,wait,none,True
+CUST_DA6228BE,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_DA8A6EA9,100,0.693,77.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_B989B36C,90,0.638,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_D7A45459,20,0.238,52.0,10,Anonymous,push,wait,none,False
+CUST_412E9C77,70,0.508,82.0,10,Cart Active,push,send_coupon,push,False
+CUST_9026C7A6,100,0.688,82.0,10,Loyal,email,send_coupon,email,True
+CUST_C8846AC3,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_CE311944,65,0.513,47.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_2C0B530D,30,0.288,62.0,10,Cart Active,sms,send_whatsapp,whatsapp,False
+CUST_AA662E08,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_3917DAA1,65,0.513,47.0,10,High Intent,whatsapp,do_nothing,none,True
+CUST_090EE7C3,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_538CA05B,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_89658641,60,0.5,60.0,0,Interested,whatsapp,send_whatsapp,whatsapp,True
+CUST_49288ADE,65,0.513,47.0,10,High Intent,sms,send_email,email,True
+CUST_949B7D14,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_FC28FE99,100,0.713,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_10D83418,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_6392D950,100,0.693,77.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_03A41A1A,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_8F04173D,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_19E10825,100,0.693,77.0,10,Loyal,email,send_coupon,email,True
+CUST_B8B54386,75,0.558,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_8AC845C7,10,0.034,61.0,55,Dormant,whatsapp,send_push,push,False
+CUST_05A18D97,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_238050B7,75,0.558,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_5FEE8FDB,70,0.508,82.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_F3D325DC,35,0.318,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_DD059926,55,0.438,62.0,10,Browsing,sms,send_whatsapp,whatsapp,False
+CUST_E3D4EBBE,100,0.698,72.0,10,High Intent,push,send_coupon,push,True
+CUST_FDA7DE19,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_9C916C23,100,0.713,57.0,10,Loyal,whatsapp,send_whatsapp,whatsapp,True
+CUST_A28ED8B7,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_900983AF,45,0.378,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_343B6A8E,100,0.703,67.0,10,Loyal,email,send_coupon,email,True
+CUST_4E144664,85,0.623,57.0,10,Loyal,email,send_coupon,email,True
+CUST_31BD9D1C,70,0.518,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_6751D2C2,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_C17B01C9,100,0.71,90.0,0,Interested,push,send_coupon,push,True
+CUST_33417744,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_A4882A26,30,0.298,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_97CE52FE,100,0.698,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_723D9DCA,90,0.668,42.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_22F4550D,30,0.288,62.0,10,Cart Active,sms,send_whatsapp,whatsapp,False
+CUST_AC45C3AC,50,0.418,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_9D82044A,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_D78DFB60,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_E1941A92,55,0.438,62.0,10,Browsing,sms,send_whatsapp,whatsapp,False
+CUST_5F4302E5,100,0.71,90.0,0,Interested,sms,send_email,email,True
+CUST_B649101A,100,0.7,100.0,0,Interested,sms,send_coupon,sms,True
+CUST_6331FF0E,40,0.358,52.0,10,Anonymous,push,send_coupon,push,False
+CUST_587CCF42,50,0.398,72.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_71A33694,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_D638B75A,100,0.713,57.0,10,Loyal,sms,send_coupon,sms,True
+CUST_84AFDD9D,60,0.5,60.0,0,Interested,push,send_whatsapp,whatsapp,True
+CUST_2E47009A,100,0.71,90.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_4B612D8F,100,0.703,67.0,10,Loyal,email,send_coupon,email,True
+CUST_BE2277F0,90,0.618,92.0,10,Interested,sms,send_coupon,sms,False
+CUST_9069B465,100,0.72,80.0,0,Interested,sms,send_coupon,sms,True
+CUST_98B23C4C,100,0.72,80.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_3B99A0E9,55,0.438,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_C05261E1,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_81368C3D,100,0.71,90.0,0,Cart Active,email,send_coupon,email,True
+CUST_C5157150,100,0.728,42.0,10,Loyal,push,send_coupon,push,True
+CUST_9EE0F949,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_0C131128,100,0.708,62.0,10,High Intent,sms,send_coupon,sms,True
+CUST_19443392,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_4B8AC103,90,0.638,72.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_35397777,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_64033C5A,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_08231C37,80,0.578,72.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_8CF33D3F,30,0.288,62.0,10,Interested,email,send_whatsapp,whatsapp,False
+CUST_FEE1B459,100,0.683,87.0,10,Loyal,push,send_coupon,push,True
+CUST_5FDCDBF4,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_F51BBC07,90,0.618,92.0,10,Cart Active,email,send_coupon,email,False
+CUST_A8E1CF2E,30,0.288,62.0,10,Interested,push,send_whatsapp,whatsapp,False
+CUST_4A676D67,40,0.358,52.0,10,Browsing,email,recommend_products,none,False
+CUST_15D8CF8B,100,0.703,67.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_061CE91D,80,0.578,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_028DF181,100,0.7,100.0,0,Cart Active,whatsapp,recommend_products,none,True
+CUST_E5EA6B2C,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_AA697B89,40,0.358,52.0,10,Browsing,email,recommend_products,none,False
+CUST_D7A95C5D,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_8EFCCF3E,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_F1A59277,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_5E319C4D,100,0.698,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_E259BC38,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_10DF13DD,50,0.398,72.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_75F4F3CA,40,0.358,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_E4288431,75,0.558,62.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_67EE3FB6,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_B23B0C5B,90,0.618,92.0,10,Cart Active,email,send_coupon,email,False
+CUST_79684223,80,0.61,70.0,0,Interested,sms,send_coupon,sms,True
+CUST_D1A85883,50,0.398,72.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_DE7BEBBA,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_DECDBB22,100,0.718,52.0,10,High Intent,sms,send_coupon,sms,True
+CUST_CBC3BAEB,100,0.693,77.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_B1384C12,100,0.72,80.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_1C71AE11,85,0.623,57.0,10,Loyal,email,send_coupon,email,True
+CUST_3DDCEA6F,80,0.61,70.0,0,Interested,email,loyalty_reward,none,True
+CUST_48D454C1,85,0.623,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_FE3A26F2,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_745D0AF1,90,0.618,92.0,10,Interested,email,wait,none,False
+CUST_8F618114,100,0.718,52.0,10,Loyal,sms,send_coupon,sms,True
+CUST_AA76100A,65,0.498,62.0,10,Browsing,sms,send_coupon,sms,False
+CUST_996223F2,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_58915F08,60,0.7326,62.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_4A6DBB54,80,0.61,70.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_8740AB12,40,0.358,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_9DC5D903,60,0.8533,62.0,10,Loyal,email,send_whatsapp,whatsapp,True
+CUST_2FA71D0D,40,0.358,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_079E274E,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_7A4CA5C1,100,0.67,100.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_0C263DCF,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_DACF0911,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_38C943B9,50,0.418,52.0,10,Browsing,push,recommend_products,none,False
+CUST_9CFE1314,100,0.718,52.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_1A657E85,100,0.72,80.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_DDA324D3,70,0.508,82.0,10,Interested,email,send_coupon,email,False
+CUST_8C94F6C3,65,0.513,47.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_CE3A6EF3,100,0.67,100.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_877C104A,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_7535DF38,100,0.71,90.0,0,Cart Active,email,send_coupon,email,True
+CUST_ACCFCF3B,100,0.688,82.0,10,High Intent,push,send_coupon,push,True
+CUST_790591B1,20,0.238,52.0,10,Anonymous,push,wait,none,False
+CUST_CC2CEE0A,60,0.6217,62.0,10,Loyal,whatsapp,send_whatsapp,whatsapp,True
+CUST_7E8D349A,50,0.418,52.0,10,Anonymous,email,wait,none,False
+CUST_1EF11355,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_6E7D7A10,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_EB2B5B57,50,0.418,52.0,10,Anonymous,push,wait,none,False
+CUST_8E0667CE,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_50D1ADC1,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_5D420B03,30,0.288,62.0,10,Interested,whatsapp,recommend_products,none,False
+CUST_DE2C207D,100,0.693,77.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_1749A777,100,0.72,80.0,0,Interested,sms,send_coupon,sms,True
+CUST_04D43A98,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_F5917397,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_A46C2B22,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_EB553367,80,0.578,72.0,10,Loyal,sms,send_coupon,sms,True
+CUST_66BD2CF3,10,0.034,61.0,55,Dormant,whatsapp,recommend_products,none,False
+CUST_53636173,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_3B00B30E,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_45E3E33F,100,0.693,77.0,10,Loyal,push,send_coupon,push,True
+CUST_926AA93D,50,0.418,52.0,10,Anonymous,sms,wait,none,False
+CUST_3298FAEB,30,0.288,62.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_EFC2D016,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_09AE2702,75,0.558,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_0518E45B,45,0.378,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_705791DA,85,0.623,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_8B1D85C9,30,0.288,62.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_5FF49FA1,100,0.723,47.0,10,High Intent,push,send_coupon,push,True
+CUST_615278FE,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_4FBCBBCA,100,0.72,80.0,0,Cart Active,email,send_coupon,email,True
+CUST_DA88C386,10,0.034,61.0,55,Churn Risk,push,wait,none,False
+CUST_E9162E8B,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_101DB21C,30,0.298,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_EA2F4359,100,0.718,52.0,10,Loyal,email,send_coupon,email,True
+CUST_A0578F65,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_DEA41107,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_AE5D913C,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_38E8F4D6,75,0.558,62.0,10,Anonymous,email,do_nothing,none,False
+CUST_1FA0B7DE,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_3B22D7B6,75,0.558,62.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_6B7F538D,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_47B5FAF8,100,0.72,80.0,0,Interested,sms,send_coupon,sms,True
+CUST_3B77AE1A,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_DDAA8F46,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_4B8AA7C9,100,0.703,67.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_B4909F1A,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_AAC06769,50,0.418,52.0,10,Anonymous,push,wait,none,False
+CUST_BC3F55D5,65,0.498,62.0,10,Browsing,email,send_coupon,email,False
+CUST_19D5B925,50,0.418,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_F2902C84,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_BCEFD4B6,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_EB6FCAAE,85,0.623,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_C967E53B,10,0.0,70.0,100,Dormant,email,wait,none,False
+CUST_40FB09E6,100,0.698,72.0,10,Loyal,email,send_coupon,email,True
+CUST_05F012AB,40,0.358,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_62EB54DD,60,0.478,52.0,10,Anonymous,email,send_email,email,False
+CUST_17E45CFF,100,0.688,82.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_85984E7D,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_CA4E5197,80,0.61,70.0,0,Cart Active,email,send_coupon,email,True
+CUST_A56D509F,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_34876524,10,0.034,61.0,55,Churn Risk,sms,wait,none,False
+CUST_529191E2,60,0.7214,62.0,10,Loyal,email,send_whatsapp,whatsapp,True
+CUST_24B0315E,100,0.703,67.0,10,High Intent,push,send_coupon,push,True
+CUST_6EBB7C65,65,0.513,47.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_4B34FA4C,75,0.558,62.0,10,Browsing,sms,send_coupon,sms,False
+CUST_CCF4473E,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_66704680,100,0.72,80.0,0,Interested,push,send_coupon,push,True
+CUST_9F5AF1B4,55,0.438,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_B6BFC136,30,0.298,52.0,10,Anonymous,email,wait,none,False
+CUST_3D58EB70,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_E2391426,100,0.713,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_FF48FB57,100,0.698,72.0,10,High Intent,email,send_coupon,email,True
+CUST_0D5966DB,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_C5943693,70,0.508,82.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_5E4E88D4,100,0.7,100.0,0,Interested,push,send_coupon,push,True
+CUST_63DB733C,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_85D20005,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_A95EB599,50,0.398,72.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_D380949A,45,0.378,62.0,10,Anonymous,push,send_whatsapp,whatsapp,False
+CUST_12C6D82F,100,0.7,100.0,0,Cart Active,push,send_coupon,push,True
+CUST_F617AAB8,100,0.683,87.0,10,Loyal,sms,send_coupon,sms,True
+CUST_EACDCB8F,100,0.713,57.0,10,Loyal,push,send_coupon,push,True
+CUST_3E4E7988,70,0.508,82.0,10,Cart Active,push,send_coupon,push,False
+CUST_F1B72375,30,0.288,62.0,10,Interested,push,send_whatsapp,whatsapp,False
+CUST_4456FF3A,65,0.498,62.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_3EEB5BD5,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_68AD3E36,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_D6AD16EF,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_08C4C971,50,0.418,52.0,10,Anonymous,email,wait,none,False
+CUST_008A2B5A,30,0.298,52.0,10,Anonymous,push,wait,none,False
+CUST_AFA1A280,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_347B3E0F,100,0.72,80.0,0,Interested,sms,send_coupon,sms,True
+CUST_CAAAF0E2,100,0.71,90.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_FCB4B49A,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_D86EB996,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_E21A7769,85,0.623,57.0,10,High Intent,push,send_coupon,push,True
+CUST_2810A1B5,100,0.698,72.0,10,Loyal,email,wait,none,True
+CUST_C8BBBA8B,60,0.7271,62.0,10,Loyal,whatsapp,send_whatsapp,whatsapp,True
+CUST_E110222E,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_960A76FC,100,0.688,82.0,10,High Intent,push,send_coupon,push,True
+CUST_8ED17183,35,0.318,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_BB95004D,30,0.288,62.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_D8BE749D,60,0.854,62.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_6CB57608,65,0.498,62.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_26E1B0EB,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_8C56898E,65,0.513,47.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_694440B5,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_F8C7266D,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_8F64453D,100,0.728,42.0,10,High Intent,sms,send_coupon,sms,True
+CUST_4B2F1384,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_D91D0369,90,0.618,92.0,10,Cart Active,push,send_coupon,push,False
+CUST_71A2934A,100,0.688,82.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_FB2D4E5B,100,0.67,100.0,10,Loyal,push,send_coupon,push,True
+CUST_CD59B969,80,0.61,70.0,0,Interested,push,send_coupon,push,True
+CUST_34F50D39,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_CEDB7614,100,0.71,90.0,0,Interested,push,send_coupon,push,True
+CUST_6703F9EC,50,0.398,72.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_E7FDF8E3,60,0.478,52.0,10,Anonymous,sms,send_email,email,False
+CUST_B3CC624F,100,0.683,87.0,10,Loyal,push,send_coupon,push,True
+CUST_13BCF28C,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_8356E3B7,65,0.513,47.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_9FEEEC4A,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_852D59DB,65,0.513,47.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_ED659A81,45,0.378,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_A618E3BA,60,0.5,60.0,0,Cart Active,email,send_whatsapp,whatsapp,True
+CUST_FA778FB9,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_48BD7B88,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_16ACD0C6,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_37EB011F,40,0.358,52.0,10,Anonymous,push,wait,none,False
+CUST_88F1E24C,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_C92AD391,100,0.693,77.0,10,Loyal,email,recommend_products,none,True
+CUST_D95E4ED6,30,0.288,62.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_A9E98AE2,60,0.478,52.0,10,Browsing,push,recommend_products,none,False
+CUST_060BDD16,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_D11AA116,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_CCAC32CA,35,0.318,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_AC9B2E3E,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_7F8ED2EF,40,0.358,52.0,10,Anonymous,sms,wait,none,False
+CUST_A778788F,100,0.72,80.0,0,Interested,push,send_coupon,push,True
+CUST_630EA12D,60,0.838,62.0,10,High Intent,push,send_email,email,True
+CUST_844A74FA,100,0.72,80.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_5EA551EB,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_C7B4B9BD,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_17A20F69,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_555700B4,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_259657D3,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_64ECE7EE,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_357B8D04,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_D3C96A5E,100,0.72,80.0,0,Interested,push,send_email,email,True
+CUST_DCF1FC29,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_4E07FA68,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_6610877B,90,0.618,92.0,10,Cart Active,sms,do_nothing,none,False
+CUST_CDE020CE,30,0.288,62.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_6633CBAE,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_2C34128B,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_7A39BAA4,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_AA3A1862,55,0.438,62.0,10,Browsing,push,send_whatsapp,whatsapp,False
+CUST_CC054EE0,30,0.288,62.0,10,Interested,email,send_whatsapp,whatsapp,False
+CUST_37055F28,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_06B32EE5,100,0.718,52.0,10,High Intent,push,send_coupon,push,True
+CUST_65E04417,90,0.638,72.0,10,Anonymous,push,send_coupon,push,False
+CUST_E6D7B89B,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_270F74DF,30,0.298,52.0,10,Browsing,push,send_whatsapp,whatsapp,False
+CUST_910181D2,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_6301D9F7,100,0.71,90.0,0,Interested,whatsapp,wait,none,True
+CUST_A33A37D8,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_8F84B196,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_9C39A1BB,85,0.623,57.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_4A5C1BEB,100,0.71,90.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_90CC98DA,100,0.708,62.0,10,Loyal,sms,send_coupon,sms,True
+CUST_D3620381,30,0.288,62.0,10,Interested,push,send_whatsapp,whatsapp,False
+CUST_B13B4F5E,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_78C3C998,30,0.298,52.0,10,Browsing,push,recommend_products,none,False
+CUST_4F73EDFF,80,0.61,70.0,0,Cart Active,push,recommend_products,none,True
+CUST_CABDE95A,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_8290A620,50,0.418,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_5592D9DA,10,0.0,70.0,100,Churn Risk,whatsapp,send_push,push,False
+CUST_6080E2EB,80,0.61,70.0,0,Interested,sms,send_coupon,sms,True
+CUST_EFC80D26,70,0.508,82.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_8A353FB6,90,0.668,42.0,10,High Intent,email,send_email,email,True
+CUST_BBA98762,80,0.61,70.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_69E3C3BC,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_0EBA4300,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_2DCC9A50,100,0.703,67.0,10,Loyal,push,send_coupon,push,True
+CUST_0969A929,50,0.398,72.0,10,Interested,push,send_whatsapp,whatsapp,False
+CUST_63815039,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_4490EE8E,75,0.558,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_9D23F007,100,0.713,57.0,10,Loyal,push,send_coupon,push,True
+CUST_F1C77A66,100,0.718,52.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_2CEA878B,20,0.238,52.0,10,Browsing,push,recommend_products,none,False
+CUST_587AD8A4,100,0.72,80.0,0,Interested,push,send_coupon,push,True
+CUST_B43BDCE6,30,0.288,62.0,10,Interested,email,send_whatsapp,whatsapp,False
+CUST_4E9B31C7,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_FE06D134,10,0.034,61.0,55,Churn Risk,push,wait,none,False
+CUST_ADB57CAD,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_D973F35F,100,0.71,90.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_86A609C6,85,0.623,57.0,10,Loyal,email,send_coupon,email,True
+CUST_57541408,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_647F8747,30,0.298,52.0,10,Anonymous,sms,wait,none,False
+CUST_C4A8005E,30,0.298,52.0,10,Browsing,push,recommend_products,none,False
+CUST_0AD2B348,90,0.618,92.0,10,Cart Active,email,send_coupon,email,False
+CUST_18CE6EE9,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_D5C2AF50,45,0.378,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_CB85A64B,100,0.72,80.0,0,Cart Active,sms,send_email,email,True
+CUST_DD199304,10,0.0,70.0,100,Dormant,email,loyalty_reward,none,False
+CUST_5382FC8A,30,0.298,52.0,10,Browsing,email,recommend_products,none,False
+CUST_131DA56E,90,0.618,92.0,10,Cart Active,whatsapp,send_coupon,whatsapp,False
+CUST_770B623C,10,0.0,70.0,100,Churn Risk,sms,send_push,push,False
+CUST_0E180EA4,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_3BD1BFA6,80,0.578,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_0947CD11,30,0.288,62.0,10,Cart Active,sms,send_whatsapp,whatsapp,False
+CUST_716F42AB,100,0.708,62.0,10,High Intent,email,recommend_products,none,True
+CUST_C143D2F6,100,0.693,77.0,10,High Intent,email,send_coupon,email,True
+CUST_56993D8E,80,0.578,72.0,10,Loyal,sms,send_coupon,sms,True
+CUST_A7E53581,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_9CB02BCF,100,0.693,77.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_503BE15D,80,0.578,72.0,10,High Intent,push,send_coupon,push,True
+CUST_C2207C2D,100,0.72,80.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_02424CE3,80,0.61,70.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_1FF0F4B8,60,0.6802,62.0,10,High Intent,sms,send_whatsapp,whatsapp,True
+CUST_0B5ABC6D,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_184CC8F1,85,0.623,57.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_E4B13E8F,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_81CA5D16,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_83645FC6,100,0.718,52.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_6E5A12E9,60,0.78,62.0,10,Loyal,sms,send_whatsapp,whatsapp,True
+CUST_AC41ECF3,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_3683D49C,65,0.498,62.0,10,Anonymous,email,loyalty_reward,none,False
+CUST_9AC92005,100,0.698,72.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_36D8E45F,30,0.298,52.0,10,Anonymous,email,recommend_products,none,False
+CUST_741B6B68,20,0.238,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_28C10C94,80,0.578,72.0,10,Loyal,email,send_coupon,email,True
+CUST_6E27F854,50,0.418,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_999FE051,100,0.708,62.0,10,Loyal,push,send_coupon,push,True
+CUST_EFDB19CD,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_83469F4C,30,0.298,52.0,10,Browsing,push,recommend_products,none,False
+CUST_C71AE6AD,65,0.513,47.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_34A39B77,100,0.7,100.0,0,Cart Active,push,send_coupon,push,True
+CUST_C8E4870F,100,0.67,100.0,10,High Intent,push,send_coupon,push,True
+CUST_A945F7C3,100,0.718,52.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_9A972779,60,0.6087,62.0,10,Loyal,whatsapp,send_whatsapp,whatsapp,True
+CUST_3B7AAABC,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_67C3AF77,100,0.703,67.0,10,High Intent,sms,send_coupon,sms,True
+CUST_8861184D,35,0.318,62.0,10,Browsing,push,send_push,push,False
+CUST_06A239D3,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_1BD16710,50,0.418,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_912094DF,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_3F1908FF,100,0.683,87.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_EEB6C2C2,100,0.738,32.0,10,High Intent,push,send_push,push,True
+CUST_94DE09B8,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_89EA70FF,65,0.498,62.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_5F83A21D,100,0.72,80.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_18AA4492,85,0.623,57.0,10,Loyal,sms,send_coupon,sms,True
+CUST_027164B3,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_0AD94D28,40,0.358,52.0,10,Anonymous,push,wait,none,False
+CUST_31B02712,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_AC95571E,50,0.418,52.0,10,Browsing,push,recommend_products,none,False
+CUST_65901553,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_8E8B796A,100,0.693,77.0,10,High Intent,email,recommend_products,none,True
+CUST_7B473553,65,0.498,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_9140D68A,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_0F053F77,30,0.298,52.0,10,Browsing,email,recommend_products,none,False
+CUST_8D250AB2,100,0.703,67.0,10,High Intent,sms,send_coupon,sms,True
+CUST_76F3CA16,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_8D1EC76F,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_19C3FD37,30,0.298,52.0,10,Anonymous,email,wait,none,False
+CUST_4E59CDC9,100,0.693,77.0,10,Loyal,push,send_coupon,push,True
+CUST_E3CC687C,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_895195FE,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_52A467A1,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_895A3F9D,100,0.72,80.0,0,Cart Active,push,send_coupon,push,True
+CUST_D8C3AB84,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_F32E13E7,100,0.678,92.0,10,High Intent,email,send_coupon,email,True
+CUST_68E73F1D,90,0.638,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_3221BDA7,100,0.713,57.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_2CF59DB9,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_7A473C6F,100,0.72,80.0,0,Cart Active,push,send_coupon,push,True
+CUST_BC076D08,100,0.708,62.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_13B3C39B,45,0.378,62.0,10,Browsing,sms,send_email,email,False
+CUST_F399372B,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_2C04A290,90,0.638,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_8512043B,60,0.5,60.0,0,Cart Active,push,send_whatsapp,whatsapp,True
+CUST_BE0BE98D,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_D385C01E,30,0.298,52.0,10,Browsing,sms,loyalty_reward,none,False
+CUST_BEDEB4E5,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_9A338CD0,70,0.508,82.0,10,Interested,email,send_coupon,email,False
+CUST_1E67221C,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_0CD60EBD,30,0.298,52.0,10,Anonymous,sms,wait,none,False
+CUST_92F17E3F,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_6F9E2418,30,0.298,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_0FF13127,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_BB285F7A,100,0.67,100.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_7EABA16F,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_B46F4923,30,0.288,62.0,10,Interested,email,send_coupon,email,False
+CUST_93700F09,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_72B6D10E,100,0.71,90.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_A54C9E5A,65,0.513,47.0,10,High Intent,email,send_email,email,True
+CUST_BCF213F1,100,0.67,100.0,10,Cart Active,email,send_coupon,email,False
+CUST_FB4910A7,10,0.034,61.0,55,Churn Risk,push,wait,none,False
+CUST_4C60FF11,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_5FAF1C12,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_79A602ED,100,0.708,62.0,10,High Intent,sms,send_coupon,sms,True
+CUST_A1727E54,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_A163EAC7,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_407E42A5,85,0.623,57.0,10,Loyal,email,loyalty_reward,none,True
+CUST_80D7E8E6,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_F0508F34,65,0.498,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_65C588C7,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_115F567A,60,0.5,60.0,0,Cart Active,sms,send_whatsapp,whatsapp,True
+CUST_11809A6B,100,0.683,87.0,10,High Intent,push,send_coupon,push,True
+CUST_30A63D4E,90,0.638,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_6C0C3F65,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_490CCB49,80,0.578,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_E1598B61,100,0.683,87.0,10,High Intent,push,send_coupon,push,True
+CUST_0F7F15A2,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_9D644E2B,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_D6F45E2B,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_5F316548,70,0.508,82.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_241A82E0,100,0.693,77.0,10,High Intent,email,send_coupon,email,True
+CUST_C3A5792C,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_7F141E6F,85,0.623,57.0,10,Loyal,push,send_coupon,push,True
+CUST_FAF701E5,85,0.623,57.0,10,High Intent,email,send_coupon,email,True
+CUST_4BE3EA6F,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_0BDEBB7F,100,0.688,82.0,10,Loyal,push,send_coupon,push,True
+CUST_E89782AF,55,0.438,62.0,10,Anonymous,sms,send_whatsapp,whatsapp,False
+CUST_3F240E7F,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_ED884268,10,0.034,61.0,55,Churn Risk,sms,wait,none,False
+CUST_DF3740B2,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_73A64B24,30,0.298,52.0,10,Browsing,email,recommend_products,none,False
+CUST_646349C1,100,0.713,57.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_0838480F,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_35DB462E,100,0.698,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_FBE3E53A,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_A46748F6,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_F6B94B37,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_6579F2EE,100,0.693,77.0,10,High Intent,sms,send_coupon,sms,True
+CUST_BEF47812,100,0.703,67.0,10,High Intent,push,send_coupon,push,True
+CUST_E639AE8C,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_6E69BB46,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_269B407E,100,0.703,67.0,10,Loyal,push,send_coupon,push,True
+CUST_60F782FD,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_8EEBB8A3,100,0.718,52.0,10,High Intent,push,send_coupon,push,True
+CUST_19E5CD10,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_B10F3870,30,0.298,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_9BB9B538,100,0.7,100.0,0,Interested,whatsapp,wait,none,True
+CUST_7B3DBE5B,70,0.508,82.0,10,Cart Active,whatsapp,send_coupon,whatsapp,False
+CUST_E999A8A8,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_07EB68F4,80,0.578,72.0,10,High Intent,email,send_coupon,email,True
+CUST_A95B61CD,10,0.034,61.0,55,Churn Risk,push,wait,none,False
+CUST_9CC313BA,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_6E792318,30,0.298,52.0,10,Anonymous,push,wait,none,False
+CUST_51AF6922,60,0.478,52.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_EB3B7A55,100,0.703,67.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_34C5C6D7,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_5A2098A2,100,0.733,37.0,10,Loyal,email,loyalty_reward,none,True
+CUST_5F862B40,100,0.703,67.0,10,Loyal,sms,send_coupon,sms,True
+CUST_B30C0F03,100,0.708,62.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_1351064A,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_4A625328,50,0.418,52.0,10,Anonymous,push,wait,none,False
+CUST_D6FCB1E8,60,0.5,60.0,0,Cart Active,email,send_whatsapp,whatsapp,True
+CUST_EB78793E,50,0.418,52.0,10,Browsing,push,recommend_products,none,False
+CUST_3BC4ECAE,60,0.478,52.0,10,Browsing,sms,send_push,push,False
+CUST_9BFE4ED4,80,0.61,70.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_756B35DC,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_58DE26DE,80,0.578,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_855AF781,80,0.578,72.0,10,Browsing,email,send_coupon,email,False
+CUST_8FE037C1,30,0.298,52.0,10,Anonymous,email,wait,none,False
+CUST_2BA29819,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_B99993B5,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_56A67BB4,100,0.713,57.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_93480CCB,65,0.498,62.0,10,Browsing,email,send_coupon,email,False
+CUST_D488727A,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_D26F973C,100,0.7,100.0,0,Interested,sms,send_coupon,sms,True
+CUST_77F1C16C,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_D6436251,100,0.683,87.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_93A9BF43,60,0.7717,62.0,10,Loyal,whatsapp,send_whatsapp,whatsapp,True
+CUST_EE0967E3,100,0.718,52.0,10,High Intent,email,send_coupon,email,True
+CUST_E0EAE488,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_F2051248,35,0.318,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_82F65E23,80,0.578,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_DD984D84,65,0.498,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_CB568B0F,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_21BB680C,70,0.508,82.0,10,Interested,email,send_coupon,email,False
+CUST_FED98234,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_EE8EF9EC,75,0.558,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_B35DE5D2,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_C56A11A5,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_A7E56800,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_2C11FCAA,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_547064A2,100,0.67,100.0,10,Interested,email,send_coupon,email,False
+CUST_92CEDCA7,75,0.558,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_D256D442,60,0.5,60.0,0,Cart Active,email,send_whatsapp,whatsapp,True
+CUST_449FC798,60,0.5,60.0,0,Interested,push,send_whatsapp,whatsapp,True
+CUST_32B7B659,10,0.0,70.0,100,Churn Risk,whatsapp,send_email,email,False
+CUST_FBEBE3B4,40,0.358,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_4C574128,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_EA42A92D,90,0.668,42.0,10,High Intent,push,send_push,push,True
+CUST_51A7B9FE,60,0.5,60.0,0,Interested,push,send_whatsapp,whatsapp,True
+CUST_44A2C795,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_FCBFFC24,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_85EA6A71,100,0.693,77.0,10,High Intent,sms,send_coupon,sms,True
+CUST_94D3E97B,50,0.398,72.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_5D50C84D,55,0.438,62.0,10,Anonymous,sms,send_whatsapp,whatsapp,False
+CUST_5103D3C5,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_260D0C2F,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_47FE6E8D,85,0.623,57.0,10,High Intent,sms,send_coupon,sms,True
+CUST_4248F272,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_6D8BC63B,50,0.418,52.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_559D568C,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_475F08DA,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_5D81D8F3,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_F25B8976,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_6E4B08DD,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_7B8B4582,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_C8832EFB,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_C4B680AE,60,0.458,72.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_0FE8CE86,100,0.72,80.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_119DD9F6,90,0.638,72.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_4A5340F6,60,0.478,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_1CE8F62B,60,0.8638,62.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_60543475,100,0.688,82.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_508B3E12,80,0.61,70.0,0,Interested,push,send_push,push,True
+CUST_64D813A5,60,0.478,52.0,10,Browsing,push,recommend_products,none,False
+CUST_EDC61F3F,75,0.558,62.0,10,Browsing,email,send_coupon,email,False
+CUST_A14EE256,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_B11FBE08,30,0.298,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_DA071068,100,0.72,80.0,0,Cart Active,email,send_coupon,email,True
+CUST_E2442033,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_F0F97E05,50,0.418,52.0,10,Anonymous,email,wait,none,False
+CUST_3B2A0D43,100,0.71,90.0,0,Interested,push,send_coupon,push,True
+CUST_E6593C6B,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_D730113B,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_B2B8F92B,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_99CA12C2,100,0.71,90.0,0,Interested,email,send_coupon,email,True
+CUST_B7CA9F4F,100,0.713,57.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_DF7B584F,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_864192A5,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_C2777272,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_C39706E3,50,0.398,72.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_E429E2BF,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_EE5F32C6,60,0.5,60.0,0,Cart Active,push,send_whatsapp,whatsapp,True
+CUST_B8585C55,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_9C908B7E,100,0.683,87.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_E05A6E55,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_1F1F606A,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_DB91EDA3,100,0.71,90.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_D26D51EE,100,0.723,47.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_0E935651,100,0.708,62.0,10,High Intent,sms,send_email,email,True
+CUST_72429935,60,0.7892,62.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_FD6AAD0E,45,0.378,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_7A378EA4,100,0.71,90.0,0,Interested,sms,send_coupon,sms,True
+CUST_5F0AAC03,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_4EAC5F1B,30,0.298,52.0,10,Browsing,push,recommend_products,none,False
+CUST_B3CF4A1B,100,0.718,52.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_956AC9C3,35,0.318,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_3EB938AC,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_0ECEFA24,75,0.558,62.0,10,Browsing,sms,send_coupon,sms,False
+CUST_3BDB194B,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_EA57BACB,35,0.318,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_DB672D6E,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_73610D47,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_43287017,100,0.71,90.0,0,Interested,push,send_coupon,push,True
+CUST_D06526D8,80,0.578,72.0,10,Loyal,sms,send_coupon,sms,True
+CUST_D314B9C7,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_C5234514,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_06321A44,80,0.578,72.0,10,High Intent,push,do_nothing,none,True
+CUST_C9697997,65,0.513,47.0,10,High Intent,email,send_email,email,True
+CUST_33540ED1,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_9674EE56,85,0.623,57.0,10,High Intent,email,send_coupon,email,True
+CUST_55273BA1,10,0.0,70.0,100,Dormant,whatsapp,wait,none,False
+CUST_2DAEC16A,60,0.5,60.0,0,Interested,sms,send_whatsapp,whatsapp,True
+CUST_B87AF05C,30,0.288,62.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_C5612976,100,0.703,67.0,10,High Intent,sms,send_coupon,sms,True
+CUST_72CBC3FF,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_0F909074,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_E15D1603,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_328B8A58,55,0.438,62.0,10,Browsing,sms,send_whatsapp,whatsapp,False
+CUST_AE9B8C22,80,0.61,70.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_3734FEC0,100,0.703,67.0,10,Loyal,push,send_coupon,push,True
+CUST_7BB9CFB8,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_ADAD237D,35,0.318,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_972B2DD0,90,0.618,92.0,10,Interested,sms,send_coupon,sms,False
+CUST_12AF5997,100,0.678,92.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_18AAD8FB,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_3E5FC064,100,0.718,52.0,10,Loyal,email,send_coupon,email,True
+CUST_75BA66A5,100,0.708,62.0,10,Loyal,email,send_coupon,email,True
+CUST_0276CE0E,100,0.72,80.0,0,Cart Active,push,send_coupon,push,True
+CUST_EFAE7945,80,0.578,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_58BF3EB3,100,0.718,52.0,10,High Intent,push,send_coupon,push,True
+CUST_791BE7DD,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_43FE3394,100,0.728,42.0,10,Loyal,email,send_coupon,email,True
+CUST_8DFFB2CE,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_63715C65,60,0.5,60.0,0,Cart Active,push,send_whatsapp,whatsapp,True
+CUST_9D10986B,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_AE7296E8,60,0.5,60.0,0,Cart Active,whatsapp,send_whatsapp,whatsapp,True
+CUST_F5094D5F,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_55E21CDC,90,0.618,92.0,10,Cart Active,whatsapp,send_coupon,whatsapp,False
+CUST_8AE530FA,75,0.558,62.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_C7AF7E68,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_A4B5E952,90,0.668,42.0,10,High Intent,email,send_email,email,True
+CUST_F9C12A90,100,0.7,100.0,0,Interested,sms,wait,none,True
+CUST_6D34DCA7,100,0.703,67.0,10,Loyal,push,send_coupon,push,True
+CUST_F8398755,100,0.713,57.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_D351A539,100,0.71,90.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_956F4391,50,0.418,52.0,10,Browsing,sms,recommend_products,none,False
+CUST_0AA057F5,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_8D6439E0,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_302CEB79,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_538A7176,100,0.71,90.0,0,Interested,email,send_coupon,email,True
+CUST_7D42AE80,45,0.378,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_A32303A8,100,0.698,72.0,10,Loyal,email,send_coupon,email,True
+CUST_711EDC8E,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_1AFE374A,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_66D6E841,90,0.618,92.0,10,Interested,push,send_coupon,push,False
+CUST_94271BA7,65,0.513,47.0,10,Loyal,push,loyalty_reward,none,True
+CUST_24C24DF0,100,0.733,37.0,10,High Intent,push,send_push,push,True
+CUST_D9AFADA6,75,0.558,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_7DABD08A,60,0.5,60.0,0,Cart Active,whatsapp,send_whatsapp,whatsapp,True
+CUST_0B2DF13F,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_B231E916,100,0.688,82.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_2307D46C,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_9F6558FE,60,0.478,52.0,10,Browsing,email,recommend_products,none,False
+CUST_EEF7C6CD,90,0.668,42.0,10,Loyal,sms,loyalty_reward,none,True
+CUST_A28972F7,100,0.683,87.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_71D368F0,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_8E801C1B,100,0.708,62.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_0AC726CC,60,0.458,72.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_7852DBC9,50,0.418,52.0,10,Anonymous,sms,wait,none,False
+CUST_07EA8A74,45,0.378,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_BF9F3367,100,0.723,47.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_F3E2D497,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_1A361C57,100,0.72,80.0,0,Cart Active,sms,send_whatsapp,whatsapp,True
+CUST_F3F8E500,55,0.438,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_5B263543,100,0.67,100.0,10,Loyal,whatsapp,do_nothing,none,True
+CUST_EFB1E232,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_586B166F,65,0.513,47.0,10,Loyal,email,loyalty_reward,none,True
+CUST_46A3E974,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_4263EE0F,100,0.743,27.0,10,High Intent,email,send_email,email,True
+CUST_0799698D,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_C4813074,60,0.6825,62.0,10,High Intent,sms,send_whatsapp,whatsapp,True
+CUST_D0D6BA71,100,0.703,67.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_EE839A5D,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_325501F0,70,0.518,72.0,10,Browsing,push,send_coupon,push,False
+CUST_71520E60,30,0.288,62.0,10,Interested,sms,send_whatsapp,whatsapp,False
+CUST_462E7A2E,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_4DC33C38,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_C640B75F,80,0.578,72.0,10,Loyal,sms,send_coupon,sms,True
+CUST_CF937353,100,0.67,100.0,10,Cart Active,whatsapp,send_coupon,whatsapp,False
+CUST_642E3418,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_84C827DA,50,0.398,72.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_05D41BA4,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_5DF7BE8B,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_9919FCF3,80,0.61,70.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_EDAA98F7,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_7C08061C,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_00BB6298,45,0.378,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_053AECF7,45,0.378,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_05128E95,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_8E117EE4,100,0.71,90.0,0,Interested,sms,send_coupon,sms,True
+CUST_6829755F,60,0.478,52.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_AFA4D7A5,90,0.668,42.0,10,High Intent,push,send_push,push,True
+CUST_84D63496,45,0.378,62.0,10,Anonymous,push,send_whatsapp,whatsapp,False
+CUST_F665114F,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_DA68F69F,80,0.578,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_B0CBB472,55,0.438,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_D9E59906,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_22C9C586,70,0.508,82.0,10,Interested,push,send_coupon,push,False
+CUST_A434A37C,10,0.034,61.0,55,Dormant,sms,wait,none,False
+CUST_B726856D,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_FCBBAB0E,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_2463F2C4,65,0.513,47.0,10,Loyal,email,loyalty_reward,none,True
+CUST_7A80472F,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_E227EA55,50,0.418,52.0,10,Anonymous,email,wait,none,False
+CUST_500B2D9A,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_D568E62C,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_B2C5D3F0,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_4F6B0EF5,75,0.558,62.0,10,Anonymous,email,loyalty_reward,none,False
+CUST_30EC8970,65,0.513,47.0,10,Loyal,push,loyalty_reward,none,True
+CUST_9D087A5B,50,0.398,72.0,10,Interested,email,loyalty_reward,none,False
+CUST_A677100E,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_23EFB197,100,0.708,62.0,10,Loyal,email,send_coupon,email,True
+CUST_7C7B002A,60,0.8969,62.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_50E42BD9,30,0.298,52.0,10,Browsing,email,recommend_products,none,False
+CUST_4B21C776,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_23EEA7C2,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_B215D3CB,95,0.658,82.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_9717D202,80,0.578,72.0,10,Loyal,email,send_coupon,email,True
+CUST_8A4D9CAB,30,0.298,52.0,10,Anonymous,sms,wait,none,False
+CUST_0CFCD5D5,60,0.5,60.0,0,Interested,whatsapp,send_whatsapp,whatsapp,True
+CUST_3B0022BB,100,0.698,72.0,10,Loyal,email,send_coupon,email,True
+CUST_C1330647,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_DD504038,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_BB8935C0,65,0.498,62.0,10,Anonymous,email,send_coupon,email,False
+CUST_CF602B04,60,0.5,60.0,0,Cart Active,email,send_whatsapp,whatsapp,True
+CUST_5E0BB013,100,0.733,37.0,10,Loyal,sms,loyalty_reward,none,True
+CUST_D26CE20B,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_66F3F64C,100,0.72,80.0,0,Cart Active,push,send_coupon,push,True
+CUST_595A074D,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_B6F8C9F4,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_04E1682F,60,0.5,60.0,0,Cart Active,push,send_whatsapp,whatsapp,True
+CUST_FC1DFA58,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_61784551,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_6452BA91,30,0.288,62.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_B5EFCFD7,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_78779B3F,35,0.318,62.0,10,Anonymous,whatsapp,send_push,push,False
+CUST_E765F27D,60,0.5,60.0,0,Interested,whatsapp,send_whatsapp,whatsapp,True
+CUST_DB6903B7,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_CC615E9C,70,0.518,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_6CC2B6D5,90,0.638,72.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_E1363176,70,0.508,82.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_732199DC,100,0.7,100.0,0,Interested,push,send_coupon,push,True
+CUST_8BE239CA,100,0.713,57.0,10,High Intent,email,send_coupon,email,True
+CUST_FCFD3350,35,0.318,62.0,10,Anonymous,email,send_push,push,False
+CUST_3187E3F9,45,0.378,62.0,10,Anonymous,email,send_whatsapp,whatsapp,False
+CUST_8BF8807D,65,0.513,47.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_813B4C1D,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_3A24199B,45,0.378,62.0,10,Browsing,sms,send_whatsapp,whatsapp,False
+CUST_4DE3D4BE,10,0.0,70.0,100,Dormant,whatsapp,recommend_products,none,False
+CUST_67D19DA2,65,0.513,47.0,10,High Intent,email,send_email,email,True
+CUST_A72EF9E3,100,0.723,47.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_5E96CE43,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_D665C471,100,0.718,52.0,10,High Intent,sms,send_coupon,sms,True
+CUST_4726940D,60,0.5,60.0,0,Interested,push,loyalty_reward,none,True
+CUST_05774682,30,0.298,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_E297E034,100,0.708,62.0,10,High Intent,sms,send_coupon,sms,True
+CUST_76F2413B,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_58844B20,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_8C946A45,100,0.71,90.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_A1319669,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_DAF217DC,60,0.6176,62.0,10,Loyal,push,loyalty_reward,none,True
+CUST_5BF19433,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_65AAD139,40,0.358,52.0,10,Browsing,email,recommend_products,none,False
+CUST_E7CCC8F3,90,0.668,42.0,10,High Intent,email,send_email,email,True
+CUST_6F69CD23,80,0.61,70.0,0,Cart Active,push,send_coupon,push,True
+CUST_6BB19DF4,60,0.9355,62.0,10,High Intent,email,send_whatsapp,whatsapp,True
+CUST_DB9A335D,100,0.7,100.0,0,Interested,push,send_coupon,push,True
+CUST_F70CEE46,10,0.0,70.0,100,Churn Risk,whatsapp,recommend_products,none,False
+CUST_FEC88168,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_3D41A73A,50,0.398,72.0,10,Interested,email,send_whatsapp,whatsapp,False
+CUST_D34AB1F8,100,0.698,72.0,10,Loyal,email,send_coupon,email,True
+CUST_DE1FEA94,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_D8629B7D,70,0.518,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_394BBCE4,100,0.7,100.0,0,Interested,sms,send_coupon,sms,True
+CUST_E7346EB8,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_9D8D3CB7,100,0.693,77.0,10,Loyal,push,send_coupon,push,True
+CUST_EE577E68,50,0.398,72.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_4F08C7E1,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_6EE4FF22,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_0D24552E,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_2FD10D2E,90,0.638,72.0,10,Anonymous,whatsapp,send_coupon,whatsapp,False
+CUST_35E4EBEE,100,0.693,77.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_019A65F6,80,0.61,70.0,0,Interested,sms,wait,none,True
+CUST_27CCC870,100,0.718,52.0,10,Loyal,sms,send_coupon,sms,True
+CUST_560A375E,10,0.034,61.0,55,Churn Risk,whatsapp,wait,none,False
+CUST_E8306052,100,0.678,92.0,10,Loyal,email,send_coupon,email,True
+CUST_40C1C35F,100,0.7,100.0,0,Cart Active,whatsapp,loyalty_reward,none,True
+CUST_4973FEA9,90,0.638,72.0,10,Browsing,sms,send_coupon,sms,False
+CUST_19632405,100,0.71,90.0,0,Interested,sms,send_coupon,sms,True
+CUST_29F2B405,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_1DC6721B,80,0.61,70.0,0,Interested,whatsapp,send_email,email,True
+CUST_635C9A61,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_F0626251,90,0.638,72.0,10,Browsing,email,send_email,email,False
+CUST_A046FDBD,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_2CD14C35,100,0.718,52.0,10,Loyal,sms,send_coupon,sms,True
+CUST_C9FDE206,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_AFFDA14D,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_DDD5D12B,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_F080180D,100,0.683,87.0,10,High Intent,email,send_coupon,email,True
+CUST_3AFE3828,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_E82A5B06,90,0.638,72.0,10,Browsing,whatsapp,send_email,email,False
+CUST_9755D509,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_B6244435,80,0.61,70.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_B1EB07F1,45,0.378,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_81413439,65,0.513,47.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_EF7187EF,85,0.623,57.0,10,High Intent,email,send_coupon,email,True
+CUST_52E25B39,100,0.71,90.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_3901D123,45,0.378,62.0,10,Browsing,email,send_whatsapp,whatsapp,False
+CUST_607B58AC,100,0.718,52.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_7E9EF41D,50,0.398,72.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_FCE6B254,30,0.298,52.0,10,Browsing,email,recommend_products,none,False
+CUST_3FC6B029,85,0.623,57.0,10,Loyal,email,send_coupon,email,True
+CUST_6B3B55D4,60,0.7538,62.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_0D9C3C6D,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_EAD51975,100,0.688,82.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_6401C024,100,0.703,67.0,10,Loyal,push,send_whatsapp,whatsapp,True
+CUST_1419DF71,10,0.034,61.0,55,Churn Risk,push,wait,none,False
+CUST_E80D9B4D,85,0.623,57.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_0D679C7A,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_E9D7F09D,80,0.578,72.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_442BA77D,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_5E833011,30,0.298,52.0,10,Anonymous,email,send_push,push,False
+CUST_47E0987A,10,0.0,70.0,100,Churn Risk,sms,do_nothing,none,False
+CUST_52F8A762,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_4D49D219,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_3A3C56D3,10,0.0,70.0,100,Churn Risk,email,send_whatsapp,whatsapp,False
+CUST_53665C2A,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_0D60282C,90,0.668,42.0,10,High Intent,email,loyalty_reward,none,True
+CUST_3E82BC00,30,0.288,62.0,10,Cart Active,push,send_push,push,False
+CUST_13032569,50,0.418,52.0,10,Browsing,email,send_push,push,False
+CUST_AEFFBB31,70,0.508,82.0,10,Interested,push,send_coupon,push,False
+CUST_E8C23CF2,100,0.733,37.0,10,Loyal,email,loyalty_reward,none,True
+CUST_43216AB0,80,0.61,70.0,0,Interested,email,send_coupon,email,True
+CUST_A8DE6CBB,100,0.723,47.0,10,Loyal,email,send_coupon,email,True
+CUST_288DE215,100,0.71,90.0,0,Interested,sms,send_coupon,sms,True
+CUST_A5EAAA27,55,0.438,62.0,10,Browsing,whatsapp,send_whatsapp,whatsapp,False
+CUST_086C9EA2,100,0.733,37.0,10,Loyal,sms,loyalty_reward,none,True
+CUST_358A3BBF,90,0.618,92.0,10,Interested,whatsapp,send_coupon,whatsapp,False
+CUST_5EFCA7D3,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_65C8F81A,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_D133848B,100,0.7,100.0,0,Cart Active,push,send_coupon,push,True
+CUST_D7E5199C,75,0.558,62.0,10,Anonymous,push,send_coupon,push,False
+CUST_6F1B6EA5,80,0.61,70.0,0,Cart Active,push,send_coupon,push,True
+CUST_FAA24C6B,30,0.288,62.0,10,Cart Active,sms,loyalty_reward,none,False
+CUST_FEC40CE5,100,0.743,27.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_36608905,10,0.034,61.0,55,Dormant,email,wait,none,False
+CUST_A34A1CD7,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_03828410,40,0.358,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_827F4A54,40,0.358,52.0,10,Anonymous,email,wait,none,False
+CUST_4BA78447,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_B235EDF2,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_AA0CFD5A,30,0.288,62.0,10,Cart Active,email,send_whatsapp,whatsapp,False
+CUST_8C65C9E1,50,0.398,72.0,10,Interested,email,send_whatsapp,whatsapp,False
+CUST_443DBF8F,60,0.5,60.0,0,Cart Active,whatsapp,send_whatsapp,whatsapp,True
+CUST_0417587D,10,0.0,70.0,100,Dormant,email,do_nothing,none,False
+CUST_76AC0392,75,0.558,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_FF0607BB,90,0.618,92.0,10,Interested,email,send_coupon,email,False
+CUST_152DD3F0,100,0.72,80.0,0,Interested,sms,send_coupon,sms,True
+CUST_D319C2D4,100,0.67,100.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_43FCC9A5,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_5ED05649,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_909AA15D,50,0.398,72.0,10,Cart Active,push,send_whatsapp,whatsapp,False
+CUST_B319ED7C,100,0.723,47.0,10,Loyal,sms,send_coupon,sms,True
+CUST_2367332C,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_F112702A,80,0.61,70.0,0,Interested,push,send_coupon,push,True
+CUST_43E1C3FE,100,0.72,80.0,0,Interested,email,send_coupon,email,True
+CUST_10B52115,40,0.358,52.0,10,Browsing,push,recommend_products,none,False
+CUST_4F614825,75,0.558,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_DF1BA4AD,100,0.718,52.0,10,High Intent,push,send_coupon,push,True
+CUST_7F6A8925,100,0.72,80.0,0,Interested,whatsapp,wait,none,True
+CUST_27F2C1C5,60,0.5,60.0,0,Cart Active,email,send_whatsapp,whatsapp,True
+CUST_848687AA,100,0.7,100.0,0,Cart Active,push,send_coupon,push,True
+CUST_6ABF865A,100,0.698,72.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_96077CC0,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_AC61A36B,80,0.578,72.0,10,Loyal,whatsapp,send_coupon,whatsapp,True
+CUST_D4854721,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_079742A8,100,0.72,80.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_90355462,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_17CE53E7,100,0.708,62.0,10,Loyal,email,send_coupon,email,True
+CUST_0863F041,30,0.288,62.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_2EFCFE48,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_A1886EE9,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_D49BFB32,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_F32EC161,60,0.6366,62.0,10,Loyal,email,send_whatsapp,whatsapp,True
+CUST_637934D3,80,0.61,70.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_AC3367D9,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_23CA8613,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_A9F28BD6,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_C2529F48,20,0.238,52.0,10,Browsing,email,recommend_products,none,False
+CUST_AB791841,10,0.0,70.0,100,Dormant,sms,do_nothing,none,False
+CUST_C95518E2,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_ACB3D092,100,0.71,90.0,0,Cart Active,email,send_coupon,email,True
+CUST_EB22D54A,10,0.0,70.0,100,Churn Risk,email,do_nothing,none,False
+CUST_653FCFFE,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_3E813AFB,65,0.513,47.0,10,High Intent,email,send_email,email,True
+CUST_1247D355,100,0.693,77.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_99797127,100,0.688,82.0,10,Loyal,sms,send_coupon,sms,True
+CUST_2FA80455,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_9BE8EFDB,50,0.398,72.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_23F288E0,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_B4EBE1E3,35,0.318,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_0B71948B,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_84D2D851,80,0.578,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_A44512C0,100,0.688,82.0,10,High Intent,email,send_coupon,email,True
+CUST_483EE7A7,90,0.668,42.0,10,Loyal,push,loyalty_reward,none,True
+CUST_33336E21,100,0.708,62.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_9FAC6DE4,55,0.438,62.0,10,Anonymous,whatsapp,send_whatsapp,whatsapp,False
+CUST_8D231AE2,60,0.6846,62.0,10,High Intent,whatsapp,send_whatsapp,whatsapp,True
+CUST_FD5C5434,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_5E03E8A0,10,0.0,70.0,100,Churn Risk,push,do_nothing,none,False
+CUST_4E1F226E,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_188B84EE,100,0.708,62.0,10,Loyal,email,send_coupon,email,True
+CUST_FBB9A1EC,40,0.358,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_E469213F,100,0.688,82.0,10,Loyal,email,send_coupon,email,True
+CUST_9A03823A,80,0.578,72.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_0EE83A44,30,0.288,62.0,10,Interested,whatsapp,send_whatsapp,whatsapp,False
+CUST_8B5D9007,30,0.298,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_B3765000,100,0.708,62.0,10,High Intent,email,send_coupon,email,True
+CUST_F0EF17C0,20,0.238,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_82D9BCE5,75,0.558,62.0,10,Anonymous,sms,send_coupon,sms,False
+CUST_8F7A5C8B,100,0.7,100.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_4F041D51,65,0.513,47.0,10,High Intent,email,send_email,email,True
+CUST_FF17432C,35,0.318,62.0,10,Anonymous,whatsapp,send_email,email,False
+CUST_B5684CA8,100,0.7,100.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_56D08890,10,0.0,70.0,100,Dormant,push,do_nothing,none,False
+CUST_867A7DE6,100,0.723,47.0,10,High Intent,email,send_email,email,True
+CUST_9F3A1613,10,0.034,61.0,55,Churn Risk,email,wait,none,False
+CUST_19F2196D,100,0.733,37.0,10,Loyal,whatsapp,loyalty_reward,none,True
+CUST_11C948DA,40,0.358,52.0,10,Anonymous,email,wait,none,False
+CUST_58606570,100,0.703,67.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_C77883ED,100,0.7,100.0,0,Interested,whatsapp,send_coupon,whatsapp,True
+CUST_DD40A301,20,0.238,52.0,10,Anonymous,whatsapp,wait,none,False
+CUST_D8D2FDCB,10,0.0,70.0,100,Churn Risk,whatsapp,do_nothing,none,False
+CUST_9FA79122,10,0.034,61.0,55,Dormant,whatsapp,wait,none,False
+CUST_97CD1252,90,0.618,92.0,10,Interested,sms,send_coupon,sms,False
+CUST_D826C7E9,30,0.298,52.0,10,Browsing,whatsapp,recommend_products,none,False
+CUST_8A9962A4,40,0.358,52.0,10,Anonymous,email,wait,none,False
+CUST_0DB8C5EC,20,0.238,52.0,10,Anonymous,push,wait,none,False
+CUST_90E53D61,100,0.698,72.0,10,Loyal,email,send_coupon,email,True
+CUST_04AB380C,30,0.288,62.0,10,Cart Active,sms,send_whatsapp,whatsapp,False
+CUST_D57FE0BC,100,0.723,47.0,10,Loyal,whatsapp,wait,none,True
+CUST_C52FAA26,55,0.438,62.0,10,Browsing,whatsapp,wait,none,False
+CUST_22023F09,100,0.7,100.0,0,Cart Active,email,send_coupon,email,True
+CUST_D3EF9E22,90,0.638,72.0,10,Anonymous,email,send_coupon,email,False
+CUST_FE7CF396,60,0.6211,62.0,10,Loyal,email,send_whatsapp,whatsapp,True
+CUST_E95ED05E,20,0.238,52.0,10,Anonymous,email,wait,none,False
+CUST_79EBAC2B,100,0.71,90.0,0,Cart Active,whatsapp,send_coupon,whatsapp,True
+CUST_E10AE950,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
+CUST_467A7CB2,100,0.723,47.0,10,Loyal,email,send_coupon,email,True
+CUST_055B9C2E,60,0.6697,62.0,10,High Intent,sms,send_whatsapp,whatsapp,True
+CUST_D0A5B691,65,0.498,62.0,10,Browsing,whatsapp,send_coupon,whatsapp,False
+CUST_FF1FD384,10,0.034,61.0,55,Dormant,push,wait,none,False
+CUST_9C7733C9,100,0.7,100.0,0,Cart Active,whatsapp,send_whatsapp,whatsapp,True
+CUST_89CE4A1E,60,0.684,62.0,10,Loyal,sms,send_whatsapp,whatsapp,True
+CUST_3BBD2672,100,0.698,72.0,10,High Intent,whatsapp,send_coupon,whatsapp,True
+CUST_0522E9F6,10,0.0,70.0,100,Dormant,whatsapp,do_nothing,none,False
+CUST_AFD558F5,90,0.668,42.0,10,Loyal,sms,loyalty_reward,none,True
+CUST_43F3B4AD,50,0.418,52.0,10,Anonymous,whatsapp,send_email,email,False
+CUST_F263F203,100,0.7,100.0,0,Interested,email,send_coupon,email,True
+CUST_AA650E61,50,0.398,72.0,10,Cart Active,whatsapp,send_whatsapp,whatsapp,False
+CUST_37E7FB43,100,0.72,80.0,0,Cart Active,sms,send_coupon,sms,True
+CUST_AB0C4AE8,100,0.678,92.0,10,High Intent,sms,send_coupon,sms,True
+CUST_70827BC2,50,0.418,52.0,10,Browsing,email,recommend_products,none,False
