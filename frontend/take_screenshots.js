@@ -29,11 +29,27 @@ const pagesToScreenshot = [
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 800 });
 
+  console.log('Navigating to run demo...');
+  await page.goto(`${URL}/store`, { waitUntil: 'networkidle0', timeout: 30000 });
+  
+  try {
+    console.log('Clicking Run Demo button...');
+    await page.evaluate(() => {
+      const buttons = Array.from(document.querySelectorAll('button'));
+      const demoBtn = buttons.find(b => b.textContent.includes('Run Demo'));
+      if (demoBtn) demoBtn.click();
+    });
+    console.log('Waiting for demo to complete (approx 15 seconds)...');
+    await new Promise(r => setTimeout(r, 15000));
+  } catch (err) {
+    console.error('Failed to run demo automatically.', err);
+  }
+
   for (const item of pagesToScreenshot) {
     try {
       console.log(`Navigating to ${URL}${item.path}`);
       await page.goto(`${URL}${item.path}`, { waitUntil: 'networkidle0', timeout: 30000 });
-      // wait a bit for animations
+      // wait a bit for animations and state hydration
       await new Promise(r => setTimeout(r, 2000));
       await page.screenshot({ path: path.join(OUT_DIR, item.name), fullPage: true });
       console.log(`Saved ${item.name}`);

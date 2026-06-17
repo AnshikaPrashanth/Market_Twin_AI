@@ -96,6 +96,9 @@ MarketTwin AI operates transparently. For every decision, the system exposes:
 ### Storefront Simulator
 ![Storefront Simulator](docs/screenshots/storefront-simulator.png)
 
+### Storefront Cart Products
+![Storefront Cart Products](docs/screenshots/storefront-cart-products.png)
+
 ### Email Deliverability
 ![Email Deliverability](docs/screenshots/email-deliverability.png)
 
@@ -104,6 +107,9 @@ MarketTwin AI operates transparently. For every decision, the system exposes:
 
 ### SMS/Push Gateway
 ![SMS/Push Gateway](docs/screenshots/sms-push-gateway.png)
+
+### AI Impact Center
+![AI Impact Center](docs/screenshots/ai-impact-center.png)
 
 ## Tech Stack
 **Frontend:**
@@ -204,8 +210,8 @@ MarketTwin AI is a hackathon Minimum Viable Product (MVP) developed entirely dur
 
 ## Team
 **Team Members:**
-1. [Add Name]
-2. [Add Name]
+1. Anshika Prashanth
+2. Spandana M Raikar
 
 ## Demo Video / Presentation
 **Demo Video:** [To be added]  

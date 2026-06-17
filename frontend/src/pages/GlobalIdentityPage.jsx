@@ -56,10 +56,15 @@ const GlobalIdentityPage = () => {
 
   if (activeCustomer === 'CUST_007') {
     customerIdentities = [
-      { identifier_type: "device_id", identifier_value: "MacBook Home", confidence_score: 100, matched_by: "Deterministic" },
-      { identifier_type: "device_id", identifier_value: "Android Work", confidence_score: 85, matched_by: "Probabilistic" },
-      { identifier_type: "device_id", identifier_value: "iPhone Personal", confidence_score: 90, matched_by: "Reassigned" },
-      { identifier_type: "email", identifier_value: "john.doe@example.com", confidence_score: 100, matched_by: "Deterministic" }
+      { identifier_type: "email_hash", identifier_value: "john.doe@email.com", confidence_score: 100, matched_by: "Deterministic" },
+      { identifier_type: "phone_hash", identifier_value: "+1-555-0199", confidence_score: 100, matched_by: "Deterministic" },
+      { identifier_type: "loyalty_id", identifier_value: "LOYALTY-9921", confidence_score: 100, matched_by: "Deterministic" },
+      { identifier_type: "device_id", identifier_value: "MacBook Home", confidence_score: 94, matched_by: "Probabilistic" },
+      { identifier_type: "device_id", identifier_value: "Android Work", confidence_score: 88, matched_by: "Probabilistic" },
+      { identifier_type: "device_id", identifier_value: "iPhone Personal", confidence_score: 92, matched_by: "Probabilistic" },
+      { identifier_type: "device_id", identifier_value: "iPad Family / Tablet", confidence_score: 85, matched_by: "Probabilistic" },
+      { identifier_type: "cookie_id", identifier_value: "Browser Cookie Session", confidence_score: 82, matched_by: "Probabilistic" },
+      { identifier_type: "login_id", identifier_value: "Reassigned Anonymous Session", confidence_score: 99, matched_by: "Reassigned" }
     ];
   }
 
@@ -103,17 +108,17 @@ const GlobalIdentityPage = () => {
             <div className="absolute top-0 right-0 p-3 opacity-10"><Network className="w-16 h-16" /></div>
             <h3 className="text-sm font-bold text-gray-300 uppercase tracking-widest mb-2">Active Demo Customer</h3>
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-xl font-bold text-white">{customer?.name || "Anonymous User"}</span>
+              <span className="text-xl font-bold text-white">{activeCustomer === 'CUST_007' ? 'John Doe' : (customer?.name || "Anonymous User")}</span>
               <span className="text-brand-500 font-bold">→</span>
               <span className="text-xl font-mono text-brand-400">{activeCustomer}</span>
             </div>
             <div className="text-sm text-gray-400 space-y-1 font-mono">
-              <div>Device: <span className="text-white">{customerIdentities.find(id => id.identifier_type === "device_id")?.identifier_value || "Unknown Device"}</span></div>
+              <div>Device: <span className="text-white">{activeCustomer === 'CUST_007' ? 'iPhone Personal / MacBook Home' : (customerIdentities.find(id => id.identifier_type === "device_id")?.identifier_value || "Unknown Device")}</span></div>
               <div>Status: <span className="text-emerald-400 font-bold">Resolved</span></div>
-              <div>Match Type: <span className="text-amber-400">{bestMatchSource}</span></div>
+              <div>Match Type: <span className="text-amber-400">{activeCustomer === 'CUST_007' ? 'deterministic + behavioral' : bestMatchSource}</span></div>
             </div>
             <p className="mt-3 text-xs text-emerald-400/80 italic border-l-2 border-emerald-500/30 pl-2">
-              "{customer?.name || "Anonymous User"}'s session is resolved to {activeCustomer} using {bestMatchSource}."
+              "{activeCustomer === 'CUST_007' ? 'John Doe' : (customer?.name || "Anonymous User")}'s session is resolved to {activeCustomer} using {activeCustomer === 'CUST_007' ? 'deterministic + behavioral' : bestMatchSource}."
             </p>
           </div>
           

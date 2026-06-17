@@ -14,6 +14,16 @@ export default function EmailInbox() {
   // Conversions should count purchases after an email click. We can just show generic purchases for now or if we want strict:
   const converted = liveEvents.filter(e => e.event_type === 'purchase').length;
 
+  const isDemo = currentCustomerId === 'CUST_007';
+  const displayEmailHistory = isDemo ? [
+    {
+      subject: "Complete your purchase",
+      content: "We noticed you left some great items in your cart. Use code RECOVER20 for 20% off.",
+      call_to_action: "Return to Cart",
+      channel: "email"
+    }
+  ] : emailHistory;
+
   return (
     <div className="max-w-3xl mx-auto space-y-6 select-none relative p-8">
       <header className="mb-8 border-b border-gray-800 pb-4">
@@ -26,13 +36,13 @@ export default function EmailInbox() {
       <div className="bg-[#111827] border border-gray-800 rounded-2xl p-6 shadow-xl">
         <h2 className="text-lg font-semibold text-white mb-4">Latest Dispatches</h2>
         
-        {emailHistory.length === 0 ? (
+        {displayEmailHistory.length === 0 ? (
           <div className="bg-[#1F2937] p-8 rounded-xl border border-gray-700/50 mb-6 text-center text-gray-400 italic">
             No emails have been sent to this customer yet.
           </div>
         ) : (
           <div className="space-y-4 mb-6">
-            {emailHistory.slice().reverse().map((msg, idx) => (
+            {displayEmailHistory.slice().reverse().map((msg, idx) => (
               <div key={idx} className="bg-[#1F2937] p-6 rounded-xl border border-gray-700/50">
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-3">
@@ -44,14 +54,20 @@ export default function EmailInbox() {
                       <p className="text-xs text-gray-400">To: {currentCustomerId}</p>
                     </div>
                   </div>
-                  <span className="text-xs text-gray-500">Delivered</span>
+                  <span className="text-xs text-emerald-400 bg-emerald-400/10 px-2 py-1 rounded border border-emerald-400/20">Delivered</span>
                 </div>
                 <div className="pl-14">
                   <h4 className="text-white font-bold mb-2">{msg.subject || "Important Update"}</h4>
                   <p className="text-gray-300 text-sm mb-4">{msg.content || msg.text}</p>
-                  <Link to="/store" className="inline-block bg-brand-600 text-white px-4 py-2 rounded font-semibold text-sm cursor-pointer hover:bg-brand-500 transition-colors">
+                  <Link to="/store" className="inline-block bg-brand-600 text-white px-4 py-2 rounded font-semibold text-sm cursor-pointer hover:bg-brand-500 transition-colors mb-2">
                     {msg.call_to_action || "Complete Action"}
                   </Link>
+                  {isDemo && (
+                    <div className="mt-4 pt-3 border-t border-gray-700">
+                      <span className="text-xs text-gray-400 uppercase tracking-widest">Revenue Attributed: </span>
+                      <span className="text-sm font-bold text-emerald-400">₹3,499</span>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

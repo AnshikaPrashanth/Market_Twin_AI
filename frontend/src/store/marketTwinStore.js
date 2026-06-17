@@ -1,7 +1,10 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import * as api from '../api/client';
 
-export const useMarketTwinStore = create((set, get) => ({
+export const useMarketTwinStore = create(
+  persist(
+    (set, get) => ({
   // State Fields
   customer: null,
   currentCustomerId: null,
@@ -318,3 +321,9 @@ export const useMarketTwinStore = create((set, get) => ({
   }
 
 }));
+    }),
+    {
+      name: 'market-twin-storage',
+    }
+  )
+);

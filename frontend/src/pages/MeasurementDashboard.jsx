@@ -71,7 +71,8 @@ export default function MeasurementDashboard() {
 
   // Demo override for CUST_007
   const hasDemoPurchased = liveEvents.some(e => e.event_type === 'purchase');
-  const isDemo = currentCustomerId === 'CUST_007' && hasDemoPurchased;
+  const hasCouponFlow = liveEvents.some(e => e.event_type === 'purchase') && liveEvents.some(e => e.event_type?.includes('click') || e.event_type?.includes('open'));
+  const isDemo = currentCustomerId === 'CUST_007' && hasDemoPurchased && hasCouponFlow;
 
   // Compute derived metrics
   const totalEvents = isDemo ? liveEvents.length : (metrics.profile_events || 0);
@@ -85,7 +86,7 @@ export default function MeasurementDashboard() {
   const revenueRecovered = isDemo ? 3499 : (metrics.revenue_recovered || 0);
   const couponCost = isDemo ? 350 : (metrics.coupon_cost || 0);
   const netUplift = isDemo ? 3149 : (metrics.net_uplift || 0);
-  const roi = isDemo ? 9.0 : (metrics.iroas || 0);
+  const roi = isDemo ? "9.0" : (metrics.iroas || 0);
   const conversionRate = isDemo ? "100.0" : (campaignsTriggered > 0 ? ((campaignConversions / campaignsTriggered) * 100).toFixed(1) : 0);
 
   // Organic Metrics
