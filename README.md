@@ -214,7 +214,6 @@ MarketTwin AI is a hackathon Minimum Viable Product (MVP) developed entirely dur
 2. Spandana M Raikar
 
 ## Demo Video / Presentation
-**Demo Video:** [To be added]  
 **Presentation:** docs/MarketTwinAI_Presentation.pptx
 
 ## Future Scope
