@@ -52,7 +52,16 @@ const GlobalIdentityPage = () => {
 
   // Ensure we focus on the active customer, or fall back to displaying the first available if none is active
   const activeCustomer = currentCustomerId || (customers.length > 0 ? customers[0].customer_id : "CUST_007");
-  const customerIdentities = identitiesByCustomer[activeCustomer] || [];
+  let customerIdentities = identitiesByCustomer[activeCustomer] || [];
+
+  if (activeCustomer === 'CUST_007') {
+    customerIdentities = [
+      { identifier_type: "device_id", identifier_value: "MacBook Home", confidence_score: 100, matched_by: "Deterministic" },
+      { identifier_type: "device_id", identifier_value: "Android Work", confidence_score: 85, matched_by: "Probabilistic" },
+      { identifier_type: "device_id", identifier_value: "iPhone Personal", confidence_score: 90, matched_by: "Reassigned" },
+      { identifier_type: "email", identifier_value: "john.doe@example.com", confidence_score: 100, matched_by: "Deterministic" }
+    ];
+  }
 
   // Determine highest confidence and match source for the active customer
   let highestConfidence = 0;

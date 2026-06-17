@@ -204,12 +204,12 @@ MarketTwin AI is a hackathon Minimum Viable Product (MVP) developed entirely dur
 
 ## Team
 **Team Members:**
-1. [Name 1]
-2. [Name 2]
+1. [Add Name]
+2. [Add Name]
 
 ## Demo Video / Presentation
 **Demo Video:** [To be added]  
-**Presentation:** [To be added]
+**Presentation:** docs/MarketTwinAI_Presentation.pptx
 
 ## Future Scope
 - **Real Trained ML Models**: Transition from heuristic/probabilistic scoring to deep learning models trained on historical interaction data.

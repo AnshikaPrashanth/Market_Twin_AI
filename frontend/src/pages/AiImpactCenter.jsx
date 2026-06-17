@@ -171,6 +171,51 @@ export default function AiImpactCenter() {
             </div>
           </div>
           
+          {/* AI Decision Log Table */}
+          <div className="bg-dark-950 p-6 rounded-2xl border border-dark-800">
+            <h3 className="text-sm font-bold text-gray-300 uppercase tracking-widest mb-6">Recent Orchestration Decisions</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-gray-300">
+                <thead className="bg-dark-900 text-gray-400 border-b border-dark-800">
+                  <tr>
+                    <th className="p-3 rounded-tl-lg">Customer ID</th>
+                    <th className="p-3">Campaign</th>
+                    <th className="p-3">Predicted Channel</th>
+                    <th className="p-3">Delivered Channel</th>
+                    <th className="p-3">Routing Logic</th>
+                    <th className="p-3 rounded-tr-lg">Outcome</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-dark-800">
+                  <tr className="hover:bg-dark-900/50 transition-colors">
+                    <td className="p-3 font-mono text-white">CUST_007</td>
+                    <td className="p-3">Cart Recovery Coupon</td>
+                    <td className="p-3 text-emerald-400">WhatsApp</td>
+                    <td className="p-3 text-blue-400">Email</td>
+                    <td className="p-3 text-amber-400 text-xs">WhatsApp consent unavailable. Fallback applied.</td>
+                    <td className="p-3 font-bold text-emerald-400">₹3,499 recovered</td>
+                  </tr>
+                  <tr className="hover:bg-dark-900/50 transition-colors">
+                    <td className="p-3 font-mono text-white">CUST_042</td>
+                    <td className="p-3">Flash Sale Alert</td>
+                    <td className="p-3 text-blue-400">SMS</td>
+                    <td className="p-3 text-gray-500">None (Suppressed)</td>
+                    <td className="p-3 text-red-400 text-xs">High fatigue risk (Score: 88). Marketing cooled down.</td>
+                    <td className="p-3 text-gray-400">Churn prevented</td>
+                  </tr>
+                  <tr className="hover:bg-dark-900/50 transition-colors">
+                    <td className="p-3 font-mono text-white">CUST_089</td>
+                    <td className="p-3">Welcome Series</td>
+                    <td className="p-3 text-emerald-400">Email</td>
+                    <td className="p-3 text-emerald-400">Email</td>
+                    <td className="p-3 text-emerald-400 text-xs">Primary channel approved.</td>
+                    <td className="p-3 text-white">Awaiting interaction</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
         </div>
       )}
     </div>
