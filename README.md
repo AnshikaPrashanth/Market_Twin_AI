@@ -1,352 +1,221 @@
-# MarketTwin AI
+# MarketTwin AI – Real-Time Customer Intelligence & Omnichannel Marketing Orchestration Platform
 
-## Real-Time Omnichannel Customer Intelligence & Digital Twin Platform
+## Overview
+MarketTwin AI is an advanced, real-time marketing orchestration platform that builds digital customer twins by observing ecommerce behaviors across channels. By unifying customer identity and tracking real-time intent, fatigue, and conversion probabilities, the AI-driven Next-Best-Action (NBA) engine automatically selects the optimal communication channel and message while strictly adhering to user consent and channel policies.
 
-MarketTwin AI is a real-time event-driven customer intelligence platform that simulates how modern enterprise Customer Data Platforms (CDPs) and personalization systems work.
+## Problem Statement
+Modern ecommerce marketing suffers from a lack of real-time intelligence:
+- **Fragmented Customer Identity**: Interactions across devices remain siloed, preventing a unified view of the customer.
+- **Cart Abandonment**: High bounce rates persist because re-engagement is either too slow or contextually irrelevant.
+- **Wrong Channel Targeting**: Blasting the same message across all channels leads to wasted ad spend and **Customer Fatigue**.
+- **Lack of AI Explainability**: Marketers cannot understand *why* an AI selected a specific action or skipped a channel.
+- **Difficulty Measuring Impact**: Connecting a specific push notification or email to a final conversion remains an attribution challenge.
 
-The project continuously:
+## Solution
+MarketTwin AI solves this by introducing a closed-loop intelligence architecture:
+- **Unified Identity Resolution**: Instantly resolves cross-device behavior into a single Global Customer ID.
+- **Real-Time Event Stream**: Captures interactions (e.g., product views, cart actions) as they happen.
+- **Digital Customer Twin**: Maintains a live, evolving profile of customer affinities, intent scores, and fatigue levels.
+- **Intent/Churn/Fatigue Scoring**: Continuously recalculates conversion probability and churn risk.
+- **AI Orchestration & NBA Engine**: Decides the exact Next Best Action to take based on the digital twin's current state.
+- **Policy-Aware Channel Routing**: Enforces strict governance, skipping channels like WhatsApp if explicit consent is missing.
+- **Measurement and ROI Tracking**: Closes the loop by directly attributing recovered carts and revenue to the specific AI-driven intervention.
 
-* ingests customer behavior events,
-* resolves customer identity across channels,
-* maintains a live digital twin,
-* tracks customer journey stages,
-* calculates behavioral intelligence scores,
-* and updates a realtime analytics dashboard.
+## Hackathon Theme Alignment
+MarketTwin AI strongly aligns with themes around **AI-powered customer experience**, **intelligent marketing automation**, **personalization**, **customer data platforms**, **digital transformation**, and **business impact analytics**. It showcases how predictive AI can transition marketing from a batch-and-blast model to an individualized, real-time orchestration strategy.
 
-The system architecture is inspired by platforms such as:
+## Key Features
+- **Real-time Command Center**: Live oversight of system throughput, active twins, and AI decisions.
+- **Global Identity Map**: Visualizes the deterministic linking of devices and sessions to human profiles.
+- **Digital Customer Twin**: Deep dive into individual customer intent, lifecycle stage, and affinities.
+- **AI Orchestration Engine**: The brain that evaluates multi-channel eligibility and calculates the optimal NBA.
+- **Audience Intelligence**: Macro-level insights into fatigue distribution and segment health.
+- **Storefront Simulator**: A live demo environment to generate user events.
+- **Email Deliverability**: Simulated inbox to view generated email content.
+- **WhatsApp Policy Gate**: Simulated WhatsApp gateway highlighting consent enforcement.
+- **SMS/Push Rejection Logic**: Engine demonstrating why certain channels are rejected (e.g., fatigue risk).
+- **Measurement Dashboard**: ROI and attribution tracking comparing baseline metrics vs. AI-uplift.
+- **Presentation Mode / Run Demo**: Automated scenario execution to present the end-to-end value proposition.
 
-* Salesforce CDP
-* Adobe Experience Platform
-* Segment Personas
-* Braze
-* MoEngage
-* Insider
+## System Architecture
 
----
-
-# Core Architecture
-
-```text id="mjlwm6"
-Customer Interaction Layer (Storefront)
-            ↓
-Event Generation
-            ↓
-FastAPI Event Service
-            ↓
-Identity Resolution Engine
-            ↓
-Digital Twin Engine
-            ↓
-Realtime Dashboard / Visualization Layer
+```mermaid
+flowchart LR
+    A[Storefront Simulator] -->|Raw Events| B(Event Engine)
+    B --> C(Identity Resolver)
+    C --> D(Customer Twin)
+    D --> E{NBA Engine}
+    E -->|Predicted Best Action| F(Policy Engine)
+    F -->|Approved| G[Channel Dispatcher]
+    F -->|Rejected| E
+    G --> H(Measurement Engine)
 ```
 
----
+## AI Explainability
+MarketTwin AI operates transparently. For every decision, the system exposes:
+- **Current Conversion Probability**: The baseline likelihood of purchase before intervention.
+- **NBA Confidence**: The AI's confidence in the chosen next best action.
+- **Projected Conversion Probability**: The expected likelihood of purchase *after* the intervention.
+- **Channel Routing Logic**:
+  - *Why WhatsApp was skipped*: Explains if the rejection was due to missing user consent or policy restrictions.
+  - *Why Email was used as fallback*: Details the channel cycling logic when a primary channel is blocked.
+  - *Why SMS/Push was rejected*: Exposes threshold limitations, such as low channel affinity or high customer fatigue risk.
 
-# Features Implemented So Far
+## Demo Scenario
+**The John Doe (CUST_007) Cart Abandonment Story**
 
-## 1. Event-Driven Architecture
+1. **Source Channel**: John browses the website and abandons his cart containing a high-value item.
+2. **Event Captured & Identity Resolved**: The system captures the event, linking the anonymous session to John Doe.
+3. **Customer Twin Updated**: John's intent score spikes, but his fatigue score is evaluated.
+4. **AI Orchestration**: The NBA engine predicts the highest conversion probability by sending a recovery coupon via WhatsApp.
+5. **Policy Check**: The Policy Engine intercepts the request, finding that John's **WhatsApp consent is unavailable**. WhatsApp is skipped.
+6. **Fallback & Rejection**: The engine evaluates SMS/Push, but rejects them due to low affinity and moderate fatigue risk.
+7. **Final Delivery**: **Email** is selected as the optimal, compliant fallback channel.
+8. **Final Action & Measurement**: John receives the Cart Recovery Coupon via email, clicks it, and converts. The Measurement Engine logs the attributed revenue uplift.
 
-Implemented a realtime event processing system where customer actions generate events dynamically.
+## Screenshots
 
-Supported events:
+### Command Center
+![Command Center](docs/screenshots/command-center.png)
 
-* session_start
-* product_view
-* add_to_cart
-* remove_from_cart
-* cart_abandon
-* purchase
-* email_open
-* email_click
-* whatsapp_click
-* push_click
+### Identity Map
+![Identity Map](docs/screenshots/identity-map.png)
 
----
+### Customer Twin
+![Customer Twin](docs/screenshots/customer-twin.png)
 
-## 2. Identity Resolution Engine
+### AI Orchestration
+![AI Orchestration](docs/screenshots/ai-orchestration.png)
 
-Implemented omnichannel customer identity resolution.
+### Audience Intelligence
+![Audience Intelligence](docs/screenshots/audience-intelligence.png)
 
-Features:
+### Measurement Dashboard
+![Measurement Dashboard](docs/screenshots/measurement-dashboard.png)
 
-* deterministic matching
-* unified customer IDs
-* identity graph mapping
-* device persistence
-* cross-event customer linking
+### Storefront Simulator
+![Storefront Simulator](docs/screenshots/storefront-simulator.png)
 
-Example:
+### Email Deliverability
+![Email Deliverability](docs/screenshots/email-deliverability.png)
 
-```text id="wjlwm2"
-DEV_88
-EMAIL_991
-PHONE_771
-        ↓
-CUST_001
-```
+### WhatsApp Policy Gate
+![WhatsApp Policy Gate](docs/screenshots/whatsapp-policy.png)
 
----
+### SMS/Push Gateway
+![SMS/Push Gateway](docs/screenshots/sms-push-gateway.png)
 
-## 3. Digital Twin Engine
+## Tech Stack
+**Frontend:**
+- React (v18)
+- Vite
+- TailwindCSS
+- Zustand (State Management)
+- Recharts
+- Framer Motion
 
-Implemented realtime customer state intelligence.
+**Backend:**
+- Python 3
+- FastAPI
+- Uvicorn
+- SQLite (Database)
+- SQLAlchemy (ORM)
+- Pandas & NumPy
+- Scikit-Learn
 
-The digital twin continuously updates:
-
-* intent score
-* churn risk
-* fatigue score
-* conversion probability
-* journey stage
-* customer segment
-* next best action
-
-Example journey transitions:
-
-```text id="0jlwm7"
-anonymous
-→ browsing
-→ cart_active
-→ cart_abandoned
-→ converted
-```
-
----
-
-## 4. Customer Journey State Machine
-
-Implemented event-driven journey stage transitions.
-
-Examples:
-
-* browsing
-* interested
-* cart_active
-* cart_abandoned
-* converted
-* dormant
-* churn_risk
-
----
-
-## 5. Next Best Action (NBA) Logic
-
-Implemented rule-based decision intelligence.
-
-Example:
-
-```text id="4jlwm2"
-High Intent + Cart Abandonment
-→ Recommend Coupon
-```
-
----
-
-## 6. Realtime Dashboard / Control Room
-
-Implemented frontend visualization layer.
-
-Features:
-
-* live digital twin monitoring
-* realtime score updates
-* journey timeline visualization
-* identity graph visualization
-* backend health monitor
-* raw API response viewer
-* event logs
-
----
-
-## 7. Mini Ecommerce Storefront
-
-Implemented simplified ecommerce storefront to generate REAL behavioral events.
-
-Features:
-
-* product browsing
-* product detail pages
-* add to cart
-* remove from cart
-* checkout flow
-* cart abandonment simulation
-
-All customer actions automatically generate backend events.
-
----
-
-# Tech Stack
-
-## Frontend
-
-* React
-* Vite
-* TailwindCSS
-* Zustand
-* Axios
-* Framer Motion
-
-## Backend
-
-* FastAPI
-* Python
-* Pydantic
-* SQLite
-* SQLAlchemy
-
----
-
-# Project Structure
-
-```text id="5jlwm4"
-MarketTwin-AI/
-│
-├── frontend/
-│
+## Folder Structure
+```text
+market_twin_ai/
 ├── backend/
-│
-├── README.md
-│
-└── .gitignore
+│   ├── app/
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── database/
+│   │   ├── models/
+│   │   ├── services/
+│   │   └── main.py
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── router/
+│   │   └── store/
+│   ├── package.json
+│   └── vite.config.js
+├── docs/
+│   └── screenshots/
+└── run.py
 ```
 
----
+## Installation & Setup
 
-# Backend Architecture
+1. **Clone the repository**
+2. **Run the Backend (Python/FastAPI)**
+   ```bash
+   # Navigate to the root directory
+   cd market_twin_ai
+   
+   # Create a virtual environment (optional but recommended)
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+   
+   # Install dependencies
+   pip install -r backend/requirements.txt
+   
+   # Start the backend server
+   python run.py
+   ```
+   *The backend will be available at http://localhost:8001*
 
-```text id="6jlwm5"
-Event Service
-    ↓
-Identity Resolution Service
-    ↓
-Digital Twin Service
-    ↓
-Next Best Action Engine
-```
+3. **Run the Frontend (React/Vite)**
+   ```bash
+   # Open a new terminal and navigate to the frontend directory
+   cd market_twin_ai/frontend
+   
+   # Install dependencies
+   npm install
+   
+   # Start the development server
+   npm run dev
+   ```
+   *The frontend will be available at http://localhost:3000*
 
----
+## API Endpoints
+Core backend capabilities are exposed via the following modular routers under the `/api` prefix:
+- `GET /api/health` - System health check
+- `POST /api/events` - Real-time event ingestion
+- `GET /api/customers` - Fetch customer twins and identity data
+- `POST /api/cart` - Cart management (add, abandon, purchase)
+- `POST /api/predictive` - Access AI scoring and predictive models
+- `GET /api/metrics` - Real-time measurement and ROI reporting
+- `GET /api/messages` - Fetch channel-specific message history
 
-# Running The Project
-python run.py
+## Measurement Logic
+MarketTwin AI includes a defensible measurement engine to prove business value:
+- **Campaign Attribution Path**: Tracks the precise journey from the AI's generated message to the final conversion event.
+- **Organic vs. Attributed**: Separates organic purchases from those directly influenced by an AI intervention.
+- **Net Uplift Calculation**: Calculates the difference in conversion probability before and after the AI action, translating that delta into incremental revenue.
+- **ROI Calculation**: Measures the value of recovered carts against the simulated cost of channel delivery (e.g., WhatsApp cost vs Email cost).
 
-# Frontend Setup
+## Originality & Hackathon Compliance
+MarketTwin AI is a hackathon Minimum Viable Product (MVP) developed entirely during the hackathon timeline. It utilizes standard open-source libraries and frameworks (FastAPI, React, Scikit-Learn) to build a functional prototype. While it demonstrates advanced architectural concepts and predictive routing, it is built for demonstration purposes and is not yet production-ready.
 
-## Step 1 — Open frontend folder
+## Team
+**Team Members:**
+1. [Name 1]
+2. [Name 2]
 
-```bash id="9jlwm6"
-cd frontend
-```
+## Demo Video / Presentation
+**Demo Video:** [To be added]  
+**Presentation:** [To be added]
 
-## Step 2 — Install dependencies
-
-```bash id="2jlwm6"
-npm install
-```
-
-## Step 3 — Run frontend
-
-```bash id="4jlwm5"
-npm run dev
-```
-
-
----
-
-# How The System Works
-
-## Step 1 — Customer interacts with storefront
-
-Examples:
-
-* views product
-* adds to cart
-* abandons cart
-* purchases
-
----
-
-## Step 2 — Frontend generates events automatically
-
-Example:
-
-```json id="9jlwm5"
-{
-  "event_type": "add_to_cart",
-  "device_id": "DEV_88"
-}
-```
-
----
-
-## Step 3 — Backend processes event
-
-Flow:
-
-```text id="2jlwm5"
-Event Service
-→ Identity Resolution
-→ Digital Twin Update
-→ NBA Engine
-```
-
----
-
-## Step 4 — Dashboard updates live
-
-UI updates:
-
-* intent score
-* journey stage
-* timeline
-* customer segment
-* next best action
-
----
-
-# Current Status
-
-## Implemented
-
-* event ingestion
-* identity resolution
-* realtime digital twin
-* journey engine
-* ecommerce event generation
-* realtime frontend dashboard
-* NBA logic
-* timeline visualization
-* identity graph visualization
-
----
-
-## Planned Future Enhancements
-
-* ML-based churn prediction
-* recommendation engine
-* campaign orchestration
-* Kafka event streaming
-* Redis realtime cache
-* WebSocket realtime updates
-* advanced analytics
-* multi-channel simulations
-* AI-generated campaigns
-
----
-
-# Demo Flow
-
-Recommended demo sequence:
-
-1. Open storefront
-2. Browse products
-3. Add product to cart
-4. Wait for cart abandonment
-5. Watch dashboard update
-6. Return and purchase
-7. Observe journey transition and score updates
-
----
-
-# Authors
-
-Built as a realtime customer intelligence and digital twin platform project.
+## Future Scope
+- **Real Trained ML Models**: Transition from heuristic/probabilistic scoring to deep learning models trained on historical interaction data.
+- **Graph-Based Identity Resolution**: Implement robust probabilistic graph databases to connect disparate browser fingerprints.
+- **Real Channel APIs**: Integrate directly with Twilio (SMS/WhatsApp), SendGrid (Email), and APNS/FCM (Push).
+- **Multi-Armed Bandit Optimization**: Continuously optimize the NBA engine using real-time exploration vs. exploitation metrics.
+- **A/B Testing**: Native capabilities to run control groups against the AI orchestration engine.
+- **Enterprise CDP Integrations**: Bidirectional sync with platforms like Segment, mParticle, or Adobe CDP.
+- **Privacy/Consent Management**: Advanced GDPR/CCPA compliance engine with preference center synchronization.
